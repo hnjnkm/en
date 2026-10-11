@@ -41,14 +41,19 @@ jobs:
               url=$(echo "$site" | jq -r '.html_url')
               for probe in {1..12}; do
                 if curl --fail --silent --show-error "$url?build=$GITHUB_SHA" -o /tmp/opic-published.html &&
-                   grep -q 'data-content-version="study-v5"' /tmp/opic-published.html &&
+                   grep -q 'data-content-version="study-v6"' /tmp/opic-published.html &&
+                   grep -q 'id="word-rail"' /tmp/opic-published.html &&
                    grep -q '<title>oPIC</title>' /tmp/opic-published.html &&
                    curl --fail --silent --show-error "${url}content.js?build=$GITHUB_SHA" -o /tmp/opic-content.js &&
                    grep -q '가산명사·불가산명사: 관사·복수·수량' /tmp/opic-content.js &&
                    grep -q '"id": "g33"' /tmp/opic-content.js &&
+                   grep -q 'Unit 8 · 분사구문·비교구문' /tmp/opic-content.js &&
+                   grep -q '"id": "g47"' /tmp/opic-content.js &&
                    grep -q '"term": "end up"' /tmp/opic-content.js &&
                    curl --fail --silent --show-error "${url}word-groups.js?build=$GITHUB_SHA" -o /tmp/opic-groups.js &&
-                   grep -q '"id": "wg64"' /tmp/opic-groups.js &&
+                   grep -q '"id": "wg100"' /tmp/opic-groups.js &&
+                   curl --fail --silent --show-error "${url}app.js?build=$GITHUB_SHA" -o /tmp/opic-app.js &&
+                   grep -q 'function goToWordGroup' /tmp/opic-app.js &&
                    curl --fail --silent --show-error "${url}favicon.svg?build=$GITHUB_SHA" -o /tmp/opic-icon.svg &&
                    grep -q '<circle' /tmp/opic-icon.svg &&
                    curl --fail --silent --show-error "${url}favicon.ico?build=$GITHUB_SHA" -o /tmp/opic-icon.ico &&

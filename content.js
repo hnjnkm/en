@@ -1,791 +1,253 @@
-// 문법 33개 강의. 단어는 중복 표제어를 제외한 핵심 단어·표현.
+// 사용자 제공 목차를 따른 8개 Unit + 말하기 보충, 문법 47개 강의.
 const grammar = [
   {
-    "id": "g01",
-    "cat": "문장 기초",
-    "title": "01 · 주어·동사·목적어·보어와 문장 순서",
-    "lead": "영어는 단어를 아는 것보다 “누가 + 어떤 상태인지 / 무엇을 하는지”를 먼저 정하는 것이 중요합니다.",
+    "id": "g34",
+    "cat": "Unit 1 · 명사·대명사",
+    "title": "01 · 명사의 모양·자리와 복합명사",
+    "lead": "명사를 고르려면 어미를 알아보고, 빈칸이 맡는 역할과 명사구의 끝을 함께 확인해야 합니다.",
     "concepts": [
       {
-        "title": "품사: 단어의 종류부터",
-        "text": "명사는 사람·장소·물건·개념의 이름(friend, park, music), 대명사는 명사를 대신하는 말(I, it), 동사는 행동·상태(live, be), 형용사는 명사의 성질(quiet), 부사는 행동·정도의 설명(slowly, very)입니다. 전치사는 명사와의 관계(in, at), 접속사는 말과 절의 연결(and, because), 감탄사는 반응(oh)을 나타냅니다. 품사는 단어의 종류, 주어·목적어는 문장 안에서 맡은 역할이라 서로 다른 분류입니다."
+        "title": "어미는 품사를 찾는 단서",
+        "text": "-tion/-sion, -ment, -ness, -ity/-ty, -ance/-ence, -ship 등은 명사에서 자주 보입니다. participation, equipment, happiness, ability, assistance처럼 단어 가족을 묶어 익히세요. 어미는 단서일 뿐입니다. proposal, initiative처럼 익숙한 형용사 어미를 가진 명사도 있고, work처럼 여러 품사로 쓰는 단어도 있습니다."
       },
       {
-        "title": "주어와 동사부터 찾기",
-        "text": "주어(S)는 문장에서 상태나 행동을 설명하는 대상입니다. 동사(V)는 행동 또는 상태를 나타냅니다. I live in Seoul에서 I가 주어, live가 동사입니다. 한국어에서는 “집에 있어요”처럼 주어를 생략하지만 영어의 평서문에는 보통 I, it 등의 주어가 필요합니다."
+        "title": "명사가 들어가는 네 가지 자리",
+        "text": "명사구는 주어, 타동사의 목적어, 전치사의 목적어, 명사 보어에 들어갑니다. The manager approved the proposal에서 manager가 주어, proposal이 목적어입니다. 관사 뒤라는 위치와 주어라는 역할은 다른 기준입니다. 명사구의 전체 범위부터 표시하세요."
       },
       {
-        "title": "구와 절: 단어 묶음과 작은 문장",
-        "text": "구는 여러 단어가 한 덩어리로 역할을 하는 표현입니다: at home은 장소를 나타내는 전치사구입니다. 절은 주어와 동사가 있는 단위입니다: I got home, when I got home. when I got home은 주어·동사가 있어도 “집에 왔을 때”라는 덧붙임이라 보통 혼자 문장을 끝내지 못합니다. I cooked dinner when I got home처럼 주절을 연결해야 내용이 완성됩니다."
+        "title": "관사·소유격·형용사 다음을 읽기",
+        "text": "a/the 또는 my/her 뒤에는 보통 명사구가 옵니다. 중간에 부사와 형용사가 끼어들 수 있습니다: the highly experienced manager. 관사 + 빈칸 + 전치사에서는 명사구를 완성할 명사가 자주 필요하지만 the best of the options처럼 다른 구조도 있으므로 공식만으로 확정하지 마세요."
       },
       {
-        "title": "목적어와 보어는 역할이 다릅니다",
-        "text": "목적어(O)는 동사의 대상입니다. I like coffee에서 coffee는 좋아하는 대상입니다. 보어(C)는 주어나 목적어가 무엇인지, 어떤 상태인지 설명합니다. I am tired에서 tired는 I의 상태입니다. be, seem, become 같은 동사 뒤에는 주어를 설명하는 보어가 자주 옵니다."
-      },
-      {
-        "title": "5형식은 암기보다 동사의 쓰임을 보기",
-        "text": "기본 구조는 S+V, S+V+C, S+V+O, S+V+간접목적어+직접목적어, S+V+O+C로 정리할 수 있습니다. 같은 동사도 의미와 용법에 따라 구조가 바뀝니다. 우선 필요한 자리를 채운 다음 시간·장소·이유를 덧붙이세요. 수식어가 길어져도 중심 구조는 그대로입니다."
+        "title": "복합명사의 중심은 보통 마지막 명사",
+        "text": "office supplies, customer satisfaction, safety regulations는 명사가 다른 명사를 수식하는 표현입니다. 뒤의 중심 명사가 전체 의미와 보통의 단·복수를 결정합니다. sales figures의 sales, sports equipment의 sports처럼 앞 명사에 -s가 굳은 표현도 있으니 함께 외우세요."
       }
     ],
     "forms": [
       {
-        "label": "1형식",
-        "pattern": "I work.",
-        "note": "주어 + 동사. I work at a café에서 at a café는 장소를 더하는 수식어입니다."
+        "label": "관사·소유격 + 명사구",
+        "pattern": "the highly experienced manager / my carefully planned presentation",
+        "note": "부사는 형용사·분사를, 형용사는 끝의 명사를 수식합니다."
       },
       {
-        "label": "2형식",
-        "pattern": "I feel tired.",
-        "note": "주어 + 동사 + 주격보어. tired는 I의 상태를 설명합니다."
+        "label": "전치사의 목적어",
+        "pattern": "in cooperation with the team / during the meeting",
+        "note": "cooperation, meeting은 앞 전치사의 목적어입니다. 두 전치사 사이에 있다고 모두 명사 한 단어인 것은 아닙니다."
       },
       {
-        "label": "3형식",
-        "pattern": "I like movies.",
-        "note": "주어 + 동사 + 목적어. movies는 좋아하는 대상입니다."
+        "label": "명사 보어",
+        "pattern": "She became a manager.",
+        "note": "a manager는 she의 정체를 설명합니다. 형용사 보어와 구별합니다."
       },
       {
-        "label": "4형식",
-        "pattern": "She gave me a gift.",
-        "note": "me는 받는 사람, a gift는 주는 물건입니다. She gave a gift to me로도 말할 수 있습니다. 모든 전달 동사가 이 어순을 쓰지는 않습니다. explain은 explain the problem to me처럼 익히세요."
-      },
-      {
-        "label": "5형식",
-        "pattern": "The music makes me happy.",
-        "note": "me가 목적어, happy가 me의 상태를 설명하는 목적격보어입니다."
+        "label": "명사 + 명사",
+        "pattern": "improved safety regulations / an expiration date",
+        "note": "improved는 safety regulations 전체를 수식하고 중심 명사는 regulations입니다."
       }
     ],
     "examples": [
       {
-        "en": "I watch movies at home on weekends.",
-        "ko": "주말에는 집에서 영화를 봐요.",
-        "analysis": "I(주어) + watch(동사) + movies(목적어). at home과 on weekends는 없어도 문장의 중심은 성립합니다."
+        "en": "The implementation of the new policy starts tomorrow.",
+        "ko": "새 정책의 시행은 내일 시작됩니다.",
+        "analysis": "The + implementation + of …가 주어 명사구입니다. policy는 of의 목적어로 들어간 수식어이며, starts는 단수 implementation에 맞춥니다."
       },
       {
-        "en": "The café looks cozy.",
-        "ko": "그 카페는 아늑해 보여요.",
-        "analysis": "looks는 여기서 “보다”가 아니라 “~해 보이다”입니다. cozy는 café를 설명하므로 형용사를 씁니다."
+        "en": "We encourage participation in the workshop.",
+        "ko": "워크숍 참여를 권장합니다.",
+        "analysis": "encourage의 목적어는 participation입니다. in the workshop은 어떤 참여인지 덧붙입니다."
       },
       {
-        "en": "My friend sent me a message.",
-        "ko": "친구가 저에게 메시지를 보냈어요.",
-        "analysis": "sent 뒤에 받는 사람 me와 전달한 것 a message가 옵니다."
+        "en": "Improved safety regulations have reduced accidents.",
+        "ko": "개선된 안전 규정이 사고를 줄였습니다.",
+        "analysis": "improved(분사 형용사) + safety(명사 수식어) + regulations(중심 복수명사). have는 regulations에 맞춥니다."
+      },
+      {
+        "en": "The sales department is on the second floor.",
+        "ko": "영업 부서는 2층에 있습니다.",
+        "analysis": "sales에 -s가 있어도 중심 명사 department가 단수이므로 is를 씁니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "I coffee like.",
-        "right": "I like coffee.",
-        "why": "목적어 coffee는 일반적으로 동사 like 뒤에 둡니다."
+        "wrong": "Office supplies is expensive.",
+        "right": "Office supplies are expensive.",
+        "why": "복합명사의 중심 supplies가 복수입니다. 앞의 office로 수 일치를 결정하지 않습니다."
       },
       {
-        "wrong": "My room very quiet.",
-        "right": "My room is very quiet.",
-        "why": "quiet는 형용사입니다. 주어와 상태를 연결하는 동사 is가 필요합니다."
+        "wrong": "We need an improve of the system.",
+        "right": "We need an improvement of the system.",
+        "why": "an 뒤의 목적어 명사구를 완성하려면 improve라는 동사가 아니라 improvement라는 명사가 필요합니다."
       }
     ],
     "exercises": [
       {
-        "q": "“저는 음악을 좋아해요”를 바르게 말하면?",
+        "q": "The ___ of the project was successful. 알맞은 형태는?",
         "options": [
-          "I music like.",
-          "I like music.",
-          "I am like music."
+          "complete",
+          "completion",
+          "completely"
         ],
-        "answer": "I like music.",
-        "explanation": "I가 주어, like가 일반동사, music이 목적어입니다. 현재형 일반동사 앞에 am을 추가하지 않습니다."
+        "answer": "completion",
+        "explanation": "The + 명사 + of 전치사구가 주어입니다. completion은 -tion 명사입니다."
       },
       {
-        "q": "The trip made me happy에서 happy는 무엇을 설명하나요?",
+        "q": "The interest rate ___ high. 알맞은 동사는?",
         "options": [
-          "여행을 한 시점",
-          "made의 횟수",
-          "목적어 me의 상태"
+          "is",
+          "are",
+          "be"
         ],
-        "answer": "목적어 me의 상태",
-        "explanation": "make + 목적어 + 형용사 구조입니다. happy는 목적격보어로 “나를 행복하게 만들었다”는 뜻을 완성합니다."
+        "answer": "is",
+        "explanation": "interest rate의 중심 명사는 단수 rate입니다."
+      },
+      {
+        "q": "improved safety regulations의 중심 명사는?",
+        "options": [
+          "improved",
+          "safety",
+          "regulations"
+        ],
+        "answer": "regulations",
+        "explanation": "improved는 형용사 역할, safety는 명사 수식어, regulations는 명사구의 중심입니다."
+      },
+      {
+        "q": "“개선된 안전 규정”을 뜻하는 improved ___ regulations에 자연스러운 결합은?",
+        "options": [
+          "safety",
+          "safely",
+          "safe"
+        ],
+        "answer": "safety",
+        "explanation": "안전 규정이라는 결합은 safety regulations입니다. safety는 명사이면서 뒤 명사를 수식합니다. safe + 명사 구조 자체는 가능하지만 규정 자체가 안전하다는 다른 뜻이므로 여기서 목표한 안전 규정이라는 표현과 구분합니다."
+      },
+      {
+        "q": "“버스 정류장 두 곳”의 올바른 표현은?",
+        "options": [
+          "two bus stops",
+          "two buses stop",
+          "two bus stop"
+        ],
+        "answer": "two bus stops",
+        "explanation": "bus stop에서 핵심 명사는 stop입니다. 두 곳을 세므로 stops로 바꾸고 앞 수식 명사 bus는 그대로 둡니다."
+      },
+      {
+        "q": "project manager는 무엇을 뜻하나요?",
+        "options": [
+          "프로젝트를 관리하는 사람",
+          "관리자라는 종류의 프로젝트",
+          "manager가 무조건 동사인 문장"
+        ],
+        "answer": "프로젝트를 관리하는 사람",
+        "explanation": "핵심 명사는 뒤의 manager이고 앞의 project가 담당 대상을 설명합니다. 명사+명사 결합은 뒤 핵심 명사부터 뜻을 잡으면 이해하기 쉽습니다."
       }
     ],
     "spoken": {
-      "prompt": "내 취미를 한 문장으로 말한 뒤 장소와 시간을 덧붙이세요.",
-      "sample": "I watch movies. I usually watch movies at home on weekends.",
-      "note": "I + 동사 + 대상부터 만들고, 어디서·언제를 붙이세요."
-    }
-  },
-  {
-    "id": "g02",
-    "cat": "문장 기초",
-    "title": "02 · be동사: 정체·상태·위치",
-    "lead": "be동사는 행동을 나타내는 말이 아니라 주어와 정체·상태·위치를 연결하는 동사입니다.",
-    "concepts": [
+      "prompt": "일상에서 쓰는 복합명사 두 개를 넣어 설명하세요.",
+      "sample": "My office supplies are in a desk drawer. My shopping list is on my phone.",
+      "note": "복합명사 전체를 익히고 중심 명사의 수에 동사를 맞춥니다."
+    },
+    "referenceTables": [
       {
-        "title": "뒤에 무엇이 오는지 보기",
-        "text": "I am a student에서는 명사 a student가 정체를, I am tired에서는 형용사 tired가 상태를 설명합니다. I am at home에서는 전치사구 at home이 위치를 나타냅니다. 한국어의 “~이다 / ~하다 / ~에 있다”를 모두 be로 연결할 수 있지만, “달리다·살다” 같은 일반동사를 대신하지는 않습니다."
-      },
-      {
-        "title": "주어와 시간에 맞춰 형태 바꾸기",
-        "text": "현재는 I am, he/she/it is, you/we/they are입니다. 과거는 I/he/she/it was, you/we/they were입니다. you는 한 사람에게 말해도 are/were를 씁니다. 말할 때 I’m, she’s, they’re 같은 축약형이 자연스럽습니다."
-      },
-      {
-        "title": "부정과 질문은 be 자체로 만들기",
-        "text": "부정은 be 뒤에 not을 붙입니다. 질문은 be를 주어 앞으로 옮깁니다. be가 본동사인 문장에는 do/does/did를 추가하지 않습니다. Are you tired?에 Yes, I am / No, I’m not처럼 짧게 답할 수 있습니다."
-      }
-    ],
-    "forms": [
-      {
-        "label": "현재 긍정",
-        "pattern": "I am / She is / They are + 보어",
-        "note": "I’m busy. She’s a teacher. They’re at home."
-      },
-      {
-        "label": "과거 긍정",
-        "pattern": "I was / They were + 보어",
-        "note": "I was tired yesterday."
-      },
-      {
-        "label": "부정",
-        "pattern": "주어 + be + not + 보어",
-        "note": "He isn’t busy. They weren’t there."
-      },
-      {
-        "label": "질문",
-        "pattern": "Be + 주어 + 보어?",
-        "note": "Is it expensive? Were you at home?"
-      }
-    ],
-    "examples": [
-      {
-        "en": "My apartment is small, but it is comfortable.",
-        "ko": "아파트는 작지만 편안해요.",
-        "analysis": "is 뒤에 small/comfortable이라는 형용사가 와서 apartment의 상태를 설명합니다."
-      },
-      {
-        "en": "Were you busy yesterday? — Yes, I was.",
-        "ko": "어제 바빴나요? — 네, 바빴어요.",
-        "analysis": "과거 질문이므로 were를 앞으로 옮기고, I로 답할 때는 was로 바꿉니다."
-      },
-      {
-        "en": "There are two cafés near my house.",
-        "ko": "집 근처에 카페 두 곳이 있어요.",
-        "analysis": "존재를 소개하는 there are 구조입니다. 위치를 말하는 The cafés are nearby와 구별하세요."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "I am live in Seoul.",
-        "right": "I live in Seoul.",
-        "why": "live는 일반동사입니다. 현재형 live 앞에 am을 붙이지 않습니다. 진행형이라면 I am living처럼 -ing가 필요합니다."
-      },
-      {
-        "wrong": "Do you are tired?",
-        "right": "Are you tired?",
-        "why": "be동사 질문은 be만 앞으로 보냅니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“그들은 어제 집에 있었어요”의 알맞은 형태는?",
-        "options": [
-          "They was at home yesterday.",
-          "They were at home yesterday.",
-          "They are at home yesterday."
+        "title": "토익·일상에서 자주 쓰는 복합명사",
+        "headers": [
+          "표현",
+          "뜻",
+          "중심 명사"
         ],
-        "answer": "They were at home yesterday.",
-        "explanation": "과거이고 주어가 they이므로 were를 사용합니다."
-      },
-      {
-        "q": "“지금 피곤해요?”를 바르게 물으면?",
-        "options": [
-          "Do you tired?",
-          "Are you tired?",
-          "Do you are tired?"
+        "rows": [
+          [
+            "office supplies",
+            "사무용품",
+            "supplies · 복수"
+          ],
+          [
+            "customer satisfaction",
+            "고객 만족",
+            "satisfaction · 불가산"
+          ],
+          [
+            "job openings",
+            "채용 공석",
+            "openings · 복수"
+          ],
+          [
+            "marketing strategy",
+            "마케팅 전략",
+            "strategy · 가산"
+          ],
+          [
+            "expiration date",
+            "만료일",
+            "date · 가산"
+          ],
+          [
+            "interest rate",
+            "금리",
+            "rate · 가산"
+          ],
+          [
+            "safety regulations",
+            "안전 규정",
+            "regulations · 복수"
+          ],
+          [
+            "assembly line",
+            "조립 라인",
+            "line · 가산"
+          ],
+          [
+            "sales figures",
+            "매출 수치",
+            "figures · 복수"
+          ],
+          [
+            "awards ceremony",
+            "시상식",
+            "ceremony · 가산"
+          ]
         ],
-        "answer": "Are you tired?",
-        "explanation": "tired는 상태를 나타내는 형용사이므로 be동사 are로 질문합니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "내 집의 상태 두 가지와 어제 내 상태를 말하세요.",
-      "sample": "My home is quiet and cozy. I was tired yesterday, so I stayed home.",
-      "note": "현재 상태에는 is, 어제 상태에는 was를 쓰세요."
-    }
-  },
-  {
-    "id": "g33",
-    "cat": "문장 기초",
-    "title": "03 · 자동사·타동사: 목적어가 필요한가?",
-    "lead": "자동사·타동사의 차이는 “스스로 하는 행동인가”가 아니라 “그 용법에서 동사가 직접 목적어를 취하는가”입니다. 영어의 동사 구조를 기준으로 판단하세요.",
-    "concepts": [
-      {
-        "title": "자동사와 타동사의 정확한 기준",
-        "text": "자동사는 동사의 직접 목적어 없이 쓰이는 동사입니다: The baby sleeps. 타동사는 동사의 직접 목적어를 취하는 동사입니다: I enjoy movies. movies는 즐기는 대상이라 enjoy의 목적어입니다. “자동사=혼자 하는 행동, 타동사=남에게 하는 행동”이라는 뜻은 아닙니다. I enjoy music처럼 혼자 하는 활동도 타동사 구조이고, We talked처럼 여러 사람이 함께 하는 활동도 자동사 구조일 수 있습니다."
+        "note": "단어 묶음의 복합명사 목록에서 분야별 표현과 복수 예외를 더 익힐 수 있습니다."
       },
       {
-        "title": "목적어와 장소·시간 설명을 구별하기",
-        "text": "I arrived at the station에서 arrived 뒤의 at the station은 장소를 나타내는 전치사구입니다. station은 전치사 at의 목적어이지 arrive의 직접 목적어가 아닙니다. I slept for eight hours의 for eight hours도 기간을 더하는 표현입니다. I slept eight hours처럼 전치사 없이 명사구로 기간을 나타낼 수도 있으므로, 동사 뒤에 명사가 있다고 모두 직접 목적어인 것은 아닙니다. 그 말이 동작의 대상인지, 장소·시간을 덧붙이는지 확인하세요."
-      },
-      {
-        "title": "자동사라도 보어가 필요할 수 있습니다",
-        "text": "The baby sleeps는 주어+동사로 완성되는 1형식입니다. My sister became a teacher는 주어+동사+보어인 2형식입니다. become은 직접 목적어 대신 주어의 정체를 설명하는 보어가 필요합니다. a teacher는 my sister가 무엇이 됐는지 설명합니다. 따라서 “자동사는 뒤에 아무 말도 필요 없다”라고 외우면 안 됩니다. be, become, seem, look, feel 등의 연결동사는 뜻에 맞는 주격보어와 함께 자주 씁니다."
-      },
-      {
-        "title": "목적어와 보어는 명사 모양이어도 다릅니다",
-        "text": "My sister met a teacher에서 teacher는 만난 대상이므로 목적어입니다. My sister became a teacher에서는 sister 자신이 teacher가 됐으므로 보어입니다. 명사가 왔는지 형용사가 왔는지만 보지 말고 그 말의 역할을 보세요. The news made me happy에서는 me가 직접 목적어이고 happy는 me의 상태를 설명하는 목적격보어입니다. 타동사 구조에도 보어가 함께 올 수 있습니다."
-      },
-      {
-        "title": "전치사가 필요한 동사와 바로 연결하는 동사",
-        "text": "기본 표현은 listen to music, wait for a friend, arrive at the station, live in Seoul입니다. 반면 visit Seoul, reach the station, discuss the problem, enter the room은 목적어를 직접 붙입니다. 비슷한 한국어 번역이라도 영어의 구조는 다릅니다. “무엇을/누구를”로 번역되는지에만 의존하지 말고 동사와 뒤 표현을 함께 익히세요. go home의 home은 방향을 나타내는 부사라 to가 없는 것이며 go의 직접 목적어가 아닙니다."
-      },
-      {
-        "title": "같은 동사도 용법에 따라 둘 다 가능합니다",
-        "text": "The door opened는 문이 열린 자동사 용법, I opened the door는 문을 연 타동사 용법입니다. I eat at home은 먹는 장소를 말하는 자동사 용법, I eat breakfast at home은 breakfast라는 직접 목적어가 있는 타동사 용법입니다. 동사마다 항상 한 종류로 고정되는 것은 아닙니다. 문장에서 어떤 뜻·구조로 쓰이는지 보세요. 사전에서는 [I]/intransitive가 자동사, [T]/transitive가 타동사 용법을 표시합니다."
-      },
-      {
-        "title": "목적어가 꼭 물건 이름일 필요는 없습니다",
-        "text": "I enjoy cooking의 cooking은 동명사 목적어, I want to leave의 to leave는 부정사 목적어, I know that he is busy의 that he is busy는 내용 전체가 목적어 역할을 하는 명사절입니다. 목적어는 “사람·물건 명사 하나”로 제한되지 않습니다. 어떤 형태를 받을 수 있는지는 동사별로 다르므로 enjoy + -ing, want + to부정사처럼 함께 익히세요."
-      },
-      {
-        "title": "수동태와 연결해서 확인하기",
-        "text": "I opened the door에서 목적어 the door를 주어로 옮기면 The door was opened가 됩니다. 목적어 없는 The accident happened를 The accident was happened로 바꾸지는 않습니다. 기본 수동태는 목적어를 취하는 구조에서 출발합니다. 다만 목적어가 있다고 모든 수동 표현이 자연스러운 것은 아니며, 전치사 동사구가 수동으로 쓰이는 경우도 있어 수동 가능 여부만으로 모든 용법을 판정하지 마세요."
-      }
-    ],
-    "forms": [
-      {
-        "label": "자동사·1형식",
-        "pattern": "주어 + 동사 (+ 수식어)",
-        "note": "The baby sleeps. / The baby sleeps at night. at night는 시간 설명입니다."
-      },
-      {
-        "label": "자동사·2형식",
-        "pattern": "주어 + 연결동사 + 주격보어",
-        "note": "My sister became a teacher. teacher는 sister의 정체입니다."
-      },
-      {
-        "label": "타동사·3형식",
-        "pattern": "주어 + 동사 + 직접 목적어",
-        "note": "I visited a museum. museum은 방문한 대상입니다."
-      },
-      {
-        "label": "타동사·4형식",
-        "pattern": "주어 + 동사 + 간접 목적어 + 직접 목적어",
-        "note": "She gave me a ticket. me는 받는 사람, a ticket은 주는 대상입니다."
-      },
-      {
-        "label": "타동사·5형식",
-        "pattern": "주어 + 동사 + 목적어 + 목적격보어",
-        "note": "The movie made me happy. happy는 me의 상태를 설명합니다."
-      },
-      {
-        "label": "자동사+전치사",
-        "pattern": "동사 + 전치사 + 전치사의 목적어",
-        "note": "listen to music / wait for a friend. music과 friend는 전치사의 목적어입니다."
-      },
-      {
-        "label": "두 용법",
-        "pattern": "The door opened. / I opened the door.",
-        "note": "첫 문장은 직접 목적어가 없고, 두 번째 문장은 the door가 직접 목적어입니다."
-      }
-    ],
-    "examples": [
-      {
-        "en": "I arrived at the station at eight.",
-        "ko": "8시에 역에 도착했어요.",
-        "analysis": "I가 주어, arrived가 자동사입니다. at the station은 장소, at eight는 시간입니다. station을 arrive에 바로 붙이지 않고 전치사 at으로 연결합니다."
-      },
-      {
-        "en": "I visited a museum with a friend.",
-        "ko": "친구와 박물관을 방문했어요.",
-        "analysis": "visited는 타동사이며 a museum이 직접 목적어입니다. with a friend는 함께한 사람을 더하는 수식어입니다. visit 뒤에 to를 넣지 않습니다."
-      },
-      {
-        "en": "The café became crowded after lunch.",
-        "ko": "점심 후에 카페가 붐비게 됐어요.",
-        "analysis": "became은 연결동사로 쓰이고 crowded는 café의 상태를 설명하는 주격보어입니다. 목적어가 없어도 보어가 필요한 2형식 문장입니다."
-      },
-      {
-        "en": "The door opened. I opened the window, too.",
-        "ko": "문이 열렸어요. 저는 창문도 열었어요.",
-        "analysis": "첫 opened는 자동사 용법, 두 번째 opened는 window를 직접 목적어로 취한 타동사 용법입니다. 같은 동사라도 구조가 달라집니다."
-      },
-      {
-        "en": "I listen to music when I work out.",
-        "ko": "운동할 때 음악을 들어요.",
-        "analysis": "listen은 이 구조에서 자동사이며 to music을 붙입니다. music은 전치사 to의 목적어입니다. 한국어로 “음악을 듣다”라고 해도 영어에서는 to를 유지합니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "I arrived the airport.",
-        "right": "I arrived at the airport.",
-        "why": "arrive는 이 의미에서 직접 목적어를 취하지 않아 장소를 at으로 연결합니다. 비슷한 뜻의 reach를 쓰면 I reached the airport처럼 바로 목적어를 붙입니다."
-      },
-      {
-        "wrong": "We discussed about the problem.",
-        "right": "We discussed the problem.",
-        "why": "discuss는 논의하는 대상을 직접 목적어로 취합니다. 같은 뜻을 talk로 말하면 We talked about the problem처럼 about이 필요합니다."
-      },
-      {
-        "wrong": "I listened music.",
-        "right": "I listened to music.",
-        "why": "listen은 듣는 대상을 전치사 to와 연결하는 것이 기본입니다. heard music은 hear가 직접 목적어를 취하는 다른 구조이며, 듣다라는 번역만으로 어순을 정하면 안 됩니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“공항에 도착했어요”의 올바른 구조는?",
-        "options": [
-          "I arrived the airport.",
-          "I arrived at the airport.",
-          "I arrived to the airport."
+        "title": "형용사 수식 ↔ 명사 수식",
+        "headers": [
+          "형용사 + 명사",
+          "명사 + 명사"
         ],
-        "answer": "I arrived at the airport.",
-        "explanation": "arrive는 이 의미에서 자동사입니다. 공항이라는 지점은 at the airport라는 전치사구로 연결합니다. to가 아닌 at을 쓰며, 도시·나라에는 보통 arrive in을 씁니다."
-      },
-      {
-        "q": "My sister became a teacher에서 a teacher의 역할은?",
-        "options": [
-          "became의 직접 목적어",
-          "sister의 정체를 설명하는 주격보어",
-          "시간을 설명하는 수식어"
+        "rows": [
+          [
+            "a safe place · 안전한 장소",
+            "safety regulations · 안전 규정"
+          ],
+          [
+            "a healthy person · 건강한 사람",
+            "health insurance · 건강 보험"
+          ],
+          [
+            "a scientific method · 과학적인 방법",
+            "a science teacher · 과학 교사"
+          ],
+          [
+            "a musical performance · 음악 공연",
+            "a music teacher · 음악 교사"
+          ],
+          [
+            "a local service · 지역 서비스",
+            "customer service · 고객 서비스"
+          ],
+          [
+            "a helpful program · 도움이 되는 프로그램",
+            "a training program · 훈련 프로그램"
+          ]
         ],
-        "answer": "sister의 정체를 설명하는 주격보어",
-        "explanation": "sister 자신이 teacher가 된 것이므로 a teacher는 주격보어입니다. become은 이 구조에서 직접 목적어를 취하지 않는 연결동사입니다. “동사 뒤 명사=항상 목적어”는 아닙니다."
-      },
-      {
-        "q": "“그 문제를 논의했어요”의 올바른 문장은?",
-        "options": [
-          "We discussed about the problem.",
-          "We discussed the problem.",
-          "We discussed to the problem."
-        ],
-        "answer": "We discussed the problem.",
-        "explanation": "discuss는 타동사로 the problem을 직접 목적어로 받습니다. about을 쓰고 싶으면 We talked about the problem처럼 동사도 talk로 바꿔야 합니다."
-      },
-      {
-        "q": "The door opened. / I opened the door.에서 open의 용법은?",
-        "options": [
-          "두 문장 모두 직접 목적어가 있다",
-          "첫 문장은 자동사, 두 번째는 타동사 용법",
-          "첫 문장은 타동사, 두 번째는 자동사 용법"
-        ],
-        "answer": "첫 문장은 자동사, 두 번째는 타동사 용법",
-        "explanation": "첫 문장은 door가 주어이며 직접 목적어가 없습니다. 두 번째는 I가 주어이고 the door가 직접 목적어입니다. 같은 동사가 두 용법으로 쓰일 수 있습니다."
+        "note": "두 구조 모두 문법적으로 가능합니다. 형용사는 성질, 수식 명사는 종류·분야·대상 등을 말합니다. 특정 빈칸 문제에서는 원하는 의미와 실제 결합이 무엇인지까지 확인하세요."
       }
-    ],
-    "spoken": {
-      "prompt": "집을 나서서 목적지에 도착한 일과, 그곳에서 방문하거나 한 일을 말하세요. 동사 뒤가 직접 목적어인지 전치사구인지 찾아보세요.",
-      "sample": "I left home at nine and arrived at the station at nine thirty. Later, I visited a museum. While I was waiting for my friend, I listened to music.",
-      "note": "arrived at the station, waiting for my friend, listened to music은 전치사를 유지합니다. visited a museum은 타동사 뒤에 직접 목적어를 붙인 구조입니다. left home의 leave도 문맥에 따라 여러 용법이 있습니다."
-    }
-  },
-  {
-    "id": "g03",
-    "cat": "문장 기초",
-    "title": "04 · 일반동사와 주어·동사의 수 일치",
-    "lead": "일반동사는 like, live, work, go처럼 행동·습관·상태를 나타내며, 현재형에서는 주어에 따라 모양이 달라집니다.",
-    "concepts": [
-      {
-        "title": "3인칭 단수 현재형만 -s",
-        "text": "나(I)와 우리(we)는 1인칭, 듣는 상대(you)는 2인칭, 그 밖의 사람·사물은 3인칭입니다. I/you/we/they에는 동사원형을 쓰고, he/she/it 또는 단수 명사에는 보통 -s를 붙입니다. my friend는 한 명이면 he/she처럼 취급합니다. my friends는 복수이므로 원형입니다. 이 규칙은 일반동사의 현재형 긍정문에 적용됩니다."
-      },
-      {
-        "title": "철자 변화와 불규칙 형태",
-        "text": "대부분 work → works, -s/-sh/-ch/-x/-o 등으로 끝나면 watch → watches, go → goes가 됩니다. 자음+y는 study → studies, 모음+y는 play → plays입니다. have는 has가 됩니다. 외우기 전에 지금 말하는 주어가 한 명인지 먼저 보세요."
-      },
-      {
-        "title": "원형이 필요한 자리에서는 -s를 붙이지 않기",
-        "text": "does/doesn’t 또는 can/will 같은 조동사 뒤에는 원형을 씁니다. She likes coffee지만 Does she like coffee?입니다. 동사마다 -s를 붙이는 것이 아니라, 시제·수 일치를 담당하는 자리가 바뀌는 것입니다."
-      },
-      {
-        "title": "동사원형·과거형·과거분사는 다릅니다",
-        "text": "동사원형은 사전에 나오는 기본형입니다: go, eat, work. 과거형은 끝난 일을 말하는 went, ate, worked이고, 과거분사는 have 뒤나 수동태에서 쓰는 gone, eaten, worked입니다. -ing형은 going, eating, working입니다. work처럼 과거형과 분사가 같을 수도 있지만 go처럼 다를 수도 있습니다. 현재의 -s형도 원형과 구별하세요: work → works. 뒤 시제 강의에서 각 형태를 언제 쓰는지 설명합니다."
-      }
-    ],
-    "forms": [
-      {
-        "label": "I / you / we / they",
-        "pattern": "주어 + 동사원형",
-        "note": "I work. My friends work."
-      },
-      {
-        "label": "he / she / it / 단수 명사",
-        "pattern": "주어 + 동사-s/-es",
-        "note": "My sister works. He studies."
-      },
-      {
-        "label": "have의 현재형",
-        "pattern": "I have / She has",
-        "note": "My apartment has two bedrooms."
-      },
-      {
-        "label": "조동사 뒤",
-        "pattern": "does / can / will + 동사원형",
-        "note": "She doesn’t work. She can drive."
-      }
-    ],
-    "examples": [
-      {
-        "en": "My brother works from home, but I work at an office.",
-        "ko": "남동생은 재택근무를 하지만 저는 사무실에서 일해요.",
-        "analysis": "brother는 3인칭 단수라 works, I는 work입니다."
-      },
-      {
-        "en": "The restaurant closes at nine.",
-        "ko": "그 식당은 9시에 문을 닫아요.",
-        "analysis": "restaurant는 단수 명사입니다. 사람뿐 아니라 사물도 3인칭 단수 규칙을 따릅니다."
-      },
-      {
-        "en": "She goes to the gym twice a week.",
-        "ko": "그녀는 일주일에 두 번 헬스장에 가요.",
-        "analysis": "go의 3인칭 단수형은 goes입니다. twice a week는 빈도를 설명합니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "My friend like movies.",
-        "right": "My friend likes movies.",
-        "why": "단수 주어 my friend에 맞춰 현재 동사에 -s를 붙입니다."
-      },
-      {
-        "wrong": "She can drives.",
-        "right": "She can drive.",
-        "why": "조동사 can 뒤에는 주어와 관계없이 원형 drive를 씁니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“우리 동네에는 큰 공원이 있어요”에서 동사를 고르면?",
-        "options": [
-          "My neighborhood have a large park.",
-          "My neighborhood has a large park.",
-          "My neighborhood haves a large park."
-        ],
-        "answer": "My neighborhood has a large park.",
-        "explanation": "neighborhood는 단수이고 have의 3인칭 단수형은 has입니다."
-      },
-      {
-        "q": "“친구들은 근처에 살아요”의 올바른 문장은?",
-        "options": [
-          "My friends lives nearby.",
-          "My friends live nearby.",
-          "My friends is live nearby."
-        ],
-        "answer": "My friends live nearby.",
-        "explanation": "friends는 복수 주어이므로 원형 live를 씁니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "나와 가족 한 명의 습관을 비교해 말하세요.",
-      "sample": "I drink tea in the morning. My sister drinks coffee.",
-      "note": "주어를 I에서 my sister로 바꿀 때 동사의 -s도 바꿔 보세요."
-    }
-  },
-  {
-    "id": "g04",
-    "cat": "문장 기초",
-    "title": "05 · 부정문과 do·does·did의 역할",
-    "lead": "일반동사 문장을 부정하거나 질문할 때 do는 문장의 모양을 바꾸는 보조 역할을 합니다.",
-    "concepts": [
-      {
-        "title": "세 종류의 부정문을 구별하기",
-        "text": "be동사는 be + not, 일반동사는 do/does/did + not + 원형, 조동사는 can/will/should + not + 원형입니다. I’m not tired, I don’t work, I can’t drive는 구조가 서로 다릅니다. 동사를 먼저 분류하면 not을 어디에 넣을지 결정할 수 있습니다."
-      },
-      {
-        "title": "do가 시제와 수 일치를 맡습니다",
-        "text": "현재 I/you/we/they는 don’t, he/she/it은 doesn’t, 과거는 주어와 관계없이 didn’t입니다. doesn’t에 현재·3인칭 단수 정보가, didn’t에 과거 정보가 이미 있으므로 뒤의 동사는 원형입니다. didn’t went처럼 과거를 두 번 표시하지 않습니다."
-      },
-      {
-        "title": "not의 범위와 빈도 표현",
-        "text": "I don’t always cook는 “항상 요리하는 것은 아니다”입니다. I never cook는 “전혀 요리하지 않는다”로 더 강합니다. 표준 영어에서는 I don’t never cook처럼 don’t와 never를 함께 써서 단순 부정을 만들지 않습니다."
-      },
-      {
-        "title": "do가 항상 보조동사는 아닙니다",
-        "text": "I do the dishes에서 do는 “하다”라는 본동사이고 the dishes가 목적어입니다. Do you do the dishes?에서는 앞 do가 질문을 만드는 보조동사, 뒤 do가 실제 행동입니다. She doesn’t do the dishes도 보조동사 doesn’t와 본동사 do가 함께 있습니다. 같은 단어가 두 번 나온다고 잘못된 문장은 아닙니다. 앞에 나온 보조동사가 시제·수 일치를 맡는지 확인하세요."
-      }
-    ],
-    "forms": [
-      {
-        "label": "be 부정",
-        "pattern": "주어 + be + not",
-        "note": "I’m not busy. It wasn’t cheap."
-      },
-      {
-        "label": "일반동사 현재 부정",
-        "pattern": "주어 + don’t / doesn’t + 원형",
-        "note": "I don’t smoke. He doesn’t smoke."
-      },
-      {
-        "label": "일반동사 과거 부정",
-        "pattern": "주어 + didn’t + 원형",
-        "note": "I didn’t buy anything."
-      },
-      {
-        "label": "조동사 부정",
-        "pattern": "주어 + 조동사 + not + 원형",
-        "note": "I can’t swim. We won’t go."
-      }
-    ],
-    "examples": [
-      {
-        "en": "I don’t eat out very often.",
-        "ko": "외식을 그렇게 자주 하지는 않아요.",
-        "analysis": "don’t + eat으로 현재 습관을 부정합니다. very often을 붙여 “전혀 안 한다”와 구분합니다."
-      },
-      {
-        "en": "The café wasn’t open, so we didn’t go in.",
-        "ko": "카페가 열려 있지 않아서 들어가지 않았어요.",
-        "analysis": "상태 open은 wasn’t, 행동 go는 didn’t go로 부정합니다."
-      },
-      {
-        "en": "She doesn’t have a car.",
-        "ko": "그녀는 차가 없어요.",
-        "analysis": "긍정문은 She has a car. 부정문에서 doesn’t가 수 일치를 맡으므로 has가 have로 돌아갑니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "I not like it.",
-        "right": "I don’t like it.",
-        "why": "일반동사 like의 현재 부정문에는 don’t가 필요합니다."
-      },
-      {
-        "wrong": "I didn’t went there.",
-        "right": "I didn’t go there.",
-        "why": "과거는 didn’t가 표시하므로 go는 원형입니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“어제 그 영화를 보지 않았어요”의 올바른 문장은?",
-        "options": [
-          "I didn’t saw the movie yesterday.",
-          "I didn’t see the movie yesterday.",
-          "I don’t saw the movie yesterday."
-        ],
-        "answer": "I didn’t see the movie yesterday.",
-        "explanation": "과거 부정은 didn’t + 원형 see입니다. saw는 과거 긍정문에서 씁니다."
-      },
-      {
-        "q": "“그녀는 항상 집에 있는 것은 아니에요”에 맞는 문장은?",
-        "options": [
-          "She isn’t always at home.",
-          "She is never at home.",
-          "She doesn’t at home."
-        ],
-        "answer": "She isn’t always at home.",
-        "explanation": "isn’t always는 부분 부정입니다. never는 “전혀 없다”라는 더 강한 의미이고, at home은 be동사와 연결합니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "하지 않는 습관과 어제 하지 않은 일을 하나씩 말하세요.",
-      "sample": "I don’t drink coffee at night. I didn’t work out yesterday.",
-      "note": "현재 습관은 don’t, 어제의 일은 didn’t로 구별하세요."
-    }
-  },
-  {
-    "id": "g05",
-    "cat": "문장 기초",
-    "title": "06 · 의문문: yes/no 질문과 의문사 질문",
-    "lead": "질문은 무조건 문장 앞에 do를 붙이는 것이 아닙니다. be·조동사·일반동사에 따라 첫 단어가 달라집니다.",
-    "concepts": [
-      {
-        "title": "yes/no 질문의 순서",
-        "text": "be문장은 be + 주어, 조동사 문장은 조동사 + 주어 + 원형, 일반동사는 do/does/did + 주어 + 원형입니다. 평서문 You live nearby를 Do you live nearby?로 바꿉니다. 질문의 나머지 부분은 대체로 그대로 둡니다."
-      },
-      {
-        "title": "의문사는 무엇을 묻는지 정합니다",
-        "text": "what은 무엇, where는 장소, when은 시점, why는 이유, how는 방법·상태를 묻습니다. 의문사 + 의문문 순서가 기본입니다. How often은 빈도, How long은 기간, How much는 가격·양, How many는 셀 수 있는 수량입니다."
-      },
-      {
-        "title": "의문사가 주어인 질문은 예외",
-        "text": "Who called you?에서는 who 자체가 주어입니다. 주어를 묻는 질문에는 보통 do/did를 넣지 않습니다. Who did you call?은 주어 you가 따로 있으며, 전화를 건 대상(목적어)을 묻습니다. 질문에서 빠진 자리가 주어인지 먼저 확인하세요."
-      }
-    ],
-    "forms": [
-      {
-        "label": "be 질문",
-        "pattern": "Be + 주어 + 보어?",
-        "note": "Are you ready? Where is the café?"
-      },
-      {
-        "label": "일반동사 질문",
-        "pattern": "Do/Does/Did + 주어 + 원형?",
-        "note": "Did you enjoy the trip?"
-      },
-      {
-        "label": "조동사 질문",
-        "pattern": "Can/Will/Could + 주어 + 원형?",
-        "note": "Could you help me?"
-      },
-      {
-        "label": "의문사 질문",
-        "pattern": "의문사 + 조동사/be + 주어 …?",
-        "note": "How often do you work out?"
-      },
-      {
-        "label": "주어를 묻는 질문",
-        "pattern": "Who/What + 동사 …?",
-        "note": "Who lives here? What happened?"
-      }
-    ],
-    "examples": [
-      {
-        "en": "What time does the tour start?",
-        "ko": "투어는 몇 시에 시작하나요?",
-        "analysis": "what time은 시작 시간을, does는 현재·단수 정보를 나타냅니다. start는 원형입니다."
-      },
-      {
-        "en": "How long did you stay there?",
-        "ko": "그곳에 얼마나 머물렀나요?",
-        "analysis": "기간을 묻는 how long 뒤에 did + you + stay가 옵니다."
-      },
-      {
-        "en": "Who invited you? — My friend did.",
-        "ko": "누가 초대했나요? — 친구가요.",
-        "analysis": "who가 주어이므로 Who did invite you?라는 기본형을 쓰지 않습니다. 강조하는 특수한 경우는 별개입니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "Where you live?",
-        "right": "Where do you live?",
-        "why": "일반동사 live로 질문하므로 do가 필요합니다."
-      },
-      {
-        "wrong": "What time does it starts?",
-        "right": "What time does it start?",
-        "why": "does 뒤에는 원형 start를 씁니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“누가 그 창문을 깼나요?”처럼 주어를 물으면?",
-        "options": [
-          "Who broke the window?",
-          "Who did broke the window?",
-          "Who the window broke?"
-        ],
-        "answer": "Who broke the window?",
-        "explanation": "who가 주어이므로 기본 의문문에서 did를 추가하지 않습니다."
-      },
-      {
-        "q": "“일주일에 몇 번 운동하나요?”에 맞는 질문은?",
-        "options": [
-          "How long do you work out?",
-          "How often do you work out?",
-          "How many do you work out?"
-        ],
-        "answer": "How often do you work out?",
-        "explanation": "빈도는 how often으로 묻습니다. how long은 한 번 또는 전체의 기간을 묻습니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "호텔에 전화한다고 생각하고 가격·위치·예약 가능 여부를 질문하세요.",
-      "sample": "How much is a room per night? Where is the hotel? Do you have any rooms available for Friday?",
-      "note": "질문의 의미를 정한 뒤 be 또는 do 구조를 고르세요."
-    }
-  },
-  {
-    "id": "g06",
-    "cat": "문장 기초",
-    "title": "07 · 대명사: I·me·my·mine과 재귀대명사",
-    "lead": "같은 “나”라도 문장에서 맡는 역할에 따라 I, me, my, mine으로 달라집니다.",
-    "concepts": [
-      {
-        "title": "주어와 목적어 자리",
-        "text": "주어 자리에는 I/you/he/she/it/we/they, 동사나 전치사의 목적어 자리에는 me/you/him/her/it/us/them을 씁니다. She invited me에서 she는 초대한 사람, me는 초대받은 대상입니다. with I가 아니라 with me처럼 전치사 뒤에도 목적격이 필요합니다."
-      },
-      {
-        "title": "명사 앞과 명사 없이 쓰는 소유",
-        "text": "my/your/his/her/its/our/their는 명사 앞에서 “누구의”를 표시합니다. mine/yours/his/hers/ours/theirs는 명사 없이 “누구의 것”을 뜻합니다. It’s my bag = The bag is mine. 소유 한정사와 a/the를 겹쳐 my a bag처럼 쓰지 않습니다."
-      },
-      {
-        "title": "재귀와 지시 표현",
-        "text": "myself/yourself/himself/herself/itself/ourselves/themselves는 행동의 주어와 대상이 같을 때 씁니다. I hurt myself는 내가 나를 다치게 했다는 뜻입니다. by myself는 “혼자”입니다. this/that은 단수, these/those는 복수이며 가까움·멀어짐을 구분합니다."
-      }
-    ],
-    "forms": [
-      {
-        "label": "주격 → 목적격",
-        "pattern": "I → me / he → him / she → her / we → us / they → them",
-        "note": "You and I went. She called you and me."
-      },
-      {
-        "label": "소유 한정사 → 소유대명사",
-        "pattern": "my → mine / your → yours / her → hers / their → theirs",
-        "note": "This is my room. This room is mine."
-      },
-      {
-        "label": "재귀",
-        "pattern": "주어와 같은 대상: myself / yourself …",
-        "note": "I cooked dinner by myself."
-      },
-      {
-        "label": "지시",
-        "pattern": "this / that + 단수 · these / those + 복수",
-        "note": "This café is nice. These cafés are nice."
-      }
-    ],
-    "examples": [
-      {
-        "en": "My friend invited me to her house.",
-        "ko": "친구가 저를 자기 집에 초대했어요.",
-        "analysis": "my는 friend를 꾸미고, me는 invited의 목적어, her는 house를 꾸밉니다."
-      },
-      {
-        "en": "I went there with them.",
-        "ko": "그들과 함께 그곳에 갔어요.",
-        "analysis": "with는 전치사이므로 뒤에 목적격 them을 씁니다."
-      },
-      {
-        "en": "I made the cake myself.",
-        "ko": "케이크는 제가 직접 만들었어요.",
-        "analysis": "myself는 “직접”이라는 강조입니다. by myself라고 하면 보통 도움 없이 혼자 했다는 뜻입니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "This is mine room.",
-        "right": "This is my room.",
-        "why": "명사 room 앞에서는 my를 사용합니다. mine은 명사 없이 씁니다."
-      },
-      {
-        "wrong": "She came with I.",
-        "right": "She came with me.",
-        "why": "전치사 with 뒤에는 목적격 me가 필요합니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“이 가방은 제 것이에요”의 올바른 문장은?",
-        "options": [
-          "This bag is my.",
-          "This bag is mine.",
-          "This bag is me."
-        ],
-        "answer": "This bag is mine.",
-        "explanation": "명사 없이 “내 것”을 나타내므로 소유대명사 mine입니다."
-      },
-      {
-        "q": "“그녀가 우리를 초대했어요”를 바르게 말하면?",
-        "options": [
-          "She invited we.",
-          "She invited our.",
-          "She invited us."
-        ],
-        "answer": "She invited us.",
-        "explanation": "동사 invited의 목적어 자리에는 목적격 us가 옵니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "친구와 함께한 일을 말하고 내 물건 하나를 소개하세요.",
-      "sample": "I went shopping with her. She liked my jacket, but this bag is hers.",
-      "note": "with 뒤 her, 명사 앞 my, 명사 없이 hers를 구분하세요."
-    }
+    ]
   },
   {
     "id": "g07",
-    "cat": "명사와 수식",
-    "title": "08 · 가산명사·불가산명사: 관사·복수·수량",
+    "cat": "Unit 1 · 명사·대명사",
+    "title": "02 · 가산명사·불가산명사: 관사·복수·수량",
     "lead": "가산명사는 하나씩 세는 대상, 불가산명사는 양이나 묶음으로 보는 대상입니다. 이 구분이 a/an, 복수형, 수량 표현, 동사의 단수·복수를 결정합니다. 한국어로 셀 수 있다는 느낌보다 영어에서 그 뜻을 어떻게 쓰는지 확인하세요.",
     "concepts": [
       {
@@ -802,7 +264,7 @@ const grammar = [
       },
       {
         "title": "4. 수량 표현도 명사 종류에 맞춥니다",
-        "text": "복수 가산명사에는 many, a few, few: many chairs / a few ideas. 불가산명사에는 much, a little, little: much luggage / a little time. some, any, a lot of는 복수 가산명사와 불가산명사 모두에 쓸 수 있습니다: some books / some water. 긍정문에서 “물이 많다”는 There is a lot of water.가 회화에서 자연스럽습니다. 질문은 How many bags? / How much luggage?처럼 나눕니다. 자세한 뉘앙스는 10번 수량 표현 강의에서 이어집니다."
+        "text": "복수 가산명사에는 many, a few, few: many chairs / a few ideas. 불가산명사에는 much, a little, little: much luggage / a little time. some, any, a lot of는 복수 가산명사와 불가산명사 모두에 쓸 수 있습니다: some books / some water. 긍정문에서 “물이 많다”는 There is a lot of water.가 회화에서 자연스럽습니다. 질문은 How many bags? / How much luggage?처럼 나눕니다. 자세한 뉘앙스는 수량 표현 강의에서 이어집니다."
       },
       {
         "title": "5. 불가산명사는 단위나 가산명사로 세세요",
@@ -811,6 +273,10 @@ const grammar = [
       {
         "title": "6. 한 명사가 뜻에 따라 가산·불가산이 됩니다",
         "text": "명사 전체에 영원히 한 가지 분류가 붙는다고 외우지 마세요. coffee는 음료 자체이면 불가산이지만 주문의 two coffees는 두 잔입니다. paper는 재료인 종이이면 불가산, 논문 한 편이면 a paper입니다. experience는 쌓인 경험이면 불가산, 구체적인 경험 한 번이면 an experience입니다. 아래 비교표에서 두 용법을 함께 확인하세요. 다만 이런 전환을 information이나 advice에 임의로 적용해 informations, advices라고 하지는 않습니다."
+      },
+      {
+        "title": "뜻이 비슷한 명사도 가산성이 다릅니다",
+        "text": "permit는 허가증이라는 개별 문서라 가산명사, permission은 허락이라는 의미에서 불가산명사입니다: a valid permit / get permission. seat는 좌석 하나라 가산, seating은 좌석 설비·배치 전체라 불가산입니다. 둘 다 명사라는 사실만으로 a/an이나 숫자를 똑같이 붙이지 마세요. certificate/certification도 증명서와 인증 절차·상태를 구분합니다. certification은 개별 인증을 뜻할 때 가산으로 쓰이기도 하므로 뜻을 함께 확인하세요."
       },
       {
         "title": "7. -s가 있다고 모두 복수인 것은 아닙니다",
@@ -897,6 +363,57 @@ const grammar = [
           ]
         ],
         "note": "○는 붙일 수 있다는 뜻입니다. the가 항상 필요하다는 뜻은 아닙니다. 듣는 사람이 대상을 특정할 수 있어야 the를 씁니다. 주문 상황의 a water는 “물 한 잔/한 병”이라는 가산 용법으로 쓰이기도 합니다."
+      },
+      {
+        "title": "헷갈리는 가산명사 ↔ 불가산명사",
+        "headers": [
+          "가산명사 [C]",
+          "불가산명사 [U]",
+          "뜻과 수량 표현"
+        ],
+        "rows": [
+          [
+            "task",
+            "work",
+            "개별 업무 ↔ 일의 양\na task / some work"
+          ],
+          [
+            "permit",
+            "permission",
+            "허가증 ↔ 허락\na valid permit / get permission"
+          ],
+          [
+            "certificate",
+            "certification",
+            "증명서 ↔ 인증 절차·상태\na certificate / professional certification"
+          ],
+          [
+            "seat",
+            "seating",
+            "좌석 하나 ↔ 좌석 설비·배치 전체\ntwo seats / comfortable seating"
+          ],
+          [
+            "architect",
+            "architecture",
+            "건축가 ↔ 건축·건축학\nan architect / modern architecture"
+          ],
+          [
+            "job",
+            "employment",
+            "일자리 ↔ 고용·취업\na job / full-time employment"
+          ],
+          [
+            "suggestion",
+            "advice",
+            "제안 한 가지 ↔ 조언\na suggestion / some advice"
+          ],
+          [
+            "document",
+            "documentation",
+            "문서 한 건 ↔ 관련 서류 전체\nthree documents / supporting documentation"
+          ]
+        ],
+        "note": "표는 적힌 의미의 기본 용법입니다. 완전한 동의어라는 뜻은 아닙니다. permission은 허락, permit는 허가증이므로 가산성뿐 아니라 지금 문장에 필요한 뜻도 확인하세요. 직업을 뜻하는 occupation은 가산명사입니다."
       },
       {
         "title": "주요 불가산명사 · 정보와 도움",
@@ -1107,6 +624,16 @@ const grammar = [
         "en": "The news is good: there won’t be much traffic tomorrow.",
         "ko": "좋은 소식이에요. 내일은 차가 많이 막히지 않을 거래요.",
         "analysis": "news는 -s로 끝나도 단수 동사 is를 씁니다. traffic은 차의 개수가 아니라 교통량이므로 much traffic입니다."
+      },
+      {
+        "en": "Students need a valid permit, but visitors need permission to enter.",
+        "ko": "학생들은 유효한 허가증이 필요하지만 방문객들은 들어가기 위한 허락이 필요해요.",
+        "analysis": "a와 valid 뒤의 permit는 가산 단수 핵심 명사입니다. permission은 허락을 뜻하는 불가산명사여서 a를 직접 붙이지 않습니다. 둘 다 명사지만 문서와 허락의 뜻도 다릅니다."
+      },
+      {
+        "en": "They discussed Ms. Hamilton’s qualifications and previous occupation.",
+        "ko": "그들은 해밀턴 씨의 자격과 이전 직업을 논의했어요.",
+        "analysis": "직업을 뜻하는 occupation은 가산명사입니다. Ms. Hamilton’s가 qualifications와 previous occupation을 함께 한정할 수 있으므로 occupation 앞에 a가 없어도 됩니다. occupant는 거주·점유자라는 사람 명사여서 이 문장의 이전 직업이라는 의미와 맞지 않습니다."
       }
     ],
     "mistakes": [
@@ -1266,6 +793,46 @@ const grammar = [
         ],
         "answer": "I need some paper.",
         "explanation": "재료인 종이를 뜻하면 paper는 불가산명사입니다. 한 장은 a sheet of paper라고 합니다. a paper는 문맥에 따라 논문 한 편이나 신문 한 부 등을 뜻할 수 있습니다."
+      },
+      {
+        "q": "“유효한 학생 허가증”을 뜻하는 a valid student ___에 알맞은 말은?",
+        "options": [
+          "permit",
+          "permission",
+          "permitted"
+        ],
+        "answer": "permit",
+        "explanation": "a 뒤에서는 가산 단수 핵심 명사 permit를 씁니다. student는 permit를 수식하는 명사입니다. permission도 명사지만 허락이라는 불가산 의미이고, permitted는 여기서 필요한 허가증 명사가 아닙니다."
+      },
+      {
+        "q": "Ms. Hamilton’s previous occupation에서 직업을 뜻하는 occupation 앞에 a가 없는 이유는?",
+        "options": [
+          "Ms. Hamilton’s가 이미 명사를 한정하므로",
+          "직업을 뜻하는 occupation이 항상 불가산이므로",
+          "previous가 관사 역할을 하므로"
+        ],
+        "answer": "Ms. Hamilton’s가 이미 명사를 한정하므로",
+        "explanation": "occupation은 이 뜻에서 가산명사입니다. 소유격 Ms. Hamilton’s가 한정사 역할을 하므로 별도의 a를 겹쳐 쓰지 않습니다. 형용사 previous 자체가 관사를 대신하는 것은 아닙니다."
+      },
+      {
+        "q": "개별 업무 하나와 업무의 양을 올바르게 대비한 것은?",
+        "options": [
+          "a task / some work",
+          "a work / some task (일반 업무 의미)",
+          "an task / many work"
+        ],
+        "answer": "a task / some work",
+        "explanation": "task는 가산명사, 일반적인 업무를 뜻하는 work는 불가산명사입니다. work가 작품을 뜻하는 별도 의미에서는 a work of art처럼 가산으로 쓰입니다."
+      },
+      {
+        "q": "개별 좌석 두 개를 뜻하는 자연스러운 표현은?",
+        "options": [
+          "two seats",
+          "two seating",
+          "two seat"
+        ],
+        "answer": "two seats",
+        "explanation": "seat는 가산명사라 two 뒤에서 seats입니다. seating은 좌석 설비·배치 전체라는 불가산명사라 comfortable seating처럼 씁니다."
       }
     ],
     "spoken": {
@@ -1275,519 +842,1118 @@ const grammar = [
     }
   },
   {
-    "id": "g08",
-    "cat": "명사와 수식",
-    "title": "09 · a·an·the와 관사 없이 쓰는 경우",
-    "lead": "관사는 단순히 “하나”를 붙이는 장식이 아니라, 듣는 사람이 그 대상을 특정할 수 있는지 알려줍니다.",
+    "id": "g35",
+    "cat": "Unit 1 · 명사·대명사",
+    "title": "03 · 사람·활동 명사와 특이한 명사 어미",
+    "lead": "같은 단어 가족에서 명사가 둘이면 사람인지 활동·결과인지, 그 뜻에서 셀 수 있는지를 나누어 봅니다.",
     "concepts": [
       {
-        "title": "a/an: 여러 개 중 하나를 소개",
-        "text": "처음 꺼내는 불특정한 단수 가산명사에 a/an을 씁니다. I saw a dog는 “개 한 마리를 봤다”이며 어떤 개인지 아직 정해지지 않았습니다. a/an의 선택은 철자가 아니라 바로 뒤 말의 첫소리 기준입니다. a university는 /y/ 소리, an hour는 h가 소리 나지 않기 때문입니다."
+        "title": "사람과 활동을 구별하기",
+        "text": "applicant는 지원자, application은 신청·신청서입니다. participant는 참가자, participation은 참여입니다. 사람 명사는 보통 가산이므로 단수일 때 a/an, the, 소유격 같은 한정사가 필요하고, 여러 명이면 복수형을 씁니다. 단수 앞에 반드시 a/an만 와야 하는 것은 아닙니다."
       },
       {
-        "title": "the: 어떤 것인지 특정 가능",
-        "text": "앞서 소개했거나, 상황상 서로 알고 있거나, 뒤의 설명으로 특정되는 대상에 씁니다. I saw a dog. The dog was cute에서 같은 개를 다시 말합니다. the book on my desk는 책상 위의 그 책을 특정합니다. the는 복수·불가산명사에도 쓸 수 있습니다: the people we met, the water in this bottle."
+        "title": "어미가 비슷해도 뜻은 확인하기",
+        "text": "-er/-or/-ist/-ee/-ant/-ent는 사람 명사에서 자주 보이지만 computer처럼 사물일 수도 있습니다. architect는 건축가이고 architecture는 건축·건축학입니다. supplier, distributor, manufacturer는 사람뿐 아니라 공급·유통·제조 업체도 뜻하므로 문맥으로 해석하세요."
       },
       {
-        "title": "일반적인 복수·불가산에는 보통 무관사",
-        "text": "I like movies / I like music은 영화·음악 전체에 대한 선호입니다. I like the movies you recommended는 추천받은 특정 영화들입니다. 고유명사는 보통 관사를 생략하지만 the United States 같은 관용 예외가 있습니다. at home, go to work 같은 표현은 묶음으로 익히세요."
+        "title": "형용사처럼 보이는 명사",
+        "text": "proposal, approval, arrival은 -al 명사입니다. initiative는 계획·발의·진취성을 뜻하는 명사이고, alternative, objective, representative는 명사와 형용사 모두 가능합니다. 형용사 어미라고 무조건 제외하지 말고 자리를 확인합니다."
       },
       {
-        "title": "직업과 소유 한정사",
-        "text": "직업을 나타내는 단수 가산명사에는 I’m a teacher처럼 a/an을 씁니다. my/this/that 등이 이미 명사를 한정하면 a/the와 겹치지 않습니다: my house, this book. 형용사가 명사 앞에 있으면 a nice hotel처럼 형용사 소리를 보고 a/an을 선택합니다."
+        "title": "가산성은 실제 뜻에 연결하기",
+        "text": "occupation은 직업이라는 뜻에서 가산명사입니다. her previous occupation에서 her가 단수 명사구의 한정사 역할을 합니다. accounting은 회계라는 활동을 뜻하는 불가산명사지만 account는 계좌·기록 등 뜻에서 가산입니다. 같은 어근이라고 같은 가산성을 갖지 않습니다."
       }
     ],
     "forms": [
       {
-        "label": "새로운 불특정 하나",
-        "pattern": "a/an + 단수 가산명사",
-        "note": "a café / an old café"
+        "label": "사람 명사 단수",
+        "pattern": "a qualified accountant / our new accountant",
+        "note": "형용사 qualified나 new는 한정사를 대신하지 못합니다."
       },
       {
-        "label": "특정 대상",
-        "pattern": "the + 단수/복수/불가산명사",
-        "note": "the café near my house / the coffee I ordered"
+        "label": "사람 명사 복수",
+        "pattern": "qualified accountants / three applicants",
+        "note": "복수는 관사 없이 일반적으로 쓸 수 있고 숫자·소유격과도 함께 씁니다."
       },
       {
-        "label": "일반적 선호",
-        "pattern": "복수 명사 또는 불가산명사",
-        "note": "I like cafés. I like coffee."
-      },
-      {
-        "label": "직업",
-        "pattern": "be + a/an + 직업 명사",
-        "note": "My sister is an engineer."
+        "label": "명사·형용사 겸용",
+        "pattern": "an alternative / an alternative route",
+        "note": "첫 alternative는 대안이라는 명사, 둘째는 route를 수식하는 형용사입니다."
       }
     ],
     "examples": [
       {
-        "en": "I found a small café. The café had great coffee.",
-        "ko": "작은 카페를 찾았어요. 그 카페의 커피가 훌륭했어요.",
-        "analysis": "처음에는 a café로 소개하고, 같은 대상을 다시 말할 때 the café라고 합니다. coffee는 음료의 일반적 질을 말하므로 무관사입니다."
+        "en": "All applicants must submit an application.",
+        "ko": "모든 지원자는 신청서를 제출해야 합니다.",
+        "analysis": "applicants는 사람 복수, an application은 한 장의 신청서입니다."
       },
       {
-        "en": "I stayed at a hotel near the station.",
-        "ko": "역 근처의 한 호텔에 묵었어요.",
-        "analysis": "hotel은 처음 소개한 하나, station은 대화에서 특정되는 역입니다. 문맥 없이 모든 station 앞에 항상 the를 쓰는 규칙은 아닙니다."
+        "en": "We hired a qualified architect.",
+        "ko": "자격을 갖춘 건축가를 채용했습니다.",
+        "analysis": "architect가 가산 단수이고 a가 명사구 전체를 한정합니다. architecture로 바꾸면 사람이 아닙니다."
       },
       {
-        "en": "I’m an office worker, and my brother is a student.",
-        "ko": "저는 회사원이고 남동생은 학생이에요.",
-        "analysis": "office는 모음 소리로 시작하여 an, student는 자음 소리로 시작하여 a를 씁니다."
+        "en": "The committee approved a new initiative.",
+        "ko": "위원회가 새 계획을 승인했습니다.",
+        "analysis": "initiative는 여기서 계획이라는 가산명사입니다. a new 뒤의 목적어 명사구를 완성합니다."
+      },
+      {
+        "en": "They discussed her qualifications and previous occupation.",
+        "ko": "그들은 그녀의 자격과 이전 직업을 논의했습니다.",
+        "analysis": "her는 qualifications와 previous occupation의 병렬 묶음에 적용됩니다. occupation이 무관사 불가산이라서 가능한 구조가 아닙니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "I am teacher.",
-        "right": "I am a teacher.",
-        "why": "직업 teacher는 단수 가산명사여서 관사가 필요합니다."
+        "wrong": "We hired qualified accountant.",
+        "right": "We hired a qualified accountant.",
+        "why": "단수 가산명사 accountant에는 한정사가 필요합니다. qualified는 형용사입니다."
       },
       {
-        "wrong": "I like the music. (음악 전반에 대한 선호)",
-        "right": "I like music.",
-        "why": "음악 일반에 대한 선호는 무관사 music. 특정 음악을 가리키는 문맥에서는 the music도 가능합니다."
+        "wrong": "The company needs an architecture.",
+        "right": "The company needs an architect.",
+        "why": "건축가 한 명을 원한다면 architect를 씁니다. architecture는 건축·건축학을 뜻합니다."
       }
     ],
     "exercises": [
       {
-        "q": "hour 앞의 관사를 고르면?",
+        "q": "All ___ should arrive early. “참가자들”을 넣으면?",
         "options": [
-          "a hour",
-          "an hour",
-          "둘 다 첫소리와 관계없이 같다"
+          "participation",
+          "participants",
+          "participate"
         ],
-        "answer": "an hour",
-        "explanation": "hour의 h는 발음되지 않아서 모음 소리로 시작하므로 an을 씁니다."
+        "answer": "participants",
+        "explanation": "사람을 뜻하는 participant의 복수형이 필요합니다. participation은 참여라는 활동입니다."
       },
       {
-        "q": "음악 전체를 좋아한다고 처음 말할 때 자연스러운 표현은?",
+        "q": "We need an ___ to the current plan. “대안”에 맞는 말은?",
         "options": [
-          "I like music.",
-          "I like a music.",
-          "I like musics."
+          "alternative",
+          "alternatively",
+          "alternation"
         ],
-        "answer": "I like music.",
-        "explanation": "음악 전반을 뜻하는 music은 불가산명사이며 여기서는 무관사입니다."
+        "answer": "alternative",
+        "explanation": "alternative는 대안이라는 명사로 an 뒤에 올 수 있습니다."
+      },
+      {
+        "q": "her previous occupation에 a가 없어도 되는 이유는?",
+        "options": [
+          "occupation이 항상 불가산이어서",
+          "her가 한정사 역할을 해서",
+          "previous가 관사여서"
+        ],
+        "answer": "her가 한정사 역할을 해서",
+        "explanation": "occupation은 직업 뜻에서 가산 단수이며 소유격 her가 한정사입니다."
       }
     ],
     "spoken": {
-      "prompt": "새로운 장소를 소개하고 같은 장소를 다시 설명하세요.",
-      "sample": "There’s a bookstore near my house. The bookstore is small, but it has a cozy reading area.",
-      "note": "처음 a bookstore, 다음 the bookstore로 대상을 이어가세요."
-    }
+      "prompt": "직업과 그 활동을 각각 한 문장으로 말하세요.",
+      "sample": "My sister is an accountant. She studied accounting at college.",
+      "note": "사람 명사 accountant와 활동·분야 accounting의 형태를 구분합니다."
+    },
+    "referenceTables": [
+      {
+        "title": "사람과 활동·결과의 단어 가족",
+        "headers": [
+          "사람·업체",
+          "활동·사물",
+          "구별"
+        ],
+        "rows": [
+          [
+            "applicant",
+            "application",
+            "지원자 / 신청·신청서"
+          ],
+          [
+            "assistant",
+            "assistance",
+            "조수 / 도움"
+          ],
+          [
+            "participant",
+            "participation",
+            "참가자 / 참여"
+          ],
+          [
+            "correspondent",
+            "correspondence",
+            "통신원 / 서신·연락"
+          ],
+          [
+            "manager",
+            "management",
+            "관리자 / 관리"
+          ],
+          [
+            "investor",
+            "investment",
+            "투자자 / 투자·투자금"
+          ],
+          [
+            "founder",
+            "foundation",
+            "설립자 / 설립·재단·기초"
+          ],
+          [
+            "architect",
+            "architecture",
+            "건축가 / 건축·건축학"
+          ],
+          [
+            "manufacturer",
+            "manufacturing",
+            "제조업자·업체 / 제조업"
+          ]
+        ],
+        "note": "사물 명사를 모두 불가산으로 묶을 수 없습니다. application, investment, foundation은 뜻에 따라 가산성이 달라집니다."
+      },
+      {
+        "title": "특이한 어미를 가진 명사",
+        "headers": [
+          "어미",
+          "단어",
+          "명사 뜻"
+        ],
+        "rows": [
+          [
+            "-al",
+            "proposal / approval / arrival",
+            "제안 / 승인 / 도착"
+          ],
+          [
+            "-ive",
+            "initiative",
+            "계획·발의 / 진취성"
+          ],
+          [
+            "명사·형용사",
+            "alternative",
+            "대안 / 대체하는"
+          ],
+          [
+            "명사·형용사",
+            "objective",
+            "목표 / 객관적인"
+          ],
+          [
+            "명사·형용사",
+            "representative",
+            "대표자 / 대표하는"
+          ]
+        ],
+        "note": ""
+      }
+    ]
   },
   {
-    "id": "g09",
-    "cat": "명사와 수식",
-    "title": "10 · some·any·many·much와 수량 표현",
-    "lead": "수량 표현은 명사가 셀 수 있는지, 양이 충분한지에 따라 선택합니다.",
+    "id": "g06",
+    "cat": "Unit 1 · 명사·대명사",
+    "title": "04 · 대명사: I·me·my·mine과 재귀대명사",
+    "lead": "같은 “나”라도 문장에서 맡는 역할에 따라 I, me, my, mine으로 달라집니다.",
     "concepts": [
       {
-        "title": "many와 much, a lot of",
-        "text": "many는 복수 가산명사, much는 불가산명사와 씁니다. many people / much time입니다. 긍정문에서는 much보다 a lot of가 회화에서 자주 쓰입니다. a lot of는 두 종류 모두 가능합니다: a lot of friends / a lot of money."
+        "title": "주어와 목적어 자리",
+        "text": "주어 자리에는 I/you/he/she/it/we/they, 동사나 전치사의 목적어 자리에는 me/you/him/her/it/us/them을 씁니다. She invited me에서 she는 초대한 사람, me는 초대받은 대상입니다. with I가 아니라 with me처럼 전치사 뒤에도 목적격이 필요합니다."
       },
       {
-        "title": "some과 any의 기본·예외",
-        "text": "some은 긍정문, any는 부정·질문에서 자주 씁니다. I have some time / I don’t have any time / Do you have any time? 하지만 상대가 수락하기를 기대하는 제안·요청에는 Would you like some coffee? / Could I have some water?처럼 some을 쓸 수 있습니다. 긍정문의 any는 “어떤 것이든”이라는 뜻도 있습니다."
+        "title": "명사 앞과 명사 없이 쓰는 소유",
+        "text": "my/your/his/her/its/our/their는 명사 앞에서 “누구의”를 표시합니다. mine/yours/his/hers/ours/theirs는 명사 없이 “누구의 것”을 뜻합니다. It’s my bag = The bag is mine. 소유 한정사와 a/the를 겹쳐 my a bag처럼 쓰지 않습니다."
       },
       {
-        "title": "a few/a little과 few/little",
-        "text": "a few는 셀 수 있는 것 몇 개, a little은 셀 수 없는 것 조금입니다. 둘 다 어느 정도 있다는 뜻입니다. a 없이 few/little은 매우 적어서 부족하다는 뉘앙스가 강합니다. I have a few friends는 친구가 몇 명 있다, I have few friends는 친구가 거의 없다입니다."
+        "title": "재귀 용법과 강조 용법",
+        "text": "She praised herself에서는 주어와 목적어가 같은 사람입니다. herself가 목적어를 채우므로 생략하면 원래 구조와 뜻을 유지하지 못합니다. She solved the problem herself에서는 목적어 the problem이 이미 있고 herself는 직접 했다는 강조이므로 생략해도 중심 문장이 완성됩니다. by herself는 보통 혼자·도움 없이, herself는 직접이라는 차이가 있습니다."
       },
       {
-        "title": "each/every와 all/both",
-        "text": "each/every 뒤에는 보통 단수 명사·단수 동사: Every room has a window. all/both 뒤에는 복수 대상을 나타낼 수 있습니다: Both rooms have windows. every days가 아니라 every day라는 형태를 익히세요."
+        "title": "his는 두 역할, its는 일반적인 독립 소유대명사가 없음",
+        "text": "his car에서 his는 소유 한정사, The car is his에서 his는 소유대명사입니다. her/hers는 형태가 다릅니다. its는 보통 its color처럼 명사 앞에서 쓰고 mine처럼 독립적으로 쓰는 소유대명사는 일반 용법에 없습니다. it’s는 it is 또는 it has의 축약이라 소유와 구별합니다."
       }
     ],
     "forms": [
       {
-        "label": "가산 복수",
-        "pattern": "many / a few / few + 복수 명사",
-        "note": "many restaurants / a few people"
+        "label": "주격 → 목적격",
+        "pattern": "I → me / he → him / she → her / we → us / they → them",
+        "note": "You and I went. She called you and me."
       },
       {
-        "label": "불가산",
-        "pattern": "much / a little / little + 명사",
-        "note": "much luggage / a little time"
+        "label": "소유 한정사 → 소유대명사",
+        "pattern": "my → mine / your → yours / her → hers / their → theirs",
+        "note": "This is my room. This room is mine."
       },
       {
-        "label": "둘 다 가능",
-        "pattern": "some / any / a lot of + 명사",
-        "note": "some chairs / some water"
+        "label": "재귀",
+        "pattern": "주어와 같은 대상: myself / yourself …",
+        "note": "I cooked dinner by myself."
       },
       {
-        "label": "하나씩",
-        "pattern": "each/every + 단수 명사 + 단수 동사",
-        "note": "Every café has Wi-Fi."
+        "label": "지시",
+        "pattern": "this / that + 단수 · these / those + 복수",
+        "note": "This café is nice. These cafés are nice."
+      },
+      {
+        "label": "강조와 생략",
+        "pattern": "She handled the issue herself. → She handled the issue.",
+        "note": "herself가 강조이면 생략 가능. 목적어를 채우는 재귀 용법과 구별합니다."
       }
     ],
     "examples": [
       {
-        "en": "I have a few close friends, and we meet every month.",
-        "ko": "친한 친구가 몇 명 있고 매달 만나요.",
-        "analysis": "friends는 복수 가산명사여서 a few, every 뒤 month는 단수입니다."
+        "en": "My friend invited me to her house.",
+        "ko": "친구가 저를 자기 집에 초대했어요.",
+        "analysis": "my는 friend를 꾸미고, me는 invited의 목적어, her는 house를 꾸밉니다."
       },
       {
-        "en": "We had little time, so we took a taxi.",
-        "ko": "시간이 거의 없어서 택시를 탔어요.",
-        "analysis": "little time은 시간이 부족하다는 뉘앙스입니다. a little time이면 조금은 있다는 쪽에 초점이 갑니다."
+        "en": "I went there with them.",
+        "ko": "그들과 함께 그곳에 갔어요.",
+        "analysis": "with는 전치사이므로 뒤에 목적격 them을 씁니다."
       },
       {
-        "en": "Could I have some water?",
-        "ko": "물 좀 주실 수 있을까요?",
-        "analysis": "질문 형태여도 정중한 요청이므로 some이 자연스럽습니다."
+        "en": "I made the cake myself.",
+        "ko": "케이크는 제가 직접 만들었어요.",
+        "analysis": "myself는 “직접”이라는 강조입니다. by myself라고 하면 보통 도움 없이 혼자 했다는 뜻입니다."
+      },
+      {
+        "en": "She introduced herself to the visitors.",
+        "ko": "그녀는 방문객들에게 자신을 소개했습니다.",
+        "analysis": "herself는 introduced의 목적어이며 소개한 사람과 소개된 사람이 같습니다."
+      },
+      {
+        "en": "The success was due to his work, so the credit is his.",
+        "ko": "성공은 그의 노력 덕분이어서 공로는 그의 것입니다.",
+        "analysis": "첫 his는 work 앞의 소유 한정사, 둘째 his는 명사 없이 소유대명사입니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "I have many time.",
-        "right": "I have a lot of time.",
-        "why": "time은 여기서 불가산명사이므로 many를 쓰지 않습니다."
+        "wrong": "This is mine room.",
+        "right": "This is my room.",
+        "why": "명사 room 앞에서는 my를 사용합니다. mine은 명사 없이 씁니다."
       },
       {
-        "wrong": "Every rooms are clean.",
-        "right": "Every room is clean.",
-        "why": "every 뒤에는 단수 명사 room, 동사는 is를 씁니다."
+        "wrong": "She came with I.",
+        "right": "She came with me.",
+        "why": "전치사 with 뒤에는 목적격 me가 필요합니다."
       }
     ],
     "exercises": [
       {
-        "q": "“짐이 많지 않아요”의 올바른 문장은?",
+        "q": "“이 가방은 제 것이에요”의 올바른 문장은?",
         "options": [
-          "I don’t have many luggage.",
-          "I don’t have much luggage.",
-          "I don’t have a few luggage."
+          "This bag is my.",
+          "This bag is mine.",
+          "This bag is me."
         ],
-        "answer": "I don’t have much luggage.",
-        "explanation": "luggage는 불가산명사이므로 much와 연결합니다."
+        "answer": "This bag is mine.",
+        "explanation": "명사 없이 “내 것”을 나타내므로 소유대명사 mine입니다."
       },
       {
-        "q": "“친구가 몇 명은 있어요”에 맞는 표현은?",
+        "q": "“그녀가 우리를 초대했어요”를 바르게 말하면?",
         "options": [
-          "I have a few friends.",
-          "I have a little friends.",
-          "I have few friend."
+          "She invited we.",
+          "She invited our.",
+          "She invited us."
         ],
-        "answer": "I have a few friends.",
-        "explanation": "friends는 복수 가산명사이고 어느 정도 있다는 뜻이므로 a few입니다."
+        "answer": "She invited us.",
+        "explanation": "동사 invited의 목적어 자리에는 목적격 us가 옵니다."
+      },
+      {
+        "q": "The bicycle is ___. “그녀의 것”은?",
+        "options": [
+          "her",
+          "hers",
+          "herself"
+        ],
+        "answer": "hers",
+        "explanation": "명사를 다시 쓰지 않고 소유를 표현하므로 hers입니다."
+      },
+      {
+        "q": "She solved the problem herself에서 herself는?",
+        "options": [
+          "강조이며 생략 가능",
+          "problem의 소유격",
+          "생략 불가능한 목적어"
+        ],
+        "answer": "강조이며 생략 가능",
+        "explanation": "목적어 the problem이 이미 있어 herself는 직접 했다는 강조입니다."
+      },
+      {
+        "q": "She hurt herself에서 herself를 쓰는 이유는?",
+        "options": [
+          "주어와 목적어가 같은 사람",
+          "뒤 명사를 수식",
+          "여러 사람을 가리킴"
+        ],
+        "answer": "주어와 목적어가 같은 사람",
+        "explanation": "다친 행위자와 대상이 모두 she이므로 재귀 목적어입니다."
       }
     ],
     "spoken": {
-      "prompt": "내 동네에 많은 것과 거의 없는 것을 말하세요.",
-      "sample": "There are a lot of cafés in my neighborhood, but there isn’t much parking space.",
-      "note": "cafés와 space의 명사 종류를 확인하세요."
-    }
+      "prompt": "친구와 함께한 일을 말하고 내 물건 하나를 소개하세요.",
+      "sample": "I went shopping with her. She liked my jacket, but this bag is hers.",
+      "note": "with 뒤 her, 명사 앞 my, 명사 없이 hers를 구분하세요."
+    },
+    "referenceTables": [
+      {
+        "title": "인칭대명사 격과 소유·재귀",
+        "headers": [
+          "주격",
+          "목적격",
+          "소유 한정사",
+          "소유대명사",
+          "재귀"
+        ],
+        "rows": [
+          [
+            "I",
+            "me",
+            "my",
+            "mine",
+            "myself"
+          ],
+          [
+            "you (단수)",
+            "you",
+            "your",
+            "yours",
+            "yourself"
+          ],
+          [
+            "he",
+            "him",
+            "his",
+            "his",
+            "himself"
+          ],
+          [
+            "she",
+            "her",
+            "her",
+            "hers",
+            "herself"
+          ],
+          [
+            "it",
+            "it",
+            "its",
+            "—",
+            "itself"
+          ],
+          [
+            "we",
+            "us",
+            "our",
+            "ours",
+            "ourselves"
+          ],
+          [
+            "you (복수)",
+            "you",
+            "your",
+            "yours",
+            "yourselves"
+          ],
+          [
+            "they",
+            "them",
+            "their",
+            "theirs",
+            "themselves"
+          ]
+        ],
+        "note": "소유 한정사 뒤에는 명사구가 오고, 소유대명사는 그 명사구를 대신합니다."
+      }
+    ]
   },
   {
-    "id": "g10",
-    "cat": "명사와 수식",
-    "title": "11 · 형용사·부사와 감정 표현",
-    "lead": "형용사는 “어떤 사람·사물인가”, 부사는 “어떻게·얼마나·얼마나 자주인가”를 설명합니다.",
+    "id": "g36",
+    "cat": "Unit 1 · 명사·대명사",
+    "title": "05 · 지시·부정대명사: those·one·another·some·any",
+    "lead": "대명사가 받는 대상과 단·복수를 먼저 보고, 정해진 대상인지 같은 종류의 다른 것인지 구별합니다.",
     "concepts": [
       {
-        "title": "형용사가 오는 자리",
-        "text": "명사 앞: a quiet room. be/feel/look/seem 같은 연결동사 뒤: The room is quiet / I feel tired. 연결동사 뒤에서 주어의 상태를 말할 때는 부사가 아니라 형용사를 씁니다. feel good과 feel well은 의미에 따라 다를 수 있지만 feel happily를 기본 감정 표현으로 쓰지는 않습니다."
+        "title": "this·that과 these·those",
+        "text": "this/that은 단수, these/those는 복수입니다. this book처럼 명사 앞에서는 한정사로, This is mine처럼 단독으로는 대명사로 씁니다. those who …는 “~하는 사람들”로 뒤 관계절의 동사가 복수에 맞고, anyone who …는 단수에 맞습니다."
       },
       {
-        "title": "부사는 동사·형용사·다른 부사를 꾸밉니다",
-        "text": "She speaks slowly는 말하는 방식을, really nice는 nice의 정도를 설명합니다. 많은 부사가 -ly로 끝나지만 fast/hard/late는 형태가 같고, good → well은 불규칙입니다. hard는 열심히, hardly는 거의 ~않다로 뜻이 다르므로 형태만 보고 바꾸지 마세요."
+        "title": "it은 바로 그 대상, one은 같은 종류의 하나",
+        "text": "I lost my pen, but I found it은 잃어버린 그 펜을 찾았다는 뜻입니다. I need a pen. Do you have one?은 어떤 펜 한 자루면 됩니다. one/ones는 보통 가산명사를 대신하고, 물질·양을 뜻하는 불가산명사를 그대로 받는 데 쓰지 않습니다."
       },
       {
-        "title": "빈도부사의 위치",
-        "text": "usually/often/always/never는 일반동사 앞, be동사 뒤가 기본 위치입니다: I usually walk / I am usually busy. 보조동사가 있으면 첫 보조동사 뒤가 흔합니다: I have never been there. sometimes는 문장 맨 앞이나 뒤에도 자연스럽게 옵니다."
+        "title": "another·other·others·the other",
+        "text": "another는 또 다른 하나로 단독 또는 단수명사 앞에 씁니다. other는 other books처럼 명사를 수식하고 others는 other people/things를 대신합니다. the other는 정해진 나머지 하나, the others는 정해진 나머지 여러 개입니다. another three days처럼 추가 수량 표현도 가능합니다."
       },
       {
-        "title": "-ed와 -ing 감정 형용사",
-        "text": "bored/interested/excited는 느끼는 대상의 상태, boring/interesting/exciting은 그런 느낌을 일으키는 성질을 말합니다. I’m bored는 내가 지루하다, I’m boring은 내가 남에게 지루함을 주는 사람이라는 뜻입니다. 사람도 exciting할 수 있으므로 단순히 “사람=-ed, 사물=-ing”로 외우지 마세요."
+        "title": "some·any의 기본과 예외",
+        "text": "some은 긍정문에서 일부를, any는 부정·의문·조건문에서 하나라도·조금이라도를 표현할 때 흔합니다. 권유·요청이나 긍정 답을 기대하는 질문은 some을 쓸 수 있습니다. 긍정문 any는 “어느 것이든”이라는 자유 선택을 나타낼 수 있습니다. 문장에 not이 있느냐만으로 모든 용법을 결정하지 마세요."
+      },
+      {
+        "title": "each other·one another",
+        "text": "둘 다 “서로”라는 상호 관계를 나타냅니다. 현대 영어에서 두 사람과 세 명 이상을 엄격하게 나누는 규칙은 없습니다. They helped each other처럼 목적어로 쓰거나 each other’s ideas처럼 소유를 표현합니다."
       }
     ],
     "forms": [
       {
-        "label": "명사 수식",
-        "pattern": "형용사 + 명사",
-        "note": "a comfortable room"
+        "label": "수 일치",
+        "pattern": "Those who need help can call us. / Anyone who needs help can call us.",
+        "note": "who의 선행사 those는 복수, anyone은 단수입니다."
       },
       {
-        "label": "상태 설명",
-        "pattern": "주어 + be/feel/look + 형용사",
-        "note": "I felt nervous. The café looked nice."
+        "label": "종류와 동일 대상",
+        "pattern": "I bought a new phone. My brother wants one too.",
+        "note": "형이 원하는 것은 같은 종류의 다른 휴대전화입니다."
       },
       {
-        "label": "행동 수식",
-        "pattern": "동사 + 부사",
-        "note": "He drives carefully."
+        "label": "추가와 나머지",
+        "pattern": "from one department to another / one … the other",
+        "note": "여러 부서 중 하나에서 다른 하나로. 둘 중 남은 하나라면 the other입니다."
       },
       {
-        "label": "감정의 방향",
-        "pattern": "I’m interested / It’s interesting",
-        "note": "interested in + 관심 대상"
+        "label": "자유 선택",
+        "pattern": "You can choose any of these seats.",
+        "note": "긍정문에서도 어느 좌석이든 괜찮다는 뜻으로 any를 씁니다."
       }
     ],
     "examples": [
       {
-        "en": "The movie was boring, so I felt bored.",
-        "ko": "영화가 지루해서 저는 지루함을 느꼈어요.",
-        "analysis": "boring은 영화의 성질, bored는 내가 느낀 상태입니다."
+        "en": "These are my keys, and that is my wallet.",
+        "ko": "이것들은 제 열쇠고 저것은 제 지갑이에요.",
+        "analysis": "복수 these는 are, 단수 that은 is와 연결합니다."
       },
       {
-        "en": "I usually walk to work, but I’m often tired afterward.",
-        "ko": "보통 걸어서 출근하지만 그 후에는 자주 피곤해요.",
-        "analysis": "usually는 walk 앞, often은 am 뒤에 위치합니다."
+        "en": "I have two bags. One is black, and the other is blue.",
+        "ko": "가방이 두 개 있어요. 하나는 검정이고 다른 하나는 파랑이에요.",
+        "analysis": "둘이라는 범위가 정해져 있으므로 남은 하나는 the other입니다."
       },
       {
-        "en": "She speaks English well.",
-        "ko": "그녀는 영어를 잘해요.",
-        "analysis": "speaks라는 동작을 꾸미므로 형용사 good이 아닌 부사 well을 씁니다."
+        "en": "Would you like some coffee?",
+        "ko": "커피 좀 드릴까요?",
+        "analysis": "권유하는 의문문이므로 some이 자연스럽습니다. coffee는 불가산명사입니다."
+      },
+      {
+        "en": "We have prepared refreshments. Please take any you like.",
+        "ko": "다과를 준비했습니다. 원하시는 것은 무엇이든 드세요.",
+        "analysis": "any가 refreshments를 대신하는 대명사이며 긍정문에서 자유 선택을 나타냅니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "I am interesting in music.",
-        "right": "I am interested in music.",
-        "why": "관심을 느끼는 내 상태는 interested, 전치사는 in입니다."
+        "wrong": "Anyone who want to join should register.",
+        "right": "Anyone who wants to join should register.",
+        "why": "anyone은 단수이므로 관계절 현재동사는 wants입니다."
       },
       {
-        "wrong": "He drives careful.",
-        "right": "He drives carefully.",
-        "why": "운전하는 방식을 설명하므로 부사 carefully를 사용합니다."
+        "wrong": "Some people left, but other stayed.",
+        "right": "Some people left, but others stayed.",
+        "why": "other 뒤에 명사가 없고 다른 사람들을 대신하므로 대명사 others를 씁니다."
       }
     ],
     "exercises": [
       {
-        "q": "“여행이 신났고, 나도 신이 났어요”의 올바른 문장은?",
+        "q": "___ who meet the requirements may apply. 복수 관계절에 맞는 말은?",
         "options": [
-          "The trip was excited, and I was exciting.",
-          "The trip was exciting, and I was excited.",
-          "The trip was exciting, and I was excite."
+          "Anyone",
+          "Those",
+          "This"
         ],
-        "answer": "The trip was exciting, and I was excited.",
-        "explanation": "여행은 신나는 성질이 있어 exciting, 내가 느끼는 상태는 excited입니다."
+        "answer": "Those",
+        "explanation": "meet가 복수 현재형이므로 those who meet가 맞습니다. anyone이면 meets입니다."
       },
       {
-        "q": "“보통 바빠요”의 기본 어순은?",
+        "q": "I lost my umbrella. Have you seen ___?",
         "options": [
-          "I usually am busy. (강조 없는 기본 위치)",
-          "I am usually busy.",
-          "I am busy usually never."
+          "it",
+          "one",
+          "another"
         ],
-        "answer": "I am usually busy.",
-        "explanation": "빈도부사 usually의 기본 위치는 be동사 뒤입니다. 특별한 강조에서는 다른 위치도 가능하지만 기본형을 먼저 익히세요."
+        "answer": "it",
+        "explanation": "찾는 것은 분실한 특정 우산이므로 it입니다."
+      },
+      {
+        "q": "We moved from one office to ___. “다른 사무실 하나”는?",
+        "options": [
+          "another",
+          "others",
+          "other"
+        ],
+        "answer": "another",
+        "explanation": "another는 another office를 대신해 단독으로 쓸 수 있습니다."
+      },
+      {
+        "q": "You may take any seat. 여기서 any의 뜻은?",
+        "options": [
+          "좌석이 전혀 없다",
+          "어느 좌석이든",
+          "일부 정해진 좌석만"
+        ],
+        "answer": "어느 좌석이든",
+        "explanation": "긍정문에서 any + 단수명사는 자유 선택을 표현할 수 있습니다."
       }
     ],
     "spoken": {
-      "prompt": "좋아하는 영화의 성질과 내가 느낀 감정을 따로 설명하세요.",
-      "sample": "The story was interesting, and I was excited about the ending.",
-      "note": "interesting/exciting과 interested/excited의 방향을 구분하세요."
-    }
+      "prompt": "내 물건 두 개와 다른 것을 원하는 상황을 설명하세요.",
+      "sample": "I have two jackets. One is warm, and the other is light. I want another one for rainy days.",
+      "note": "정해진 나머지는 the other, 추가로 다른 하나는 another one입니다."
+    },
+    "referenceTables": []
   },
   {
-    "id": "g11",
-    "cat": "명사와 수식",
-    "title": "12 · 비교급·최상급과 as … as",
-    "lead": "두 대상을 비교하면 비교급, 같은 범위에서 가장 두드러지면 최상급을 씁니다.",
+    "id": "g03",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "06 · 일반동사와 주어·동사의 수 일치",
+    "lead": "일반동사는 like, live, work, go처럼 행동·습관·상태를 나타내며, 현재형에서는 주어에 따라 모양이 달라집니다.",
     "concepts": [
       {
-        "title": "비교급 만들기",
-        "text": "짧은 형용사는 보통 -er: small → smaller, nice → nicer. 끝이 자음+y이면 easy → easier, 일부 짧은 단어는 big → bigger처럼 마지막 자음을 겹칩니다. 긴 형용사는 more comfortable처럼 more를 앞에 둡니다. 2음절 형용사는 단어별 차이가 있으므로 모르는 형태는 사전으로 확인하세요."
+        "title": "3인칭 단수 현재형만 -s",
+        "text": "나(I)와 우리(we)는 1인칭, 듣는 상대(you)는 2인칭, 그 밖의 사람·사물은 3인칭입니다. I/you/we/they에는 동사원형을 쓰고, he/she/it 또는 단수 명사에는 보통 -s를 붙입니다. my friend는 한 명이면 he/she처럼 취급합니다. my friends는 복수이므로 원형입니다. 이 규칙은 일반동사의 현재형 긍정문에 적용됩니다."
       },
       {
-        "title": "불규칙과 비교 대상",
-        "text": "good/well → better → best, bad → worse → worst입니다. A is cheaper than B에서 than 뒤에 비교 대상을 붙입니다. 비교급은 much/a lot/a little로 정도를 더할 수 있습니다. very cheaper가 아니라 much cheaper, more cheaper가 아니라 cheaper입니다."
+        "title": "철자 변화와 불규칙 형태",
+        "text": "대부분 work → works, -s/-sh/-ch/-x/-o 등으로 끝나면 watch → watches, go → goes가 됩니다. 자음+y는 study → studies, 모음+y는 play → plays입니다. have는 has가 됩니다. 외우기 전에 지금 말하는 주어가 한 명인지 먼저 보세요."
       },
       {
-        "title": "최상급의 범위",
-        "text": "the cheapest restaurant in my neighborhood처럼 “어디에서 가장”인지를 붙이면 정확합니다. one of the best cafés는 최고의 카페 중 하나이고, one of 뒤의 명사는 복수입니다. 소유 한정사가 있으면 my best friend처럼 the를 겹치지 않습니다."
+        "title": "원형이 필요한 자리에서는 -s를 붙이지 않기",
+        "text": "does/doesn’t 또는 can/will 같은 조동사 뒤에는 원형을 씁니다. She likes coffee지만 Does she like coffee?입니다. 동사마다 -s를 붙이는 것이 아니라, 시제·수 일치를 담당하는 자리가 바뀌는 것입니다."
       },
       {
-        "title": "동등 비교",
-        "text": "as + 형용사/부사 원급 + as는 “~만큼”입니다. not as expensive as는 “~만큼 비싸지는 않은”입니다. more를 끼우지 않습니다. 회화에서는 A is better than B라고 짧게 비교한 뒤 because로 이유를 붙이면 답변이 자연스럽게 길어집니다."
+        "title": "동사원형·과거형·과거분사는 다릅니다",
+        "text": "동사원형은 사전에 나오는 기본형입니다: go, eat, work. 과거형은 끝난 일을 말하는 went, ate, worked이고, 과거분사는 have 뒤나 수동태에서 쓰는 gone, eaten, worked입니다. -ing형은 going, eating, working입니다. work처럼 과거형과 분사가 같을 수도 있지만 go처럼 다를 수도 있습니다. 현재의 -s형도 원형과 구별하세요: work → works. 뒤 시제 강의에서 각 형태를 언제 쓰는지 설명합니다."
+      },
+      {
+        "title": "S 법칙은 규칙적인 명사의 현재형에 쓰는 기억법",
+        "text": "a boy plays / boys play처럼 주어 또는 동사에 -s가 하나 보이는 패턴은 기억에 도움이 됩니다. 하지만 I play, you play, people work, news is처럼 적용되지 않는 경우가 많습니다. 끝 글자가 아니라 주어가 실제로 단수인지 복수인지, 3인칭인지 보고 판단하세요."
+      },
+      {
+        "title": "주어와 동사 사이의 수식어 걷어내기",
+        "text": "The manager of the stores is busy에서 주어는 manager이며 stores가 아닙니다. 전치사구, 부사, 분사구, 관계절이 사이에 들어갈 수 있습니다. The employees hired last month are here처럼 본동사 앞의 분사가 주어를 수식하는지 확인하세요."
+      },
+      {
+        "title": "단수로 보는 주어",
+        "text": "information, equipment 등의 불가산명사와 하나의 to부정사구·동명사구·명사절은 보통 단수로 받습니다. Learning new skills takes time. 고유명사는 대문자라는 이유만으로 모두 단수가 아닙니다. 회사 하나를 뜻하면 이름에 -s가 있어도 단수로 받을 수 있지만 the Netherlands처럼 고유명사별 관습도 확인해야 합니다."
       }
     ],
     "forms": [
       {
-        "label": "차이",
-        "pattern": "A + be + 비교급 + than B",
-        "note": "This café is quieter than that one."
+        "label": "I / you / we / they",
+        "pattern": "주어 + 동사원형",
+        "note": "I work. My friends work."
       },
       {
-        "label": "차이의 정도",
-        "pattern": "much/a lot/a little + 비교급",
-        "note": "It’s much more convenient."
+        "label": "he / she / it / 단수 명사",
+        "pattern": "주어 + 동사-s/-es",
+        "note": "My sister works. He studies."
       },
       {
-        "label": "가장",
-        "pattern": "the + 최상급 + 범위",
-        "note": "the best restaurant in town"
+        "label": "have의 현재형",
+        "pattern": "I have / She has",
+        "note": "My apartment has two bedrooms."
       },
       {
-        "label": "비슷함",
-        "pattern": "as + 원급 + as",
-        "note": "It’s as comfortable as my old room."
+        "label": "조동사 뒤",
+        "pattern": "does / can / will + 동사원형",
+        "note": "She doesn’t work. She can drive."
       }
     ],
     "examples": [
       {
-        "en": "Taking the subway is cheaper than driving.",
-        "ko": "지하철을 타는 게 운전보다 저렴해요.",
-        "analysis": "Taking the subway가 주어, cheaper가 비교급, driving이 비교 대상입니다."
+        "en": "My brother works from home, but I work at an office.",
+        "ko": "남동생은 재택근무를 하지만 저는 사무실에서 일해요.",
+        "analysis": "brother는 3인칭 단수라 works, I는 work입니다."
       },
       {
-        "en": "It’s one of the most popular parks in Seoul.",
-        "ko": "서울에서 가장 인기 있는 공원 중 하나예요.",
-        "analysis": "one of 뒤에는 복수 parks를 씁니다. most popular는 최상급입니다."
+        "en": "The restaurant closes at nine.",
+        "ko": "그 식당은 9시에 문을 닫아요.",
+        "analysis": "restaurant는 단수 명사입니다. 사람뿐 아니라 사물도 3인칭 단수 규칙을 따릅니다."
       },
       {
-        "en": "My new apartment isn’t as spacious as my old one.",
-        "ko": "새 아파트는 예전 집만큼 넓지는 않아요.",
-        "analysis": "not as + 원급 spacious + as입니다. one은 apartment의 반복을 피합니다."
+        "en": "She goes to the gym twice a week.",
+        "ko": "그녀는 일주일에 두 번 헬스장에 가요.",
+        "analysis": "go의 3인칭 단수형은 goes입니다. twice a week는 빈도를 설명합니다."
+      },
+      {
+        "en": "The employees in the main office work together.",
+        "ko": "본사 사무실의 직원들은 함께 일합니다.",
+        "analysis": "in the main office를 제외한 실제 주어 employees가 복수이므로 work입니다."
+      },
+      {
+        "en": "The seminar held last month was useful.",
+        "ko": "지난달 열린 세미나는 유익했습니다.",
+        "analysis": "held last month는 seminar를 수식하는 분사구입니다. 주어 seminar가 단수라 was입니다."
+      },
+      {
+        "en": "Sharing regular updates helps the team.",
+        "ko": "정기적인 상황 공유가 팀에 도움이 됩니다.",
+        "analysis": "Sharing regular updates 전체가 한 동명사 주어이므로 helps입니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "It is more cheaper.",
-        "right": "It is cheaper.",
-        "why": "-er와 more로 비교급을 중복 표시하지 않습니다."
+        "wrong": "My friend like movies.",
+        "right": "My friend likes movies.",
+        "why": "단수 주어 my friend에 맞춰 현재 동사에 -s를 붙입니다."
       },
       {
-        "wrong": "It is one of the best café.",
-        "right": "It is one of the best cafés.",
-        "why": "여러 카페 중 하나를 뜻하므로 cafés는 복수입니다."
+        "wrong": "She can drives.",
+        "right": "She can drive.",
+        "why": "조동사 can 뒤에는 주어와 관계없이 원형 drive를 씁니다."
       }
     ],
     "exercises": [
       {
-        "q": "“훨씬 더 편리해요”의 올바른 문장은?",
+        "q": "“우리 동네에는 큰 공원이 있어요”에서 동사를 고르면?",
         "options": [
-          "It’s very more convenient.",
-          "It’s much more convenient.",
-          "It’s more convenienter."
+          "My neighborhood have a large park.",
+          "My neighborhood has a large park.",
+          "My neighborhood haves a large park."
         ],
-        "answer": "It’s much more convenient.",
-        "explanation": "긴 형용사 convenient는 more로 비교급을 만들고, 비교급의 정도는 much로 강조합니다."
+        "answer": "My neighborhood has a large park.",
+        "explanation": "neighborhood는 단수이고 have의 3인칭 단수형은 has입니다."
       },
       {
-        "q": "“예전 집만큼 크지는 않아요”에 맞는 문장은?",
+        "q": "“친구들은 근처에 살아요”의 올바른 문장은?",
         "options": [
-          "It isn’t as big as my old place.",
-          "It isn’t as bigger as my old place.",
-          "It isn’t as more big as my old place."
+          "My friends lives nearby.",
+          "My friends live nearby.",
+          "My friends is live nearby."
         ],
-        "answer": "It isn’t as big as my old place.",
-        "explanation": "as … as 안에는 비교급이 아니라 원급 big이 들어갑니다."
+        "answer": "My friends live nearby.",
+        "explanation": "friends는 복수 주어이므로 원형 live를 씁니다."
+      },
+      {
+        "q": "The quality of the products ___ excellent.",
+        "options": [
+          "is",
+          "are",
+          "be"
+        ],
+        "answer": "is",
+        "explanation": "of the products는 quality를 수식합니다. 실제 주어 quality가 단수입니다."
+      },
+      {
+        "q": "Reviewing the applications ___ time.",
+        "options": [
+          "takes",
+          "take",
+          "taking"
+        ],
+        "answer": "takes",
+        "explanation": "동명사구 하나가 주어이므로 단수 현재동사 takes입니다."
+      },
+      {
+        "q": "The news ___ surprising.",
+        "options": [
+          "is",
+          "are",
+          "were"
+        ],
+        "answer": "is",
+        "explanation": "news는 -s가 있어도 불가산명사라 단수로 받습니다."
       }
     ],
     "spoken": {
-      "prompt": "현재와 과거의 동네를 비교하고 이유를 붙이세요.",
-      "sample": "My current neighborhood is quieter than my old one. It’s also much more convenient because the station is nearby.",
-      "note": "비교급 + than 뒤에 비교 대상을 분명히 넣으세요."
-    }
+      "prompt": "나와 가족 한 명의 습관을 비교해 말하세요.",
+      "sample": "I drink tea in the morning. My sister drinks coffee.",
+      "note": "주어를 I에서 my sister로 바꿀 때 동사의 -s도 바꿔 보세요."
+    },
+    "referenceTables": [
+      {
+        "title": "글자 -s만으로 판단하면 틀리는 주어",
+        "headers": [
+          "주어",
+          "동사",
+          "이유"
+        ],
+        "rows": [
+          [
+            "I / you",
+            "work / have",
+            "1·2인칭은 3인칭 단수 -s 규칙에서 제외"
+          ],
+          [
+            "people / children",
+            "work / have",
+            "-s 없이 복수"
+          ],
+          [
+            "news / equipment",
+            "is / has",
+            "불가산이므로 단수"
+          ],
+          [
+            "a series / this species",
+            "is",
+            "단·복수 형태가 같은 단어는 한정사·문맥 확인"
+          ],
+          [
+            "learning new skills",
+            "takes",
+            "동명사구 하나가 주어"
+          ]
+        ],
+        "note": ""
+      }
+    ]
   },
   {
-    "id": "g12",
-    "cat": "명사와 수식",
-    "title": "13 · 전치사: 시간·위치·이동",
-    "lead": "전치사는 뒤의 명사·대명사와 한 덩어리가 되어 시간, 장소, 방향 등의 관계를 나타냅니다.",
+    "id": "g24",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "07 · 수동태: 행동을 받은 대상이 주어일 때",
+    "lead": "누가 했는지보다 “무엇이 어떻게 되었는지”가 중요한 상황에서는 수동태가 유용합니다.",
     "concepts": [
       {
-        "title": "시간의 at/on/in",
-        "text": "at은 시각이나 특정 시점: at seven, at noon, at night. on은 요일·날짜: on Monday, on July 3. in은 월·연도·계절·하루의 큰 시간대: in July, in 2025, in summer, in the morning. on Monday morning처럼 날짜·요일로 좁혀지면 on을 씁니다."
+        "title": "목적어를 주어 자리로",
+        "text": "능동 My friend canceled the reservation에서 reservation은 취소된 대상입니다. 수동 The reservation was canceled는 그 대상을 주어로 세웁니다. 기본 형태는 be + 과거분사이며, 행위자는 필요한 경우 by …로 붙입니다. 행위자가 불명확하거나 중요하지 않으면 생략합니다."
       },
       {
-        "title": "위치와 방향은 다릅니다",
-        "text": "in은 내부·영역, on은 표면, at은 활동 지점에 초점이 있습니다. at the station은 역이라는 지점, in the station은 역 건물 내부를 강조합니다. to는 도착 방향, into는 안으로 들어감, from은 출발점입니다. go to the gym과 be at the gym을 구분하세요."
+        "title": "be가 시제를, 분사가 행동을 담당",
+        "text": "현재 is cleaned, 과거 was cleaned, 미래 will be cleaned, 현재완료 has been cleaned입니다. 과거분사 cleaned는 유지하고 be 쪽으로 시간 정보를 표현합니다. 진행 중인 수동은 is being repaired처럼 be + being + 분사입니다."
       },
       {
-        "title": "기간·기한·순서",
-        "text": "for two hours는 길이, since Monday는 시작점, during the movie는 어떤 사건이 진행되는 동안입니다. by Friday는 금요일까지 완료, until Friday는 금요일까지 계속입니다. I’ll finish it by Friday와 I’ll stay until Friday는 시간 관계가 다릅니다."
+        "title": "모든 동사를 수동으로 만들 수 없습니다",
+        "text": "수동태는 기본적으로 목적어를 취하는 동사와 연결됩니다. happen/arrive 같은 자동사는 It happened / He arrived처럼 능동 형태를 씁니다. was happened는 만들지 않습니다. 일부 be + 분사는 상태 형용사와 가까운 뜻도 있습니다: The door is closed."
       },
       {
-        "title": "무전치사와 동사 조합",
-        "text": "this/next/last/every로 시작하는 시간 표현에는 보통 전치사를 넣지 않습니다: next week, last night, every day. go home은 to 없이 씁니다. listen to music, wait for a bus처럼 특정 동사가 요구하는 전치사는 표현째 익혀야 합니다. 전치사 뒤 동사를 넣을 때는 보통 -ing형입니다."
+        "title": "롤플레이에 쓰기",
+        "text": "My flight was canceled, My phone was stolen처럼 문제 발생을 설명할 수 있습니다. 문제를 말한 뒤 Could you …?로 해결을 부탁하세요. 수동태를 무리하게 늘리기보다, 초점을 대상에 두고 싶을 때 골라 쓰면 됩니다."
+      },
+      {
+        "title": "목적어가 없다는 이유만으로 수동은 아닙니다",
+        "text": "The package arrived는 목적어가 없어도 arrive라는 자동사의 능동입니다. 반대로 We were given a map은 수동 뒤에 명사 목적어가 남습니다. 목적어 유무는 단서로 쓰고 주어가 실제로 행동을 하는지 받는지 및 동사의 구조로 판단하세요."
+      },
+      {
+        "title": "4형식 수동에는 목적어가 남을 수 있습니다",
+        "text": "She showed her colleagues the plan을 Her colleagues were shown the plan으로 바꾸면 받는 사람이 주어가 되고 the plan이 직접목적어로 남습니다. The plan was shown to her colleagues처럼 물건을 주어로 바꿀 수도 있습니다. 모든 두 목적어 동사가 두 수동을 똑같이 자연스럽게 허용하지는 않습니다."
+      },
+      {
+        "title": "5형식 수동에는 보어가 남습니다",
+        "text": "The board appointed Kim the director → Kim was appointed the director. 목적어 Kim만 주어가 되고 director라는 명사 보어는 남습니다. They encouraged us to apply → We were encouraged to apply에서도 to apply가 남습니다."
+      },
+      {
+        "title": "분사와 전치사의 결합",
+        "text": "be satisfied with, be interested in, be known for/as, be based on/in처럼 상태·형용사화한 분사 표현은 특정 전치사와 결합합니다. by는 행위자를 나타내지만 모든 p.p. 뒤에 by를 쓰는 것은 아닙니다. known for는 유명한 이유, known as는 신분·명칭입니다."
       }
     ],
     "forms": [
       {
-        "label": "시간",
-        "pattern": "at 7 / on Friday / in May",
-        "note": "I’ll see you on Friday at seven."
+        "label": "현재·과거",
+        "pattern": "am/is/are 또는 was/were + 과거분사",
+        "note": "The rooms are cleaned every day."
       },
       {
-        "label": "위치",
-        "pattern": "at a point / in an area / on a surface",
-        "note": "at home / in Seoul / on the table"
+        "label": "미래",
+        "pattern": "will be + 과거분사",
+        "note": "It will be delivered tomorrow."
       },
       {
-        "label": "이동",
-        "pattern": "to / into / from + 장소",
-        "note": "go to work / walk into the room"
+        "label": "현재완료",
+        "pattern": "have/has been + 과거분사",
+        "note": "My reservation has been confirmed."
       },
       {
-        "label": "기한과 지속",
-        "pattern": "by = 완료 기한 / until = 지속의 끝",
-        "note": "finish by six / stay until six"
+        "label": "진행수동",
+        "pattern": "be being + 과거분사",
+        "note": "The road is being repaired."
+      },
+      {
+        "label": "4형식",
+        "pattern": "We were offered complimentary breakfast.",
+        "note": "수동 뒤 breakfast가 직접목적어로 남습니다."
+      },
+      {
+        "label": "5형식",
+        "pattern": "Kim was appointed the director.",
+        "note": "the director는 주어 Kim의 정체를 설명하는 보어로 남습니다."
+      },
+      {
+        "label": "to부정사 보어",
+        "pattern": "be asked / allowed / advised / required / expected + to do",
+        "note": "목적어를 주어로 바꾸면 to부정사 보어가 남습니다."
       }
     ],
     "examples": [
       {
-        "en": "I went to the gym on Monday morning.",
-        "ko": "월요일 아침에 헬스장에 갔어요.",
-        "analysis": "to는 이동 목적지, on은 요일로 특정한 아침을 나타냅니다."
+        "en": "My flight was canceled because of bad weather.",
+        "ko": "악천후 때문에 항공편이 취소됐어요.",
+        "analysis": "항공편이 취소를 한 것이 아니라 취소된 대상이므로 was canceled입니다."
       },
       {
-        "en": "I stayed at the café for two hours.",
-        "ko": "카페에 두 시간 동안 있었어요.",
-        "analysis": "at은 머문 지점, for는 기간의 길이입니다."
+        "en": "The room is cleaned every morning.",
+        "ko": "방은 매일 아침 청소돼요.",
+        "analysis": "반복되는 현재 수동입니다. 청소하는 직원보다 room의 관리 상태가 중심입니다."
       },
       {
-        "en": "I’ll be home by six, and I’ll stay there until nine.",
-        "ko": "6시까지 집에 도착해서 9시까지 있을게요.",
-        "analysis": "by six는 도착 기한, until nine은 머무는 상태가 계속되는 끝입니다."
+        "en": "My bag has been stolen.",
+        "ko": "가방을 도난당했어요.",
+        "analysis": "have/has + been + 분사로 현재완료 수동을 만들고 현재의 문제를 강조합니다."
+      },
+      {
+        "en": "The hotel guests are offered complimentary breakfast.",
+        "ko": "호텔 투숙객은 무료 조식을 제공받습니다.",
+        "analysis": "are offered는 수동이고 breakfast는 남은 직접목적어입니다. 투숙객이 조식을 제공하는 것이 아닙니다."
+      },
+      {
+        "en": "Kim was appointed the director by the board.",
+        "ko": "김 씨는 이사회에 의해 책임자로 임명됐습니다.",
+        "analysis": "Kim이 임명받는 사람이고 the director는 보어입니다."
+      },
+      {
+        "en": "All visitors are required to register at the entrance.",
+        "ko": "모든 방문객은 입구에서 등록해야 합니다.",
+        "analysis": "require + 목적어 + to부정사를 수동으로 바꾼 구조입니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "I went to home last night.",
-        "right": "I went home last night.",
-        "why": "go home에서 home은 방향을 나타내는 부사로 쓰여 to를 넣지 않습니다."
+        "wrong": "My flight canceled. (항공편이 취소되었다는 의도)",
+        "right": "My flight was canceled.",
+        "why": "canceled만 쓰면 항공편이 취소 행동의 주체처럼 읽히거나 불완전해집니다. 수동을 나타내는 was가 필요합니다."
       },
       {
-        "wrong": "I’ll meet you in next week.",
-        "right": "I’ll meet you next week.",
-        "why": "next week 앞에는 기본적으로 전치사를 붙이지 않습니다."
+        "wrong": "The accident was happened yesterday.",
+        "right": "The accident happened yesterday.",
+        "why": "happen은 목적어를 취하지 않는 자동사라 기본적으로 수동태를 만들지 않습니다."
       }
     ],
     "exercises": [
       {
-        "q": "“금요일 아침에 만나요”의 올바른 표현은?",
+        "q": "“객실은 매일 청소돼요”의 올바른 문장은?",
         "options": [
-          "Let’s meet in Friday morning.",
-          "Let’s meet on Friday morning.",
-          "Let’s meet at Friday morning."
+          "The room is clean every day. (청소된다는 동작)",
+          "The room is cleaned every day.",
+          "The room is cleaning every day."
         ],
-        "answer": "Let’s meet on Friday morning.",
-        "explanation": "요일과 함께 특정한 아침을 말하면 on을 사용합니다."
+        "answer": "The room is cleaned every day.",
+        "explanation": "청소받는 동작은 is + 과거분사 cleaned입니다. is clean은 깨끗한 상태를 뜻합니다."
       },
       {
-        "q": "“금요일까지 제출을 완료할게요”에는?",
+        "q": "“내일 배송될 거예요”의 수동형은?",
         "options": [
-          "I’ll submit it until Friday.",
-          "I’ll submit it by Friday.",
-          "I’ll submit it during Friday."
+          "It will delivered tomorrow.",
+          "It will be delivered tomorrow.",
+          "It will be deliver tomorrow."
         ],
-        "answer": "I’ll submit it by Friday.",
-        "explanation": "완료해야 할 기한은 by입니다. until은 계속되는 동작·상태의 끝을 나타냅니다."
+        "answer": "It will be delivered tomorrow.",
+        "explanation": "미래 수동은 will + be + 과거분사 delivered입니다."
+      },
+      {
+        "q": "Guests ___ complimentary breakfast. “조식을 제공받는다”에 맞는 것은?",
+        "options": [
+          "are offered",
+          "offer",
+          "offering"
+        ],
+        "answer": "are offered",
+        "explanation": "4형식의 수동이므로 직접목적어 breakfast가 남아도 are offered가 가능합니다."
+      },
+      {
+        "q": "Kim was appointed the manager에서 the manager의 역할은?",
+        "options": [
+          "남은 보어",
+          "행위자 by구",
+          "주어와 관계없는 부사"
+        ],
+        "answer": "남은 보어",
+        "explanation": "임명받은 Kim의 정체·직책을 설명하는 보어입니다."
+      },
+      {
+        "q": "The train arrived at noon. 수동태인가요?",
+        "options": [
+          "아니다, 자동사 능동이다",
+          "그렇다, 목적어가 없기 때문이다",
+          "그렇다, 과거형이기 때문이다"
+        ],
+        "answer": "아니다, 자동사 능동이다",
+        "explanation": "arrive는 이 용법에서 자동사이며 수동태 be + p.p. 형태가 아닙니다."
       }
     ],
     "spoken": {
-      "prompt": "일정 하나를 시각·요일·장소를 넣어 말하세요.",
-      "sample": "I usually meet my friends at a café on Saturdays. We stay there for about two hours.",
-      "note": "at/on/for의 관계를 각각 설명할 수 있는지 확인하세요."
-    }
+      "prompt": "여행 중 문제가 생긴 상황을 설명하고 도움을 요청하세요.",
+      "sample": "My flight was canceled this morning. Could you put me on another flight?",
+      "note": "문제는 수동으로, 해결 요청은 능동으로 자연스럽게 이어가세요."
+    },
+    "referenceTables": [
+      {
+        "title": "분사·형용사와 전치사",
+        "headers": [
+          "표현",
+          "뜻",
+          "예"
+        ],
+        "rows": [
+          [
+            "be surprised at / by",
+            "~에 놀라다",
+            "surprised at the result"
+          ],
+          [
+            "be satisfied with",
+            "~에 만족하다",
+            "satisfied with the service"
+          ],
+          [
+            "be filled / equipped with",
+            "~로 채워지다 / 갖추다",
+            "equipped with cameras"
+          ],
+          [
+            "be involved / interested in",
+            "~에 관여하다 / 관심 있다",
+            "interested in design"
+          ],
+          [
+            "be known for / as",
+            "~로 유명하다 / ~로 알려져 있다",
+            "known for its food / known as a resort"
+          ],
+          [
+            "be based on / in",
+            "~에 근거하다 / 기반을 두다",
+            "based on evidence / based in Seoul"
+          ]
+        ],
+        "note": "놀란 원인은 by로도 표현할 수 있습니다. 상태를 나타내는 분사 형용사와 실제 사건의 수동은 문맥에 따라 구별합니다."
+      }
+    ]
+  },
+  {
+    "id": "g38",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "08 · 시제 전체 지도와 시간 단서",
+    "lead": "현재·과거·미래에 단순·진행·완료·완료진행을 조합합니다. 단서는 시간 관계를 읽는 출발점입니다.",
+    "concepts": [
+      {
+        "title": "시점과 보는 방식을 나누기",
+        "text": "단순은 사실·사건, 진행은 기준 순간의 과정, 완료는 기준 시점과 이전 사건의 연결, 완료진행은 이어지는 활동에 초점을 둡니다. 형태부터 구별한 뒤 문장이 어느 시점을 기준으로 하는지 보세요. 시제와 능동·수동은 서로 다른 축입니다."
+      },
+      {
+        "title": "동사 묶음의 앞과 끝을 함께 보기",
+        "text": "has been repaired는 have의 현재형 has + been + repaired라서 현재완료 수동입니다. will be working은 미래 진행 능동입니다. 완료의 have + p.p.를 수동의 be + p.p.와 혼동하지 마세요. 완료 수동에서는 been도 과거분사지만 마지막 행동동사 앞의 be 역할을 합니다."
+      },
+      {
+        "title": "단서가 있어도 문맥을 확인하기",
+        "text": "every day, usually는 습관 현재와, last week, ago, yesterday는 단순과거와 자주 어울립니다. since와 현재까지의 for 기간은 현재완료의 단서입니다. recently는 과거와 현재완료 모두 가능합니다. for two hours만으로 완료를 결정할 수 없습니다: I studied for two hours yesterday는 과거입니다."
+      },
+      {
+        "title": "문제를 읽는 순서",
+        "text": "① 빈칸이 본동사 자리인가 ② 단독 to부정사·-ing가 아닌 시제 있는 동사인가 ③ 실제 주어의 수 ④ 주어가 행동을 하는지 받는지 ⑤ 기준 시점과 시간 표현을 확인합니다. 여러 선택지가 남을 때는 문장 전체의 시간 관계를 읽으세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "단순",
+        "pattern": "work / worked / will work",
+        "note": "습관·사실 또는 사건 자체."
+      },
+      {
+        "label": "진행",
+        "pattern": "am working / was working / will be working",
+        "note": "기준 시점에서 진행되는 과정."
+      },
+      {
+        "label": "완료",
+        "pattern": "have worked / had worked / will have worked",
+        "note": "현재·과거·미래 기준점보다 이전과 연결."
+      },
+      {
+        "label": "완료진행",
+        "pattern": "have been working / had been working / will have been working",
+        "note": "기준점까지 이어진 활동과 그 기간에 초점."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Our office opens at nine every morning.",
+        "ko": "사무실은 매일 아침 9시에 엽니다.",
+        "analysis": "every morning은 반복의 단서이며 office가 단수라 opens를 씁니다."
+      },
+      {
+        "en": "I studied for two hours yesterday.",
+        "ko": "어제 두 시간 공부했어요.",
+        "analysis": "for two hours라는 기간이 있어도 yesterday라는 끝난 시점이어서 단순과거가 자연스럽습니다."
+      },
+      {
+        "en": "The policies will be implemented next month.",
+        "ko": "정책은 다음 달 시행될 것입니다.",
+        "analysis": "policies가 시행을 받으므로 수동, next month가 미래 단서이므로 will be implemented입니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "She has visited Paris last week.",
+        "right": "She visited Paris last week.",
+        "why": "끝난 과거 시점 last week을 직접 지정하면 일반적으로 현재완료 대신 단순과거를 씁니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "has been reviewed는 어떤 형태인가요?",
+        "options": [
+          "현재완료 능동",
+          "현재완료 수동",
+          "과거진행 수동"
+        ],
+        "answer": "현재완료 수동",
+        "explanation": "has + been + reviewed. have + p.p.는 완료, 마지막 행동동사 reviewed 앞의 been은 수동의 be입니다."
+      },
+      {
+        "q": "for three days가 있으면 언제나 현재완료인가요?",
+        "options": [
+          "그렇다",
+          "기준 시점과 문맥을 봐야 한다",
+          "항상 과거완료다"
+        ],
+        "answer": "기준 시점과 문맥을 봐야 한다",
+        "explanation": "기간 표현은 여러 시제와 함께 쓰입니다. 현재까지인지, 끝난 과거인지, 미래까지인지 확인합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "같은 활동을 습관·과거·현재까지의 경험으로 바꿔 말하세요.",
+      "sample": "I visit my parents every week. I visited them yesterday. I have visited them several times this month.",
+      "note": "같은 동사라도 시간 관계에 맞춰 형태를 바꿉니다."
+    },
+    "referenceTables": [
+      {
+        "title": "12개 시제 형태 — 주어 I 기준",
+        "headers": [
+          "구분",
+          "현재",
+          "과거",
+          "미래"
+        ],
+        "rows": [
+          [
+            "단순",
+            "I work.",
+            "I worked.",
+            "I will work."
+          ],
+          [
+            "진행",
+            "I am working.",
+            "I was working.",
+            "I will be working."
+          ],
+          [
+            "완료",
+            "I have worked.",
+            "I had worked.",
+            "I will have worked."
+          ],
+          [
+            "완료진행",
+            "I have been working.",
+            "I had been working.",
+            "I will have been working."
+          ]
+        ],
+        "note": "말하기에서는 실제 상황과 동사의 의미에 맞는 형태를 고르세요. 표의 모든 형태가 모든 동사에 똑같이 자연스러운 것은 아닙니다."
+      }
+    ]
   },
   {
     "id": "g13",
-    "cat": "시제",
-    "title": "14 · 현재형: 습관·사실·상태",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "09 · 현재형: 습관·사실·상태",
     "lead": "현재형은 “지금 눈앞에서 하는 행동”만을 뜻하지 않습니다. 반복하는 일, 일반적 사실, 현재 유지되는 상태가 중심입니다.",
     "concepts": [
       {
@@ -1883,315 +2049,9 @@ const grammar = [
     }
   },
   {
-    "id": "g14",
-    "cat": "시제",
-    "title": "15 · 과거형: 끝난 사건과 경험의 순서",
-    "lead": "과거형은 현재 이전의 특정 시간에 끝난 행동이나 상태를 이야기합니다.",
-    "concepts": [
-      {
-        "title": "규칙형과 불규칙형",
-        "text": "일반동사는 보통 -ed: work → worked, -e는 -d: live → lived, 자음+y는 study → studied입니다. go → went, see → saw, eat → ate, buy → bought, take → took, have → had 같은 불규칙형은 자주 쓰는 것부터 익히세요. 주어가 he/she여도 일반동사 과거형에는 -s를 추가하지 않습니다."
-      },
-      {
-        "title": "동작과 상태의 과거",
-        "text": "I visited a park는 행동, I was tired는 상태입니다. be 과거는 was/were, 일반동사의 부정·질문은 didn’t/did + 원형입니다. 과거형 발화가 어려우면 Last weekend를 먼저 말한 뒤 went, had, saw 같은 핵심 동사로 사건을 이어가세요."
-      },
-      {
-        "title": "과거 이야기를 시간 순서로",
-        "text": "First, then, after that, finally를 이용하면 과거형만으로도 여러 사건의 순서를 설명할 수 있습니다. 모든 과거 사건을 과거완료로 만들 필요는 없습니다. 기억에 남는 경험은 배경 → 사건 → 결과·느낌 순서로 말하면 듣기 쉽습니다."
-      },
-      {
-        "title": "-ed의 발음",
-        "text": "/t/는 worked·watched, /d/는 played·lived, /ɪd/는 wanted·needed처럼 앞소리에 따라 달라집니다. 특히 t/d 소리 뒤에는 한 음절이 추가됩니다. 철자뿐 아니라 예문을 읽을 때 동사의 끝소리도 확인하세요."
-      }
-    ],
-    "forms": [
-      {
-        "label": "긍정",
-        "pattern": "주어 + 과거동사",
-        "note": "I went. She worked."
-      },
-      {
-        "label": "부정",
-        "pattern": "주어 + didn’t + 원형",
-        "note": "I didn’t go. She didn’t work."
-      },
-      {
-        "label": "질문",
-        "pattern": "Did + 주어 + 원형?",
-        "note": "Did you enjoy it?"
-      },
-      {
-        "label": "be 과거",
-        "pattern": "was/were + 보어",
-        "note": "It was great. We were happy."
-      }
-    ],
-    "examples": [
-      {
-        "en": "Last weekend, I went to a park and took some photos.",
-        "ko": "지난 주말에 공원에 가서 사진을 찍었어요.",
-        "analysis": "went와 took 모두 끝난 행동의 과거형입니다. and로 두 행동을 연결합니다."
-      },
-      {
-        "en": "The weather was nice, but the park was crowded.",
-        "ko": "날씨는 좋았지만 공원은 붐볐어요.",
-        "analysis": "nice/crowded는 상태를 설명하므로 was 뒤에 붙입니다."
-      },
-      {
-        "en": "Did you like the movie? — Yes, I did.",
-        "ko": "영화가 좋았나요? — 네, 좋았어요.",
-        "analysis": "질문의 did가 과거를 표시하므로 like는 원형입니다. 짧은 답에도 did를 사용합니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "She wented there.",
-        "right": "She went there.",
-        "why": "go의 과거형은 went입니다. 불규칙 과거형에 -ed를 다시 붙이지 않습니다."
-      },
-      {
-        "wrong": "Did you saw it?",
-        "right": "Did you see it?",
-        "why": "did 뒤에는 원형 see입니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "buy의 과거형을 사용한 올바른 문장은?",
-        "options": [
-          "I buyed a ticket yesterday.",
-          "I bought a ticket yesterday.",
-          "I buying a ticket yesterday."
-        ],
-        "answer": "I bought a ticket yesterday.",
-        "explanation": "buy의 불규칙 과거형은 bought입니다. 규칙동사처럼 -ed를 붙여 buyed로 만들지 않으며, buying만으로는 과거 문장의 동사가 되지 않습니다."
-      },
-      {
-        "q": "“어제 바쁘지 않았어요”의 올바른 문장은?",
-        "options": [
-          "I didn’t busy yesterday.",
-          "I wasn’t busy yesterday.",
-          "I don’t was busy yesterday."
-        ],
-        "answer": "I wasn’t busy yesterday.",
-        "explanation": "busy는 형용사이므로 be동사 was의 부정형 wasn’t를 씁니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "지난 주말의 일을 시간 순서로 세 문장 말하세요.",
-      "sample": "First, I met a friend. Then, we had lunch at a small restaurant. After that, we walked around the neighborhood.",
-      "note": "각 문장의 핵심 동사가 과거형인지 확인하세요."
-    }
-  },
-  {
-    "id": "g15",
-    "cat": "시제",
-    "title": "16 · 현재진행·과거진행: 그 순간 하고 있던 일",
-    "lead": "진행형은 특정 시점을 기준으로 진행 중인 동작이나 일시적인 상황을 보여줍니다.",
-    "concepts": [
-      {
-        "title": "be + -ing가 한 동사 묶음",
-        "text": "현재는 am/is/are + -ing, 과거는 was/were + -ing입니다. I cooking도, I am cook도 진행형이 아닙니다. 질문은 be를 앞으로: Are you cooking? 부정은 be 뒤 not: I’m not cooking. -ing만 과거로 바꾸지 않습니다."
-      },
-      {
-        "title": "언제 진행 중인가",
-        "text": "I’m studying now는 지금, I’m staying with a friend this week는 이번 주의 일시적 상황입니다. I was studying at eight last night는 어제 8시에 진행 중이던 일입니다. 과거진행은 이야기의 배경, 단순과거는 그때 일어난 사건으로 함께 자주 쓰입니다."
-      },
-      {
-        "title": "when과 while로 배경 연결",
-        "text": "I was cooking when the phone rang는 요리 중에 전화가 울린 사건을 말합니다. While I was cooking, my friend was setting the table은 두 동작이 동시에 진행됐다는 뜻입니다. when=항상 과거, while=항상 진행이라는 고정 규칙은 아니고 사건의 관계가 핵심입니다."
-      },
-      {
-        "title": "-ing 철자와 상태동사",
-        "text": "make → making, lie → lying, run → running처럼 변합니다. know/need/like 같은 상태동사는 기본 의미에서 보통 진행형으로 쓰지 않습니다. have lunch는 행동이므로 I’m having lunch가 가능하지만 소유 have는 I have a car가 기본입니다."
-      }
-    ],
-    "forms": [
-      {
-        "label": "현재진행",
-        "pattern": "am/is/are + 동사-ing",
-        "note": "I’m working right now."
-      },
-      {
-        "label": "과거진행",
-        "pattern": "was/were + 동사-ing",
-        "note": "I was working when you called."
-      },
-      {
-        "label": "부정·질문",
-        "pattern": "be not + -ing / Be + 주어 + -ing?",
-        "note": "I wasn’t sleeping. Were you sleeping?"
-      },
-      {
-        "label": "배경 + 사건",
-        "pattern": "과거진행 + when + 과거",
-        "note": "I was walking when it started raining."
-      }
-    ],
-    "examples": [
-      {
-        "en": "I was taking a shower when my friend called.",
-        "ko": "친구가 전화했을 때 샤워 중이었어요.",
-        "analysis": "was taking은 진행 중인 배경, called는 그 사이에 일어난 사건입니다."
-      },
-      {
-        "en": "I’m staying at a hotel this week.",
-        "ko": "이번 주에는 호텔에 머물고 있어요.",
-        "analysis": "말하는 순간만이 아니라 이번 주의 일시적 생활도 현재진행형으로 나타낼 수 있습니다."
-      },
-      {
-        "en": "While we were waiting, we talked about the trip.",
-        "ko": "기다리는 동안 여행에 대해 이야기했어요.",
-        "analysis": "were waiting은 계속되던 배경, talked는 그동안 한 일을 말합니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "I was cook when he called.",
-        "right": "I was cooking when he called.",
-        "why": "과거진행은 was + -ing입니다. 원형 cook로는 성립하지 않습니다."
-      },
-      {
-        "wrong": "I am having a car. (소유)",
-        "right": "I have a car.",
-        "why": "차를 소유한다는 상태의 have는 현재형이 기본입니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“전화가 왔을 때 자고 있었어요”에 맞는 문장은?",
-        "options": [
-          "I slepting when the phone rang.",
-          "I was sleeping when the phone rang.",
-          "I was sleep when the phone rang."
-        ],
-        "answer": "I was sleeping when the phone rang.",
-        "explanation": "과거 특정 순간에 진행 중이던 행동은 was + sleeping입니다."
-      },
-      {
-        "q": "“지금 점심을 먹고 있어요”의 올바른 문장은?",
-        "options": [
-          "I’m having lunch now.",
-          "I’m have lunch now.",
-          "I having lunch now."
-        ],
-        "answer": "I’m having lunch now.",
-        "explanation": "have lunch는 식사하는 행동입니다. 진행형은 am + having으로 만듭니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "예상치 못한 일이 생겼을 때 무엇을 하고 있었는지 말하세요.",
-      "sample": "I was walking home when it suddenly started raining. I was wearing a light jacket, so I got cold.",
-      "note": "진행형으로 장면을 만들고 단순과거로 사건을 넣으세요."
-    }
-  },
-  {
-    "id": "g16",
-    "cat": "시제",
-    "title": "17 · 미래: will·be going to·현재진행",
-    "lead": "미래를 말하는 표현들은 서로 겹치지만, 결정 시점·근거·약속 여부에 따라 초점이 달라집니다.",
-    "concepts": [
-      {
-        "title": "will: 결정·약속·예측",
-        "text": "말하는 순간의 결정: I’ll take a taxi. 약속: I’ll call you later. 예측·의견: I think it will rain. will 뒤에는 원형을 쓰고, 부정은 won’t입니다. he/she여도 will goes가 아니라 will go입니다."
-      },
-      {
-        "title": "be going to: 의도와 현재 근거",
-        "text": "미리 생각한 계획: I’m going to visit my parents. 눈앞의 근거에 기반한 예측: Look at those clouds. It’s going to rain. be를 빼면 안 됩니다. 이미 정한 계획에도 will을 쓰는 경우가 있으므로 “계획에는 will이 절대 불가”라는 규칙은 아닙니다."
-      },
-      {
-        "title": "현재진행: 확정된 개인 일정",
-        "text": "I’m meeting a friend tomorrow는 날짜·상대 등 준비가 된 일정입니다. 일반적으로 시간 표현이나 문맥이 있어야 미래 의미가 분명해집니다. 공식 시간표는 The train leaves at eight처럼 현재형으로 말할 수 있습니다."
-      },
-      {
-        "title": "시간·조건절의 미래",
-        "text": "미래라도 when/if가 이끄는 시간·조건절에는 보통 현재형을 씁니다: I’ll call you when I arrive. 다만 간접질문 I don’t know when he will arrive에서는 when이 도착 시점을 묻는 명사절이어서 will이 가능합니다."
-      }
-    ],
-    "forms": [
-      {
-        "label": "will",
-        "pattern": "will + 원형 / won’t + 원형",
-        "note": "I’ll help you. I won’t be late."
-      },
-      {
-        "label": "going to",
-        "pattern": "am/is/are going to + 원형",
-        "note": "We’re going to travel next month."
-      },
-      {
-        "label": "약속·확정 일정",
-        "pattern": "am/is/are + -ing + 미래 시점",
-        "note": "I’m meeting her on Friday."
-      },
-      {
-        "label": "미래 시간절",
-        "pattern": "will … + when + 현재형",
-        "note": "I’ll text you when I get home."
-      }
-    ],
-    "examples": [
-      {
-        "en": "I’m going to start exercising regularly next month.",
-        "ko": "다음 달부터 규칙적으로 운동하려고 해요.",
-        "analysis": "going to는 이미 생각한 의도를 설명합니다."
-      },
-      {
-        "en": "The bus is late. I’ll take a taxi instead.",
-        "ko": "버스가 늦네요. 대신 택시를 탈게요.",
-        "analysis": "지금 상황을 보고 내리는 결정이라 will이 자연스럽습니다."
-      },
-      {
-        "en": "I’m having dinner with my parents tomorrow.",
-        "ko": "내일 부모님과 저녁을 먹기로 했어요.",
-        "analysis": "현재진행형이지만 tomorrow 때문에 예정된 미래 일정이라는 뜻입니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "I going to study tonight.",
-        "right": "I’m going to study tonight.",
-        "why": "going to 앞에 주어에 맞는 be동사가 필요합니다."
-      },
-      {
-        "wrong": "I’ll call you when I will arrive.",
-        "right": "I’ll call you when I arrive.",
-        "why": "미래를 나타내는 시간절 when I arrive에는 보통 현재형을 씁니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“미리 계획한 주말 여행”의 올바른 문장은?",
-        "options": [
-          "I going to travel this weekend.",
-          "I’m going to travel this weekend.",
-          "I’m going travel this weekend."
-        ],
-        "answer": "I’m going to travel this weekend.",
-        "explanation": "계획 표현은 be going to + 원형입니다. be와 to를 모두 유지해야 합니다."
-      },
-      {
-        "q": "“집에 도착하면 전화할게요”의 기본 표현은?",
-        "options": [
-          "I’ll call you when I get home.",
-          "I’ll call you when I will get home.",
-          "I’ll call you when I getting home."
-        ],
-        "answer": "I’ll call you when I get home.",
-        "explanation": "시간절 when에서는 미래 의미여도 현재형 get을 사용합니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "다음 주의 계획과 확정된 약속을 각각 말하세요.",
-      "sample": "I’m going to spend more time studying next week. I’m meeting my friend on Saturday.",
-      "note": "계획의 의도와 상대가 있는 약속의 초점을 구분하세요."
-    }
-  },
-  {
     "id": "g17",
-    "cat": "시제",
-    "title": "18 · 현재완료: 과거를 현재와 연결하기",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "10 · 현재완료: 과거를 현재와 연결하기",
     "lead": "현재완료는 have/has + 과거분사입니다. 과거에 시작되거나 일어난 일을 현재의 경험·결과·기간과 연결합니다.",
     "concepts": [
       {
@@ -2291,9 +2151,502 @@ const grammar = [
     }
   },
   {
+    "id": "g14",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "11 · 과거형: 끝난 사건과 경험의 순서",
+    "lead": "과거형은 현재 이전의 특정 시간에 끝난 행동이나 상태를 이야기합니다.",
+    "concepts": [
+      {
+        "title": "규칙형과 불규칙형",
+        "text": "일반동사는 보통 -ed: work → worked, -e는 -d: live → lived, 자음+y는 study → studied입니다. go → went, see → saw, eat → ate, buy → bought, take → took, have → had 같은 불규칙형은 자주 쓰는 것부터 익히세요. 주어가 he/she여도 일반동사 과거형에는 -s를 추가하지 않습니다."
+      },
+      {
+        "title": "동작과 상태의 과거",
+        "text": "I visited a park는 행동, I was tired는 상태입니다. be 과거는 was/were, 일반동사의 부정·질문은 didn’t/did + 원형입니다. 과거형 발화가 어려우면 Last weekend를 먼저 말한 뒤 went, had, saw 같은 핵심 동사로 사건을 이어가세요."
+      },
+      {
+        "title": "과거 이야기를 시간 순서로",
+        "text": "First, then, after that, finally를 이용하면 과거형만으로도 여러 사건의 순서를 설명할 수 있습니다. 모든 과거 사건을 과거완료로 만들 필요는 없습니다. 기억에 남는 경험은 배경 → 사건 → 결과·느낌 순서로 말하면 듣기 쉽습니다."
+      },
+      {
+        "title": "-ed의 발음",
+        "text": "/t/는 worked·watched, /d/는 played·lived, /ɪd/는 wanted·needed처럼 앞소리에 따라 달라집니다. 특히 t/d 소리 뒤에는 한 음절이 추가됩니다. 철자뿐 아니라 예문을 읽을 때 동사의 끝소리도 확인하세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "긍정",
+        "pattern": "주어 + 과거동사",
+        "note": "I went. She worked."
+      },
+      {
+        "label": "부정",
+        "pattern": "주어 + didn’t + 원형",
+        "note": "I didn’t go. She didn’t work."
+      },
+      {
+        "label": "질문",
+        "pattern": "Did + 주어 + 원형?",
+        "note": "Did you enjoy it?"
+      },
+      {
+        "label": "be 과거",
+        "pattern": "was/were + 보어",
+        "note": "It was great. We were happy."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Last weekend, I went to a park and took some photos.",
+        "ko": "지난 주말에 공원에 가서 사진을 찍었어요.",
+        "analysis": "went와 took 모두 끝난 행동의 과거형입니다. and로 두 행동을 연결합니다."
+      },
+      {
+        "en": "The weather was nice, but the park was crowded.",
+        "ko": "날씨는 좋았지만 공원은 붐볐어요.",
+        "analysis": "nice/crowded는 상태를 설명하므로 was 뒤에 붙입니다."
+      },
+      {
+        "en": "Did you like the movie? — Yes, I did.",
+        "ko": "영화가 좋았나요? — 네, 좋았어요.",
+        "analysis": "질문의 did가 과거를 표시하므로 like는 원형입니다. 짧은 답에도 did를 사용합니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "She wented there.",
+        "right": "She went there.",
+        "why": "go의 과거형은 went입니다. 불규칙 과거형에 -ed를 다시 붙이지 않습니다."
+      },
+      {
+        "wrong": "Did you saw it?",
+        "right": "Did you see it?",
+        "why": "did 뒤에는 원형 see입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "buy의 과거형을 사용한 올바른 문장은?",
+        "options": [
+          "I buyed a ticket yesterday.",
+          "I bought a ticket yesterday.",
+          "I buying a ticket yesterday."
+        ],
+        "answer": "I bought a ticket yesterday.",
+        "explanation": "buy의 불규칙 과거형은 bought입니다. 규칙동사처럼 -ed를 붙여 buyed로 만들지 않으며, buying만으로는 과거 문장의 동사가 되지 않습니다."
+      },
+      {
+        "q": "“어제 바쁘지 않았어요”의 올바른 문장은?",
+        "options": [
+          "I didn’t busy yesterday.",
+          "I wasn’t busy yesterday.",
+          "I don’t was busy yesterday."
+        ],
+        "answer": "I wasn’t busy yesterday.",
+        "explanation": "busy는 형용사이므로 be동사 was의 부정형 wasn’t를 씁니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "지난 주말의 일을 시간 순서로 세 문장 말하세요.",
+      "sample": "First, I met a friend. Then, we had lunch at a small restaurant. After that, we walked around the neighborhood.",
+      "note": "각 문장의 핵심 동사가 과거형인지 확인하세요."
+    }
+  },
+  {
+    "id": "g19",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "12 · 과거완료: 과거 사건보다 더 이전의 일",
+    "lead": "과거완료는 “그 과거 시점에 이미”라는 관계를 나타냅니다. 오래된 일이기 때문에 쓰는 시제는 아닙니다.",
+    "concepts": [
+      {
+        "title": "두 과거 사건의 앞뒤",
+        "text": "had + 과거분사입니다. When I arrived, the movie had already started는 도착했을 때 영화가 이미 시작해 있었다는 뜻입니다. 기준 과거는 arrived, 그보다 먼저 일어난 일은 had started입니다. 주어와 관계없이 had를 씁니다."
+      },
+      {
+        "title": "단순과거만으로 충분한 경우",
+        "text": "I bought a ticket and entered the theater처럼 시간 순서대로 말하면 과거형만으로 충분합니다. before/after 등으로 순서가 분명하면 과거완료가 필수가 아닌 경우도 많습니다. 과거완료는 사건의 선후나 그때까지의 완료를 강조하려고 씁니다."
+      },
+      {
+        "title": "과거완료진행은 과거까지의 지속",
+        "text": "had been + -ing입니다. We had been waiting for an hour when the bus arrived는 버스가 도착한 과거 시점까지 한 시간 동안 기다리고 있었다는 뜻입니다. 현재완료진행과 달리 기준점이 현재가 아닙니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "앞선 완료",
+        "pattern": "had + 과거분사",
+        "note": "The train had already left."
+      },
+      {
+        "label": "부정·질문",
+        "pattern": "hadn’t + 분사 / Had + 주어 + 분사?",
+        "note": "I hadn’t booked a room. Had you eaten?"
+      },
+      {
+        "label": "과거까지의 지속",
+        "pattern": "had been + -ing",
+        "note": "I had been waiting for an hour."
+      },
+      {
+        "label": "기준점 표시",
+        "pattern": "과거형 + 과거완료",
+        "note": "I realized that I had lost my key."
+      }
+    ],
+    "examples": [
+      {
+        "en": "When we arrived, the restaurant had already closed.",
+        "ko": "도착했을 때 식당은 이미 문을 닫은 뒤였어요.",
+        "analysis": "도착 arrived보다 폐점 had closed가 먼저입니다."
+      },
+      {
+        "en": "I was tired because I hadn’t slept well the night before.",
+        "ko": "전날 밤 잘 못 자서 피곤했어요.",
+        "analysis": "피곤했던 과거 시점보다 잠을 못 잔 일이 이전이라 hadn’t slept를 씁니다."
+      },
+      {
+        "en": "I had been waiting for thirty minutes when my friend finally arrived.",
+        "ko": "친구가 마침내 도착했을 때 30분 동안 기다리고 있었어요.",
+        "analysis": "기다림의 지속이 친구가 도착한 과거 시점까지 이어졌습니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Yesterday, I had went to a café. (이 한 사건만 소개)",
+        "right": "Yesterday, I went to a café.",
+        "why": "단일 과거 사건은 단순과거로 충분하고, go의 분사는 gone이지 went가 아닙니다."
+      },
+      {
+        "wrong": "The train had leave before I arrived.",
+        "right": "The train had left before I arrived.",
+        "why": "had 뒤에는 과거분사 left가 필요합니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“도착했을 때 버스가 이미 떠난 뒤였어요”에 맞는 문장은?",
+        "options": [
+          "When I arrived, the bus had already left.",
+          "When I arrived, the bus has already leave.",
+          "When I arrived, the bus had already leave."
+        ],
+        "answer": "When I arrived, the bus had already left.",
+        "explanation": "도착이라는 과거보다 먼저 떠났으므로 had + left입니다."
+      },
+      {
+        "q": "“지난 일요일에 영화를 봤어요”만 말할 때 기본 시제는?",
+        "options": [
+          "I watched a movie last Sunday.",
+          "I had watch a movie last Sunday.",
+          "I have watched a movie last Sunday."
+        ],
+        "answer": "I watched a movie last Sunday.",
+        "explanation": "끝난 과거의 단일 사건이므로 단순과거면 충분합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "늦어서 놓친 일을 과거완료로 설명하세요.",
+      "sample": "I got to the station late. The train had already left, so I had to wait for the next one.",
+      "note": "got이라는 기준 과거보다 앞선 left를 had left로 표현하세요."
+    }
+  },
+  {
+    "id": "g16",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "13 · 미래: will·be going to·현재진행",
+    "lead": "미래를 말하는 표현들은 서로 겹치지만, 결정 시점·근거·약속 여부에 따라 초점이 달라집니다.",
+    "concepts": [
+      {
+        "title": "will: 결정·약속·예측",
+        "text": "말하는 순간의 결정: I’ll take a taxi. 약속: I’ll call you later. 예측·의견: I think it will rain. will 뒤에는 원형을 쓰고, 부정은 won’t입니다. he/she여도 will goes가 아니라 will go입니다."
+      },
+      {
+        "title": "be going to: 의도와 현재 근거",
+        "text": "미리 생각한 계획: I’m going to visit my parents. 눈앞의 근거에 기반한 예측: Look at those clouds. It’s going to rain. be를 빼면 안 됩니다. 이미 정한 계획에도 will을 쓰는 경우가 있으므로 “계획에는 will이 절대 불가”라는 규칙은 아닙니다."
+      },
+      {
+        "title": "현재진행: 확정된 개인 일정",
+        "text": "I’m meeting a friend tomorrow는 날짜·상대 등 준비가 된 일정입니다. 일반적으로 시간 표현이나 문맥이 있어야 미래 의미가 분명해집니다. 공식 시간표는 The train leaves at eight처럼 현재형으로 말할 수 있습니다."
+      },
+      {
+        "title": "시간·조건절의 미래",
+        "text": "미래라도 when/if가 이끄는 시간·조건절에는 보통 현재형을 씁니다: I’ll call you when I arrive. 다만 간접질문 I don’t know when he will arrive에서는 when이 도착 시점을 묻는 명사절이어서 will이 가능합니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "will",
+        "pattern": "will + 원형 / won’t + 원형",
+        "note": "I’ll help you. I won’t be late."
+      },
+      {
+        "label": "going to",
+        "pattern": "am/is/are going to + 원형",
+        "note": "We’re going to travel next month."
+      },
+      {
+        "label": "약속·확정 일정",
+        "pattern": "am/is/are + -ing + 미래 시점",
+        "note": "I’m meeting her on Friday."
+      },
+      {
+        "label": "미래 시간절",
+        "pattern": "will … + when + 현재형",
+        "note": "I’ll text you when I get home."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I’m going to start exercising regularly next month.",
+        "ko": "다음 달부터 규칙적으로 운동하려고 해요.",
+        "analysis": "going to는 이미 생각한 의도를 설명합니다."
+      },
+      {
+        "en": "The bus is late. I’ll take a taxi instead.",
+        "ko": "버스가 늦네요. 대신 택시를 탈게요.",
+        "analysis": "지금 상황을 보고 내리는 결정이라 will이 자연스럽습니다."
+      },
+      {
+        "en": "I’m having dinner with my parents tomorrow.",
+        "ko": "내일 부모님과 저녁을 먹기로 했어요.",
+        "analysis": "현재진행형이지만 tomorrow 때문에 예정된 미래 일정이라는 뜻입니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I going to study tonight.",
+        "right": "I’m going to study tonight.",
+        "why": "going to 앞에 주어에 맞는 be동사가 필요합니다."
+      },
+      {
+        "wrong": "I’ll call you when I will arrive.",
+        "right": "I’ll call you when I arrive.",
+        "why": "미래를 나타내는 시간절 when I arrive에는 보통 현재형을 씁니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“미리 계획한 주말 여행”의 올바른 문장은?",
+        "options": [
+          "I going to travel this weekend.",
+          "I’m going to travel this weekend.",
+          "I’m going travel this weekend."
+        ],
+        "answer": "I’m going to travel this weekend.",
+        "explanation": "계획 표현은 be going to + 원형입니다. be와 to를 모두 유지해야 합니다."
+      },
+      {
+        "q": "“집에 도착하면 전화할게요”의 기본 표현은?",
+        "options": [
+          "I’ll call you when I get home.",
+          "I’ll call you when I will get home.",
+          "I’ll call you when I getting home."
+        ],
+        "answer": "I’ll call you when I get home.",
+        "explanation": "시간절 when에서는 미래 의미여도 현재형 get을 사용합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "다음 주의 계획과 확정된 약속을 각각 말하세요.",
+      "sample": "I’m going to spend more time studying next week. I’m meeting my friend on Saturday.",
+      "note": "계획의 의도와 상대가 있는 약속의 초점을 구분하세요."
+    }
+  },
+  {
+    "id": "g37",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "14 · 미래완료: 미래 시점까지 끝나거나 이어질 일",
+    "lead": "will have + p.p.는 미래의 기준 시점에서 이미 끝났거나 그때까지 쌓인 기간을 되돌아봅니다.",
+    "concepts": [
+      {
+        "title": "미래의 기준점에서 돌아보기",
+        "text": "By Friday, I will have finished the report는 금요일이라는 미래 시점까지 보고서를 끝내 놓을 것이라는 뜻입니다. will finish가 앞으로의 사건을 말한다면 will have finished는 미래 기준점에서 완료된 상태에 초점을 둡니다."
+      },
+      {
+        "title": "기간 없이도 미래완료가 가능합니다",
+        "text": "By next year, she will have worked here for ten years처럼 미래까지의 지속 기간을 표현할 수 있습니다. 하지만 for 기간이 필수는 아닙니다. By noon, we will have arrived는 도착 완료를 뜻합니다. by + 미래시점 역시 단순미래와 함께 쓸 수 있으므로 문맥을 확인합니다."
+      },
+      {
+        "title": "by the time 절은 현재형으로 미래를 표현",
+        "text": "By the time you arrive, we will have prepared dinner에서 arrive는 미래 내용이지만 시간 부사절의 현재형입니다. 주절의 미래완료와 구별하세요. will have been prepared는 미래완료 수동이고, will have prepared는 능동입니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "완료",
+        "pattern": "will have + p.p.",
+        "note": "미래 기준 시점까지 이미 완료된 일."
+      },
+      {
+        "label": "지속",
+        "pattern": "will have worked + for 기간 + by 미래시점",
+        "note": "그 미래 시점에서 근무한 기간이 얼마나 될지."
+      },
+      {
+        "label": "수동",
+        "pattern": "will have been + p.p.",
+        "note": "The road will have been repaired by Monday. 월요일까지 도로가 보수되어 있을 것입니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "By Friday, I will have finished the report.",
+        "ko": "금요일까지는 보고서를 다 끝내 놓을 거예요.",
+        "analysis": "by Friday가 기준점, will have finished가 그때 완료되어 있을 일입니다."
+      },
+      {
+        "en": "Next month, I will have lived here for five years.",
+        "ko": "다음 달이면 이곳에 산 지 5년이 돼요.",
+        "analysis": "미래 시점까지 이어지는 거주 기간을 완료형으로 표현합니다."
+      },
+      {
+        "en": "By the time you get home, I will have cooked dinner.",
+        "ko": "집에 도착할 때쯤이면 저녁을 만들어 놓을게요.",
+        "analysis": "get은 시간 부사절의 현재형, will have cooked는 주절의 미래완료입니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "By the time you will arrive, we will have finished.",
+        "right": "By the time you arrive, we will have finished.",
+        "why": "미래 시간 부사절에는 보통 현재형을 씁니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "By noon, the team ___ the inspection. “검사를 끝내 놓을 것이다”는?",
+        "options": [
+          "will have completed",
+          "has completed",
+          "had completed"
+        ],
+        "answer": "will have completed",
+        "explanation": "미래 기준 시점까지 완료될 일은 will have + 과거분사로 표현합니다."
+      },
+      {
+        "q": "미래완료에 반드시 for + 기간이 있어야 하나요?",
+        "options": [
+          "항상 있어야 한다",
+          "없어도 완료를 표현할 수 있다",
+          "기간이 있으면 미래완료를 쓸 수 없다"
+        ],
+        "answer": "없어도 완료를 표현할 수 있다",
+        "explanation": "완료된 사건을 표현하는 미래완료에는 기간 표현이 없어도 됩니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "미래의 기준일과 그때까지 끝낼 일을 말하세요.",
+      "sample": "By next weekend, I will have cleaned my room and finished my project.",
+      "note": "실제로 끝내 놓을 계획을 미래 기준점에서 설명합니다."
+    },
+    "referenceTables": []
+  },
+  {
+    "id": "g15",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "15 · 현재진행·과거진행: 그 순간 하고 있던 일",
+    "lead": "진행형은 특정 시점을 기준으로 진행 중인 동작이나 일시적인 상황을 보여줍니다.",
+    "concepts": [
+      {
+        "title": "be + -ing가 한 동사 묶음",
+        "text": "현재는 am/is/are + -ing, 과거는 was/were + -ing입니다. I cooking도, I am cook도 진행형이 아닙니다. 질문은 be를 앞으로: Are you cooking? 부정은 be 뒤 not: I’m not cooking. -ing만 과거로 바꾸지 않습니다."
+      },
+      {
+        "title": "언제 진행 중인가",
+        "text": "I’m studying now는 지금, I’m staying with a friend this week는 이번 주의 일시적 상황입니다. I was studying at eight last night는 어제 8시에 진행 중이던 일입니다. 과거진행은 이야기의 배경, 단순과거는 그때 일어난 사건으로 함께 자주 쓰입니다."
+      },
+      {
+        "title": "when과 while로 배경 연결",
+        "text": "I was cooking when the phone rang는 요리 중에 전화가 울린 사건을 말합니다. While I was cooking, my friend was setting the table은 두 동작이 동시에 진행됐다는 뜻입니다. when=항상 과거, while=항상 진행이라는 고정 규칙은 아니고 사건의 관계가 핵심입니다."
+      },
+      {
+        "title": "-ing 철자와 상태동사",
+        "text": "make → making, lie → lying, run → running처럼 변합니다. know/need/like 같은 상태동사는 기본 의미에서 보통 진행형으로 쓰지 않습니다. have lunch는 행동이므로 I’m having lunch가 가능하지만 소유 have는 I have a car가 기본입니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "현재진행",
+        "pattern": "am/is/are + 동사-ing",
+        "note": "I’m working right now."
+      },
+      {
+        "label": "과거진행",
+        "pattern": "was/were + 동사-ing",
+        "note": "I was working when you called."
+      },
+      {
+        "label": "부정·질문",
+        "pattern": "be not + -ing / Be + 주어 + -ing?",
+        "note": "I wasn’t sleeping. Were you sleeping?"
+      },
+      {
+        "label": "배경 + 사건",
+        "pattern": "과거진행 + when + 과거",
+        "note": "I was walking when it started raining."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I was taking a shower when my friend called.",
+        "ko": "친구가 전화했을 때 샤워 중이었어요.",
+        "analysis": "was taking은 진행 중인 배경, called는 그 사이에 일어난 사건입니다."
+      },
+      {
+        "en": "I’m staying at a hotel this week.",
+        "ko": "이번 주에는 호텔에 머물고 있어요.",
+        "analysis": "말하는 순간만이 아니라 이번 주의 일시적 생활도 현재진행형으로 나타낼 수 있습니다."
+      },
+      {
+        "en": "While we were waiting, we talked about the trip.",
+        "ko": "기다리는 동안 여행에 대해 이야기했어요.",
+        "analysis": "were waiting은 계속되던 배경, talked는 그동안 한 일을 말합니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I was cook when he called.",
+        "right": "I was cooking when he called.",
+        "why": "과거진행은 was + -ing입니다. 원형 cook로는 성립하지 않습니다."
+      },
+      {
+        "wrong": "I am having a car. (소유)",
+        "right": "I have a car.",
+        "why": "차를 소유한다는 상태의 have는 현재형이 기본입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“전화가 왔을 때 자고 있었어요”에 맞는 문장은?",
+        "options": [
+          "I slepting when the phone rang.",
+          "I was sleeping when the phone rang.",
+          "I was sleep when the phone rang."
+        ],
+        "answer": "I was sleeping when the phone rang.",
+        "explanation": "과거 특정 순간에 진행 중이던 행동은 was + sleeping입니다."
+      },
+      {
+        "q": "“지금 점심을 먹고 있어요”의 올바른 문장은?",
+        "options": [
+          "I’m having lunch now.",
+          "I’m have lunch now.",
+          "I having lunch now."
+        ],
+        "answer": "I’m having lunch now.",
+        "explanation": "have lunch는 식사하는 행동입니다. 진행형은 am + having으로 만듭니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "예상치 못한 일이 생겼을 때 무엇을 하고 있었는지 말하세요.",
+      "sample": "I was walking home when it suddenly started raining. I was wearing a light jacket, so I got cold.",
+      "note": "진행형으로 장면을 만들고 단순과거로 사건을 넣으세요."
+    }
+  },
+  {
     "id": "g18",
-    "cat": "시제",
-    "title": "19 · for·since와 현재완료진행",
+    "cat": "Unit 2 · 동사: 수·태·시제",
+    "title": "16 · for·since와 현재완료진행",
     "lead": "과거부터 지금까지 계속되는 상태·활동을 말할 때, 기간의 길이와 시작점을 구분해야 합니다.",
     "concepts": [
       {
@@ -2393,821 +2746,977 @@ const grammar = [
     }
   },
   {
-    "id": "g19",
-    "cat": "시제",
-    "title": "20 · 과거완료: 과거 사건보다 더 이전의 일",
-    "lead": "과거완료는 “그 과거 시점에 이미”라는 관계를 나타냅니다. 오래된 일이기 때문에 쓰는 시제는 아닙니다.",
+    "id": "g10",
+    "cat": "Unit 3 · 형용사·부사",
+    "title": "17 · 형용사: 명사 수식·주격보어·목적격보어",
+    "lead": "형용사는 명사의 성질을 설명하며 명사 앞이나 주어·목적어를 설명하는 보어 자리에 옵니다.",
     "concepts": [
       {
-        "title": "두 과거 사건의 앞뒤",
-        "text": "had + 과거분사입니다. When I arrived, the movie had already started는 도착했을 때 영화가 이미 시작해 있었다는 뜻입니다. 기준 과거는 arrived, 그보다 먼저 일어난 일은 had started입니다. 주어와 관계없이 had를 씁니다."
+        "title": "형용사가 오는 자리",
+        "text": "명사 앞: a quiet room. be/feel/look/seem 같은 연결동사 뒤: The room is quiet / I feel tired. 연결동사 뒤에서 주어의 상태를 말할 때는 부사가 아니라 형용사를 씁니다. feel good과 feel well은 의미에 따라 다를 수 있지만 feel happily를 기본 감정 표현으로 쓰지는 않습니다."
       },
       {
-        "title": "단순과거만으로 충분한 경우",
-        "text": "I bought a ticket and entered the theater처럼 시간 순서대로 말하면 과거형만으로 충분합니다. before/after 등으로 순서가 분명하면 과거완료가 필수가 아닌 경우도 많습니다. 과거완료는 사건의 선후나 그때까지의 완료를 강조하려고 씁니다."
+        "title": "-ed와 -ing 감정 형용사",
+        "text": "bored/interested/excited는 느끼는 대상의 상태, boring/interesting/exciting은 그런 느낌을 일으키는 성질을 말합니다. I’m bored는 내가 지루하다, I’m boring은 내가 남에게 지루함을 주는 사람이라는 뜻입니다. 사람도 exciting할 수 있으므로 단순히 “사람=-ed, 사물=-ing”로 외우지 마세요."
       },
       {
-        "title": "과거완료진행은 과거까지의 지속",
-        "text": "had been + -ing입니다. We had been waiting for an hour when the bus arrived는 버스가 도착한 과거 시점까지 한 시간 동안 기다리고 있었다는 뜻입니다. 현재완료진행과 달리 기준점이 현재가 아닙니다."
+        "title": "주격보어와 목적격보어",
+        "text": "be, become, remain, seem, look는 주어의 상태를 연결하는 용법에서 형용사 보어를 받습니다. keep, find, consider, make는 목적어 + 형용사 보어 구조를 만들 수 있습니다. I found the instructions useful에서 useful은 I가 아니라 instructions를 설명합니다. 명사 보어는 정체, 형용사 보어는 성질·상태를 말합니다."
       }
     ],
     "forms": [
       {
-        "label": "앞선 완료",
-        "pattern": "had + 과거분사",
-        "note": "The train had already left."
+        "label": "명사 수식",
+        "pattern": "형용사 + 명사",
+        "note": "a comfortable room"
       },
       {
-        "label": "부정·질문",
-        "pattern": "hadn’t + 분사 / Had + 주어 + 분사?",
-        "note": "I hadn’t booked a room. Had you eaten?"
+        "label": "상태 설명",
+        "pattern": "주어 + be/feel/look + 형용사",
+        "note": "I felt nervous. The café looked nice."
       },
       {
-        "label": "과거까지의 지속",
-        "pattern": "had been + -ing",
-        "note": "I had been waiting for an hour."
+        "label": "목적격보어",
+        "pattern": "S + keep/find/consider/make + O + 형용사",
+        "note": "The news made me happy. 목적어 me의 상태를 설명합니다."
       },
       {
-        "label": "기준점 표시",
-        "pattern": "과거형 + 과거완료",
-        "note": "I realized that I had lost my key."
+        "label": "감정의 방향",
+        "pattern": "I’m interested / It’s interesting",
+        "note": "interested in + 관심 대상"
       }
     ],
     "examples": [
       {
-        "en": "When we arrived, the restaurant had already closed.",
-        "ko": "도착했을 때 식당은 이미 문을 닫은 뒤였어요.",
-        "analysis": "도착 arrived보다 폐점 had closed가 먼저입니다."
+        "en": "The movie was boring, so I felt bored.",
+        "ko": "영화가 지루해서 저는 지루함을 느꼈어요.",
+        "analysis": "boring은 영화의 성질, bored는 내가 느낀 상태입니다."
       },
       {
-        "en": "I was tired because I hadn’t slept well the night before.",
-        "ko": "전날 밤 잘 못 자서 피곤했어요.",
-        "analysis": "피곤했던 과거 시점보다 잠을 못 잔 일이 이전이라 hadn’t slept를 씁니다."
+        "en": "The user manual is very helpful.",
+        "ko": "사용 설명서는 매우 도움이 됩니다.",
+        "analysis": "helpful은 manual의 성질을 설명하는 주격보어, very는 helpful의 정도를 수식하는 부사입니다."
       },
       {
-        "en": "I had been waiting for thirty minutes when my friend finally arrived.",
-        "ko": "친구가 마침내 도착했을 때 30분 동안 기다리고 있었어요.",
-        "analysis": "기다림의 지속이 친구가 도착한 과거 시점까지 이어졌습니다."
+        "en": "The workshop made the participants confident.",
+        "ko": "워크숍은 참가자들에게 자신감을 주었습니다.",
+        "analysis": "participants가 목적어, confident는 그 상태를 설명하는 목적격보어입니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "Yesterday, I had went to a café. (이 한 사건만 소개)",
-        "right": "Yesterday, I went to a café.",
-        "why": "단일 과거 사건은 단순과거로 충분하고, go의 분사는 gone이지 went가 아닙니다."
+        "wrong": "I am interesting in music.",
+        "right": "I am interested in music.",
+        "why": "관심을 느끼는 내 상태는 interested, 전치사는 in입니다."
       },
       {
-        "wrong": "The train had leave before I arrived.",
-        "right": "The train had left before I arrived.",
-        "why": "had 뒤에는 과거분사 left가 필요합니다."
+        "wrong": "The instructions seem clearly.",
+        "right": "The instructions seem clear.",
+        "why": "연결동사 seem 뒤에서 주어의 성질을 설명하려면 형용사 clear입니다."
       }
     ],
     "exercises": [
       {
-        "q": "“도착했을 때 버스가 이미 떠난 뒤였어요”에 맞는 문장은?",
+        "q": "“여행이 신났고, 나도 신이 났어요”의 올바른 문장은?",
         "options": [
-          "When I arrived, the bus had already left.",
-          "When I arrived, the bus has already leave.",
-          "When I arrived, the bus had already leave."
+          "The trip was excited, and I was exciting.",
+          "The trip was exciting, and I was excited.",
+          "The trip was exciting, and I was excite."
         ],
-        "answer": "When I arrived, the bus had already left.",
-        "explanation": "도착이라는 과거보다 먼저 떠났으므로 had + left입니다."
+        "answer": "The trip was exciting, and I was excited.",
+        "explanation": "여행은 신나는 성질이 있어 exciting, 내가 느끼는 상태는 excited입니다."
       },
       {
-        "q": "“지난 일요일에 영화를 봤어요”만 말할 때 기본 시제는?",
+        "q": "The staff found the workshop ___. “유익하다”에 맞는 것은?",
         "options": [
-          "I watched a movie last Sunday.",
-          "I had watch a movie last Sunday.",
-          "I have watched a movie last Sunday."
+          "useful",
+          "usefully",
+          "usefulness"
         ],
-        "answer": "I watched a movie last Sunday.",
-        "explanation": "끝난 과거의 단일 사건이므로 단순과거면 충분합니다."
+        "answer": "useful",
+        "explanation": "목적어 workshop의 성질을 설명하는 목적격보어 형용사입니다."
+      },
+      {
+        "q": "The user manual is ___. “도움이 된다”는?",
+        "options": [
+          "helpful",
+          "helpfully",
+          "helpfulness"
+        ],
+        "answer": "helpful",
+        "explanation": "is 뒤에서 manual의 성질을 설명하는 형용사 주격보어입니다."
       }
     ],
     "spoken": {
-      "prompt": "늦어서 놓친 일을 과거완료로 설명하세요.",
-      "sample": "I got to the station late. The train had already left, so I had to wait for the next one.",
-      "note": "got이라는 기준 과거보다 앞선 left를 had left로 표현하세요."
+      "prompt": "좋아하는 영화의 성질과 내가 느낀 감정을 따로 설명하세요.",
+      "sample": "The story was interesting, and I was excited about the ending.",
+      "note": "interesting/exciting과 interested/excited의 방향을 구분하세요."
     }
   },
   {
-    "id": "g20",
-    "cat": "동사 확장",
-    "title": "21 · 조동사: 가능·허락·의무·조언·추측",
-    "lead": "조동사는 행동 자체보다 “할 수 있는가, 해야 하는가, 그럴 가능성이 있는가”를 덧붙입니다.",
+    "id": "g09",
+    "cat": "Unit 3 · 형용사·부사",
+    "title": "18 · some·any·many·much와 수량 표현",
+    "lead": "수량 표현은 명사가 셀 수 있는지, 양이 충분한지에 따라 선택합니다.",
     "concepts": [
       {
-        "title": "조동사 뒤에는 원형",
-        "text": "can/could/may/might/must/should/will/would 뒤에는 원형이 옵니다. he/she여도 can drives가 아니라 can drive. be동사가 필요하면 원형 be를 씁니다: It might be expensive. 질문은 조동사를 앞으로, 부정은 조동사 뒤에 not을 붙입니다."
+        "title": "many와 much, a lot of",
+        "text": "many는 복수 가산명사, much는 불가산명사와 씁니다. many people / much time입니다. 긍정문에서는 much보다 a lot of가 회화에서 자주 쓰입니다. a lot of는 두 종류 모두 가능합니다: a lot of friends / a lot of money."
       },
       {
-        "title": "가능·허락·추측",
-        "text": "can은 능력과 가능: I can swim. Can I …?는 허락 요청입니다. could는 과거의 일반 능력 또는 정중한 요청: I could swim when I was young / Could you help me? may/might는 가능성: It might rain. must는 의무 외에 강한 추측도 됩니다: You must be tired."
+        "title": "some과 any의 기본·예외",
+        "text": "some은 긍정문, any는 부정·질문에서 자주 씁니다. I have some time / I don’t have any time / Do you have any time? 하지만 상대가 수락하기를 기대하는 제안·요청에는 Would you like some coffee? / Could I have some water?처럼 some을 쓸 수 있습니다. 긍정문의 any는 “어떤 것이든”이라는 뜻도 있습니다."
       },
       {
-        "title": "의무와 조언",
-        "text": "must/have to는 해야 함, should는 권장·조언입니다. have to는 일반동사처럼 변합니다: she has to, didn’t have to, Do you have to? 현재 조동사 must의 과거 의무는 보통 had to로 표현합니다. ought to도 조언이지만 기본 회화에서는 should부터 익히세요."
+        "title": "a few/a little과 few/little",
+        "text": "a few는 셀 수 있는 것 몇 개, a little은 셀 수 없는 것 조금입니다. 둘 다 어느 정도 있다는 뜻입니다. a 없이 few/little은 매우 적어서 부족하다는 뉘앙스가 강합니다. I have a few friends는 친구가 몇 명 있다, I have few friends는 친구가 거의 없다입니다."
       },
       {
-        "title": "금지와 불필요는 다릅니다",
-        "text": "mustn’t는 해서는 안 된다, don’t have to는 할 필요가 없다는 뜻입니다. You mustn’t park here는 금지, You don’t have to drive는 운전 안 해도 된다는 선택입니다. 이 차이를 놓치면 의도가 반대로 전달될 수 있습니다."
+        "title": "each/every와 all/both",
+        "text": "each/every 뒤에는 보통 단수 명사·단수 동사: Every room has a window. all/both 뒤에는 복수 대상을 나타낼 수 있습니다: Both rooms have windows. every days가 아니라 every day라는 형태를 익히세요."
+      },
+      {
+        "title": "수량 표현의 예외 구조",
+        "text": "every two weeks는 2주마다, another three days는 추가로 3일이라는 수량 덩어리를 받습니다. every 뒤 단수라는 기본 규칙과 다른 구조입니다. a number of students are는 많은 학생들, the number of students is는 학생 수라는 중심 단수 number입니다."
       }
     ],
     "forms": [
       {
-        "label": "능력",
-        "pattern": "can/could + 원형",
-        "note": "I can cook. I could run fast as a child."
+        "label": "가산 복수",
+        "pattern": "many / a few / few + 복수 명사",
+        "note": "many restaurants / a few people"
       },
       {
-        "label": "가능성",
-        "pattern": "may/might + 원형",
-        "note": "It might be crowded."
+        "label": "불가산",
+        "pattern": "much / a little / little + 명사",
+        "note": "much luggage / a little time"
       },
       {
-        "label": "의무·조언",
-        "pattern": "must / have to / should + 원형",
-        "note": "I have to work. You should rest."
+        "label": "둘 다 가능",
+        "pattern": "some / any / a lot of + 명사",
+        "note": "some chairs / some water"
       },
       {
-        "label": "금지·불필요",
-        "pattern": "mustn’t / don’t have to + 원형",
-        "note": "금지 / 안 해도 됨"
+        "label": "하나씩",
+        "pattern": "each/every + 단수 명사 + 단수 동사",
+        "note": "Every café has Wi-Fi."
       }
     ],
     "examples": [
       {
-        "en": "You should book in advance because it gets crowded.",
-        "ko": "붐비니까 미리 예약하는 게 좋아요.",
-        "analysis": "should는 강제 의무가 아니라 조언입니다."
+        "en": "I have a few close friends, and we meet every month.",
+        "ko": "친한 친구가 몇 명 있고 매달 만나요.",
+        "analysis": "friends는 복수 가산명사여서 a few, every 뒤 month는 단수입니다."
       },
       {
-        "en": "I had to cancel the trip because I was sick.",
-        "ko": "아파서 여행을 취소해야 했어요.",
-        "analysis": "과거 의무를 had to로 표현합니다. cancel은 to 뒤 원형입니다."
+        "en": "We had little time, so we took a taxi.",
+        "ko": "시간이 거의 없어서 택시를 탔어요.",
+        "analysis": "little time은 시간이 부족하다는 뉘앙스입니다. a little time이면 조금은 있다는 쪽에 초점이 갑니다."
       },
       {
-        "en": "You don’t have to pay in advance.",
-        "ko": "미리 결제하지 않아도 돼요.",
-        "analysis": "결제 금지가 아니라 미리 결제할 의무가 없다는 뜻입니다."
+        "en": "Could I have some water?",
+        "ko": "물 좀 주실 수 있을까요?",
+        "analysis": "질문 형태여도 정중한 요청이므로 some이 자연스럽습니다."
+      },
+      {
+        "en": "A number of employees are on leave, but the number is small.",
+        "ko": "여러 직원이 휴가 중이지만 그 수는 적습니다.",
+        "analysis": "a number of + 복수명사는 복수, the number는 수 자체여서 단수입니다."
+      },
+      {
+        "en": "The team meets every two weeks.",
+        "ko": "팀은 2주마다 만납니다.",
+        "analysis": "every two weeks는 각 2주 간격이라는 수량 표현입니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "She can to drive.",
-        "right": "She can drive.",
-        "why": "can 뒤에는 to 없이 원형을 씁니다."
+        "wrong": "I have many time.",
+        "right": "I have a lot of time.",
+        "why": "time은 여기서 불가산명사이므로 many를 쓰지 않습니다."
       },
       {
-        "wrong": "You mustn’t come. (안 와도 된다는 의도)",
-        "right": "You don’t have to come.",
-        "why": "mustn’t는 오면 안 된다는 금지입니다. 불필요는 don’t have to입니다."
+        "wrong": "Every rooms are clean.",
+        "right": "Every room is clean.",
+        "why": "every 뒤에는 단수 명사 room, 동사는 is를 씁니다."
       }
     ],
     "exercises": [
       {
-        "q": "“예약할 필요는 없어요”에 맞는 문장은?",
+        "q": "“짐이 많지 않아요”의 올바른 문장은?",
         "options": [
-          "You mustn’t make a reservation.",
-          "You don’t have to make a reservation.",
-          "You should to make a reservation."
+          "I don’t have many luggage.",
+          "I don’t have much luggage.",
+          "I don’t have a few luggage."
         ],
-        "answer": "You don’t have to make a reservation.",
-        "explanation": "don’t have to는 불필요, mustn’t는 금지입니다."
+        "answer": "I don’t have much luggage.",
+        "explanation": "luggage는 불가산명사이므로 much와 연결합니다."
       },
       {
-        "q": "“비가 올지도 몰라요”의 올바른 형태는?",
+        "q": "“친구가 몇 명은 있어요”에 맞는 표현은?",
         "options": [
-          "It might rains.",
-          "It might rain.",
-          "It might to rain."
+          "I have a few friends.",
+          "I have a little friends.",
+          "I have few friend."
         ],
-        "answer": "It might rain.",
-        "explanation": "조동사 might 뒤에는 주어와 관계없이 동사원형입니다."
+        "answer": "I have a few friends.",
+        "explanation": "friends는 복수 가산명사이고 어느 정도 있다는 뜻이므로 a few입니다."
+      },
+      {
+        "q": "The number of applicants ___ increasing.",
+        "options": [
+          "is",
+          "are",
+          "be"
+        ],
+        "answer": "is",
+        "explanation": "중심은 지원자들이 아니라 단수 number입니다."
       }
     ],
     "spoken": {
-      "prompt": "친구에게 여행 조언과 주의 사항을 말하세요.",
-      "sample": "You should bring a jacket. It might be cold at night. You don’t have to rent a car because the buses are convenient.",
-      "note": "조언·가능성·불필요의 의미를 구분하세요."
-    }
+      "prompt": "내 동네에 많은 것과 거의 없는 것을 말하세요.",
+      "sample": "There are a lot of cafés in my neighborhood, but there isn’t much parking space.",
+      "note": "cafés와 space의 명사 종류를 확인하세요."
+    },
+    "referenceTables": [
+      {
+        "title": "수량 한정사와 명사 종류",
+        "headers": [
+          "단수 가산",
+          "복수 가산",
+          "불가산",
+          "둘 다"
+        ],
+        "rows": [
+          [
+            "each / every / another",
+            "many / several / a few / few / both",
+            "much / a little / little",
+            "some / any / a lot of / plenty of"
+          ],
+          [
+            "each seat",
+            "several seats",
+            "a little seating space",
+            "a lot of seats / a lot of space"
+          ]
+        ],
+        "note": "any + 단수 가산명사는 어느 것이든이라는 자유 선택에도 쓰입니다. some/any는 명사 종류와 문맥에 따라 뜻이 달라집니다."
+      }
+    ]
   },
   {
-    "id": "g21",
-    "cat": "동사 확장",
-    "title": "22 · would·could와 정중한 요청",
-    "lead": "would와 could는 과거만 나타내지 않습니다. 부탁·선호·가정에서도 자주 사용합니다.",
+    "id": "g40",
+    "cat": "Unit 3 · 형용사·부사",
+    "title": "19 · 형용사 표현과 비슷한 단어 구분",
+    "lead": "형용사는 의미와 함께 자주 결합하는 명사를 익히면 구별하기 쉽습니다.",
     "concepts": [
       {
-        "title": "Could you …?와 Would you …?",
-        "text": "Could you help me?는 도와줄 수 있는지 정중하게 묻고, Would you help me?는 해줄 의향을 묻습니다. 둘 다 실제 요청으로 자연스럽습니다. Can you …?도 일상에서 흔하며, 조동사가 바뀐다고 언제나 같은 정도의 공손함이 보장되는 것은 아닙니다. 문맥과 말투도 중요합니다."
+        "title": "어미와 위치를 먼저 확인",
+        "text": "-ful, -able/-ible, -ive, -ic/-ical, -ous, -y는 형용사에서 흔합니다. 하지만 objective처럼 명사도 되는 단어가 있으므로 문장 자리도 보세요. helpful advice는 명사 수식, The advice is helpful은 주격보어입니다."
       },
       {
-        "title": "would like와 would rather",
-        "text": "I’d like a room은 방을 원한다는 정중한 표현, I’d like to change the date는 날짜를 바꾸고 싶다는 뜻입니다. would like 뒤 명사 또는 to부정사가 옵니다. would rather 뒤에는 to 없이 원형: I’d rather stay home. I’d는 I would 또는 I had의 축약이므로 뒤 형태로 구별합니다."
+        "title": "비슷한 모양을 뜻·결합으로 구별",
+        "text": "considerable은 상당한, considerate는 배려하는입니다. considerable experience / a considerate colleague처럼 짝을 익히세요. expensive는 비싼, extensive는 광범위한, successful은 성공적인, successive는 연속되는이라는 차이가 있습니다."
       },
       {
-        "title": "가정과 과거의 반복",
-        "text": "I’d travel more if I had more time은 가정 속 결과입니다. When I was young, we would go camping every summer는 과거의 반복 행동입니다. 과거 상태는 used to가 일반적입니다: I used to live there. would live로 과거 거주 상태만 전달하려고 하면 문맥에 따라 다른 의미가 될 수 있습니다."
+        "title": "전치사까지 한 덩어리로",
+        "text": "be responsible for는 ~에 책임이 있다, be responsive to는 ~에 반응을 잘하다입니다. be reliant on은 ~에 의존하다, reliable은 믿을 만한입니다. 뜻이 유사해 보여도 같은 자리에 자유롭게 바꿔 쓰지 않습니다."
       },
       {
-        "title": "간접 요청과 실제 과거 구별",
-        "text": "Could I get a refund?에서 could는 지금의 정중한 요청입니다. I couldn’t find my bag yesterday에서 couldn’t는 실제 과거의 실패입니다. could가 보이면 무조건 한국어 과거형으로 번역하지 마세요."
+        "title": "후치 수식의 조건",
+        "text": "available, possible은 명사 뒤에 올 수 있습니다: rooms available, the best solution possible. possible, impossible이 아무 명사 뒤에 늘 자연스럽게 오는 것은 아닙니다. something useful처럼 -thing/-one 계열 부정대명사 뒤에 형용사를 두는 구조도 익히세요."
       }
     ],
     "forms": [
       {
-        "label": "정중한 부탁",
-        "pattern": "Could/Would you + 원형?",
-        "note": "Could you check my reservation?"
+        "label": "명사 앞",
+        "pattern": "extensive experience / favorable reviews",
+        "note": "형용사의 뜻과 명사의 조합을 함께 익힙니다."
       },
       {
-        "label": "정중한 희망",
-        "pattern": "would like + 명사 / to + 원형",
-        "note": "I’d like a refund. I’d like to cancel."
+        "label": "보어",
+        "pattern": "The supplier is reliable. / We found the instructions useful.",
+        "note": "주격보어는 주어, 목적격보어는 목적어를 설명합니다."
       },
       {
-        "label": "선호",
-        "pattern": "would rather + 원형",
-        "note": "I’d rather stay home."
-      },
-      {
-        "label": "가정 결과",
-        "pattern": "would + 원형",
-        "note": "I would travel more if I had time."
+        "label": "명사 뒤",
+        "pattern": "the seats available / something important",
+        "note": "후치 수식이 자연스러운 구조를 표현 단위로 외웁니다."
       }
     ],
     "examples": [
       {
-        "en": "Could you tell me the total price?",
-        "ko": "총금액을 알려주실 수 있나요?",
-        "analysis": "could는 과거 능력이 아니라 지금 정중하게 부탁하는 기능입니다."
+        "en": "The company has extensive experience in this field.",
+        "ko": "회사는 이 분야에서 폭넓은 경험을 갖고 있습니다.",
+        "analysis": "extensive는 광범위한이라는 뜻으로 experience와 어울립니다. expensive는 가격이 비싸다는 뜻입니다."
       },
       {
-        "en": "I’d like to change my reservation to Friday.",
-        "ko": "예약을 금요일로 바꾸고 싶어요.",
-        "analysis": "would like to + 원형 change. to Friday는 변경 후 날짜입니다."
+        "en": "My manager is considerate and gives me useful advice.",
+        "ko": "관리자는 배려심이 있고 유용한 조언을 해 줍니다.",
+        "analysis": "considerate는 사람의 배려, useful은 advice의 성질을 설명합니다."
       },
       {
-        "en": "I’d rather take the bus than drive.",
-        "ko": "운전하는 것보다 버스를 타고 싶어요.",
-        "analysis": "rather 뒤 take와 than 뒤 drive 모두 원형으로 연결합니다."
+        "en": "The team is responsible for customer support.",
+        "ko": "팀은 고객 지원을 담당합니다.",
+        "analysis": "responsible for + 업무·대상입니다. responsive to는 반응을 잘한다는 다른 뜻입니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "I would like change the date.",
-        "right": "I would like to change the date.",
-        "why": "would like 뒤 행동은 to부정사로 연결합니다."
-      },
-      {
-        "wrong": "I’d rather to stay home.",
-        "right": "I’d rather stay home.",
-        "why": "would rather 뒤에는 to 없이 동사원형입니다."
+        "wrong": "He is considerable of other people.",
+        "right": "He is considerate of other people.",
+        "why": "다른 사람을 배려한다면 considerate입니다. considerable은 양·정도가 상당하다는 뜻입니다."
       }
     ],
     "exercises": [
       {
-        "q": "“예약을 취소하고 싶어요”의 정중한 형태는?",
+        "q": "“광범위한 조사”에 알맞은 조합은?",
         "options": [
-          "I’d like cancel my reservation.",
-          "I’d like to cancel my reservation.",
-          "I’d rather to cancel my reservation."
+          "expensive research",
+          "extensive research",
+          "considerate research"
         ],
-        "answer": "I’d like to cancel my reservation.",
-        "explanation": "would like 뒤 동작은 to + 원형으로 표현합니다."
+        "answer": "extensive research",
+        "explanation": "extensive는 범위가 넓다는 뜻입니다. expensive는 비용이 많이 든다는 뜻입니다."
       },
       {
-        "q": "“차라리 집에 있고 싶어요”의 올바른 문장은?",
+        "q": "The technician is responsible ___ maintenance.",
         "options": [
-          "I’d rather stay home.",
-          "I’d rather to stay home.",
-          "I’d rather staying home."
+          "for",
+          "to",
+          "with"
         ],
-        "answer": "I’d rather stay home.",
-        "explanation": "would rather의 뒤에는 동사원형 stay가 옵니다."
+        "answer": "for",
+        "explanation": "responsible for는 업무·결과에 책임이 있다는 뜻입니다."
       }
     ],
     "spoken": {
-      "prompt": "잘못된 예약을 바꾸려는 요청을 세 문장으로 말하세요.",
-      "sample": "I’d like to change my reservation. Could you move it to Friday? If that’s not possible, I’d like a refund.",
-      "note": "희망은 I’d like, 부탁은 Could you로 분리해 말하세요."
-    }
+      "prompt": "장소나 사람을 비슷한 형용사 두 개로 구체적으로 설명하세요.",
+      "sample": "My colleague is considerate and reliable. She gives useful advice when I have a problem.",
+      "note": "모양이 아니라 실제 의미와 결합을 사용해 말합니다."
+    },
+    "referenceTables": [
+      {
+        "title": "자주 헷갈리는 형용사",
+        "headers": [
+          "표현 1",
+          "표현 2",
+          "구별"
+        ],
+        "rows": [
+          [
+            "considerable experience",
+            "a considerate person",
+            "상당한 / 배려하는"
+          ],
+          [
+            "expensive equipment",
+            "extensive research",
+            "비싼 / 광범위한"
+          ],
+          [
+            "favorable reviews",
+            "my favorite café",
+            "호의적인 / 가장 좋아하는"
+          ],
+          [
+            "responsive to requests",
+            "responsible for a task",
+            "반응을 잘하는 / 책임 있는"
+          ],
+          [
+            "a successful project",
+            "three successive days",
+            "성공적인 / 연속되는"
+          ],
+          [
+            "comparable products",
+            "a comparative study",
+            "비교할 만한 / 비교하는"
+          ],
+          [
+            "a reliable supplier",
+            "reliant on technology",
+            "믿을 만한 / 의존하는"
+          ]
+        ],
+        "note": ""
+      }
+    ]
   },
   {
-    "id": "g22",
-    "cat": "동사 확장",
-    "title": "23 · to부정사·동명사와 동사 연결",
-    "lead": "동작 두 개를 연결할 때 두 번째 동사를 무조건 원형으로 놓을 수는 없습니다. 앞의 동사와 역할에 맞는 형태가 필요합니다.",
+    "id": "g39",
+    "cat": "Unit 3 · 형용사·부사",
+    "title": "20 · 부사의 역할·위치와 헷갈리는 형태",
+    "lead": "부사는 동사·형용사·다른 부사·문장 전체를 수식합니다. 무엇을 꾸미는지에 따라 위치와 뜻이 달라집니다.",
     "concepts": [
       {
-        "title": "to부정사의 역할",
-        "text": "to + 원형은 want to go처럼 동사의 뒤에 오거나, I went there to relax처럼 목적을 나타냅니다. To learn English takes time처럼 주어도 가능하지만 회화에서는 Learning English takes time이나 It takes time to learn English가 자주 쓰입니다. 목적을 나타내는 to는 “~하려고”로 해석해 보세요."
+        "title": "형용사와 부사가 수식하는 대상",
+        "text": "a careful driver에서는 careful이 명사 driver를 수식합니다. drive carefully에서는 carefully가 운전하는 행동을 수식합니다. very careful에서는 very가 형용사를, surprisingly quickly에서는 surprisingly가 부사를 수식합니다. 명사 앞 빈칸이라고 언제나 형용사인 것은 아닙니다: a highly skilled worker."
       },
       {
-        "title": "동명사는 동작을 명사처럼",
-        "text": "-ing가 주어·목적어·전치사 뒤에 오면 동명사입니다: Swimming is fun / I enjoy swimming / I’m good at swimming. be + -ing의 진행형과 모양은 같지만 역할이 다릅니다. I’m swimming에서는 동사, I enjoy swimming에서는 enjoy의 목적어입니다."
+        "title": "빈도부사: 비·조 뒤, 일반동사 앞",
+        "text": "usually, often, always는 보통 be동사 뒤(I am usually busy), 조동사 뒤(I can usually go), 일반동사 앞(I usually go)에 옵니다. 여러 조동사가 있으면 첫 조동사 뒤가 흔합니다: I have often been there. sometimes는 문장 앞·끝에도 자연스럽게 옵니다."
       },
       {
-        "title": "앞 동사에 따라 선택",
-        "text": "want/plan/decide/hope는 보통 to부정사, enjoy/avoid/finish/mind는 -ing와 연결합니다. like/love/start는 두 형태가 가능한 경우가 많습니다. stop smoking은 흡연을 그만둠, stop to smoke는 담배를 피우려고 하던 일을 잠시 멈춤처럼 뜻이 달라지는 동사도 있습니다."
+        "title": "목적어를 갈라놓지 않기",
+        "text": "방법 부사는 보통 동사 앞이나 목적어 뒤에 둡니다: carefully read the report / read the report carefully. read carefully the report는 짧은 목적어에서 부자연스럽습니다. 의미에 따라 위치가 달라질 수 있으므로 한 가지 자리만 외우지 마세요."
       },
       {
-        "title": "전치사의 to를 구별",
-        "text": "look forward to, be used to의 to는 전치사라 뒤에 명사 또는 -ing가 옵니다: I look forward to seeing you. want to의 to는 부정사 표시라 뒤에 원형입니다. “to 뒤는 항상 원형”이라고 외우면 이 표현에서 틀리게 됩니다."
+        "title": "숫자·명사구를 한정하는 부사",
+        "text": "approximately ten minutes, nearly all employees처럼 수량의 정도를 더하고 only the manager, even beginners처럼 초점을 제한·강조할 수 있습니다. 보통 명사 자체의 성질은 형용사가 설명하지만 only, even 등의 초점 부사는 명사구 전체에도 적용됩니다."
+      },
+      {
+        "title": "-ly만 보고 결정하지 않기",
+        "text": "friendly, costly, timely, lively는 형용사입니다. fast, hard, late, early는 문맥에 따라 형용사·부사 모두 됩니다. hard는 열심히, hardly는 거의 ~않다; late는 늦게, lately는 최근에; high는 높이, highly는 매우·높이 평가하여; close는 가까이, closely는 면밀히라는 차이를 익히세요."
       }
     ],
     "forms": [
       {
-        "label": "to와 연결",
-        "pattern": "want/plan/decide/hope + to + 원형",
-        "note": "I decided to stay."
+        "label": "문장 수식",
+        "pattern": "Fortunately, nobody was hurt.",
+        "note": "문장 전체에 대한 판단. 문두 부사 뒤 쉼표가 흔합니다."
       },
       {
-        "label": "-ing와 연결",
-        "pattern": "enjoy/finish/avoid/mind + -ing",
-        "note": "I enjoy cooking."
+        "label": "동사 수식",
+        "pattern": "I carefully checked the form. / I checked the form carefully.",
+        "note": "동작의 방법. 짧은 목적어 사이를 피합니다."
       },
       {
-        "label": "전치사 뒤",
-        "pattern": "전치사 + 명사/-ing",
-        "note": "after eating / good at cooking"
+        "label": "동사 묶음 안",
+        "pattern": "has recently changed / is currently working / can easily change",
+        "note": "조동사·be와 본동사 사이에도 부사가 올 수 있습니다."
       },
       {
-        "label": "목적",
-        "pattern": "주절 + to + 원형",
-        "note": "I went to the park to relax."
+        "label": "형용사·분사 수식",
+        "pattern": "a highly qualified applicant / is extremely useful",
+        "note": "qualified, useful를 꾸미는 부사."
+      },
+      {
+        "label": "수량·초점",
+        "pattern": "roughly 30 people / only two seats / even my brother",
+        "note": "대략적 수량, 제한, 예상 밖의 포함을 표현합니다."
       }
     ],
     "examples": [
       {
-        "en": "I enjoy cooking, but I don’t like washing the dishes.",
-        "ko": "요리는 즐기지만 설거지는 좋아하지 않아요.",
-        "analysis": "enjoy 뒤 cooking은 필수 -ing 용법입니다. like 뒤는 washing 또는 to wash가 가능한 경우입니다."
+        "en": "She is usually on time, but she arrived late today.",
+        "ko": "그녀는 보통 제시간에 오지만 오늘은 늦게 왔어요.",
+        "analysis": "usually는 is 뒤, late는 arrived를 수식하는 부사입니다. lately는 최근에라는 다른 뜻입니다."
       },
       {
-        "en": "I went to the café to meet a friend.",
-        "ko": "친구를 만나려고 카페에 갔어요.",
-        "analysis": "to the café는 장소 전치사구, to meet는 목적을 나타내는 부정사입니다."
+        "en": "The technician has carefully checked all the equipment.",
+        "ko": "기술자가 모든 장비를 꼼꼼히 점검했습니다.",
+        "analysis": "carefully는 has와 checked 사이에서 행동을 수식합니다. equipment는 불가산입니다."
       },
       {
-        "en": "I’m looking forward to seeing you.",
-        "ko": "당신을 만나기를 기대하고 있어요.",
-        "analysis": "look forward to의 to가 전치사이므로 see가 seeing으로 옵니다."
+        "en": "Only the manager can approve requests over this amount.",
+        "ko": "이 금액을 넘는 요청은 관리자만 승인할 수 있습니다.",
+        "analysis": "only는 the manager라는 명사구를 한정합니다. only의 위치를 바꾸면 무엇을 제한하는지가 달라질 수 있습니다."
+      },
+      {
+        "en": "I work hard, but I hardly have any free time.",
+        "ko": "열심히 일하지만 여유 시간이 거의 없어요.",
+        "analysis": "hard는 방법, hardly는 거의 없음입니다. hardly 자체가 부정 의미를 갖습니다."
+      },
+      {
+        "en": "I usually walk to work, but I’m often tired afterward.",
+        "ko": "보통 걸어서 출근하지만 그 후에는 자주 피곤해요.",
+        "analysis": "usually는 walk 앞, often은 am 뒤에 위치합니다."
+      },
+      {
+        "en": "She speaks English well.",
+        "ko": "그녀는 영어를 잘해요.",
+        "analysis": "speaks라는 동작을 꾸미므로 형용사 good이 아닌 부사 well을 씁니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "I enjoy to walk.",
-        "right": "I enjoy walking.",
-        "why": "enjoy는 목적어로 동명사 walking을 취합니다."
+        "wrong": "She speaks fluent.",
+        "right": "She speaks fluently.",
+        "why": "speaks라는 행동을 수식하므로 부사 fluently입니다."
       },
       {
-        "wrong": "I’m good at cook.",
-        "right": "I’m good at cooking.",
-        "why": "전치사 at 뒤에 동작을 넣으면 명사 역할의 -ing를 씁니다."
+        "wrong": "He is a friendlily person.",
+        "right": "He is a friendly person.",
+        "why": "friendly 자체가 형용사입니다. friendlily로 일반적인 부사를 만들지 않습니다."
+      },
+      {
+        "wrong": "He drives careful.",
+        "right": "He drives carefully.",
+        "why": "운전하는 방식을 설명하므로 부사 carefully를 사용합니다."
       }
     ],
     "exercises": [
       {
-        "q": "“연습을 끝냈어요”의 올바른 문장은?",
+        "q": "The instructions are ___ clear.",
         "options": [
-          "I finished practicing.",
-          "I finished to practice.",
-          "I finished practice to."
+          "extreme",
+          "extremely",
+          "extremity"
         ],
-        "answer": "I finished practicing.",
-        "explanation": "finish 뒤에는 동명사 practicing이 옵니다."
+        "answer": "extremely",
+        "explanation": "clear라는 형용사의 정도를 수식하므로 부사입니다."
       },
       {
-        "q": "“당신을 만나기를 기대해요”의 올바른 표현은?",
+        "q": "“최근에 운동을 많이 했다”의 최근에는?",
         "options": [
-          "I look forward to see you.",
-          "I look forward to seeing you.",
-          "I look forward see you."
+          "late",
+          "lately",
+          "latter"
         ],
-        "answer": "I look forward to seeing you.",
-        "explanation": "look forward to의 to는 전치사라 뒤에는 seeing을 사용합니다."
+        "answer": "lately",
+        "explanation": "lately는 최근에, late는 늦게입니다."
+      },
+      {
+        "q": "I ___ arrive early. 빈도부사 위치에 맞는 말은?",
+        "options": [
+          "usually",
+          "usual",
+          "usage"
+        ],
+        "answer": "usually",
+        "explanation": "일반동사 arrive 앞에서 빈도를 나타내는 부사를 씁니다."
+      },
+      {
+        "q": "“보통 바빠요”의 기본 어순은?",
+        "options": [
+          "I usually am busy. (강조 없는 기본 위치)",
+          "I am usually busy.",
+          "I am busy usually never."
+        ],
+        "answer": "I am usually busy.",
+        "explanation": "빈도부사 usually의 기본 위치는 be동사 뒤입니다. 특별한 강조에서는 다른 위치도 가능하지만 기본형을 먼저 익히세요."
       }
     ],
     "spoken": {
-      "prompt": "취미를 즐기는 이유와 새로 해보려는 일을 말하세요.",
-      "sample": "I enjoy taking photos because it helps me relax. I want to try hiking to spend more time outdoors.",
-      "note": "enjoy + -ing, want + to, 목적의 to를 따로 찾아보세요."
-    }
+      "prompt": "일상의 빈도와 방법을 넣어 말하세요.",
+      "sample": "I usually walk to work. I am often busy, so I plan my day carefully.",
+      "note": "일반동사 앞·be 뒤의 빈도와 목적어 뒤 방법 부사를 연습합니다."
+    },
+    "referenceTables": []
   },
   {
-    "id": "g23",
-    "cat": "동사 확장",
-    "title": "24 · used to·be used to·get used to",
-    "lead": "철자가 비슷하지만 “예전 습관”, “익숙한 상태”, “익숙해지는 과정”은 서로 다른 구조입니다.",
+    "id": "g12",
+    "cat": "Unit 4 · 전치사·등위·부사절",
+    "title": "21 · 전치사: 시간·위치·이동",
+    "lead": "전치사는 뒤의 명사·대명사와 한 덩어리가 되어 시간, 장소, 방향 등의 관계를 나타냅니다.",
     "concepts": [
       {
-        "title": "used to + 원형: 예전에는",
-        "text": "지금은 달라진 과거 습관이나 상태입니다. I used to drive to work는 예전에는 차로 출근했다는 뜻입니다. I used to live in Busan처럼 상태도 가능합니다. 과거 한 번의 사건은 I went there yesterday처럼 과거형으로 말하고 used to로 바꾸지 않습니다."
+        "title": "시간의 at/on/in",
+        "text": "at은 시각이나 특정 시점: at seven, at noon, at night. on은 요일·날짜: on Monday, on July 3. in은 월·연도·계절·하루의 큰 시간대: in July, in 2025, in summer, in the morning. on Monday morning처럼 날짜·요일로 좁혀지면 on을 씁니다."
       },
       {
-        "title": "부정·질문에는 use to",
-        "text": "표준 학습 형태는 didn’t use to + 원형, Did you use to + 원형?입니다. did가 과거를 표시해서 used가 use로 돌아갑니다. 발음상 used to와 use to가 매우 비슷하므로 글로도 확인하세요."
+        "title": "위치와 방향은 다릅니다",
+        "text": "in은 내부·영역, on은 표면, at은 활동 지점에 초점이 있습니다. at the station은 역이라는 지점, in the station은 역 건물 내부를 강조합니다. to는 도착 방향, into는 안으로 들어감, from은 출발점입니다. go to the gym과 be at the gym을 구분하세요."
       },
       {
-        "title": "be used to + 명사/-ing: 익숙하다",
-        "text": "I’m used to the noise / I’m used to getting up early에서 to는 전치사입니다. 과거에 익숙했다면 I was used to …처럼 be의 시제를 바꿉니다. get used to는 익숙해지는 변화: I’m getting used to my new job."
+        "title": "기간·기한·순서",
+        "text": "for two hours는 길이, since Monday는 시작점, during the movie는 어떤 사건이 진행되는 동안입니다. by Friday는 금요일까지 완료, until Friday는 금요일까지 계속입니다. I’ll finish it by Friday와 I’ll stay until Friday는 시간 관계가 다릅니다."
       },
       {
-        "title": "사용되다와의 모양 구별",
-        "text": "This room is used to store equipment는 “방이 장비 보관에 사용된다”라는 수동태 used + 목적 to부정사입니다. I’m used to waking up early의 익숙함과 뜻이 다릅니다. 뒤에 원형인지 -ing인지, 주어가 무엇인지 함께 보세요."
+        "title": "무전치사와 동사 조합",
+        "text": "this/next/last/every로 시작하는 시간 표현에는 보통 전치사를 넣지 않습니다: next week, last night, every day. go home은 to 없이 씁니다. listen to music, wait for a bus처럼 특정 동사가 요구하는 전치사는 표현째 익혀야 합니다. 전치사 뒤 동사를 넣을 때는 보통 -ing형입니다."
       }
     ],
     "forms": [
       {
-        "label": "예전 습관·상태",
-        "pattern": "used to + 동사원형",
-        "note": "I used to live alone."
+        "label": "시간",
+        "pattern": "at 7 / on Friday / in May",
+        "note": "I’ll see you on Friday at seven."
       },
       {
-        "label": "과거 습관 부정",
-        "pattern": "didn’t use to + 원형",
-        "note": "I didn’t use to cook."
+        "label": "위치",
+        "pattern": "at a point / in an area / on a surface",
+        "note": "at home / in Seoul / on the table"
       },
       {
-        "label": "익숙한 상태",
-        "pattern": "be used to + 명사/-ing",
-        "note": "I’m used to the weather."
+        "label": "이동",
+        "pattern": "to / into / from + 장소",
+        "note": "go to work / walk into the room"
       },
       {
-        "label": "익숙해지는 변화",
-        "pattern": "get used to + 명사/-ing",
-        "note": "I’m getting used to commuting."
+        "label": "기한과 지속",
+        "pattern": "by = 완료 기한 / until = 지속의 끝",
+        "note": "finish by six / stay until six"
       }
     ],
     "examples": [
       {
-        "en": "I used to eat out a lot, but now I cook at home.",
-        "ko": "예전에는 외식을 많이 했지만 지금은 집에서 요리해요.",
-        "analysis": "used to + eat으로 과거 반복 습관과 현재의 변화를 연결합니다."
+        "en": "I went to the gym on Monday morning.",
+        "ko": "월요일 아침에 헬스장에 갔어요.",
+        "analysis": "to는 이동 목적지, on은 요일로 특정한 아침을 나타냅니다."
       },
       {
-        "en": "I’m used to taking the subway during rush hour.",
-        "ko": "출퇴근 시간에 지하철을 타는 데 익숙해요.",
-        "analysis": "be used to 뒤에 동명사 taking이 오며 현재 익숙한 상태입니다."
+        "en": "I stayed at the café for two hours.",
+        "ko": "카페에 두 시간 동안 있었어요.",
+        "analysis": "at은 머문 지점, for는 기간의 길이입니다."
       },
       {
-        "en": "It took me a month to get used to my new neighborhood.",
-        "ko": "새 동네에 익숙해지는 데 한 달 걸렸어요.",
-        "analysis": "get used to는 변화 과정, 뒤에는 명사 neighborhood입니다."
+        "en": "I’ll be home by six, and I’ll stay there until nine.",
+        "ko": "6시까지 집에 도착해서 9시까지 있을게요.",
+        "analysis": "by six는 도착 기한, until nine은 머무는 상태가 계속되는 끝입니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "I used to getting up early. (예전 습관)",
-        "right": "I used to get up early.",
-        "why": "과거 습관의 used to 뒤에는 원형 get입니다."
+        "wrong": "I went to home last night.",
+        "right": "I went home last night.",
+        "why": "go home에서 home은 방향을 나타내는 부사로 쓰여 to를 넣지 않습니다."
       },
       {
-        "wrong": "I’m used to get up early. (익숙함)",
-        "right": "I’m used to getting up early.",
-        "why": "익숙함의 be used to 뒤에는 -ing 또는 명사입니다."
+        "wrong": "I’ll meet you in next week.",
+        "right": "I’ll meet you next week.",
+        "why": "next week 앞에는 기본적으로 전치사를 붙이지 않습니다."
       }
     ],
     "exercises": [
       {
-        "q": "“예전에는 운전했지만 지금은 안 해요”에 맞는 문장은?",
+        "q": "“금요일 아침에 만나요”의 올바른 표현은?",
         "options": [
-          "I used to drive, but I don’t anymore.",
-          "I am used to driving, but I don’t anymore.",
-          "I used to driving, but I don’t anymore."
+          "Let’s meet in Friday morning.",
+          "Let’s meet on Friday morning.",
+          "Let’s meet at Friday morning."
         ],
-        "answer": "I used to drive, but I don’t anymore.",
-        "explanation": "used to + 원형은 과거 습관입니다. be used to는 익숙한 상태라는 다른 의미입니다."
+        "answer": "Let’s meet on Friday morning.",
+        "explanation": "요일과 함께 특정한 아침을 말하면 on을 사용합니다."
       },
       {
-        "q": "“일찍 일어나는 데 익숙해요”의 올바른 표현은?",
+        "q": "“금요일까지 제출을 완료할게요”에는?",
         "options": [
-          "I’m used to get up early.",
-          "I’m used to getting up early.",
-          "I used to get up early."
+          "I’ll submit it until Friday.",
+          "I’ll submit it by Friday.",
+          "I’ll submit it during Friday."
         ],
-        "answer": "I’m used to getting up early.",
-        "explanation": "현재의 익숙함은 be used to + 동명사입니다. to가 전치사이므로 getting을 씁니다. used to get은 “예전에는 일찍 일어났다”라는 과거 습관입니다."
+        "answer": "I’ll submit it by Friday.",
+        "explanation": "완료해야 할 기한은 by입니다. until은 계속되는 동작·상태의 끝을 나타냅니다."
       }
     ],
     "spoken": {
-      "prompt": "예전 생활과 현재 변화, 새로 익숙해진 것을 말하세요.",
-      "sample": "I used to drive everywhere. Now I take the subway, and I’m used to commuting by train.",
-      "note": "예전 습관과 현재 익숙함을 한 답변 안에서 구별하세요."
-    }
-  },
-  {
-    "id": "g24",
-    "cat": "동사 확장",
-    "title": "25 · 수동태: 행동을 받은 대상이 주어일 때",
-    "lead": "누가 했는지보다 “무엇이 어떻게 되었는지”가 중요한 상황에서는 수동태가 유용합니다.",
-    "concepts": [
+      "prompt": "일정 하나를 시각·요일·장소를 넣어 말하세요.",
+      "sample": "I usually meet my friends at a café on Saturdays. We stay there for about two hours.",
+      "note": "at/on/for의 관계를 각각 설명할 수 있는지 확인하세요."
+    },
+    "referenceTables": [
       {
-        "title": "목적어를 주어 자리로",
-        "text": "능동 My friend canceled the reservation에서 reservation은 취소된 대상입니다. 수동 The reservation was canceled는 그 대상을 주어로 세웁니다. 기본 형태는 be + 과거분사이며, 행위자는 필요한 경우 by …로 붙입니다. 행위자가 불명확하거나 중요하지 않으면 생략합니다."
-      },
-      {
-        "title": "be가 시제를, 분사가 행동을 담당",
-        "text": "현재 is cleaned, 과거 was cleaned, 미래 will be cleaned, 현재완료 has been cleaned입니다. 과거분사 cleaned는 유지하고 be 쪽으로 시간 정보를 표현합니다. 진행 중인 수동은 is being repaired처럼 be + being + 분사입니다."
-      },
-      {
-        "title": "모든 동사를 수동으로 만들 수 없습니다",
-        "text": "수동태는 기본적으로 목적어를 취하는 동사와 연결됩니다. happen/arrive 같은 자동사는 It happened / He arrived처럼 능동 형태를 씁니다. was happened는 만들지 않습니다. 일부 be + 분사는 상태 형용사와 가까운 뜻도 있습니다: The door is closed."
-      },
-      {
-        "title": "롤플레이에 쓰기",
-        "text": "My flight was canceled, My phone was stolen처럼 문제 발생을 설명할 수 있습니다. 문제를 말한 뒤 Could you …?로 해결을 부탁하세요. 수동태를 무리하게 늘리기보다, 초점을 대상에 두고 싶을 때 골라 쓰면 됩니다."
-      }
-    ],
-    "forms": [
-      {
-        "label": "현재·과거",
-        "pattern": "am/is/are 또는 was/were + 과거분사",
-        "note": "The rooms are cleaned every day."
-      },
-      {
-        "label": "미래",
-        "pattern": "will be + 과거분사",
-        "note": "It will be delivered tomorrow."
-      },
-      {
-        "label": "현재완료",
-        "pattern": "have/has been + 과거분사",
-        "note": "My reservation has been confirmed."
-      },
-      {
-        "label": "진행수동",
-        "pattern": "be being + 과거분사",
-        "note": "The road is being repaired."
-      }
-    ],
-    "examples": [
-      {
-        "en": "My flight was canceled because of bad weather.",
-        "ko": "악천후 때문에 항공편이 취소됐어요.",
-        "analysis": "항공편이 취소를 한 것이 아니라 취소된 대상이므로 was canceled입니다."
-      },
-      {
-        "en": "The room is cleaned every morning.",
-        "ko": "방은 매일 아침 청소돼요.",
-        "analysis": "반복되는 현재 수동입니다. 청소하는 직원보다 room의 관리 상태가 중심입니다."
-      },
-      {
-        "en": "My bag has been stolen.",
-        "ko": "가방을 도난당했어요.",
-        "analysis": "have/has + been + 분사로 현재완료 수동을 만들고 현재의 문제를 강조합니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "My flight canceled. (항공편이 취소되었다는 의도)",
-        "right": "My flight was canceled.",
-        "why": "canceled만 쓰면 항공편이 취소 행동의 주체처럼 읽히거나 불완전해집니다. 수동을 나타내는 was가 필요합니다."
-      },
-      {
-        "wrong": "The accident was happened yesterday.",
-        "right": "The accident happened yesterday.",
-        "why": "happen은 목적어를 취하지 않는 자동사라 기본적으로 수동태를 만들지 않습니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“객실은 매일 청소돼요”의 올바른 문장은?",
-        "options": [
-          "The room is clean every day. (청소된다는 동작)",
-          "The room is cleaned every day.",
-          "The room is cleaning every day."
+        "title": "핵심 전치사 비교",
+        "headers": [
+          "표현",
+          "기본 뜻·결합",
+          "예"
         ],
-        "answer": "The room is cleaned every day.",
-        "explanation": "청소받는 동작은 is + 과거분사 cleaned입니다. is clean은 깨끗한 상태를 뜻합니다."
-      },
-      {
-        "q": "“내일 배송될 거예요”의 수동형은?",
-        "options": [
-          "It will delivered tomorrow.",
-          "It will be delivered tomorrow.",
-          "It will be deliver tomorrow."
+        "rows": [
+          [
+            "at / on / in",
+            "시각 / 요일·날짜 / 월·연도·기간",
+            "at 9 / on Monday / in May"
+          ],
+          [
+            "after / before",
+            "~후 / ~전",
+            "after lunch / before the meeting"
+          ],
+          [
+            "until / by",
+            "그때까지 계속 / 그때까지 완료",
+            "stay until five / finish by five"
+          ],
+          [
+            "during / for",
+            "사건·시기 동안 / 기간",
+            "during the seminar / for an hour"
+          ],
+          [
+            "to / from",
+            "도착점·방향 / 출발점",
+            "to Seoul / from Busan"
+          ],
+          [
+            "through / throughout",
+            "통과 / 전역·내내",
+            "through a tunnel / throughout the year"
+          ],
+          [
+            "within / without",
+            "범위 이내 / ~없이",
+            "within two days / without help"
+          ],
+          [
+            "between / among",
+            "개별 대상 관계 / 무리 안",
+            "between the offices / among the guests"
+          ],
+          [
+            "since",
+            "시작점 이래로",
+            "since 2020"
+          ],
+          [
+            "despite / in spite of",
+            "~에도 불구하고",
+            "despite the rain / in spite of the delay"
+          ]
         ],
-        "answer": "It will be delivered tomorrow.",
-        "explanation": "미래 수동은 will + be + 과거분사 delivered입니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "여행 중 문제가 생긴 상황을 설명하고 도움을 요청하세요.",
-      "sample": "My flight was canceled this morning. Could you put me on another flight?",
-      "note": "문제는 수동으로, 해결 요청은 능동으로 자연스럽게 이어가세요."
-    }
-  },
-  {
-    "id": "g25",
-    "cat": "동사 확장",
-    "title": "26 · there is·가주어 it와 존재·상황 설명",
-    "lead": "“무엇이 있다”와 “그것이 어디 있다”는 영어에서 서로 다른 문장으로 자주 말합니다.",
-    "concepts": [
-      {
-        "title": "there is/are: 존재를 새로 소개",
-        "text": "There is a park near my house는 공원의 존재를 소개합니다. There are two parks에서는 뒤 명사가 복수라 are입니다. there는 이 문장에서 “그곳”이라는 장소어가 아니라 존재 구문의 형식적 요소입니다. 과거 there was/were, 미래 there will be로 바꿀 수 있습니다."
+        "note": "between을 무조건 둘만, among을 무조건 셋 이상으로 정하지 않습니다. 세 곳 이상의 개별 관계도 between으로 표현할 수 있습니다."
       },
       {
-        "title": "위치를 말할 때는 대상을 주어로",
-        "text": "The park is near my house는 이미 알고 있는 공원의 위치를 말합니다. I have a car는 소유, There is a car outside는 존재를 말합니다. “있다”라는 한국어만 보고 have/there is/be를 똑같이 바꾸지 마세요."
-      },
-      {
-        "title": "날씨·시간·거리의 it",
-        "text": "It is raining / It is seven o’clock / It is far from here의 it은 구체적인 사물을 대신하는 말이 아니라 문법상 주어를 채웁니다. 영어의 평서문에서는 보통 주어가 필요하므로 Is raining처럼 생략하지 않습니다."
-      },
-      {
-        "title": "긴 주어를 뒤로 보내는 it",
-        "text": "It is difficult to explain은 “설명하는 것이 어렵다”입니다. to explain을 뒤로 보내고 앞에 형식상 it을 놓습니다. It takes me thirty minutes to get to work는 출근하는 데 시간이 든다는 구조입니다. it이 항상 특정 사물이라는 뜻은 아닙니다."
-      }
-    ],
-    "forms": [
-      {
-        "label": "존재",
-        "pattern": "There is + 단수/불가산 · There are + 복수",
-        "note": "There’s a café. There’s some water."
-      },
-      {
-        "label": "존재 부정·질문",
-        "pattern": "There isn’t/aren’t … / Is/Are there …?",
-        "note": "Are there any shops nearby?"
-      },
-      {
-        "label": "상황",
-        "pattern": "It + be + 날씨/시간/거리 표현",
-        "note": "It’s cold. It’s late."
-      },
-      {
-        "label": "평가·소요 시간",
-        "pattern": "It’s + 형용사 + to … / It takes … to …",
-        "note": "It’s easy to get there."
-      }
-    ],
-    "examples": [
-      {
-        "en": "There are several cafés near my apartment.",
-        "ko": "아파트 근처에 카페가 여러 곳 있어요.",
-        "analysis": "복수 cafés를 새로 소개하므로 there are입니다. 회화에서 there’s + 복수도 들리지만 기본 형태는 are로 익히세요."
-      },
-      {
-        "en": "It takes me twenty minutes to walk to work.",
-        "ko": "걸어서 출근하는 데 20분 걸려요.",
-        "analysis": "it은 형식 주어, me는 시간이 드는 사람, to walk to work는 실제 활동입니다."
-      },
-      {
-        "en": "It’s hard to find a parking space here.",
-        "ko": "여기서는 주차 공간을 찾기 어려워요.",
-        "analysis": "평가 hard의 대상은 뒤의 to find … 전체입니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "There have two cafés.",
-        "right": "There are two cafés.",
-        "why": "존재 소개는 there are입니다. have는 소유하는 주어가 필요합니다."
-      },
-      {
-        "wrong": "Is cold today.",
-        "right": "It is cold today.",
-        "why": "날씨를 말하는 문장에도 형식 주어 it이 필요합니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“근처에 식당이 있나요?”의 올바른 질문은?",
-        "options": [
-          "Is there a restaurant nearby?",
-          "Does there a restaurant nearby?",
-          "Has there a restaurant nearby?"
+        "title": "추가로 익힐 전치사 표현",
+        "headers": [
+          "표현",
+          "뜻",
+          "예"
         ],
-        "answer": "Is there a restaurant nearby?",
-        "explanation": "존재 구문의 be동사 is를 앞으로 보내 질문을 만듭니다."
-      },
-      {
-        "q": "“거기 가는 데 한 시간 걸려요”에 맞는 문장은?",
-        "options": [
-          "It takes an hour to get there.",
-          "There takes an hour to get there.",
-          "It takes an hour get there."
+        "rows": [
+          [
+            "because of / due to / owing to / on account of",
+            "~때문에",
+            "due to the storm"
+          ],
+          [
+            "following / prior to / ahead of",
+            "~후 / ~전에 / ~에 앞서",
+            "prior to departure"
+          ],
+          [
+            "regarding / concerning / with regard to",
+            "~에 관하여",
+            "regarding your request"
+          ],
+          [
+            "including / excluding",
+            "~을 포함·제외하여",
+            "including tax"
+          ],
+          [
+            "in case of / in the event of",
+            "~의 경우·대비하여",
+            "in case of fire"
+          ],
+          [
+            "as a result of / in light of",
+            "~의 결과로 / ~에 비추어",
+            "as a result of the change"
+          ],
+          [
+            "as",
+            "~로서",
+            "as a manager"
+          ],
+          [
+            "underneath / beneath",
+            "~아래에",
+            "underneath the table"
+          ]
         ],
-        "answer": "It takes an hour to get there.",
-        "explanation": "소요 시간 구문은 It takes + 기간 + to부정사입니다."
+        "note": ""
       }
-    ],
-    "spoken": {
-      "prompt": "동네 시설과 그곳까지 걸리는 시간을 설명하세요.",
-      "sample": "There’s a park near my house. It takes about ten minutes to walk there, and it’s easy to find.",
-      "note": "존재를 소개한 뒤 시간·접근성을 it 구문으로 붙이세요."
-    }
+    ]
   },
   {
     "id": "g26",
-    "cat": "문장 연결",
-    "title": "27 · and·but·because·so·although",
-    "lead": "짧은 문장을 길게 만들려면 두 내용의 관계를 먼저 정하세요: 추가, 대조, 이유, 결과 중 무엇인가요?",
+    "cat": "Unit 4 · 전치사·등위·부사절",
+    "title": "22 · 등위접속사: and·but·or·so·yet·nor",
+    "lead": "단어·구·절을 같은 역할로 연결하고, 절을 연결할 때 문장 경계를 확인합니다.",
     "concepts": [
       {
         "title": "대등하게 연결하기",
         "text": "and는 추가, but은 대조, or는 선택, so는 결과입니다. I was tired, so I went home처럼 완전한 두 절을 연결할 수 있습니다. 같은 주어의 동작이면 I went home and took a shower처럼 두 번째 주어를 생략해 동사끼리 연결할 수 있습니다."
       },
       {
-        "title": "because와 although는 종속절",
-        "text": "because 뒤에는 이유, although/though 뒤에는 반대되는 조건이 옵니다. 이 절만으로는 보통 완전한 평서문이 아닙니다. Because I was tired, I went home처럼 주절이 필요합니다. 질문 Why …?에 Because …로 짧게 답하는 회화의 생략은 가능하지만, 긴 답변에서는 결과까지 붙여 보세요."
+        "title": "and·but·or는 단어·구·절 연결",
+        "text": "tea or coffee처럼 명사를, small but comfortable처럼 형용사를, I called and left a message처럼 동작을 연결할 수 있습니다. 완전한 두 독립절을 연결할 때는 긴 문장에서 접속사 앞 쉼표를 보통 사용합니다."
       },
       {
-        "title": "because와 because of",
-        "text": "because 뒤에는 주어+동사가 있는 절: because it rained. because of 뒤에는 명사 또는 명사 역할의 표현: because of the rain. due to도 기본적으로 명사구와 연결합니다. 단어를 바꾸는 것이 아니라 뒤 구조도 바꿔야 합니다."
+        "title": "so·yet·nor",
+        "text": "결과를 나타내는 so는 이 용법에서 주로 절을 연결합니다. yet는 but처럼 예상과 다른 대비를 나타냅니다. nor로 부정 절을 이어 쓰면 I did not call, nor did I send a message처럼 도치가 생깁니다. 기본 단계에서는 neither … nor를 병렬로 익히세요."
       },
       {
-        "title": "접속사를 겹치지 않기",
-        "text": "표준 학습 문장에서는 Because …, so …를 한 구조에 함께 쓰지 않습니다. Although …, but …도 겹치지 않습니다. Because I was tired, I went home 또는 I was tired, so I went home 중 하나를 고릅니다. and는 앞뒤를 비슷한 형태로 연결하면 명확합니다: I enjoy cooking and taking photos."
+        "title": "접속사 수와 본동사 자리",
+        "text": "독립절이 여러 개면 각 절에 본동사가 필요합니다. 하지만 and는 명사·동사구도 연결하므로 접속사 개수 + 1을 모든 문장의 본동사 개수로 단순 계산할 수 없습니다. I like tea and coffee에는 본동사 하나뿐입니다."
       }
     ],
     "forms": [
       {
-        "label": "추가·대조·결과",
-        "pattern": "절 + and/but/so + 절",
-        "note": "It was small, but it was cozy."
+        "label": "단어·구 연결",
+        "pattern": "tea and coffee / cheap but reliable / on Friday or on Saturday",
+        "note": "앞뒤 역할이 대등해야 합니다."
       },
       {
-        "label": "이유",
-        "pattern": "주절 + because + 절",
-        "note": "I stayed home because I was sick."
+        "label": "절 연결",
+        "pattern": "S + V, and/but/or/so/yet + S + V",
+        "note": "독립절 둘은 쉼표와 등위접속사로 연결할 수 있습니다."
       },
       {
-        "label": "양보",
-        "pattern": "Although + 절, 주절",
-        "note": "Although it rained, we went out."
-      },
-      {
-        "label": "명사로 된 이유",
-        "pattern": "because of + 명사구",
-        "note": "The flight was canceled because of the rain."
+        "label": "동사구 연결",
+        "pattern": "I went home and took a shower.",
+        "note": "같은 주어의 두 동작을 연결합니다."
       }
     ],
     "examples": [
       {
-        "en": "I like the café because it’s quiet and the coffee is good.",
-        "ko": "조용하고 커피가 맛있어서 그 카페를 좋아해요.",
-        "analysis": "because가 이유를 이끌고, 두 이유 it’s quiet와 the coffee is good을 and로 연결합니다."
-      },
-      {
-        "en": "Although the hotel was expensive, it was worth it.",
-        "ko": "호텔이 비쌌지만 그만한 가치가 있었어요.",
-        "analysis": "although절이 예상과 반대되는 조건을 제시하고, 뒤 주절이 핵심 판단입니다."
-      },
-      {
         "en": "It started raining, so we went inside.",
         "ko": "비가 오기 시작해서 안으로 들어갔어요.",
         "analysis": "앞은 원인 상황, so 뒤는 결과입니다."
+      },
+      {
+        "en": "The room was small but comfortable.",
+        "ko": "방은 작지만 편안했어요.",
+        "analysis": "but이 두 형용사 small과 comfortable을 연결합니다."
+      },
+      {
+        "en": "You can call us or send an email.",
+        "ko": "전화하거나 이메일을 보내셔도 됩니다.",
+        "analysis": "or가 동사구 call us와 send an email을 연결합니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "Because I was tired, so I went home.",
-        "right": "Because I was tired, I went home.",
-        "why": "because로 이미 이유·주절 관계를 만들었으므로 같은 구조에 so를 다시 넣지 않습니다."
-      },
-      {
-        "wrong": "I stayed home because of I was sick.",
-        "right": "I stayed home because I was sick.",
-        "why": "I was sick는 절이라 because와 연결합니다. because of 뒤에는 my illness 같은 명사구가 옵니다."
+        "wrong": "I went home and taking a shower.",
+        "right": "I went home and took a shower.",
+        "why": "같은 주어의 과거 동작을 대등하게 연결합니다."
       }
     ],
     "exercises": [
       {
-        "q": "“비 때문에 취소됐어요”의 올바른 표현은?",
+        "q": "“작지만 아늑한 방”의 자연스러운 표현은?",
         "options": [
-          "It was canceled because of the rain.",
-          "It was canceled because the rain.",
-          "It was canceled because of it rained."
+          "a small but cozy room",
+          "a small but cozily room",
+          "a small so cozy room"
         ],
-        "answer": "It was canceled because of the rain.",
-        "explanation": "the rain은 명사구라 because of와 연결합니다. 절 it rained를 쓰면 because입니다."
+        "answer": "a small but cozy room",
+        "explanation": "but이 형용사 small과 cozy를 대등하게 연결합니다."
       },
       {
-        "q": "표준 문장에서 중복 없이 대조를 말한 것은?",
+        "q": "I was hungry, ___ I made dinner. 결과 접속사는?",
         "options": [
-          "Although it was expensive, but I bought it.",
-          "Although it was expensive, I bought it.",
-          "Although it expensive, I bought it."
+          "so",
+          "although",
+          "despite"
         ],
-        "answer": "Although it was expensive, I bought it.",
-        "explanation": "although절과 주절을 연결할 때 같은 관계의 but을 중복하지 않습니다."
+        "answer": "so",
+        "explanation": "앞 상황의 결과를 완전한 절로 연결합니다."
       }
     ],
     "spoken": {
-      "prompt": "좋아하는 장소의 이유와 단점을 함께 말하세요.",
-      "sample": "I like this park because it’s peaceful. Although it’s a little far from home, I go there often.",
-      "note": "이유와 대조를 각각 한 가지씩 넣되 접속사를 억지로 겹치지 마세요."
+      "prompt": "추가·선택·대조 중 두 가지를 써서 말하세요.",
+      "sample": "I can take the bus or walk to the station. Walking is slower, but it is relaxing.",
+      "note": "단어·동사구·절 중 무엇을 연결하는지 확인합니다."
     }
   },
   {
+    "id": "g41",
+    "cat": "Unit 4 · 전치사·등위·부사절",
+    "title": "23 · 상관접속사·병렬 구조와 수 일치",
+    "lead": "both A and B처럼 두 대상을 연결할 때는 같은 역할을 나란히 놓고 주어의 중심을 확인합니다.",
+    "concepts": [
+      {
+        "title": "병렬은 문장 속 역할을 맞추기",
+        "text": "and/or 앞뒤는 명사와 명사, 형용사와 형용사, 동사구와 동사구처럼 같은 역할을 연결하는 것이 기본입니다. She likes reading and cooking처럼 맞추세요. 형태가 무조건 글자까지 같아야 한다는 뜻은 아니며 전체 구조가 문법적으로 대등한지를 봅니다."
+      },
+      {
+        "title": "both·either·neither·not only",
+        "text": "both A and B는 A와 B 모두, either A or B는 둘 중 하나, neither A nor B는 둘 다 아님, not only A but also B는 A뿐 아니라 B도입니다. 뒤 also는 생략되기도 합니다. not only를 문두에 내세우는 절은 도치가 생길 수 있지만 일반적인 명사구 연결과 구별하세요."
+      },
+      {
+        "title": "연결 방식에 맞춘 동사 수",
+        "text": "both A and B는 보통 복수동사입니다. either A or B / neither A nor B / not only A but also B에서 주어의 수가 다르면 동사에 가까운 B에 맞추는 방식이 흔합니다. 혼합된 단·복수로 문장이 어색해지면 순서를 바꾸거나 다시 쓰는 것도 좋습니다."
+      },
+      {
+        "title": "as well as는 and와 수 일치가 다릅니다",
+        "text": "B as well as A가 주어이면 기본적으로 B가 중심입니다. The manager, as well as the assistants, is attending. 추가 정보 assistants 때문에 are로 바꾸지 않습니다. rather than은 “~보다는”으로 여러 구조를 연결하므로 앞뒤 역할을 읽어야 합니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "둘 다",
+        "pattern": "Both the manager and the assistants are attending.",
+        "note": "and로 연결된 두 주어는 보통 복수."
+      },
+      {
+        "label": "둘 중 하나·둘 다 아님",
+        "pattern": "Either the manager or the assistants are attending.",
+        "note": "가까운 assistants에 맞춥니다."
+      },
+      {
+        "label": "추가 정보",
+        "pattern": "The manager, as well as the assistants, is attending.",
+        "note": "중심 주어 manager에 맞춥니다."
+      },
+      {
+        "label": "병렬",
+        "pattern": "not only reliable but also affordable",
+        "note": "형용사 reliable과 affordable을 연결합니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Both the price and the location are important.",
+        "ko": "가격과 위치가 모두 중요해요.",
+        "analysis": "단수명사 둘을 both … and로 연결한 주어는 복수입니다."
+      },
+      {
+        "en": "Either my brothers or my sister is picking me up.",
+        "ko": "형제들이나 여동생 중 누군가 저를 데리러 와요.",
+        "analysis": "동사에 가까운 sister가 단수이므로 is입니다."
+      },
+      {
+        "en": "I enjoy cooking rather than eating out.",
+        "ko": "외식하기보다 요리하는 것을 즐겨요.",
+        "analysis": "cooking과 eating out은 동명사구로 대등하게 연결됩니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Both my mother and my father is retired.",
+        "right": "Both my mother and my father are retired.",
+        "why": "both A and B가 두 사람을 함께 주어로 만들므로 복수동사입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "The manager, as well as the staff members, ___ ready.",
+        "options": [
+          "is",
+          "are",
+          "be"
+        ],
+        "answer": "is",
+        "explanation": "as well as 뒤는 추가 정보입니다. 중심 주어 manager에 맞춥니다."
+      },
+      {
+        "q": "Neither the assistants nor the director ___ available.",
+        "options": [
+          "is",
+          "are",
+          "being"
+        ],
+        "answer": "is",
+        "explanation": "가까운 director가 단수이므로 is를 씁니다."
+      },
+      {
+        "q": "She is not only skilled but also ___.",
+        "options": [
+          "patience",
+          "patient",
+          "patiently"
+        ],
+        "answer": "patient",
+        "explanation": "skilled와 대등하게 연결할 형용사 patient가 필요합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "두 가지 장점과 둘 중 하나를 고르는 상황을 말하세요.",
+      "sample": "Both the food and the service are great. I can go there either on Friday or on Saturday.",
+      "note": "both … and와 either … or 안에 같은 역할의 표현을 넣습니다."
+    },
+    "referenceTables": []
+  },
+  {
     "id": "g27",
-    "cat": "문장 연결",
-    "title": "28 · when·while·before·after·until",
+    "cat": "Unit 4 · 전치사·등위·부사절",
+    "title": "24 · when·while·before·after·until",
     "lead": "시간을 나타내는 절은 “언제, 동안, 이전, 이후, 언제까지” 사건이 이어지는지 설명합니다.",
     "concepts": [
       {
@@ -3307,9 +3816,161 @@ const grammar = [
     }
   },
   {
+    "id": "g42",
+    "cat": "Unit 4 · 전치사·등위·부사절",
+    "title": "25 · 부사절 접속사: 이유·조건·양보·목적",
+    "lead": "부사절은 완전한 주절에 이유·조건·대조·목적을 덧붙이는 절입니다.",
+    "concepts": [
+      {
+        "title": "접속사 + 주어 + 동사",
+        "text": "Because the road was closed, we took another route에서 because절은 이유이고 we took another route가 주절입니다. 주절을 먼저 쓸 수도 있습니다. 부사절을 먼저 두면 보통 쉼표로 구분하고, 뒤에 놓을 때의 쉼표는 의미·길이·문체에 따라 달라집니다."
+      },
+      {
+        "title": "이유와 조건",
+        "text": "because, since, as, now that는 이유를, if, unless, provided/providing (that), as long as, assuming (that)는 조건을 나타낼 수 있습니다. since는 “~이래로”, as는 “~하는 동안·~처럼”도 되므로 문맥을 봅니다. unless는 “~하지 않는 한”이지 if와 같은 긍정 조건이 아닙니다."
+      },
+      {
+        "title": "양보와 대비",
+        "text": "although, though, even though는 사실을 인정하면서 반대되는 결과를 말합니다. even if는 아직 사실로 확정되지 않은 조건도 “설령 ~하더라도”라고 말할 수 있습니다. while, whereas는 “~인 반면”이라는 대비를 만들며 while은 시간도 나타냅니다."
+      },
+      {
+        "title": "목적과 결과",
+        "text": "so that / in order that + 주어 + 동사는 목적을 표현하고 can/could 등의 조동사가 흔합니다. so + 형용사·부사 + that절은 “너무 ~해서 …하다”라는 결과 구조입니다. in order to / so as to 뒤에는 주어·동사 절 대신 동사원형을 씁니다."
+      },
+      {
+        "title": "미래 시간·조건 부사절의 현재형",
+        "text": "If it rains tomorrow, we will stay home처럼 미래 상황에도 조건절에는 보통 현재형을 씁니다. 하지만 will이 의지·기꺼이 함을 뜻하거나 if가 “~인지”라는 명사절을 이끌 때는 같은 규칙을 그대로 적용하지 않습니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "이유",
+        "pattern": "because / since / as / now that + S + V",
+        "note": "since/as는 여러 뜻을 가지므로 문맥을 확인합니다."
+      },
+      {
+        "label": "조건",
+        "pattern": "if / unless / provided that / as long as + S + V",
+        "note": "unless = if … not에 가까우며 불필요한 이중 부정을 피합니다."
+      },
+      {
+        "label": "양보·대비",
+        "pattern": "although / even though / even if / whereas / while + S + V",
+        "note": "사실 양보·가정 조건·대비를 구분합니다."
+      },
+      {
+        "label": "목적",
+        "pattern": "so that + S + can/could + V",
+        "note": "누가 목적 행동을 하는지 주어를 써서 나타냅니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Although it was raining, we went for a walk.",
+        "ko": "비가 왔지만 산책하러 갔어요.",
+        "analysis": "although절과 주절을 연결합니다. although와 but을 이 구조에서 중복시키지 않습니다."
+      },
+      {
+        "en": "We booked early so that we could get cheaper tickets.",
+        "ko": "더 저렴한 표를 구하려고 일찍 예약했어요.",
+        "analysis": "목적을 나타내는 so that절이며 could가 목적의 가능성을 더합니다."
+      },
+      {
+        "en": "I will help you even if I am busy tomorrow.",
+        "ko": "내일 바쁘더라도 도와줄게요.",
+        "analysis": "even if는 가정적인 양보 조건입니다. am은 미래 조건절의 현재형입니다."
+      },
+      {
+        "en": "My brother prefers cities, whereas I prefer quiet towns.",
+        "ko": "형제는 도시를 좋아하는 반면 저는 조용한 소도시를 좋아해요.",
+        "analysis": "whereas가 두 선호를 대비합니다."
+      },
+      {
+        "en": "I like the café because it’s quiet and the coffee is good.",
+        "ko": "조용하고 커피가 맛있어서 그 카페를 좋아해요.",
+        "analysis": "because가 이유를 이끌고, 두 이유 it’s quiet와 the coffee is good을 and로 연결합니다."
+      },
+      {
+        "en": "Although the hotel was expensive, it was worth it.",
+        "ko": "호텔이 비쌌지만 그만한 가치가 있었어요.",
+        "analysis": "although절이 예상과 반대되는 조건을 제시하고, 뒤 주절이 핵심 판단입니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Because I was tired, so I went home.",
+        "right": "Because I was tired, I went home.",
+        "why": "because 종속절과 주절 구조에서는 so를 중복시키지 않습니다."
+      },
+      {
+        "wrong": "We left early in order to we could catch the train.",
+        "right": "We left early in order to catch the train.",
+        "why": "in order to 뒤는 동사원형입니다. 주어·동사를 쓰려면 so that we could catch로 바꿉니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "___ the weather was bad, the event continued. “날씨가 나빴지만”은?",
+        "options": [
+          "Although",
+          "Despite",
+          "Because of"
+        ],
+        "answer": "Although",
+        "explanation": "뒤에 the weather was bad라는 절이 있으므로 양보 접속사 although입니다."
+      },
+      {
+        "q": "We will call you if the schedule ___ tomorrow.",
+        "options": [
+          "changes",
+          "will change",
+          "changing"
+        ],
+        "answer": "changes",
+        "explanation": "미래의 조건 부사절에서는 보통 현재형 changes를 씁니다."
+      },
+      {
+        "q": "“설령 비가 오더라도”처럼 아직 확정되지 않은 조건은?",
+        "options": [
+          "even if it rains",
+          "even though it rained",
+          "because it rains"
+        ],
+        "answer": "even if it rains",
+        "explanation": "even if는 가정적 상황의 양보 조건을 나타냅니다."
+      },
+      {
+        "q": "“비 때문에 취소됐어요”의 올바른 표현은?",
+        "options": [
+          "It was canceled because of the rain.",
+          "It was canceled because the rain.",
+          "It was canceled because of it rained."
+        ],
+        "answer": "It was canceled because of the rain.",
+        "explanation": "the rain은 명사구라 because of와 연결합니다. 절 it rained를 쓰면 because입니다."
+      },
+      {
+        "q": "표준 문장에서 중복 없이 대조를 말한 것은?",
+        "options": [
+          "Although it was expensive, but I bought it.",
+          "Although it was expensive, I bought it.",
+          "Although it expensive, I bought it."
+        ],
+        "answer": "Although it was expensive, I bought it.",
+        "explanation": "although절과 주절을 연결할 때 같은 관계의 but을 중복하지 않습니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "계획에 이유·조건·양보 중 두 가지를 덧붙이세요.",
+      "sample": "Because I want to save money, I cook at home. Even if I am busy, I try to make a simple dinner.",
+      "note": "주절과 부사절의 주어·동사를 각각 확인합니다."
+    },
+    "referenceTables": []
+  },
+  {
     "id": "g28",
-    "cat": "문장 연결",
-    "title": "29 · 명사절·간접질문: 문장 속에 문장 넣기",
+    "cat": "Unit 5 · 명사절·형용사절",
+    "title": "26 · 명사절·간접질문: 문장 속에 문장 넣기",
     "lead": "생각·정보·질문 내용을 한 문장의 목적어로 넣을 수 있습니다. 안쪽 문장은 평서문 순서가 기본입니다.",
     "concepts": [
       {
@@ -3327,6 +3988,18 @@ const grammar = [
       {
         "title": "바깥 문장이 질문인지 보기",
         "text": "Could you tell me …?는 바깥이 질문이어서 물음표가 필요합니다. I don’t know where it is.는 평서문이므로 마침표입니다. 의문사가 있다는 이유만으로 문장 전체가 질문이 되는 것은 아닙니다."
+      },
+      {
+        "title": "명사절이 들어가는 자리",
+        "text": "That she passed the exam is good news는 주어, I know that she passed는 동사 목적어, The question is whether she passed는 보어입니다. whether절·의문사절은 전치사의 목적어로도 올 수 있습니다. that절은 일반적인 전치사 바로 뒤에서 목적어로 쓰지 않지만 in that, except that 같은 별도의 관용 구조는 있습니다."
+      },
+      {
+        "title": "whether와 if를 구별",
+        "text": "whether는 주어·보어·전치사 목적어와 whether to do, whether or not처럼 바로 or not이 붙는 구조에 씁니다. if는 “~인지”라는 뜻에서 동사 뒤의 간접질문으로 흔히 쓰고 if … or not은 가능하지만 if or not …은 일반적으로 쓰지 않습니다. 실제 영어의 if절 쓰임은 더 넓으나 기본 학습에서는 여부 주어·전치사 뒤에 whether를 선택하는 것이 안전합니다."
+      },
+      {
+        "title": "동격 that과 관계대명사 that",
+        "text": "the fact that she passed에서 뒤 절은 주어·목적어가 모두 갖춰져 있고 사실의 내용을 말합니다. the exam that she passed에서는 passed의 목적어가 비어 있고 exam을 수식합니다. that절이 목적어일 때의 that 생략과 주어로 쓰일 때의 that 필요도 구별하세요."
       }
     ],
     "forms": [
@@ -3349,6 +4022,21 @@ const grammar = [
         "label": "정중한 바깥 질문",
         "pattern": "Could you tell me + 간접질문?",
         "note": "Could you tell me when it opens?"
+      },
+      {
+        "label": "주어·보어",
+        "pattern": "Whether she will come is unclear. / The problem is that we are late.",
+        "note": "명사절 덩어리가 하나의 주어이면 보통 단수동사입니다."
+      },
+      {
+        "label": "전치사 목적어",
+        "pattern": "about whether she will come / about what she said",
+        "note": "전치사 뒤 여부절은 whether, 내용은 의문사절입니다."
+      },
+      {
+        "label": "동격",
+        "pattern": "the fact / news / idea + that + 완전한 절",
+        "note": "앞 명사의 내용을 설명합니다."
       }
     ],
     "examples": [
@@ -3400,18 +4088,81 @@ const grammar = [
         ],
         "answer": "Could you check if a room is available?",
         "explanation": "yes/no 내용을 넣는 if 뒤에는 평서문 순서 a room is available을 씁니다."
+      },
+      {
+        "q": "We talked about ___ the plan would work.",
+        "options": [
+          "whether",
+          "if",
+          "that"
+        ],
+        "answer": "whether",
+        "explanation": "전치사 about 뒤에서 여부를 나타내는 명사절은 whether가 기본입니다."
+      },
+      {
+        "q": "the fact that she passed에서 that 뒤 절은?",
+        "options": [
+          "완전한 내용절",
+          "passed의 목적어가 비어 있는 관계절",
+          "주어가 없는 문장"
+        ],
+        "answer": "완전한 내용절",
+        "explanation": "she가 주어이고 passed는 여기서 합격하다라는 자동사 용법입니다. fact의 내용을 설명합니다."
+      },
+      {
+        "q": "___ or not we travel depends on the weather.",
+        "options": [
+          "Whether",
+          "If",
+          "That"
+        ],
+        "answer": "Whether",
+        "explanation": "문두의 여부 주어절이며 whether 바로 뒤 or not 구조가 가능합니다."
       }
     ],
     "spoken": {
       "prompt": "직접 질문을 정중한 간접질문으로 바꿔 세 번 말하세요.",
       "sample": "Where is the café? → Could you tell me where the café is? What time does it open? → Do you know what time it opens?",
       "note": "안쪽의 be/do 질문 순서를 평서문 순서로 되돌리세요."
-    }
+    },
+    "referenceTables": [
+      {
+        "title": "명사절 연결어 비교",
+        "headers": [
+          "연결어",
+          "내용·구조",
+          "주요 자리"
+        ],
+        "rows": [
+          [
+            "that",
+            "완전한 내용절 · ~라는 것",
+            "주어 / 동사 목적어 / 보어 / 동격"
+          ],
+          [
+            "whether (or not)",
+            "여부 · ~인지 아닌지",
+            "주어 / 동사·전치사 목적어 / 보어"
+          ],
+          [
+            "if",
+            "간접질문의 여부",
+            "주로 동사 뒤의 내용절"
+          ],
+          [
+            "what / who / where / when / why / how",
+            "무엇·누구·장소·시각·이유·방법",
+            "주어 / 목적어 / 보어"
+          ]
+        ],
+        "note": "의문사절은 주어·동사 평서문 순서가 기본입니다. who called처럼 의문사가 주어이면 그 뒤에 또 주어를 넣지 않습니다."
+      }
+    ]
   },
   {
     "id": "g29",
-    "cat": "문장 연결",
-    "title": "30 · 관계절: 사람·장소·물건을 더 설명하기",
+    "cat": "Unit 5 · 명사절·형용사절",
+    "title": "27 · 관계절: 사람·장소·물건을 더 설명하기",
     "lead": "관계절은 앞의 명사를 설명하는 작은 문장입니다. “어떤 사람·장소·물건인지”를 더 구체적으로 말합니다.",
     "concepts": [
       {
@@ -3429,6 +4180,18 @@ const grammar = [
       {
         "title": "쉼표가 있는 덧붙임",
         "text": "My sister, who lives in Busan, …는 이미 특정된 sister에 추가 정보를 넣습니다. 이 비제한적 관계절에서는 보통 that을 쓰거나 관계사를 생략하지 않습니다. 기본 말하기에서는 쉼표 없는 “어떤 대상인지 좁히는” 관계절부터 연습하세요."
+      },
+      {
+        "title": "whose는 소유 한정사 자리",
+        "text": "a person whose car is red에서 whose는 그 사람의라는 소유 관계로 car를 한정합니다. whose 뒤에는 이 구조에서 a/the/my를 다시 붙이지 않습니다. whose는 사람뿐 아니라 회사·사물의 소유·관련 관계에도 쓸 수 있습니다."
+      },
+      {
+        "title": "관계대명사 생략과 분사구",
+        "text": "목적격 관계대명사는 쉼표 없는 제한적 관계절에서 단독 생략할 수 있습니다. 주격 관계대명사는 단독으로 생략하지 않지만 the documents which were sent yesterday → the documents sent yesterday처럼 주격 관계사와 be를 함께 줄이는 구조가 가능합니다. 아무 주격 관계절에서 무조건 who/which만 지우는 것은 아닙니다."
+      },
+      {
+        "title": "전치사 앞과 삽입절",
+        "text": "the person to whom I spoke처럼 전치사 바로 뒤에는 사람 whom, 사물 which를 사용하고 that을 쓰지 않습니다. who I think will help처럼 I think가 끼어들면 관계사가 안쪽 will help의 주어 역할을 하는지까지 읽습니다. 눈에 보이는 첫 I만으로 목적격이라 판단하지 마세요."
       }
     ],
     "forms": [
@@ -3468,6 +4231,21 @@ const grammar = [
         "en": "It’s a quiet place where I can relax.",
         "ko": "제가 쉴 수 있는 조용한 장소예요.",
         "analysis": "where는 그 장소에서라는 부사 역할입니다. I can relax에는 별도 목적어가 필요하지 않습니다."
+      },
+      {
+        "en": "The company whose products I use is based in Seoul.",
+        "ko": "제가 제품을 사용하는 회사는 서울에 기반을 두고 있습니다.",
+        "analysis": "whose products는 use의 목적어이며 소유 한정사 whose가 products를 한정합니다."
+      },
+      {
+        "en": "The colleague who I think will lead the team is here.",
+        "ko": "제가 팀을 이끌 것이라고 생각하는 동료가 여기 있습니다.",
+        "analysis": "who는 안쪽 will lead의 주어입니다. I think가 끼어 있어도 목적격 whom을 고르지 않습니다."
+      },
+      {
+        "en": "The forms sent yesterday have been reviewed.",
+        "ko": "어제 보낸 양식들은 검토되었습니다.",
+        "analysis": "sent yesterday는 forms의 수동 분사구이며 have been reviewed가 본동사입니다."
       }
     ],
     "mistakes": [
@@ -3502,18 +4280,2551 @@ const grammar = [
         ],
         "answer": "a park where I exercise",
         "explanation": "exercise는 이 문장에서 자동사입니다. 장소 “그곳에서”를 나타내는 where가 자연스럽습니다."
+      },
+      {
+        "q": "The applicant ___ résumé impressed us was selected.",
+        "options": [
+          "whose",
+          "who",
+          "whom"
+        ],
+        "answer": "whose",
+        "explanation": "résumé를 소유 관계로 한정하는 whose입니다."
+      },
+      {
+        "q": "My sister, ___ lives in Busan, is visiting.",
+        "options": [
+          "who",
+          "that",
+          "생략"
+        ],
+        "answer": "who",
+        "explanation": "쉼표 뒤 추가 정보를 주는 비제한적 관계절에는 that과 관계사 생략을 쓰지 않습니다."
+      },
+      {
+        "q": "The person to ___ I spoke was helpful.",
+        "options": [
+          "whom",
+          "that",
+          "whoever"
+        ],
+        "answer": "whom",
+        "explanation": "전치사 바로 뒤에서 사람을 받는 목적격 관계사는 whom입니다."
       }
     ],
     "spoken": {
       "prompt": "좋아하는 장소와 함께 가는 사람을 관계절로 설명하세요.",
       "sample": "There’s a park where I go jogging. I usually go with a friend who lives nearby.",
       "note": "장소에서 하는 활동은 where, 사람의 특징은 who로 연결해 보세요."
+    },
+    "referenceTables": [
+      {
+        "title": "관계절의 빈자리",
+        "headers": [
+          "역할",
+          "사람",
+          "사물",
+          "뒤의 구조"
+        ],
+        "rows": [
+          [
+            "주격",
+            "who / that",
+            "which / that",
+            "관계사가 주어 · 동사 시작"
+          ],
+          [
+            "목적격",
+            "who / whom / that",
+            "which / that",
+            "주어 + 동사 · 목적어 자리 비어 있음"
+          ],
+          [
+            "소유격",
+            "whose",
+            "whose",
+            "명사와 결합해 소유 한정사 역할"
+          ]
+        ],
+        "note": "비제한적 관계절에서는 that·생략을 사용하지 않습니다. 주격 관계절 동사는 선행사의 수에 맞춥니다."
+      }
+    ]
+  },
+  {
+    "id": "g43",
+    "cat": "Unit 6 · 접속부사·전접부",
+    "title": "28 · 접속부사와 문장 사이의 논리",
+    "lead": "접속부사는 앞뒤 내용을 의미상 연결하지만, 두 독립절을 문법적으로 연결하는 접속사는 아닙니다.",
+    "concepts": [
+      {
+        "title": "문장 경계와 부사의 역할",
+        "text": "It was raining. However, we went out.처럼 문장을 나누거나 It was raining; however, we went out.처럼 세미콜론을 사용합니다. however 앞뒤의 쉼표만으로 두 독립절을 연결하면 보통 comma splice라는 오류가 됩니다. However,라는 문두 위치만 가능한 것은 아니며 문장 안·끝에도 들어갈 수 있습니다."
+      },
+      {
+        "title": "역접·양보·대안을 구별",
+        "text": "however는 그러나, nevertheless/nonetheless/even so는 그럼에도, otherwise는 그렇지 않으면·그 밖에는 등입니다. on the other hand는 다른 측면을 대비합니다. 뜻이 비슷한 부사라도 어떤 논리 관계인지 앞뒤 두 문장을 읽어야 합니다."
+      },
+      {
+        "title": "결과·추가·예시",
+        "text": "therefore, thus, hence, consequently, as a result는 결과를, moreover, furthermore, in addition, besides는 추가를, for example, for instance는 예시를 나타냅니다. accordingly는 따라서·그에 맞게라는 조정의 의미도 있으므로 모든 결과 표현을 자유롭게 바꾸지 않습니다."
+      },
+      {
+        "title": "품사와 문맥을 차례로 확인",
+        "text": "빈칸 뒤에 쉼표와 독립된 완전한 문장이 오고 앞 문장도 끝났다면 접속부사일 가능성이 큽니다. 다만 쉼표 하나만으로 품사를 확정하지 말고 전체 구조를 읽으세요. 후보를 좁힌 다음 앞뒤가 대조·결과·추가 중 무엇인지 판단합니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "마침표",
+        "pattern": "S + V. However, S + V.",
+        "note": "각각 독립된 문장입니다."
+      },
+      {
+        "label": "세미콜론",
+        "pattern": "S + V; therefore, S + V.",
+        "note": "세미콜론으로 독립절을 연결하고 therefore가 논리를 더합니다."
+      },
+      {
+        "label": "문장 안",
+        "pattern": "The plan, however, is too expensive.",
+        "note": "however가 끼어들어도 주어 plan과 동사 is의 관계는 유지됩니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Your experience is impressive. However, we have no open positions.",
+        "ko": "경력이 인상적입니다. 하지만 현재 채용 공석은 없습니다.",
+        "analysis": "좋은 평가에서 채용 불가능이라는 반대 결과로 넘어가므로 however입니다."
+      },
+      {
+        "en": "The train was canceled. Therefore, we took a bus.",
+        "ko": "열차가 취소됐어요. 그래서 버스를 탔어요.",
+        "analysis": "열차 취소가 버스를 탄 원인이므로 결과의 therefore입니다."
+      },
+      {
+        "en": "The room is quiet. Moreover, it is close to the station.",
+        "ko": "방이 조용해요. 게다가 역에서도 가까워요.",
+        "analysis": "두 가지 장점을 추가로 나열하므로 moreover입니다."
+      },
+      {
+        "en": "Please submit the form today; otherwise, your request may be delayed.",
+        "ko": "오늘 양식을 제출해 주세요. 그렇지 않으면 요청 처리가 지연될 수 있습니다.",
+        "analysis": "otherwise는 앞의 행동을 하지 않았을 때의 결과를 나타냅니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "It was expensive, however I bought it.",
+        "right": "It was expensive; however, I bought it.",
+        "why": "however만으로 독립절 둘을 쉼표 하나로 연결하지 않습니다. It was expensive, but I bought it도 가능합니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "The product is reliable. ___, it is too expensive.",
+        "options": [
+          "However",
+          "Moreover",
+          "For example"
+        ],
+        "answer": "However",
+        "explanation": "신뢰성이라는 장점과 높은 가격이라는 단점을 대조합니다."
+      },
+      {
+        "q": "접속부사 therefore로 독립절을 연결한 바른 문장은?",
+        "options": [
+          "It rained, therefore we stayed home.",
+          "It rained; therefore, we stayed home.",
+          "Therefore it rained because we stayed home."
+        ],
+        "answer": "It rained; therefore, we stayed home.",
+        "explanation": "세미콜론이 독립절을 연결하고 therefore가 원인·결과를 표현합니다."
+      },
+      {
+        "q": "Please hurry; otherwise, you may miss the bus. otherwise의 뜻은?",
+        "options": [
+          "게다가",
+          "예를 들면",
+          "그렇지 않으면"
+        ],
+        "answer": "그렇지 않으면",
+        "explanation": "서두르지 않을 때 생길 결과를 나타냅니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "장점 뒤에 단점을 덧붙이고, 그 결과를 말하세요.",
+      "sample": "The hotel was comfortable. However, it was far from the beach. Therefore, we rented a car.",
+      "note": "역접과 결과를 다른 문장에 넣어 논리 흐름을 만듭니다."
+    },
+    "referenceTables": [
+      {
+        "title": "논리 관계별 표현",
+        "headers": [
+          "관계",
+          "대표 표현",
+          "확인할 내용"
+        ],
+        "rows": [
+          [
+            "대조",
+            "however / on the other hand",
+            "앞뒤가 다른 관점·반대 내용인가"
+          ],
+          [
+            "양보",
+            "nevertheless / nonetheless / even so",
+            "앞 사실에도 결과가 성립하는가"
+          ],
+          [
+            "결과",
+            "therefore / thus / consequently / as a result",
+            "앞 원인의 결과인가"
+          ],
+          [
+            "추가",
+            "moreover / furthermore / in addition / besides",
+            "같은 방향의 정보를 더하는가"
+          ],
+          [
+            "예시",
+            "for example / for instance",
+            "앞 설명의 구체적인 예인가"
+          ],
+          [
+            "대안·조건 결과",
+            "otherwise",
+            "앞 행동을 안 하면 어떤 일이 생기는가"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "g44",
+    "cat": "Unit 6 · 접속부사·전접부",
+    "title": "29 · 전접부 비교: 전치사·접속사·부사 한눈에",
+    "lead": "뜻이 같아도 뒤에 명사구가 오는지, 절이 오는지, 이미 문장 경계가 있는지를 구별해야 합니다.",
+    "concepts": [
+      {
+        "title": "전치사 뒤에는 명사 역할의 덩어리",
+        "text": "because of the delay, despite the rain처럼 명사구가 오거나 after checking the form처럼 동명사구가 옵니다. 전치사 뒤의 목적어는 길 수 있으므로 단어 수로 판정하지 않습니다. 전치사 to 뒤의 동명사와 부정사의 to + 원형도 구별하세요."
+      },
+      {
+        "title": "접속사 뒤에는 절을 읽기",
+        "text": "because the train was delayed, although it rained처럼 주어·동사가 옵니다. and/but/or는 대등한 성분을, because/although는 종속절을 연결합니다. when needed처럼 주어·be가 생략된 축약 부사절도 있으므로 “접속사 뒤에는 언제나 보이는 주어·동사”라고 단정하지 마세요."
+      },
+      {
+        "title": "접속부사는 문장의 논리를 더하기",
+        "text": "The train was delayed. As a result, we were late.는 두 문장을 연결하는 의미 흐름입니다. as a result of the delay는 of 뒤 명사구를 목적어로 받는 전치사구입니다. 같은 해석만으로 고르면 구조가 틀릴 수 있습니다."
+      },
+      {
+        "title": "명사절·관계절은 절의 역할로 구별",
+        "text": "I know that she is busy에서 that절은 know의 목적어입니다. the book that I bought에서는 that절이 앞 명사 book을 수식하고 bought의 목적어가 비어 있습니다. 명사 뒤 that라고 모두 관계대명사는 아닙니다: the fact that she is busy는 완전한 절로 fact의 내용을 설명합니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "전치사 + 명사구",
+        "pattern": "despite the rain / because of the delay",
+        "note": "명사구·동명사구를 목적어로 받습니다."
+      },
+      {
+        "label": "부사절 접속사 + 절",
+        "pattern": "although it rained / because there was a delay",
+        "note": "완전한 주절에 이유·시간·양보 등을 더합니다."
+      },
+      {
+        "label": "접속부사와 문장 경계",
+        "pattern": "It rained. Nevertheless, we went out.",
+        "note": "완전한 독립문장에 논리 연결을 더합니다."
+      },
+      {
+        "label": "부정사의 목적 표현",
+        "pattern": "in order to finish / so as to finish",
+        "note": "전치사구가 아니라 to + 동사원형입니다. so that we can finish와 비교합니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "We stayed inside because of the rain.",
+        "ko": "비 때문에 실내에 있었어요.",
+        "analysis": "because of 뒤에 명사 the rain입니다."
+      },
+      {
+        "en": "We stayed inside because it was raining.",
+        "ko": "비가 오고 있어서 실내에 있었어요.",
+        "analysis": "because 뒤에 주어 it + 동사 was raining인 절입니다."
+      },
+      {
+        "en": "It was raining. Therefore, we stayed inside.",
+        "ko": "비가 오고 있었어요. 그래서 실내에 있었어요.",
+        "analysis": "마침표로 끝난 문장 뒤에 결과 접속부사 therefore가 옵니다."
+      },
+      {
+        "en": "Please call us in the event of an emergency.",
+        "ko": "긴급 상황이 발생하면 전화해 주세요.",
+        "analysis": "of 뒤에 명사구입니다. in the event that an emergency occurs로 바꾸면 that 뒤에 절이 옵니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Despite it was raining, we left.",
+        "right": "Although it was raining, we left.",
+        "why": "despite 뒤에는 명사구나 동명사구가 필요합니다. Despite the rain으로도 수정할 수 있습니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "___ the bad weather, the flight departed on time.",
+        "options": [
+          "Despite",
+          "Although",
+          "However"
+        ],
+        "answer": "Despite",
+        "explanation": "the bad weather는 명사구이므로 전치사 despite입니다."
+      },
+      {
+        "q": "The flight was canceled. ___, we requested a refund.",
+        "options": [
+          "Because of",
+          "As a result",
+          "Although"
+        ],
+        "answer": "As a result",
+        "explanation": "독립 문장 사이에서 결과를 나타내는 접속부사 표현입니다."
+      },
+      {
+        "q": "in order to 뒤에 오는 기본 형태는?",
+        "options": [
+          "동사원형",
+          "주어 + 동사",
+          "명사만"
+        ],
+        "answer": "동사원형",
+        "explanation": "in order to는 목적의 to부정사 표현입니다. in order that 뒤에는 절이 옵니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "같은 이유를 세 가지 구조로 바꿔 말하세요.",
+      "sample": "I stayed home because of the snow. I stayed home because it snowed. It snowed. Therefore, I stayed home.",
+      "note": "이유 명사구·이유절·결과 문장을 같은 상황으로 비교합니다."
+    },
+    "referenceTables": [
+      {
+        "title": "비슷한 뜻, 다른 구조",
+        "headers": [
+          "뜻",
+          "전치사 + 명사구",
+          "접속사 + 절",
+          "접속부사"
+        ],
+        "rows": [
+          [
+            "이유·결과",
+            "because of / due to / owing to / on account of",
+            "because / since / as / now that",
+            "therefore / consequently / as a result"
+          ],
+          [
+            "양보",
+            "despite / in spite of",
+            "although / though / even though",
+            "nevertheless / nonetheless / even so"
+          ],
+          [
+            "대비",
+            "unlike",
+            "whereas / while",
+            "however / on the other hand"
+          ],
+          [
+            "동안",
+            "during / for",
+            "while",
+            "—"
+          ],
+          [
+            "이후·이전",
+            "after / following / before / prior to",
+            "after / before",
+            "afterward / previously"
+          ],
+          [
+            "대비·조건",
+            "in case of / in the event of",
+            "in case / in the event that / if",
+            "otherwise"
+          ],
+          [
+            "결과",
+            "as a result of",
+            "so (등위접속사)",
+            "as a result / therefore"
+          ],
+          [
+            "목적",
+            "—",
+            "so that / in order that",
+            "—"
+          ]
+        ],
+        "note": "during은 사건·시기, for는 기간과 어울립니다. in case는 대비, if는 조건이라는 뜻 차이도 있습니다. in order to / so as to + 원형은 별도의 부정사 구조입니다."
+      },
+      {
+        "title": "that절 비교",
+        "headers": [
+          "구조",
+          "뒤 절",
+          "역할"
+        ],
+        "rows": [
+          [
+            "I know that she is busy.",
+            "완전한 절",
+            "know의 목적어 명사절"
+          ],
+          [
+            "the fact that she is busy",
+            "완전한 절",
+            "fact의 내용을 설명하는 동격절"
+          ],
+          [
+            "the person that called me",
+            "주어 자리 비어 있음",
+            "person을 수식하는 관계절"
+          ],
+          [
+            "the book that I bought",
+            "bought의 목적어 비어 있음",
+            "book을 수식하는 관계절"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "g22",
+    "cat": "Unit 7 · to부정사·동명사·분사",
+    "title": "30 · 준동사와 to부정사: 명사·형용사·부사 역할",
+    "lead": "준동사는 동사에서 나온 형태로 본동사와 다른 역할을 합니다. to부정사는 명사·형용사·부사 역할을 할 수 있습니다.",
+    "concepts": [
+      {
+        "title": "준동사와 본동사 자리",
+        "text": "to do, doing, p.p.는 동사에서 나온 형태지만 단독으로 평서문의 시제 있는 본동사를 대신하지는 않습니다. I want to go에서 want가 본동사, to go가 목적어입니다. I am going에서는 am going 전체가 진행형 본동사입니다. 모양보다 절마다 본동사가 있는지 확인하세요."
+      },
+      {
+        "title": "to부정사의 역할",
+        "text": "to + 원형은 want to go처럼 동사의 뒤에 오거나, I went there to relax처럼 목적을 나타냅니다. To learn English takes time처럼 주어도 가능하지만 회화에서는 Learning English takes time이나 It takes time to learn English가 자주 쓰입니다. 목적을 나타내는 to는 “~하려고”로 해석해 보세요."
+      },
+      {
+        "title": "가주어 it와 의미상의 주어",
+        "text": "It is important for me to check the inventory에서 it은 가주어, to check …는 진주어, for me는 확인할 사람입니다. It is kind of you to help처럼 사람의 태도를 평가하는 형용사는 of를 사용합니다. 하나의 부정사구를 문두 주어로 쓰면 보통 단수동사입니다."
+      },
+      {
+        "title": "목적어·목적격보어 결합",
+        "text": "want, hope, plan, decide, aim, fail, promise, learn, refuse, manage, seek 등은 to부정사를 목적어로 받습니다. ask, allow, advise, require, expect, encourage, permit, invite, remind, enable은 목적어 + to부정사 구조를 자주 씁니다. 동사 뜻에 따른 실제 결합을 익히세요."
+      },
+      {
+        "title": "형용사 역할은 명사 뒤에서",
+        "text": "a way to solve the problem, a chance to travel처럼 명사 뒤에서 어떤 방법·기회인지 설명합니다. plan, ability, opportunity, time, need, effort, right, decision, intention 등과 함께 익힙니다."
+      },
+      {
+        "title": "부사 역할: 목적",
+        "text": "To attend the workshop, we registered early / We registered early to attend the workshop에서 목적을 나타냅니다. in order to / so as to도 원형과 연결됩니다. so that / in order that 뒤에는 주어·동사 절이 옵니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "명사 역할",
+        "pattern": "To learn takes time. / I want to learn. / My goal is to learn.",
+        "note": "주어·목적어·명사 보어를 채웁니다."
+      },
+      {
+        "label": "가주어·진주어",
+        "pattern": "It is important for me to learn.",
+        "note": "실제 행동을 하는 사람은 for me로 나타낼 수 있습니다."
+      },
+      {
+        "label": "목적격보어",
+        "pattern": "They encouraged me to apply. → I was encouraged to apply.",
+        "note": "목적어가 수동의 주어가 되어도 to부정사는 남습니다."
+      },
+      {
+        "label": "형용사 역할",
+        "pattern": "a way to solve the problem",
+        "note": "앞 명사 way의 내용을 설명합니다."
+      },
+      {
+        "label": "부사 역할",
+        "pattern": "to relax / in order to relax / so as to relax",
+        "note": "~하기 위해서라는 목적을 나타냅니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I went to the café to meet a friend.",
+        "ko": "친구를 만나려고 카페에 갔어요.",
+        "analysis": "to the café는 장소 전치사구, to meet는 목적을 나타내는 부정사입니다."
+      },
+      {
+        "en": "It is important for visitors to register in advance.",
+        "ko": "방문객이 사전에 등록하는 것은 중요합니다.",
+        "analysis": "it은 가주어, to register는 진주어, for visitors는 의미상의 주어입니다."
+      },
+      {
+        "en": "We need a way to reduce costs.",
+        "ko": "비용을 줄일 방법이 필요합니다.",
+        "analysis": "need의 목적어는 a way to reduce costs라는 명사구입니다. to reduce는 way를 수식합니다."
+      },
+      {
+        "en": "The manager encouraged us to ask questions.",
+        "ko": "관리자는 질문하라고 격려했습니다.",
+        "analysis": "us가 목적어, to ask questions가 목적격보어입니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I want going home.",
+        "right": "I want to go home.",
+        "why": "want 뒤의 동작 목적어에는 이 구조에서 to부정사를 씁니다."
+      },
+      {
+        "wrong": "She allowed me leave early.",
+        "right": "She allowed me to leave early.",
+        "why": "allow + 목적어 + to부정사 구조입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "The company permits employees ___ from home.",
+        "options": [
+          "to work",
+          "working",
+          "work"
+        ],
+        "answer": "to work",
+        "explanation": "permit + 목적어 + to부정사입니다."
+      },
+      {
+        "q": "We saved money in order ___ a car.",
+        "options": [
+          "to buy",
+          "buying",
+          "buy"
+        ],
+        "answer": "to buy",
+        "explanation": "in order to + 동사원형으로 목적을 표현합니다."
+      },
+      {
+        "q": "a chance to travel에서 to travel은?",
+        "options": [
+          "chance의 내용을 설명하는 수식어",
+          "시제 있는 본동사",
+          "chance를 대신하는 주어"
+        ],
+        "answer": "chance의 내용을 설명하는 수식어",
+        "explanation": "명사 뒤의 to부정사가 어떤 기회인지 설명합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "목표·목적·기회에 to부정사를 사용하세요.",
+      "sample": "I plan to study abroad. I save money to pay for the trip, and I want a chance to meet new people.",
+      "note": "목적어 to study, 목적의 to pay, 명사 수식 to meet를 구별합니다."
+    },
+    "referenceTables": [
+      {
+        "title": "to부정사 결합",
+        "headers": [
+          "종류",
+          "표현",
+          "구조"
+        ],
+        "rows": [
+          [
+            "목적어",
+            "aim / hope / need / fail / want / wish / plan / decide / promise / learn / refuse / manage / seek",
+            "V + to do"
+          ],
+          [
+            "목적격보어",
+            "require / remind / invite / expect / enable / encourage / permit / advise / ask / allow",
+            "V + O + to do"
+          ],
+          [
+            "명사 뒤",
+            "way / plan / ability / chance / opportunity / time / need / effort / right / intention",
+            "N + to do"
+          ],
+          [
+            "수동 표현",
+            "be asked / allowed / advised / required / expected / encouraged",
+            "be + p.p. + to do"
+          ]
+        ],
+        "note": "like/love/start는 두 형태가 가능한 경우가 많습니다. stop doing은 그 행동을 그만두기, stop to do는 다른 행동을 하려고 멈추기입니다."
+      }
+    ]
+  },
+  {
+    "id": "g45",
+    "cat": "Unit 7 · to부정사·동명사·분사",
+    "title": "31 · 동명사: 목적어·전치사·명사와의 차이",
+    "lead": "동명사는 문장에서 명사 역할을 하면서 동사의 목적어·부사 수식을 유지합니다.",
+    "concepts": [
+      {
+        "title": "명사 역할과 동사 성격을 함께",
+        "text": "Reviewing the data carefully takes time에서 reviewing the data carefully 전체가 주어이고 단수 takes를 씁니다. reviewing은 목적어 the data를 받고 carefully의 수식을 받으므로 동사 성격이 남아 있습니다. 동명사구 하나를 주어로 쓰는 경우와 두 구를 and로 연결한 경우를 구별합니다."
+      },
+      {
+        "title": "동명사를 목적어로 받는 동사",
+        "text": "mind, enjoy, give up, admit, postpone, practice, suggest, finish, avoid, deny, consider, recommend 등은 -ing 목적어를 흔히 받습니다. 동명사 선택을 “과거·부정적인 뜻”만으로 결정할 수는 없습니다. 의미를 이해한 뒤 실제 동사의 결합을 외우세요."
+      },
+      {
+        "title": "전치사 to 뒤의 -ing",
+        "text": "look forward to, object to, contribute to, be devoted to, be used to의 to는 전치사입니다. 뒤에 명사 또는 동명사를 씁니다. hope to go의 to는 부정사 표지라 원형입니다. be used to doing(익숙함)과 be used to do(쓰임·용도)를 뜻으로도 구별합니다."
+      },
+      {
+        "title": "동명사와 파생명사",
+        "text": "collecting stamps는 동사형 동명사 + 직접 목적어입니다. the collection of stamps는 관사 + 명사 + of구입니다. 앞자는 부사 carefully collecting, 뒤자는 형용사 careful collection의 수식을 받습니다. -ing가 관사 뒤에 전혀 올 수 없다는 규칙은 틀립니다: the building, the opening of the museum 같은 명사적 용법은 가능합니다."
+      },
+      {
+        "title": "동명사와 현재분사",
+        "text": "My hobby is playing the piano에서 playing은 취미의 내용을 말하는 명사 보어입니다. She is playing the piano에서는 is playing이 진행형 동사 묶음입니다. playing children은 children을 수식하는 현재분사입니다. 모양이 아니라 문장 역할을 보세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "주어·목적어·보어",
+        "pattern": "Swimming is fun. / I enjoy swimming. / My hobby is swimming.",
+        "note": "행동을 명사처럼 표현하며 필요하면 목적어·수식어를 붙입니다."
+      },
+      {
+        "label": "전치사의 목적어",
+        "pattern": "after checking / by reviewing / look forward to meeting",
+        "note": "전치사 뒤의 동명사."
+      },
+      {
+        "label": "관용 표현",
+        "pattern": "have difficulty doing / spend time doing / be worth doing",
+        "note": "difficulty (in) doing, spend 시간·돈 (on) doing처럼 전치사가 가능한 표현도 있습니다."
+      },
+      {
+        "label": "의미상의 주어",
+        "pattern": "I appreciate your helping me.",
+        "note": "your 또는 목적격 형태가 동명사 행위자를 나타내는 용법도 있습니다. 문체·구조에 따라 형태가 달라집니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I look forward to meeting you.",
+        "ko": "만나 뵙기를 기대합니다.",
+        "analysis": "look forward to의 to는 전치사이므로 meeting입니다."
+      },
+      {
+        "en": "Carefully checking all the documents takes time.",
+        "ko": "모든 문서를 꼼꼼히 확인하는 데 시간이 걸립니다.",
+        "analysis": "carefully는 동명사 checking을 수식하고 documents는 그 목적어입니다. 주어 덩어리 하나는 단수 takes를 받습니다."
+      },
+      {
+        "en": "The careful review of the documents took an hour.",
+        "ko": "문서를 꼼꼼히 검토하는 데 한 시간이 걸렸습니다.",
+        "analysis": "review라는 명사는 careful의 수식을 받고 of the documents를 연결합니다."
+      },
+      {
+        "en": "My hobby is cooking, but I am not cooking right now.",
+        "ko": "취미는 요리지만 지금 요리하고 있지는 않아요.",
+        "analysis": "앞 cooking은 명사 보어, 뒤 cooking은 am과 함께 진행형을 만듭니다."
+      },
+      {
+        "en": "I enjoy cooking, but I don’t like washing the dishes.",
+        "ko": "요리는 즐기지만 설거지는 좋아하지 않아요.",
+        "analysis": "enjoy 뒤 cooking은 필수 -ing 용법입니다. like 뒤는 washing 또는 to wash가 가능한 경우입니다."
+      },
+      {
+        "en": "I’m looking forward to seeing you.",
+        "ko": "당신을 만나기를 기대하고 있어요.",
+        "analysis": "look forward to의 to가 전치사이므로 see가 seeing으로 옵니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I enjoy to swim.",
+        "right": "I enjoy swimming.",
+        "why": "enjoy의 목적어로는 보통 동명사 swimming을 씁니다."
+      },
+      {
+        "wrong": "I look forward to meet you.",
+        "right": "I look forward to meeting you.",
+        "why": "전치사 to 뒤에 동명사 meeting이 옵니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "She suggested ___ a taxi.",
+        "options": [
+          "taking",
+          "to take",
+          "take"
+        ],
+        "answer": "taking",
+        "explanation": "suggest는 동명사를 목적어로 받을 수 있습니다."
+      },
+      {
+        "q": "by carefully ___ the data에 맞는 형태는?",
+        "options": [
+          "reviewing",
+          "review",
+          "reviewed"
+        ],
+        "answer": "reviewing",
+        "explanation": "by는 전치사, carefully는 부사, the data는 reviewing의 목적어입니다."
+      },
+      {
+        "q": "My hobby is playing the piano에서 playing의 역할은?",
+        "options": [
+          "동명사로 쓰인 명사 보어",
+          "주어를 수식하는 형용사",
+          "현재진행형 본동사"
+        ],
+        "answer": "동명사로 쓰인 명사 보어",
+        "explanation": "취미와 피아노 연주라는 활동의 정체를 연결하는 보어입니다."
+      },
+      {
+        "q": "“연습을 끝냈어요”의 올바른 문장은?",
+        "options": [
+          "I finished practicing.",
+          "I finished to practice.",
+          "I finished practice to."
+        ],
+        "answer": "I finished practicing.",
+        "explanation": "finish 뒤에는 동명사 practicing이 옵니다."
+      },
+      {
+        "q": "“당신을 만나기를 기대해요”의 올바른 표현은?",
+        "options": [
+          "I look forward to see you.",
+          "I look forward to seeing you.",
+          "I look forward see you."
+        ],
+        "answer": "I look forward to seeing you.",
+        "explanation": "look forward to의 to는 전치사라 뒤에는 seeing을 사용합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "좋아하는 활동과 익숙해진 활동을 말하세요.",
+      "sample": "I enjoy cooking at home. I am used to preparing meals early, and I look forward to trying new recipes.",
+      "note": "enjoy + -ing와 전치사 to + -ing를 함께 연습합니다."
+    },
+    "referenceTables": [
+      {
+        "title": "동명사 결합 표현",
+        "headers": [
+          "동사·표현",
+          "구조",
+          "뜻"
+        ],
+        "rows": [
+          [
+            "mind / enjoy / avoid / finish",
+            "+ doing",
+            "꺼리다 / 즐기다 / 피하다 / 끝내다"
+          ],
+          [
+            "admit / deny / consider / suggest",
+            "+ doing",
+            "인정하다 / 부인하다 / 고려하다 / 제안하다"
+          ],
+          [
+            "give up / postpone / practice",
+            "+ doing",
+            "포기하다 / 미루다 / 연습하다"
+          ],
+          [
+            "look forward to / object to",
+            "+ doing",
+            "기대하다 / 반대하다"
+          ],
+          [
+            "be devoted to / contribute to",
+            "+ doing",
+            "헌신하다 / 기여하다"
+          ],
+          [
+            "feel like / be worth",
+            "+ doing",
+            "~하고 싶다 / ~할 가치가 있다"
+          ],
+          [
+            "have difficulty / be busy",
+            "+ (in) doing",
+            "~하기 어렵다 / ~하느라 바쁘다"
+          ],
+          [
+            "spend 시간·돈",
+            "+ (on) doing",
+            "~하는 데 시간·돈을 쓰다"
+          ],
+          [
+            "It is no use",
+            "+ doing",
+            "~해도 소용없다"
+          ]
+        ],
+        "note": "go shopping/swimming 등은 활동 이름으로 굳은 go + -ing 표현입니다. 모든 동사에 go + -ing를 자유롭게 붙이는 규칙은 아닙니다."
+      }
+    ]
+  },
+  {
+    "id": "g46",
+    "cat": "Unit 7 · to부정사·동명사·분사",
+    "title": "32 · 분사: 현재분사·과거분사와 명사 수식",
+    "lead": "분사는 명사를 수식하거나 보어로 쓰이고, 진행·완료·수동의 동사 묶음에도 참여합니다.",
+    "concepts": [
+      {
+        "title": "능동·수동 관계를 먼저",
+        "text": "a sleeping child는 아이가 자는 것이므로 -ing, an assigned task는 업무가 배정되는 것이므로 p.p.입니다. 과거분사라는 이름만으로 과거 시제라고 판단하지 않습니다. 명사와 분사의 의미 관계 및 원래 동사의 쓰임을 봅니다."
+      },
+      {
+        "title": "전치 수식과 후치 수식",
+        "text": "a revised policy처럼 짧은 분사는 명사 앞에 흔히 옵니다. the policy revised by the committee처럼 목적어·전치사구가 붙은 분사구는 명사 뒤에 흔히 옵니다. 단어가 하나라도 추가되면 무조건 뒤로 가야 한다는 절대 규칙은 아닙니다: a recently revised policy처럼 부사 + 분사는 앞에서도 자연스럽습니다."
+      },
+      {
+        "title": "뒤의 목적어와 전치사구는 단서",
+        "text": "employees attending the workshop은 attend의 직접 목적어가 있어 능동 -ing입니다. documents prepared by the team은 작성되는 대상이라 p.p.입니다. 그러나 전치사구가 있다고 자동으로 p.p.는 아닙니다: people working in Seoul, a company specializing in software는 능동입니다. 4·5형식 수동은 목적어·보어가 남을 수도 있습니다."
+      },
+      {
+        "title": "자동사와 굳어진 형용사",
+        "text": "rising prices, remaining seats, growing demand, existing laws처럼 자동사의 현재분사를 자주 씁니다. 자동사는 수동태를 만들지 않지만 fallen leaves, a retired teacher처럼 완료·상태를 나타내는 과거분사 수식은 가능합니다. “자동사 분사는 언제나 -ing”로 일반화하지 마세요."
+      },
+      {
+        "title": "감정을 유발하는지 느끼는지",
+        "text": "an interesting person은 흥미를 유발하는 사람, an interested person은 흥미를 느끼는 사람입니다. 사람은 늘 -ed, 사물은 늘 -ing라는 공식이 아닙니다. The workshop was interesting / The participants were interested처럼 설명 대상의 의미 관계를 보세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "명사 앞",
+        "pattern": "a sleeping child / an enclosed document",
+        "note": "명사와 분사의 능동·수동 또는 상태 관계를 확인합니다."
+      },
+      {
+        "label": "명사 뒤",
+        "pattern": "the people waiting outside / the items delivered yesterday",
+        "note": "덧붙은 표현까지 하나의 분사구로 읽습니다."
+      },
+      {
+        "label": "주격·목적격보어",
+        "pattern": "The result was disappointing. / The result made us disappointed.",
+        "note": "첫 분사는 result, 둘째는 목적어 us를 설명합니다."
+      },
+      {
+        "label": "동사 묶음",
+        "pattern": "is working / was repaired / has worked",
+        "note": "-ing와 p.p.가 시제·태 구성에도 쓰입니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "The equipment purchased from the supplier is ready.",
+        "ko": "공급업체에서 구매한 장비가 준비되어 있습니다.",
+        "analysis": "purchased from …은 equipment를 수식합니다. 본동사는 is이고 equipment는 불가산이라 단수입니다."
+      },
+      {
+        "en": "The employees attending the seminar need to register.",
+        "ko": "세미나에 참석하는 직원들은 등록해야 합니다.",
+        "analysis": "attending은 employees의 능동 행동이며 the seminar를 목적어로 받습니다. 본동사는 need입니다."
+      },
+      {
+        "en": "The company specializing in software is hiring.",
+        "ko": "소프트웨어를 전문으로 하는 회사가 채용 중입니다.",
+        "analysis": "in software라는 전치사구가 있어도 specialize in이라는 능동 쓰임이므로 specializing입니다."
+      },
+      {
+        "en": "We found the workshop interesting.",
+        "ko": "워크숍이 흥미롭다고 느꼈어요.",
+        "analysis": "목적격보어 interesting은 주어 we가 아니라 목적어 workshop을 설명합니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "The people worked in Seoul are here.",
+        "right": "The people working in Seoul are here.",
+        "why": "people을 수식하는 능동 분사구입니다. 전치사구 in Seoul만 보고 과거분사를 선택하지 않습니다."
+      },
+      {
+        "wrong": "The movie was interested.",
+        "right": "The movie was interesting.",
+        "why": "영화가 흥미를 유발한다는 의미이므로 interesting입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "The documents ___ by the team are on the desk.",
+        "options": [
+          "prepared",
+          "preparing",
+          "prepare"
+        ],
+        "answer": "prepared",
+        "explanation": "문서가 팀에 의해 작성되는 수동 관계입니다. are가 본동사입니다."
+      },
+      {
+        "q": "The students ___ in the library are quiet.",
+        "options": [
+          "studying",
+          "studied",
+          "study"
+        ],
+        "answer": "studying",
+        "explanation": "학생들이 공부하는 능동 관계입니다. 전치사구가 있다고 p.p.를 쓰지 않습니다."
+      },
+      {
+        "q": "She is an interesting person의 뜻은?",
+        "options": [
+          "그녀는 흥미를 유발하는 사람이다",
+          "그녀는 언제나 관심이 없다",
+          "사람이므로 문법 오류다"
+        ],
+        "answer": "그녀는 흥미를 유발하는 사람이다",
+        "explanation": "사람도 흥미를 유발하면 interesting으로 수식합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "사람과 물건을 각각 분사구로 설명하세요.",
+      "sample": "The person sitting next to me is my friend. The book written by my favorite author is on my desk.",
+      "note": "수식되는 명사와 분사의 관계를 읽습니다."
+    },
+    "referenceTables": [
+      {
+        "title": "표현으로 익히는 분사 형용사",
+        "headers": [
+          "-ing 표현",
+          "뜻",
+          "p.p. 표현",
+          "뜻"
+        ],
+        "rows": [
+          [
+            "leading expert",
+            "선도적 전문가",
+            "detailed instructions",
+            "상세한 지침"
+          ],
+          [
+            "lasting impression",
+            "지속되는 인상",
+            "written permission",
+            "서면 허가"
+          ],
+          [
+            "promising candidate",
+            "유망한 후보자",
+            "designated area",
+            "지정 구역"
+          ],
+          [
+            "missing luggage",
+            "분실된 수하물",
+            "skilled worker",
+            "숙련 노동자"
+          ],
+          [
+            "emerging market",
+            "신흥 시장",
+            "distinguished scholar",
+            "저명한 학자"
+          ],
+          [
+            "upcoming event",
+            "다가오는 행사",
+            "accomplished artist",
+            "기량이 뛰어난 예술가"
+          ],
+          [
+            "rewarding experience",
+            "보람 있는 경험",
+            "renowned writer",
+            "명성 있는 작가"
+          ],
+          [
+            "demanding job",
+            "요구 수준이 높은 일",
+            "customized product",
+            "맞춤형 제품"
+          ]
+        ],
+        "note": "단어 자체의 뜻과 결합을 익힙니다. missing luggage는 missed luggage와 같은 뜻이 아닙니다."
+      }
+    ]
+  },
+  {
+    "id": "g47",
+    "cat": "Unit 8 · 분사구문·비교구문",
+    "title": "33 · 분사구문: 부사절을 줄여 시간·이유 표현하기",
+    "lead": "분사구문은 주절에 시간·이유·조건 등의 배경을 더하는 구조입니다. 생략된 행위자를 확인해야 합니다.",
+    "concepts": [
+      {
+        "title": "같은 주어를 생략하고 동사를 분사로",
+        "text": "While I was waiting for the bus, I checked my messages는 While waiting for the bus, I checked my messages로 줄일 수 있습니다. 기다린 사람과 메시지를 확인한 사람이 같으므로 I를 생략합니다. 접속사는 의미를 분명히 하려고 남길 수 있습니다."
+      },
+      {
+        "title": "능동 -ing, 수동 p.p.",
+        "text": "Entering the room, she turned on the lights에서 들어가는 사람은 she입니다. Asked about the problem, she explained the situation에서는 she가 질문을 받습니다. (Being) asked처럼 being이 생략될 수 있지만 모든 be를 아무 문장에서 생략하는 규칙은 아닙니다."
+      },
+      {
+        "title": "앞선 행위는 having + p.p.",
+        "text": "Having finished the report, I went home는 보고서를 먼저 끝낸 뒤 귀가했다는 순서를 명시합니다. 단순히 두 동사의 시제가 다르다는 이유만으로 having을 쓰는 것이 아닙니다. 먼저 끝난 행위라는 의미 관계가 중요하며 after와 단순 분사로도 순서를 나타낼 수 있습니다."
+      },
+      {
+        "title": "주어가 어긋나지 않게",
+        "text": "Walking to work, the rain started라고 하면 걷는 행위자가 rain처럼 연결되어 어색합니다. While I was walking to work, it started to rain으로 주어를 밝혀 고칩니다. 주어가 다른 독립분사구문(The meeting over, we left.)도 있지만 기본 학습에서는 주어를 명시한 절이 더 분명합니다."
+      },
+      {
+        "title": "자주 쓰는 축약 표현",
+        "text": "unless otherwise stated, as requested, as scheduled, when possible, while on duty는 주어·be 등이 생략된 표현입니다. when possible은 모든 형태가 분사인 것은 아니며 축약 부사절로 이해하면 좋습니다. after checking은 전치사 + 동명사로 분석하기도 합니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "능동",
+        "pattern": "(While) waiting for the bus, I checked my phone.",
+        "note": "생략된 주어는 주절의 I입니다."
+      },
+      {
+        "label": "수동",
+        "pattern": "Asked about the issue, she answered calmly.",
+        "note": "그녀가 질문을 받습니다. 뒤 전치사구는 부가 단서입니다."
+      },
+      {
+        "label": "완료 능동·수동",
+        "pattern": "Having finished … / Having been invited …",
+        "note": "주절의 기준보다 먼저 완료된 행동을 드러냅니다."
+      },
+      {
+        "label": "축약 부사절",
+        "pattern": "when possible / unless otherwise stated / as requested",
+        "note": "뜻과 구조를 표현 단위로 익힙니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "While watching the documentary, we took notes.",
+        "ko": "다큐멘터리를 보면서 메모했어요.",
+        "analysis": "watching의 행위자는 주절의 we이고 documentary가 목적어입니다."
+      },
+      {
+        "en": "Surprised by the news, he called his friend.",
+        "ko": "소식에 놀라서 친구에게 전화했어요.",
+        "analysis": "he가 놀란 감정을 느끼는 대상이므로 surprised입니다."
+      },
+      {
+        "en": "Having finished my work, I went for a walk.",
+        "ko": "일을 끝낸 후 산책하러 갔어요.",
+        "analysis": "산책보다 먼저 완료된 일을 having finished로 나타냅니다."
+      },
+      {
+        "en": "Unless otherwise stated, all prices include tax.",
+        "ko": "별도 명시가 없으면 모든 가격에는 세금이 포함됩니다.",
+        "analysis": "가격에 대한 사항이 명시되는 수동 축약 표현입니다. 생략된 내용을 문맥에서 읽습니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Walking home, a car passed me.",
+        "right": "While I was walking home, a car passed me.",
+        "why": "분사구문만 쓰면 걷는 주어가 a car로 잘못 연결됩니다. 절로 주어를 명시합니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "While ___ the form, please check your contact details.",
+        "options": [
+          "completing",
+          "completed",
+          "completion"
+        ],
+        "answer": "completing",
+        "explanation": "명령문의 생략된 주어 you가 양식을 작성하는 능동 관계입니다."
+      },
+      {
+        "q": "Unless otherwise ___, the deadline is Friday.",
+        "options": [
+          "stated",
+          "stating",
+          "state"
+        ],
+        "answer": "stated",
+        "explanation": "별도로 명시되지 않으면이라는 수동 축약 표현입니다."
+      },
+      {
+        "q": "Having finished the task, she left. 어떤 순서인가요?",
+        "options": [
+          "떠난 뒤 업무를 끝냄",
+          "업무를 끝낸 뒤 떠남",
+          "업무를 끝내지 않음"
+        ],
+        "answer": "업무를 끝낸 뒤 떠남",
+        "explanation": "having + p.p.는 주절 행동보다 앞선 완료를 명시합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "같은 주어의 배경과 행동을 연결해 말하세요.",
+      "sample": "While waiting for my friend, I ordered coffee. Having finished my drink, I went outside.",
+      "note": "분사구문의 행위자와 주절의 주어를 같은 사람으로 맞춥니다."
+    },
+    "referenceTables": [
+      {
+        "title": "자주 쓰는 축약 표현",
+        "headers": [
+          "표현",
+          "뜻",
+          "비교할 완전한 구조"
+        ],
+        "rows": [
+          [
+            "unless otherwise stated / indicated / noted",
+            "달리 명시·표시·언급되지 않으면",
+            "unless it is otherwise stated …"
+          ],
+          [
+            "as requested / scheduled / planned",
+            "요청·예정·계획대로",
+            "as it was requested / scheduled …"
+          ],
+          [
+            "as expected / discussed",
+            "예상·논의한 대로",
+            "as was expected / discussed …"
+          ],
+          [
+            "when possible / necessary",
+            "가능·필요할 때",
+            "when it is possible / necessary"
+          ],
+          [
+            "while on duty",
+            "근무 중에",
+            "while you are on duty"
+          ]
+        ],
+        "note": "문맥에 따라 복원할 주어·시제는 달라집니다. 축약 표현 뒤의 독립된 주절을 함께 읽습니다."
+      }
+    ]
+  },
+  {
+    "id": "g11",
+    "cat": "Unit 8 · 분사구문·비교구문",
+    "title": "34 · 비교급·최상급과 as … as",
+    "lead": "두 대상을 비교하면 비교급, 같은 범위에서 가장 두드러지면 최상급을 씁니다.",
+    "concepts": [
+      {
+        "title": "비교급 만들기",
+        "text": "짧은 형용사는 보통 -er: small → smaller, nice → nicer. 끝이 자음+y이면 easy → easier, 일부 짧은 단어는 big → bigger처럼 마지막 자음을 겹칩니다. 긴 형용사는 more comfortable처럼 more를 앞에 둡니다. 2음절 형용사는 단어별 차이가 있으므로 모르는 형태는 사전으로 확인하세요."
+      },
+      {
+        "title": "불규칙과 비교 대상",
+        "text": "good/well → better → best, bad → worse → worst입니다. A is cheaper than B에서 than 뒤에 비교 대상을 붙입니다. 비교급은 much/a lot/a little로 정도를 더할 수 있습니다. very cheaper가 아니라 much cheaper, more cheaper가 아니라 cheaper입니다."
+      },
+      {
+        "title": "최상급의 범위",
+        "text": "the cheapest restaurant in my neighborhood처럼 “어디에서 가장”인지를 붙이면 정확합니다. one of the best cafés는 최고의 카페 중 하나이고, one of 뒤의 명사는 복수입니다. 소유 한정사가 있으면 my best friend처럼 the를 겹치지 않습니다."
+      },
+      {
+        "title": "동등 비교",
+        "text": "as + 형용사/부사 원급 + as는 “~만큼”입니다. not as expensive as는 “~만큼 비싸지는 않은”입니다. more를 끼우지 않습니다. 회화에서는 A is better than B라고 짧게 비교한 뒤 because로 이유를 붙이면 답변이 자연스럽게 길어집니다."
+      },
+      {
+        "title": "비교 구조에서도 품사 자리는 같습니다",
+        "text": "as useful as에서는 보어·명사 수식 자리에 형용사, as quickly as에서는 행동을 수식하는 부사입니다. more/most가 있어도 형용사와 부사 선택은 실제 역할로 판단합니다. as many books as는 복수 가산명사, as much information as는 불가산명사를 받습니다."
+      },
+      {
+        "title": "the + 비교급의 두 구조",
+        "text": "The more you practice, the more confident you become는 연습할수록 더 자신 있어진다는 비례 비교입니다. the more experienced of the two managers는 두 관리자 중 더 경험 많은 사람을 뜻합니다. 비교급에도 이 구조에서 the를 사용합니다."
+      },
+      {
+        "title": "강조 표현과 비교 대상 맞추기",
+        "text": "much, far, a lot, even, a little/a bit은 비교급 정도를 표현할 수 있습니다. by far the best는 훨씬 최고임을 강조합니다. the best so far / the biggest yet은 지금까지라는 범위를 더합니다. very와 more를 -er 비교급 앞에 자유롭게 겹치지 않습니다. 가격을 가격과 비교하려면 This price is higher than that of the other product처럼 대상도 맞추세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "차이",
+        "pattern": "A + be + 비교급 + than B",
+        "note": "This café is quieter than that one."
+      },
+      {
+        "label": "차이의 정도",
+        "pattern": "much/a lot/a little + 비교급",
+        "note": "It’s much more convenient."
+      },
+      {
+        "label": "가장",
+        "pattern": "the + 최상급 + 범위",
+        "note": "the best restaurant in town"
+      },
+      {
+        "label": "비슷함",
+        "pattern": "as + 원급 + as",
+        "note": "It’s as comfortable as my old room."
+      },
+      {
+        "label": "수량 동등 비교",
+        "pattern": "as many + 복수 가산명사 + as / as much + 불가산명사 + as",
+        "note": "as much information as possible"
+      },
+      {
+        "label": "비례 비교",
+        "pattern": "the + 비교급 + 절, the + 비교급 + 절",
+        "note": "The sooner you start, the easier it gets."
+      },
+      {
+        "label": "둘 중 더",
+        "pattern": "the + 비교급 + of the two …",
+        "note": "the taller of the two buildings"
+      },
+      {
+        "label": "최상급 강조·범위",
+        "pattern": "by far the best / the best so far / the biggest yet",
+        "note": "by far는 차이 강조, so far/yet은 지금까지의 범위입니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Taking the subway is cheaper than driving.",
+        "ko": "지하철을 타는 게 운전보다 저렴해요.",
+        "analysis": "Taking the subway가 주어, cheaper가 비교급, driving이 비교 대상입니다."
+      },
+      {
+        "en": "It’s one of the most popular parks in Seoul.",
+        "ko": "서울에서 가장 인기 있는 공원 중 하나예요.",
+        "analysis": "one of 뒤에는 복수 parks를 씁니다. most popular는 최상급입니다."
+      },
+      {
+        "en": "My new apartment isn’t as spacious as my old one.",
+        "ko": "새 아파트는 예전 집만큼 넓지는 않아요.",
+        "analysis": "not as + 원급 spacious + as입니다. one은 apartment의 반복을 피합니다."
+      },
+      {
+        "en": "The more I practice, the more confident I become.",
+        "ko": "연습할수록 더 자신감이 생겨요.",
+        "analysis": "두 the + 비교급 구조가 비례 관계를 만듭니다."
+      },
+      {
+        "en": "I gathered as much information as possible.",
+        "ko": "가능한 한 많은 정보를 모았어요.",
+        "analysis": "information은 불가산명사이므로 much입니다."
+      },
+      {
+        "en": "She is by far the most experienced member of the team.",
+        "ko": "그녀는 팀에서 단연 가장 경험이 많습니다.",
+        "analysis": "by far가 최상급 the most experienced를 강조합니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "It is more cheaper.",
+        "right": "It is cheaper.",
+        "why": "-er와 more로 비교급을 중복 표시하지 않습니다."
+      },
+      {
+        "wrong": "It is one of the best café.",
+        "right": "It is one of the best cafés.",
+        "why": "여러 카페 중 하나를 뜻하므로 cafés는 복수입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“훨씬 더 편리해요”의 올바른 문장은?",
+        "options": [
+          "It’s very more convenient.",
+          "It’s much more convenient.",
+          "It’s more convenienter."
+        ],
+        "answer": "It’s much more convenient.",
+        "explanation": "긴 형용사 convenient는 more로 비교급을 만들고, 비교급의 정도는 much로 강조합니다."
+      },
+      {
+        "q": "“예전 집만큼 크지는 않아요”에 맞는 문장은?",
+        "options": [
+          "It isn’t as big as my old place.",
+          "It isn’t as bigger as my old place.",
+          "It isn’t as more big as my old place."
+        ],
+        "answer": "It isn’t as big as my old place.",
+        "explanation": "as … as 안에는 비교급이 아니라 원급 big이 들어갑니다."
+      },
+      {
+        "q": "as ___ information as possible에서 알맞은 것은?",
+        "options": [
+          "much",
+          "many",
+          "few"
+        ],
+        "answer": "much",
+        "explanation": "information은 불가산명사라 as much information as입니다."
+      },
+      {
+        "q": "“둘 중 더 큰 건물”의 자연스러운 표현은?",
+        "options": [
+          "the taller of the two buildings",
+          "the tallest of the two building",
+          "more taller of two buildings"
+        ],
+        "answer": "the taller of the two buildings",
+        "explanation": "두 대상 중 더 ~한 경우 the + 비교급 + of the two를 쓸 수 있습니다."
+      },
+      {
+        "q": "The more you practice, ___ confident you become.",
+        "options": [
+          "the more",
+          "most",
+          "more the"
+        ],
+        "answer": "the more",
+        "explanation": "the + 비교급 …, the + 비교급 …의 비례 구조입니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "현재와 과거의 동네를 비교하고 이유를 붙이세요.",
+      "sample": "My current neighborhood is quieter than my old one. It’s also much more convenient because the station is nearby.",
+      "note": "비교급 + than 뒤에 비교 대상을 분명히 넣으세요."
+    },
+    "referenceTables": [
+      {
+        "title": "불규칙 비교 변화",
+        "headers": [
+          "원급",
+          "비교급",
+          "최상급"
+        ],
+        "rows": [
+          [
+            "good / well",
+            "better",
+            "best"
+          ],
+          [
+            "bad / badly",
+            "worse",
+            "worst"
+          ],
+          [
+            "many / much",
+            "more",
+            "most"
+          ],
+          [
+            "little (양)",
+            "less",
+            "least"
+          ],
+          [
+            "far",
+            "farther / further",
+            "farthest / furthest"
+          ]
+        ],
+        "note": "farther/further의 뜻·용법 차이와 문체도 함께 익히세요. -ly 부사는 보통 more/most를 쓰지만 early → earlier처럼 예외가 있습니다."
+      }
+    ]
+  },
+  {
+    "id": "g01",
+    "cat": "말하기 보충",
+    "title": "35 · 주어·동사·목적어·보어와 문장 순서",
+    "lead": "영어는 단어를 아는 것보다 “누가 + 어떤 상태인지 / 무엇을 하는지”를 먼저 정하는 것이 중요합니다.",
+    "concepts": [
+      {
+        "title": "품사: 단어의 종류부터",
+        "text": "명사는 사람·장소·물건·개념의 이름(friend, park, music), 대명사는 명사를 대신하는 말(I, it), 동사는 행동·상태(live, be), 형용사는 명사의 성질(quiet), 부사는 행동·정도의 설명(slowly, very)입니다. 전치사는 명사와의 관계(in, at), 접속사는 말과 절의 연결(and, because), 감탄사는 반응(oh)을 나타냅니다. 품사는 단어의 종류, 주어·목적어는 문장 안에서 맡은 역할이라 서로 다른 분류입니다."
+      },
+      {
+        "title": "주어와 동사부터 찾기",
+        "text": "주어(S)는 문장에서 상태나 행동을 설명하는 대상입니다. 동사(V)는 행동 또는 상태를 나타냅니다. I live in Seoul에서 I가 주어, live가 동사입니다. 한국어에서는 “집에 있어요”처럼 주어를 생략하지만 영어의 평서문에는 보통 I, it 등의 주어가 필요합니다."
+      },
+      {
+        "title": "구와 절: 단어 묶음과 작은 문장",
+        "text": "구는 여러 단어가 한 덩어리로 역할을 하는 표현입니다: at home은 장소를 나타내는 전치사구입니다. 절은 주어와 동사가 있는 단위입니다: I got home, when I got home. when I got home은 주어·동사가 있어도 “집에 왔을 때”라는 덧붙임이라 보통 혼자 문장을 끝내지 못합니다. I cooked dinner when I got home처럼 주절을 연결해야 내용이 완성됩니다."
+      },
+      {
+        "title": "목적어와 보어는 역할이 다릅니다",
+        "text": "목적어(O)는 동사의 대상입니다. I like coffee에서 coffee는 좋아하는 대상입니다. 보어(C)는 주어나 목적어가 무엇인지, 어떤 상태인지 설명합니다. I am tired에서 tired는 I의 상태입니다. be, seem, become 같은 동사 뒤에는 주어를 설명하는 보어가 자주 옵니다."
+      },
+      {
+        "title": "5형식은 암기보다 동사의 쓰임을 보기",
+        "text": "기본 구조는 S+V, S+V+C, S+V+O, S+V+간접목적어+직접목적어, S+V+O+C로 정리할 수 있습니다. 같은 동사도 의미와 용법에 따라 구조가 바뀝니다. 우선 필요한 자리를 채운 다음 시간·장소·이유를 덧붙이세요. 수식어가 길어져도 중심 구조는 그대로입니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "1형식",
+        "pattern": "I work.",
+        "note": "주어 + 동사. I work at a café에서 at a café는 장소를 더하는 수식어입니다."
+      },
+      {
+        "label": "2형식",
+        "pattern": "I feel tired.",
+        "note": "주어 + 동사 + 주격보어. tired는 I의 상태를 설명합니다."
+      },
+      {
+        "label": "3형식",
+        "pattern": "I like movies.",
+        "note": "주어 + 동사 + 목적어. movies는 좋아하는 대상입니다."
+      },
+      {
+        "label": "4형식",
+        "pattern": "She gave me a gift.",
+        "note": "me는 받는 사람, a gift는 주는 물건입니다. She gave a gift to me로도 말할 수 있습니다. 모든 전달 동사가 이 어순을 쓰지는 않습니다. explain은 explain the problem to me처럼 익히세요."
+      },
+      {
+        "label": "5형식",
+        "pattern": "The music makes me happy.",
+        "note": "me가 목적어, happy가 me의 상태를 설명하는 목적격보어입니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I watch movies at home on weekends.",
+        "ko": "주말에는 집에서 영화를 봐요.",
+        "analysis": "I(주어) + watch(동사) + movies(목적어). at home과 on weekends는 없어도 문장의 중심은 성립합니다."
+      },
+      {
+        "en": "The café looks cozy.",
+        "ko": "그 카페는 아늑해 보여요.",
+        "analysis": "looks는 여기서 “보다”가 아니라 “~해 보이다”입니다. cozy는 café를 설명하므로 형용사를 씁니다."
+      },
+      {
+        "en": "My friend sent me a message.",
+        "ko": "친구가 저에게 메시지를 보냈어요.",
+        "analysis": "sent 뒤에 받는 사람 me와 전달한 것 a message가 옵니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I coffee like.",
+        "right": "I like coffee.",
+        "why": "목적어 coffee는 일반적으로 동사 like 뒤에 둡니다."
+      },
+      {
+        "wrong": "My room very quiet.",
+        "right": "My room is very quiet.",
+        "why": "quiet는 형용사입니다. 주어와 상태를 연결하는 동사 is가 필요합니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“저는 음악을 좋아해요”를 바르게 말하면?",
+        "options": [
+          "I music like.",
+          "I like music.",
+          "I am like music."
+        ],
+        "answer": "I like music.",
+        "explanation": "I가 주어, like가 일반동사, music이 목적어입니다. 현재형 일반동사 앞에 am을 추가하지 않습니다."
+      },
+      {
+        "q": "The trip made me happy에서 happy는 무엇을 설명하나요?",
+        "options": [
+          "여행을 한 시점",
+          "made의 횟수",
+          "목적어 me의 상태"
+        ],
+        "answer": "목적어 me의 상태",
+        "explanation": "make + 목적어 + 형용사 구조입니다. happy는 목적격보어로 “나를 행복하게 만들었다”는 뜻을 완성합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "내 취미를 한 문장으로 말한 뒤 장소와 시간을 덧붙이세요.",
+      "sample": "I watch movies. I usually watch movies at home on weekends.",
+      "note": "I + 동사 + 대상부터 만들고, 어디서·언제를 붙이세요."
+    }
+  },
+  {
+    "id": "g02",
+    "cat": "말하기 보충",
+    "title": "36 · be동사: 정체·상태·위치",
+    "lead": "be동사는 행동을 나타내는 말이 아니라 주어와 정체·상태·위치를 연결하는 동사입니다.",
+    "concepts": [
+      {
+        "title": "뒤에 무엇이 오는지 보기",
+        "text": "I am a student에서는 명사 a student가 정체를, I am tired에서는 형용사 tired가 상태를 설명합니다. I am at home에서는 전치사구 at home이 위치를 나타냅니다. 한국어의 “~이다 / ~하다 / ~에 있다”를 모두 be로 연결할 수 있지만, “달리다·살다” 같은 일반동사를 대신하지는 않습니다."
+      },
+      {
+        "title": "주어와 시간에 맞춰 형태 바꾸기",
+        "text": "현재는 I am, he/she/it is, you/we/they are입니다. 과거는 I/he/she/it was, you/we/they were입니다. you는 한 사람에게 말해도 are/were를 씁니다. 말할 때 I’m, she’s, they’re 같은 축약형이 자연스럽습니다."
+      },
+      {
+        "title": "부정과 질문은 be 자체로 만들기",
+        "text": "부정은 be 뒤에 not을 붙입니다. 질문은 be를 주어 앞으로 옮깁니다. be가 본동사인 문장에는 do/does/did를 추가하지 않습니다. Are you tired?에 Yes, I am / No, I’m not처럼 짧게 답할 수 있습니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "현재 긍정",
+        "pattern": "I am / She is / They are + 보어",
+        "note": "I’m busy. She’s a teacher. They’re at home."
+      },
+      {
+        "label": "과거 긍정",
+        "pattern": "I was / They were + 보어",
+        "note": "I was tired yesterday."
+      },
+      {
+        "label": "부정",
+        "pattern": "주어 + be + not + 보어",
+        "note": "He isn’t busy. They weren’t there."
+      },
+      {
+        "label": "질문",
+        "pattern": "Be + 주어 + 보어?",
+        "note": "Is it expensive? Were you at home?"
+      }
+    ],
+    "examples": [
+      {
+        "en": "My apartment is small, but it is comfortable.",
+        "ko": "아파트는 작지만 편안해요.",
+        "analysis": "is 뒤에 small/comfortable이라는 형용사가 와서 apartment의 상태를 설명합니다."
+      },
+      {
+        "en": "Were you busy yesterday? — Yes, I was.",
+        "ko": "어제 바빴나요? — 네, 바빴어요.",
+        "analysis": "과거 질문이므로 were를 앞으로 옮기고, I로 답할 때는 was로 바꿉니다."
+      },
+      {
+        "en": "There are two cafés near my house.",
+        "ko": "집 근처에 카페 두 곳이 있어요.",
+        "analysis": "존재를 소개하는 there are 구조입니다. 위치를 말하는 The cafés are nearby와 구별하세요."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I am live in Seoul.",
+        "right": "I live in Seoul.",
+        "why": "live는 일반동사입니다. 현재형 live 앞에 am을 붙이지 않습니다. 진행형이라면 I am living처럼 -ing가 필요합니다."
+      },
+      {
+        "wrong": "Do you are tired?",
+        "right": "Are you tired?",
+        "why": "be동사 질문은 be만 앞으로 보냅니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“그들은 어제 집에 있었어요”의 알맞은 형태는?",
+        "options": [
+          "They was at home yesterday.",
+          "They were at home yesterday.",
+          "They are at home yesterday."
+        ],
+        "answer": "They were at home yesterday.",
+        "explanation": "과거이고 주어가 they이므로 were를 사용합니다."
+      },
+      {
+        "q": "“지금 피곤해요?”를 바르게 물으면?",
+        "options": [
+          "Do you tired?",
+          "Are you tired?",
+          "Do you are tired?"
+        ],
+        "answer": "Are you tired?",
+        "explanation": "tired는 상태를 나타내는 형용사이므로 be동사 are로 질문합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "내 집의 상태 두 가지와 어제 내 상태를 말하세요.",
+      "sample": "My home is quiet and cozy. I was tired yesterday, so I stayed home.",
+      "note": "현재 상태에는 is, 어제 상태에는 was를 쓰세요."
+    }
+  },
+  {
+    "id": "g33",
+    "cat": "말하기 보충",
+    "title": "37 · 자동사·타동사: 목적어가 필요한가?",
+    "lead": "자동사·타동사의 차이는 “스스로 하는 행동인가”가 아니라 “그 용법에서 동사가 직접 목적어를 취하는가”입니다. 영어의 동사 구조를 기준으로 판단하세요.",
+    "concepts": [
+      {
+        "title": "자동사와 타동사의 정확한 기준",
+        "text": "자동사는 동사의 직접 목적어 없이 쓰이는 동사입니다: The baby sleeps. 타동사는 동사의 직접 목적어를 취하는 동사입니다: I enjoy movies. movies는 즐기는 대상이라 enjoy의 목적어입니다. “자동사=혼자 하는 행동, 타동사=남에게 하는 행동”이라는 뜻은 아닙니다. I enjoy music처럼 혼자 하는 활동도 타동사 구조이고, We talked처럼 여러 사람이 함께 하는 활동도 자동사 구조일 수 있습니다."
+      },
+      {
+        "title": "목적어와 장소·시간 설명을 구별하기",
+        "text": "I arrived at the station에서 arrived 뒤의 at the station은 장소를 나타내는 전치사구입니다. station은 전치사 at의 목적어이지 arrive의 직접 목적어가 아닙니다. I slept for eight hours의 for eight hours도 기간을 더하는 표현입니다. I slept eight hours처럼 전치사 없이 명사구로 기간을 나타낼 수도 있으므로, 동사 뒤에 명사가 있다고 모두 직접 목적어인 것은 아닙니다. 그 말이 동작의 대상인지, 장소·시간을 덧붙이는지 확인하세요."
+      },
+      {
+        "title": "자동사라도 보어가 필요할 수 있습니다",
+        "text": "The baby sleeps는 주어+동사로 완성되는 1형식입니다. My sister became a teacher는 주어+동사+보어인 2형식입니다. become은 직접 목적어 대신 주어의 정체를 설명하는 보어가 필요합니다. a teacher는 my sister가 무엇이 됐는지 설명합니다. 따라서 “자동사는 뒤에 아무 말도 필요 없다”라고 외우면 안 됩니다. be, become, seem, look, feel 등의 연결동사는 뜻에 맞는 주격보어와 함께 자주 씁니다."
+      },
+      {
+        "title": "목적어와 보어는 명사 모양이어도 다릅니다",
+        "text": "My sister met a teacher에서 teacher는 만난 대상이므로 목적어입니다. My sister became a teacher에서는 sister 자신이 teacher가 됐으므로 보어입니다. 명사가 왔는지 형용사가 왔는지만 보지 말고 그 말의 역할을 보세요. The news made me happy에서는 me가 직접 목적어이고 happy는 me의 상태를 설명하는 목적격보어입니다. 타동사 구조에도 보어가 함께 올 수 있습니다."
+      },
+      {
+        "title": "전치사가 필요한 동사와 바로 연결하는 동사",
+        "text": "기본 표현은 listen to music, wait for a friend, arrive at the station, live in Seoul입니다. 반면 visit Seoul, reach the station, discuss the problem, enter the room은 목적어를 직접 붙입니다. 비슷한 한국어 번역이라도 영어의 구조는 다릅니다. “무엇을/누구를”로 번역되는지에만 의존하지 말고 동사와 뒤 표현을 함께 익히세요. go home의 home은 방향을 나타내는 부사라 to가 없는 것이며 go의 직접 목적어가 아닙니다."
+      },
+      {
+        "title": "같은 동사도 용법에 따라 둘 다 가능합니다",
+        "text": "The door opened는 문이 열린 자동사 용법, I opened the door는 문을 연 타동사 용법입니다. I eat at home은 먹는 장소를 말하는 자동사 용법, I eat breakfast at home은 breakfast라는 직접 목적어가 있는 타동사 용법입니다. 동사마다 항상 한 종류로 고정되는 것은 아닙니다. 문장에서 어떤 뜻·구조로 쓰이는지 보세요. 사전에서는 [I]/intransitive가 자동사, [T]/transitive가 타동사 용법을 표시합니다."
+      },
+      {
+        "title": "목적어가 꼭 물건 이름일 필요는 없습니다",
+        "text": "I enjoy cooking의 cooking은 동명사 목적어, I want to leave의 to leave는 부정사 목적어, I know that he is busy의 that he is busy는 내용 전체가 목적어 역할을 하는 명사절입니다. 목적어는 “사람·물건 명사 하나”로 제한되지 않습니다. 어떤 형태를 받을 수 있는지는 동사별로 다르므로 enjoy + -ing, want + to부정사처럼 함께 익히세요."
+      },
+      {
+        "title": "수동태와 연결해서 확인하기",
+        "text": "I opened the door에서 목적어 the door를 주어로 옮기면 The door was opened가 됩니다. 목적어 없는 The accident happened를 The accident was happened로 바꾸지는 않습니다. 기본 수동태는 목적어를 취하는 구조에서 출발합니다. 다만 목적어가 있다고 모든 수동 표현이 자연스러운 것은 아니며, 전치사 동사구가 수동으로 쓰이는 경우도 있어 수동 가능 여부만으로 모든 용법을 판정하지 마세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "자동사·1형식",
+        "pattern": "주어 + 동사 (+ 수식어)",
+        "note": "The baby sleeps. / The baby sleeps at night. at night는 시간 설명입니다."
+      },
+      {
+        "label": "자동사·2형식",
+        "pattern": "주어 + 연결동사 + 주격보어",
+        "note": "My sister became a teacher. teacher는 sister의 정체입니다."
+      },
+      {
+        "label": "타동사·3형식",
+        "pattern": "주어 + 동사 + 직접 목적어",
+        "note": "I visited a museum. museum은 방문한 대상입니다."
+      },
+      {
+        "label": "타동사·4형식",
+        "pattern": "주어 + 동사 + 간접 목적어 + 직접 목적어",
+        "note": "She gave me a ticket. me는 받는 사람, a ticket은 주는 대상입니다."
+      },
+      {
+        "label": "타동사·5형식",
+        "pattern": "주어 + 동사 + 목적어 + 목적격보어",
+        "note": "The movie made me happy. happy는 me의 상태를 설명합니다."
+      },
+      {
+        "label": "자동사+전치사",
+        "pattern": "동사 + 전치사 + 전치사의 목적어",
+        "note": "listen to music / wait for a friend. music과 friend는 전치사의 목적어입니다."
+      },
+      {
+        "label": "두 용법",
+        "pattern": "The door opened. / I opened the door.",
+        "note": "첫 문장은 직접 목적어가 없고, 두 번째 문장은 the door가 직접 목적어입니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I arrived at the station at eight.",
+        "ko": "8시에 역에 도착했어요.",
+        "analysis": "I가 주어, arrived가 자동사입니다. at the station은 장소, at eight는 시간입니다. station을 arrive에 바로 붙이지 않고 전치사 at으로 연결합니다."
+      },
+      {
+        "en": "I visited a museum with a friend.",
+        "ko": "친구와 박물관을 방문했어요.",
+        "analysis": "visited는 타동사이며 a museum이 직접 목적어입니다. with a friend는 함께한 사람을 더하는 수식어입니다. visit 뒤에 to를 넣지 않습니다."
+      },
+      {
+        "en": "The café became crowded after lunch.",
+        "ko": "점심 후에 카페가 붐비게 됐어요.",
+        "analysis": "became은 연결동사로 쓰이고 crowded는 café의 상태를 설명하는 주격보어입니다. 목적어가 없어도 보어가 필요한 2형식 문장입니다."
+      },
+      {
+        "en": "The door opened. I opened the window, too.",
+        "ko": "문이 열렸어요. 저는 창문도 열었어요.",
+        "analysis": "첫 opened는 자동사 용법, 두 번째 opened는 window를 직접 목적어로 취한 타동사 용법입니다. 같은 동사라도 구조가 달라집니다."
+      },
+      {
+        "en": "I listen to music when I work out.",
+        "ko": "운동할 때 음악을 들어요.",
+        "analysis": "listen은 이 구조에서 자동사이며 to music을 붙입니다. music은 전치사 to의 목적어입니다. 한국어로 “음악을 듣다”라고 해도 영어에서는 to를 유지합니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I arrived the airport.",
+        "right": "I arrived at the airport.",
+        "why": "arrive는 이 의미에서 직접 목적어를 취하지 않아 장소를 at으로 연결합니다. 비슷한 뜻의 reach를 쓰면 I reached the airport처럼 바로 목적어를 붙입니다."
+      },
+      {
+        "wrong": "We discussed about the problem.",
+        "right": "We discussed the problem.",
+        "why": "discuss는 논의하는 대상을 직접 목적어로 취합니다. 같은 뜻을 talk로 말하면 We talked about the problem처럼 about이 필요합니다."
+      },
+      {
+        "wrong": "I listened music.",
+        "right": "I listened to music.",
+        "why": "listen은 듣는 대상을 전치사 to와 연결하는 것이 기본입니다. heard music은 hear가 직접 목적어를 취하는 다른 구조이며, 듣다라는 번역만으로 어순을 정하면 안 됩니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“공항에 도착했어요”의 올바른 구조는?",
+        "options": [
+          "I arrived the airport.",
+          "I arrived at the airport.",
+          "I arrived to the airport."
+        ],
+        "answer": "I arrived at the airport.",
+        "explanation": "arrive는 이 의미에서 자동사입니다. 공항이라는 지점은 at the airport라는 전치사구로 연결합니다. to가 아닌 at을 쓰며, 도시·나라에는 보통 arrive in을 씁니다."
+      },
+      {
+        "q": "My sister became a teacher에서 a teacher의 역할은?",
+        "options": [
+          "became의 직접 목적어",
+          "sister의 정체를 설명하는 주격보어",
+          "시간을 설명하는 수식어"
+        ],
+        "answer": "sister의 정체를 설명하는 주격보어",
+        "explanation": "sister 자신이 teacher가 된 것이므로 a teacher는 주격보어입니다. become은 이 구조에서 직접 목적어를 취하지 않는 연결동사입니다. “동사 뒤 명사=항상 목적어”는 아닙니다."
+      },
+      {
+        "q": "“그 문제를 논의했어요”의 올바른 문장은?",
+        "options": [
+          "We discussed about the problem.",
+          "We discussed the problem.",
+          "We discussed to the problem."
+        ],
+        "answer": "We discussed the problem.",
+        "explanation": "discuss는 타동사로 the problem을 직접 목적어로 받습니다. about을 쓰고 싶으면 We talked about the problem처럼 동사도 talk로 바꿔야 합니다."
+      },
+      {
+        "q": "The door opened. / I opened the door.에서 open의 용법은?",
+        "options": [
+          "두 문장 모두 직접 목적어가 있다",
+          "첫 문장은 자동사, 두 번째는 타동사 용법",
+          "첫 문장은 타동사, 두 번째는 자동사 용법"
+        ],
+        "answer": "첫 문장은 자동사, 두 번째는 타동사 용법",
+        "explanation": "첫 문장은 door가 주어이며 직접 목적어가 없습니다. 두 번째는 I가 주어이고 the door가 직접 목적어입니다. 같은 동사가 두 용법으로 쓰일 수 있습니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "집을 나서서 목적지에 도착한 일과, 그곳에서 방문하거나 한 일을 말하세요. 동사 뒤가 직접 목적어인지 전치사구인지 찾아보세요.",
+      "sample": "I left home at nine and arrived at the station at nine thirty. Later, I visited a museum. While I was waiting for my friend, I listened to music.",
+      "note": "arrived at the station, waiting for my friend, listened to music은 전치사를 유지합니다. visited a museum은 타동사 뒤에 직접 목적어를 붙인 구조입니다. left home의 leave도 문맥에 따라 여러 용법이 있습니다."
+    }
+  },
+  {
+    "id": "g20",
+    "cat": "말하기 보충",
+    "title": "38 · 조동사: 가능·허락·의무·조언·추측",
+    "lead": "조동사는 행동 자체보다 “할 수 있는가, 해야 하는가, 그럴 가능성이 있는가”를 덧붙입니다.",
+    "concepts": [
+      {
+        "title": "조동사 뒤에는 원형",
+        "text": "can/could/may/might/must/should/will/would 뒤에는 원형이 옵니다. he/she여도 can drives가 아니라 can drive. be동사가 필요하면 원형 be를 씁니다: It might be expensive. 질문은 조동사를 앞으로, 부정은 조동사 뒤에 not을 붙입니다."
+      },
+      {
+        "title": "가능·허락·추측",
+        "text": "can은 능력과 가능: I can swim. Can I …?는 허락 요청입니다. could는 과거의 일반 능력 또는 정중한 요청: I could swim when I was young / Could you help me? may/might는 가능성: It might rain. must는 의무 외에 강한 추측도 됩니다: You must be tired."
+      },
+      {
+        "title": "의무와 조언",
+        "text": "must/have to는 해야 함, should는 권장·조언입니다. have to는 일반동사처럼 변합니다: she has to, didn’t have to, Do you have to? 현재 조동사 must의 과거 의무는 보통 had to로 표현합니다. ought to도 조언이지만 기본 회화에서는 should부터 익히세요."
+      },
+      {
+        "title": "금지와 불필요는 다릅니다",
+        "text": "mustn’t는 해서는 안 된다, don’t have to는 할 필요가 없다는 뜻입니다. You mustn’t park here는 금지, You don’t have to drive는 운전 안 해도 된다는 선택입니다. 이 차이를 놓치면 의도가 반대로 전달될 수 있습니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "능력",
+        "pattern": "can/could + 원형",
+        "note": "I can cook. I could run fast as a child."
+      },
+      {
+        "label": "가능성",
+        "pattern": "may/might + 원형",
+        "note": "It might be crowded."
+      },
+      {
+        "label": "의무·조언",
+        "pattern": "must / have to / should + 원형",
+        "note": "I have to work. You should rest."
+      },
+      {
+        "label": "금지·불필요",
+        "pattern": "mustn’t / don’t have to + 원형",
+        "note": "금지 / 안 해도 됨"
+      }
+    ],
+    "examples": [
+      {
+        "en": "You should book in advance because it gets crowded.",
+        "ko": "붐비니까 미리 예약하는 게 좋아요.",
+        "analysis": "should는 강제 의무가 아니라 조언입니다."
+      },
+      {
+        "en": "I had to cancel the trip because I was sick.",
+        "ko": "아파서 여행을 취소해야 했어요.",
+        "analysis": "과거 의무를 had to로 표현합니다. cancel은 to 뒤 원형입니다."
+      },
+      {
+        "en": "You don’t have to pay in advance.",
+        "ko": "미리 결제하지 않아도 돼요.",
+        "analysis": "결제 금지가 아니라 미리 결제할 의무가 없다는 뜻입니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "She can to drive.",
+        "right": "She can drive.",
+        "why": "can 뒤에는 to 없이 원형을 씁니다."
+      },
+      {
+        "wrong": "You mustn’t come. (안 와도 된다는 의도)",
+        "right": "You don’t have to come.",
+        "why": "mustn’t는 오면 안 된다는 금지입니다. 불필요는 don’t have to입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“예약할 필요는 없어요”에 맞는 문장은?",
+        "options": [
+          "You mustn’t make a reservation.",
+          "You don’t have to make a reservation.",
+          "You should to make a reservation."
+        ],
+        "answer": "You don’t have to make a reservation.",
+        "explanation": "don’t have to는 불필요, mustn’t는 금지입니다."
+      },
+      {
+        "q": "“비가 올지도 몰라요”의 올바른 형태는?",
+        "options": [
+          "It might rains.",
+          "It might rain.",
+          "It might to rain."
+        ],
+        "answer": "It might rain.",
+        "explanation": "조동사 might 뒤에는 주어와 관계없이 동사원형입니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "친구에게 여행 조언과 주의 사항을 말하세요.",
+      "sample": "You should bring a jacket. It might be cold at night. You don’t have to rent a car because the buses are convenient.",
+      "note": "조언·가능성·불필요의 의미를 구분하세요."
+    }
+  },
+  {
+    "id": "g31",
+    "cat": "말하기 보충",
+    "title": "39 · 명령·제안: 원형·let’s·why don’t we",
+    "lead": "상대에게 행동을 요청하거나 함께할 일을 제안할 때는 평서문과 다른 시작 형태를 씁니다.",
+    "concepts": [
+      {
+        "title": "명령문에는 주어 you를 보통 생략",
+        "text": "동사원형으로 시작합니다: Turn left / Please wait here. 부정은 Don’t + 원형: Don’t worry. be동사도 원형으로: Be careful / Don’t be late. please를 붙여도 상황에 따라 직접적인 명령으로 들릴 수 있으므로 서비스 롤플레이의 부탁은 Could you …?도 함께 익히세요."
+      },
+      {
+        "title": "함께하는 제안",
+        "text": "Let’s + 원형은 “우리 ~하자”입니다. 부정 제안은 Let’s not + 원형. Let’s는 let us의 축약이지만 일반적인 제안에서는 관용 표현처럼 익히면 됩니다. Let’s going이나 Let’s to go로 바꾸지 않습니다."
+      },
+      {
+        "title": "다른 제안 표현",
+        "text": "Why don’t we + 원형?는 실제로 이유를 캐묻기보다 제안으로 쓰입니다. How about + 명사/-ing?는 선택지를 제시합니다. Shall we …?도 가능합니다. 상대에게만 제안하면 Why don’t you …?가 되며 문맥에 따라 조언·지적처럼 들릴 수 있습니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "명령·안내",
+        "pattern": "(Please) + 원형",
+        "note": "Please take a seat."
+      },
+      {
+        "label": "부정 명령",
+        "pattern": "Don’t + 원형",
+        "note": "Don’t forget your passport."
+      },
+      {
+        "label": "함께 제안",
+        "pattern": "Let’s (not) + 원형",
+        "note": "Let’s take a break."
+      },
+      {
+        "label": "의문형 제안",
+        "pattern": "Why don’t we + 원형? / How about + -ing?",
+        "note": "How about taking the bus?"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Go straight and turn left at the corner.",
+        "ko": "직진한 뒤 모퉁이에서 왼쪽으로 도세요.",
+        "analysis": "길 안내 명령문입니다. go와 turn 모두 원형이며 you는 생략됐습니다."
+      },
+      {
+        "en": "Let’s not drive today. How about taking the subway?",
+        "ko": "오늘은 운전하지 말자. 지하철을 타는 건 어때?",
+        "analysis": "Let’s not 뒤 drive는 원형, 전치사 about 뒤 taking은 -ing입니다."
+      },
+      {
+        "en": "Why don’t we meet at the station?",
+        "ko": "역에서 만나는 게 어때요?",
+        "analysis": "why don’t we는 이 문맥에서 제안의 기능을 합니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Let’s to go outside.",
+        "right": "Let’s go outside.",
+        "why": "Let’s 뒤에는 to 없이 원형입니다."
+      },
+      {
+        "wrong": "How about go hiking?",
+        "right": "How about going hiking?",
+        "why": "전치사 about 뒤에는 명사나 동명사 -ing가 옵니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“조심하세요”의 올바른 명령문은?",
+        "options": [
+          "Are careful.",
+          "Be careful.",
+          "Is careful."
+        ],
+        "answer": "Be careful.",
+        "explanation": "명령문은 주어 you를 보통 생략하고 동사원형으로 시작합니다. 따라서 are/is가 아닌 be를 쓰고, 뒤의 형용사 careful로 요청하는 상태를 나타냅니다."
+      },
+      {
+        "q": "“산책하는 건 어때요?”의 올바른 제안은?",
+        "options": [
+          "How about taking a walk?",
+          "How about to take a walk?",
+          "How about take a walk?"
+        ],
+        "answer": "How about taking a walk?",
+        "explanation": "How about 뒤에는 동명사 taking 또는 명사 표현이 옵니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "친구에게 휴일 활동을 두 가지 제안하세요.",
+      "sample": "Let’s go for a walk first. After that, how about getting coffee at the café near the station?",
+      "note": "Let’s + 원형과 How about + -ing를 각각 말해 보세요."
+    }
+  },
+  {
+    "id": "g08",
+    "cat": "말하기 보충",
+    "title": "40 · a·an·the와 관사 없이 쓰는 경우",
+    "lead": "관사는 단순히 “하나”를 붙이는 장식이 아니라, 듣는 사람이 그 대상을 특정할 수 있는지 알려줍니다.",
+    "concepts": [
+      {
+        "title": "a/an: 여러 개 중 하나를 소개",
+        "text": "처음 꺼내는 불특정한 단수 가산명사에 a/an을 씁니다. I saw a dog는 “개 한 마리를 봤다”이며 어떤 개인지 아직 정해지지 않았습니다. a/an의 선택은 철자가 아니라 바로 뒤 말의 첫소리 기준입니다. a university는 /y/ 소리, an hour는 h가 소리 나지 않기 때문입니다."
+      },
+      {
+        "title": "the: 어떤 것인지 특정 가능",
+        "text": "앞서 소개했거나, 상황상 서로 알고 있거나, 뒤의 설명으로 특정되는 대상에 씁니다. I saw a dog. The dog was cute에서 같은 개를 다시 말합니다. the book on my desk는 책상 위의 그 책을 특정합니다. the는 복수·불가산명사에도 쓸 수 있습니다: the people we met, the water in this bottle."
+      },
+      {
+        "title": "일반적인 복수·불가산에는 보통 무관사",
+        "text": "I like movies / I like music은 영화·음악 전체에 대한 선호입니다. I like the movies you recommended는 추천받은 특정 영화들입니다. 고유명사는 보통 관사를 생략하지만 the United States 같은 관용 예외가 있습니다. at home, go to work 같은 표현은 묶음으로 익히세요."
+      },
+      {
+        "title": "직업과 소유 한정사",
+        "text": "직업을 나타내는 단수 가산명사에는 I’m a teacher처럼 a/an을 씁니다. my/this/that 등이 이미 명사를 한정하면 a/the와 겹치지 않습니다: my house, this book. 형용사가 명사 앞에 있으면 a nice hotel처럼 형용사 소리를 보고 a/an을 선택합니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "새로운 불특정 하나",
+        "pattern": "a/an + 단수 가산명사",
+        "note": "a café / an old café"
+      },
+      {
+        "label": "특정 대상",
+        "pattern": "the + 단수/복수/불가산명사",
+        "note": "the café near my house / the coffee I ordered"
+      },
+      {
+        "label": "일반적 선호",
+        "pattern": "복수 명사 또는 불가산명사",
+        "note": "I like cafés. I like coffee."
+      },
+      {
+        "label": "직업",
+        "pattern": "be + a/an + 직업 명사",
+        "note": "My sister is an engineer."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I found a small café. The café had great coffee.",
+        "ko": "작은 카페를 찾았어요. 그 카페의 커피가 훌륭했어요.",
+        "analysis": "처음에는 a café로 소개하고, 같은 대상을 다시 말할 때 the café라고 합니다. coffee는 음료의 일반적 질을 말하므로 무관사입니다."
+      },
+      {
+        "en": "I stayed at a hotel near the station.",
+        "ko": "역 근처의 한 호텔에 묵었어요.",
+        "analysis": "hotel은 처음 소개한 하나, station은 대화에서 특정되는 역입니다. 문맥 없이 모든 station 앞에 항상 the를 쓰는 규칙은 아닙니다."
+      },
+      {
+        "en": "I’m an office worker, and my brother is a student.",
+        "ko": "저는 회사원이고 남동생은 학생이에요.",
+        "analysis": "office는 모음 소리로 시작하여 an, student는 자음 소리로 시작하여 a를 씁니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I am teacher.",
+        "right": "I am a teacher.",
+        "why": "직업 teacher는 단수 가산명사여서 관사가 필요합니다."
+      },
+      {
+        "wrong": "I like the music. (음악 전반에 대한 선호)",
+        "right": "I like music.",
+        "why": "음악 일반에 대한 선호는 무관사 music. 특정 음악을 가리키는 문맥에서는 the music도 가능합니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "hour 앞의 관사를 고르면?",
+        "options": [
+          "a hour",
+          "an hour",
+          "둘 다 첫소리와 관계없이 같다"
+        ],
+        "answer": "an hour",
+        "explanation": "hour의 h는 발음되지 않아서 모음 소리로 시작하므로 an을 씁니다."
+      },
+      {
+        "q": "음악 전체를 좋아한다고 처음 말할 때 자연스러운 표현은?",
+        "options": [
+          "I like music.",
+          "I like a music.",
+          "I like musics."
+        ],
+        "answer": "I like music.",
+        "explanation": "음악 전반을 뜻하는 music은 불가산명사이며 여기서는 무관사입니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "새로운 장소를 소개하고 같은 장소를 다시 설명하세요.",
+      "sample": "There’s a bookstore near my house. The bookstore is small, but it has a cozy reading area.",
+      "note": "처음 a bookstore, 다음 the bookstore로 대상을 이어가세요."
+    }
+  },
+  {
+    "id": "g04",
+    "cat": "말하기 보충",
+    "title": "41 · 부정문과 do·does·did의 역할",
+    "lead": "일반동사 문장을 부정하거나 질문할 때 do는 문장의 모양을 바꾸는 보조 역할을 합니다.",
+    "concepts": [
+      {
+        "title": "세 종류의 부정문을 구별하기",
+        "text": "be동사는 be + not, 일반동사는 do/does/did + not + 원형, 조동사는 can/will/should + not + 원형입니다. I’m not tired, I don’t work, I can’t drive는 구조가 서로 다릅니다. 동사를 먼저 분류하면 not을 어디에 넣을지 결정할 수 있습니다."
+      },
+      {
+        "title": "do가 시제와 수 일치를 맡습니다",
+        "text": "현재 I/you/we/they는 don’t, he/she/it은 doesn’t, 과거는 주어와 관계없이 didn’t입니다. doesn’t에 현재·3인칭 단수 정보가, didn’t에 과거 정보가 이미 있으므로 뒤의 동사는 원형입니다. didn’t went처럼 과거를 두 번 표시하지 않습니다."
+      },
+      {
+        "title": "not의 범위와 빈도 표현",
+        "text": "I don’t always cook는 “항상 요리하는 것은 아니다”입니다. I never cook는 “전혀 요리하지 않는다”로 더 강합니다. 표준 영어에서는 I don’t never cook처럼 don’t와 never를 함께 써서 단순 부정을 만들지 않습니다."
+      },
+      {
+        "title": "do가 항상 보조동사는 아닙니다",
+        "text": "I do the dishes에서 do는 “하다”라는 본동사이고 the dishes가 목적어입니다. Do you do the dishes?에서는 앞 do가 질문을 만드는 보조동사, 뒤 do가 실제 행동입니다. She doesn’t do the dishes도 보조동사 doesn’t와 본동사 do가 함께 있습니다. 같은 단어가 두 번 나온다고 잘못된 문장은 아닙니다. 앞에 나온 보조동사가 시제·수 일치를 맡는지 확인하세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "be 부정",
+        "pattern": "주어 + be + not",
+        "note": "I’m not busy. It wasn’t cheap."
+      },
+      {
+        "label": "일반동사 현재 부정",
+        "pattern": "주어 + don’t / doesn’t + 원형",
+        "note": "I don’t smoke. He doesn’t smoke."
+      },
+      {
+        "label": "일반동사 과거 부정",
+        "pattern": "주어 + didn’t + 원형",
+        "note": "I didn’t buy anything."
+      },
+      {
+        "label": "조동사 부정",
+        "pattern": "주어 + 조동사 + not + 원형",
+        "note": "I can’t swim. We won’t go."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I don’t eat out very often.",
+        "ko": "외식을 그렇게 자주 하지는 않아요.",
+        "analysis": "don’t + eat으로 현재 습관을 부정합니다. very often을 붙여 “전혀 안 한다”와 구분합니다."
+      },
+      {
+        "en": "The café wasn’t open, so we didn’t go in.",
+        "ko": "카페가 열려 있지 않아서 들어가지 않았어요.",
+        "analysis": "상태 open은 wasn’t, 행동 go는 didn’t go로 부정합니다."
+      },
+      {
+        "en": "She doesn’t have a car.",
+        "ko": "그녀는 차가 없어요.",
+        "analysis": "긍정문은 She has a car. 부정문에서 doesn’t가 수 일치를 맡으므로 has가 have로 돌아갑니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I not like it.",
+        "right": "I don’t like it.",
+        "why": "일반동사 like의 현재 부정문에는 don’t가 필요합니다."
+      },
+      {
+        "wrong": "I didn’t went there.",
+        "right": "I didn’t go there.",
+        "why": "과거는 didn’t가 표시하므로 go는 원형입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“어제 그 영화를 보지 않았어요”의 올바른 문장은?",
+        "options": [
+          "I didn’t saw the movie yesterday.",
+          "I didn’t see the movie yesterday.",
+          "I don’t saw the movie yesterday."
+        ],
+        "answer": "I didn’t see the movie yesterday.",
+        "explanation": "과거 부정은 didn’t + 원형 see입니다. saw는 과거 긍정문에서 씁니다."
+      },
+      {
+        "q": "“그녀는 항상 집에 있는 것은 아니에요”에 맞는 문장은?",
+        "options": [
+          "She isn’t always at home.",
+          "She is never at home.",
+          "She doesn’t at home."
+        ],
+        "answer": "She isn’t always at home.",
+        "explanation": "isn’t always는 부분 부정입니다. never는 “전혀 없다”라는 더 강한 의미이고, at home은 be동사와 연결합니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "하지 않는 습관과 어제 하지 않은 일을 하나씩 말하세요.",
+      "sample": "I don’t drink coffee at night. I didn’t work out yesterday.",
+      "note": "현재 습관은 don’t, 어제의 일은 didn’t로 구별하세요."
+    }
+  },
+  {
+    "id": "g05",
+    "cat": "말하기 보충",
+    "title": "42 · 의문문: yes/no 질문과 의문사 질문",
+    "lead": "질문은 무조건 문장 앞에 do를 붙이는 것이 아닙니다. be·조동사·일반동사에 따라 첫 단어가 달라집니다.",
+    "concepts": [
+      {
+        "title": "yes/no 질문의 순서",
+        "text": "be문장은 be + 주어, 조동사 문장은 조동사 + 주어 + 원형, 일반동사는 do/does/did + 주어 + 원형입니다. 평서문 You live nearby를 Do you live nearby?로 바꿉니다. 질문의 나머지 부분은 대체로 그대로 둡니다."
+      },
+      {
+        "title": "의문사는 무엇을 묻는지 정합니다",
+        "text": "what은 무엇, where는 장소, when은 시점, why는 이유, how는 방법·상태를 묻습니다. 의문사 + 의문문 순서가 기본입니다. How often은 빈도, How long은 기간, How much는 가격·양, How many는 셀 수 있는 수량입니다."
+      },
+      {
+        "title": "의문사가 주어인 질문은 예외",
+        "text": "Who called you?에서는 who 자체가 주어입니다. 주어를 묻는 질문에는 보통 do/did를 넣지 않습니다. Who did you call?은 주어 you가 따로 있으며, 전화를 건 대상(목적어)을 묻습니다. 질문에서 빠진 자리가 주어인지 먼저 확인하세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "be 질문",
+        "pattern": "Be + 주어 + 보어?",
+        "note": "Are you ready? Where is the café?"
+      },
+      {
+        "label": "일반동사 질문",
+        "pattern": "Do/Does/Did + 주어 + 원형?",
+        "note": "Did you enjoy the trip?"
+      },
+      {
+        "label": "조동사 질문",
+        "pattern": "Can/Will/Could + 주어 + 원형?",
+        "note": "Could you help me?"
+      },
+      {
+        "label": "의문사 질문",
+        "pattern": "의문사 + 조동사/be + 주어 …?",
+        "note": "How often do you work out?"
+      },
+      {
+        "label": "주어를 묻는 질문",
+        "pattern": "Who/What + 동사 …?",
+        "note": "Who lives here? What happened?"
+      }
+    ],
+    "examples": [
+      {
+        "en": "What time does the tour start?",
+        "ko": "투어는 몇 시에 시작하나요?",
+        "analysis": "what time은 시작 시간을, does는 현재·단수 정보를 나타냅니다. start는 원형입니다."
+      },
+      {
+        "en": "How long did you stay there?",
+        "ko": "그곳에 얼마나 머물렀나요?",
+        "analysis": "기간을 묻는 how long 뒤에 did + you + stay가 옵니다."
+      },
+      {
+        "en": "Who invited you? — My friend did.",
+        "ko": "누가 초대했나요? — 친구가요.",
+        "analysis": "who가 주어이므로 Who did invite you?라는 기본형을 쓰지 않습니다. 강조하는 특수한 경우는 별개입니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Where you live?",
+        "right": "Where do you live?",
+        "why": "일반동사 live로 질문하므로 do가 필요합니다."
+      },
+      {
+        "wrong": "What time does it starts?",
+        "right": "What time does it start?",
+        "why": "does 뒤에는 원형 start를 씁니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“누가 그 창문을 깼나요?”처럼 주어를 물으면?",
+        "options": [
+          "Who broke the window?",
+          "Who did broke the window?",
+          "Who the window broke?"
+        ],
+        "answer": "Who broke the window?",
+        "explanation": "who가 주어이므로 기본 의문문에서 did를 추가하지 않습니다."
+      },
+      {
+        "q": "“일주일에 몇 번 운동하나요?”에 맞는 질문은?",
+        "options": [
+          "How long do you work out?",
+          "How often do you work out?",
+          "How many do you work out?"
+        ],
+        "answer": "How often do you work out?",
+        "explanation": "빈도는 how often으로 묻습니다. how long은 한 번 또는 전체의 기간을 묻습니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "호텔에 전화한다고 생각하고 가격·위치·예약 가능 여부를 질문하세요.",
+      "sample": "How much is a room per night? Where is the hotel? Do you have any rooms available for Friday?",
+      "note": "질문의 의미를 정한 뒤 be 또는 do 구조를 고르세요."
+    }
+  },
+  {
+    "id": "g21",
+    "cat": "말하기 보충",
+    "title": "43 · would·could와 정중한 요청",
+    "lead": "would와 could는 과거만 나타내지 않습니다. 부탁·선호·가정에서도 자주 사용합니다.",
+    "concepts": [
+      {
+        "title": "Could you …?와 Would you …?",
+        "text": "Could you help me?는 도와줄 수 있는지 정중하게 묻고, Would you help me?는 해줄 의향을 묻습니다. 둘 다 실제 요청으로 자연스럽습니다. Can you …?도 일상에서 흔하며, 조동사가 바뀐다고 언제나 같은 정도의 공손함이 보장되는 것은 아닙니다. 문맥과 말투도 중요합니다."
+      },
+      {
+        "title": "would like와 would rather",
+        "text": "I’d like a room은 방을 원한다는 정중한 표현, I’d like to change the date는 날짜를 바꾸고 싶다는 뜻입니다. would like 뒤 명사 또는 to부정사가 옵니다. would rather 뒤에는 to 없이 원형: I’d rather stay home. I’d는 I would 또는 I had의 축약이므로 뒤 형태로 구별합니다."
+      },
+      {
+        "title": "가정과 과거의 반복",
+        "text": "I’d travel more if I had more time은 가정 속 결과입니다. When I was young, we would go camping every summer는 과거의 반복 행동입니다. 과거 상태는 used to가 일반적입니다: I used to live there. would live로 과거 거주 상태만 전달하려고 하면 문맥에 따라 다른 의미가 될 수 있습니다."
+      },
+      {
+        "title": "간접 요청과 실제 과거 구별",
+        "text": "Could I get a refund?에서 could는 지금의 정중한 요청입니다. I couldn’t find my bag yesterday에서 couldn’t는 실제 과거의 실패입니다. could가 보이면 무조건 한국어 과거형으로 번역하지 마세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "정중한 부탁",
+        "pattern": "Could/Would you + 원형?",
+        "note": "Could you check my reservation?"
+      },
+      {
+        "label": "정중한 희망",
+        "pattern": "would like + 명사 / to + 원형",
+        "note": "I’d like a refund. I’d like to cancel."
+      },
+      {
+        "label": "선호",
+        "pattern": "would rather + 원형",
+        "note": "I’d rather stay home."
+      },
+      {
+        "label": "가정 결과",
+        "pattern": "would + 원형",
+        "note": "I would travel more if I had time."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Could you tell me the total price?",
+        "ko": "총금액을 알려주실 수 있나요?",
+        "analysis": "could는 과거 능력이 아니라 지금 정중하게 부탁하는 기능입니다."
+      },
+      {
+        "en": "I’d like to change my reservation to Friday.",
+        "ko": "예약을 금요일로 바꾸고 싶어요.",
+        "analysis": "would like to + 원형 change. to Friday는 변경 후 날짜입니다."
+      },
+      {
+        "en": "I’d rather take the bus than drive.",
+        "ko": "운전하는 것보다 버스를 타고 싶어요.",
+        "analysis": "rather 뒤 take와 than 뒤 drive 모두 원형으로 연결합니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I would like change the date.",
+        "right": "I would like to change the date.",
+        "why": "would like 뒤 행동은 to부정사로 연결합니다."
+      },
+      {
+        "wrong": "I’d rather to stay home.",
+        "right": "I’d rather stay home.",
+        "why": "would rather 뒤에는 to 없이 동사원형입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“예약을 취소하고 싶어요”의 정중한 형태는?",
+        "options": [
+          "I’d like cancel my reservation.",
+          "I’d like to cancel my reservation.",
+          "I’d rather to cancel my reservation."
+        ],
+        "answer": "I’d like to cancel my reservation.",
+        "explanation": "would like 뒤 동작은 to + 원형으로 표현합니다."
+      },
+      {
+        "q": "“차라리 집에 있고 싶어요”의 올바른 문장은?",
+        "options": [
+          "I’d rather stay home.",
+          "I’d rather to stay home.",
+          "I’d rather staying home."
+        ],
+        "answer": "I’d rather stay home.",
+        "explanation": "would rather의 뒤에는 동사원형 stay가 옵니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "잘못된 예약을 바꾸려는 요청을 세 문장으로 말하세요.",
+      "sample": "I’d like to change my reservation. Could you move it to Friday? If that’s not possible, I’d like a refund.",
+      "note": "희망은 I’d like, 부탁은 Could you로 분리해 말하세요."
+    }
+  },
+  {
+    "id": "g23",
+    "cat": "말하기 보충",
+    "title": "44 · used to·be used to·get used to",
+    "lead": "철자가 비슷하지만 “예전 습관”, “익숙한 상태”, “익숙해지는 과정”은 서로 다른 구조입니다.",
+    "concepts": [
+      {
+        "title": "used to + 원형: 예전에는",
+        "text": "지금은 달라진 과거 습관이나 상태입니다. I used to drive to work는 예전에는 차로 출근했다는 뜻입니다. I used to live in Busan처럼 상태도 가능합니다. 과거 한 번의 사건은 I went there yesterday처럼 과거형으로 말하고 used to로 바꾸지 않습니다."
+      },
+      {
+        "title": "부정·질문에는 use to",
+        "text": "표준 학습 형태는 didn’t use to + 원형, Did you use to + 원형?입니다. did가 과거를 표시해서 used가 use로 돌아갑니다. 발음상 used to와 use to가 매우 비슷하므로 글로도 확인하세요."
+      },
+      {
+        "title": "be used to + 명사/-ing: 익숙하다",
+        "text": "I’m used to the noise / I’m used to getting up early에서 to는 전치사입니다. 과거에 익숙했다면 I was used to …처럼 be의 시제를 바꿉니다. get used to는 익숙해지는 변화: I’m getting used to my new job."
+      },
+      {
+        "title": "사용되다와의 모양 구별",
+        "text": "This room is used to store equipment는 “방이 장비 보관에 사용된다”라는 수동태 used + 목적 to부정사입니다. I’m used to waking up early의 익숙함과 뜻이 다릅니다. 뒤에 원형인지 -ing인지, 주어가 무엇인지 함께 보세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "예전 습관·상태",
+        "pattern": "used to + 동사원형",
+        "note": "I used to live alone."
+      },
+      {
+        "label": "과거 습관 부정",
+        "pattern": "didn’t use to + 원형",
+        "note": "I didn’t use to cook."
+      },
+      {
+        "label": "익숙한 상태",
+        "pattern": "be used to + 명사/-ing",
+        "note": "I’m used to the weather."
+      },
+      {
+        "label": "익숙해지는 변화",
+        "pattern": "get used to + 명사/-ing",
+        "note": "I’m getting used to commuting."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I used to eat out a lot, but now I cook at home.",
+        "ko": "예전에는 외식을 많이 했지만 지금은 집에서 요리해요.",
+        "analysis": "used to + eat으로 과거 반복 습관과 현재의 변화를 연결합니다."
+      },
+      {
+        "en": "I’m used to taking the subway during rush hour.",
+        "ko": "출퇴근 시간에 지하철을 타는 데 익숙해요.",
+        "analysis": "be used to 뒤에 동명사 taking이 오며 현재 익숙한 상태입니다."
+      },
+      {
+        "en": "It took me a month to get used to my new neighborhood.",
+        "ko": "새 동네에 익숙해지는 데 한 달 걸렸어요.",
+        "analysis": "get used to는 변화 과정, 뒤에는 명사 neighborhood입니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I used to getting up early. (예전 습관)",
+        "right": "I used to get up early.",
+        "why": "과거 습관의 used to 뒤에는 원형 get입니다."
+      },
+      {
+        "wrong": "I’m used to get up early. (익숙함)",
+        "right": "I’m used to getting up early.",
+        "why": "익숙함의 be used to 뒤에는 -ing 또는 명사입니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“예전에는 운전했지만 지금은 안 해요”에 맞는 문장은?",
+        "options": [
+          "I used to drive, but I don’t anymore.",
+          "I am used to driving, but I don’t anymore.",
+          "I used to driving, but I don’t anymore."
+        ],
+        "answer": "I used to drive, but I don’t anymore.",
+        "explanation": "used to + 원형은 과거 습관입니다. be used to는 익숙한 상태라는 다른 의미입니다."
+      },
+      {
+        "q": "“일찍 일어나는 데 익숙해요”의 올바른 표현은?",
+        "options": [
+          "I’m used to get up early.",
+          "I’m used to getting up early.",
+          "I used to get up early."
+        ],
+        "answer": "I’m used to getting up early.",
+        "explanation": "현재의 익숙함은 be used to + 동명사입니다. to가 전치사이므로 getting을 씁니다. used to get은 “예전에는 일찍 일어났다”라는 과거 습관입니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "예전 생활과 현재 변화, 새로 익숙해진 것을 말하세요.",
+      "sample": "I used to drive everywhere. Now I take the subway, and I’m used to commuting by train.",
+      "note": "예전 습관과 현재 익숙함을 한 답변 안에서 구별하세요."
+    }
+  },
+  {
+    "id": "g25",
+    "cat": "말하기 보충",
+    "title": "45 · there is·가주어 it와 존재·상황 설명",
+    "lead": "“무엇이 있다”와 “그것이 어디 있다”는 영어에서 서로 다른 문장으로 자주 말합니다.",
+    "concepts": [
+      {
+        "title": "there is/are: 존재를 새로 소개",
+        "text": "There is a park near my house는 공원의 존재를 소개합니다. There are two parks에서는 뒤 명사가 복수라 are입니다. there는 이 문장에서 “그곳”이라는 장소어가 아니라 존재 구문의 형식적 요소입니다. 과거 there was/were, 미래 there will be로 바꿀 수 있습니다."
+      },
+      {
+        "title": "위치를 말할 때는 대상을 주어로",
+        "text": "The park is near my house는 이미 알고 있는 공원의 위치를 말합니다. I have a car는 소유, There is a car outside는 존재를 말합니다. “있다”라는 한국어만 보고 have/there is/be를 똑같이 바꾸지 마세요."
+      },
+      {
+        "title": "날씨·시간·거리의 it",
+        "text": "It is raining / It is seven o’clock / It is far from here의 it은 구체적인 사물을 대신하는 말이 아니라 문법상 주어를 채웁니다. 영어의 평서문에서는 보통 주어가 필요하므로 Is raining처럼 생략하지 않습니다."
+      },
+      {
+        "title": "긴 주어를 뒤로 보내는 it",
+        "text": "It is difficult to explain은 “설명하는 것이 어렵다”입니다. to explain을 뒤로 보내고 앞에 형식상 it을 놓습니다. It takes me thirty minutes to get to work는 출근하는 데 시간이 든다는 구조입니다. it이 항상 특정 사물이라는 뜻은 아닙니다."
+      }
+    ],
+    "forms": [
+      {
+        "label": "존재",
+        "pattern": "There is + 단수/불가산 · There are + 복수",
+        "note": "There’s a café. There’s some water."
+      },
+      {
+        "label": "존재 부정·질문",
+        "pattern": "There isn’t/aren’t … / Is/Are there …?",
+        "note": "Are there any shops nearby?"
+      },
+      {
+        "label": "상황",
+        "pattern": "It + be + 날씨/시간/거리 표현",
+        "note": "It’s cold. It’s late."
+      },
+      {
+        "label": "평가·소요 시간",
+        "pattern": "It’s + 형용사 + to … / It takes … to …",
+        "note": "It’s easy to get there."
+      }
+    ],
+    "examples": [
+      {
+        "en": "There are several cafés near my apartment.",
+        "ko": "아파트 근처에 카페가 여러 곳 있어요.",
+        "analysis": "복수 cafés를 새로 소개하므로 there are입니다. 회화에서 there’s + 복수도 들리지만 기본 형태는 are로 익히세요."
+      },
+      {
+        "en": "It takes me twenty minutes to walk to work.",
+        "ko": "걸어서 출근하는 데 20분 걸려요.",
+        "analysis": "it은 형식 주어, me는 시간이 드는 사람, to walk to work는 실제 활동입니다."
+      },
+      {
+        "en": "It’s hard to find a parking space here.",
+        "ko": "여기서는 주차 공간을 찾기 어려워요.",
+        "analysis": "평가 hard의 대상은 뒤의 to find … 전체입니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "There have two cafés.",
+        "right": "There are two cafés.",
+        "why": "존재 소개는 there are입니다. have는 소유하는 주어가 필요합니다."
+      },
+      {
+        "wrong": "Is cold today.",
+        "right": "It is cold today.",
+        "why": "날씨를 말하는 문장에도 형식 주어 it이 필요합니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“근처에 식당이 있나요?”의 올바른 질문은?",
+        "options": [
+          "Is there a restaurant nearby?",
+          "Does there a restaurant nearby?",
+          "Has there a restaurant nearby?"
+        ],
+        "answer": "Is there a restaurant nearby?",
+        "explanation": "존재 구문의 be동사 is를 앞으로 보내 질문을 만듭니다."
+      },
+      {
+        "q": "“거기 가는 데 한 시간 걸려요”에 맞는 문장은?",
+        "options": [
+          "It takes an hour to get there.",
+          "There takes an hour to get there.",
+          "It takes an hour get there."
+        ],
+        "answer": "It takes an hour to get there.",
+        "explanation": "소요 시간 구문은 It takes + 기간 + to부정사입니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "동네 시설과 그곳까지 걸리는 시간을 설명하세요.",
+      "sample": "There’s a park near my house. It takes about ten minutes to walk there, and it’s easy to find.",
+      "note": "존재를 소개한 뒤 시간·접근성을 it 구문으로 붙이세요."
     }
   },
   {
     "id": "g30",
-    "cat": "문장 연결",
-    "title": "31 · 조건문: 실제 가능성과 가정",
+    "cat": "말하기 보충",
+    "title": "46 · 조건문: 실제 가능성과 가정",
     "lead": "if절은 조건, 주절은 그 조건의 결과를 말합니다. 현재 가능한 조건인지 사실과 다른 상상인지 구분하세요.",
     "concepts": [
       {
@@ -3613,107 +6924,9 @@ const grammar = [
     }
   },
   {
-    "id": "g31",
-    "cat": "문장 연결",
-    "title": "32 · 명령·제안: 원형·let’s·why don’t we",
-    "lead": "상대에게 행동을 요청하거나 함께할 일을 제안할 때는 평서문과 다른 시작 형태를 씁니다.",
-    "concepts": [
-      {
-        "title": "명령문에는 주어 you를 보통 생략",
-        "text": "동사원형으로 시작합니다: Turn left / Please wait here. 부정은 Don’t + 원형: Don’t worry. be동사도 원형으로: Be careful / Don’t be late. please를 붙여도 상황에 따라 직접적인 명령으로 들릴 수 있으므로 서비스 롤플레이의 부탁은 Could you …?도 함께 익히세요."
-      },
-      {
-        "title": "함께하는 제안",
-        "text": "Let’s + 원형은 “우리 ~하자”입니다. 부정 제안은 Let’s not + 원형. Let’s는 let us의 축약이지만 일반적인 제안에서는 관용 표현처럼 익히면 됩니다. Let’s going이나 Let’s to go로 바꾸지 않습니다."
-      },
-      {
-        "title": "다른 제안 표현",
-        "text": "Why don’t we + 원형?는 실제로 이유를 캐묻기보다 제안으로 쓰입니다. How about + 명사/-ing?는 선택지를 제시합니다. Shall we …?도 가능합니다. 상대에게만 제안하면 Why don’t you …?가 되며 문맥에 따라 조언·지적처럼 들릴 수 있습니다."
-      }
-    ],
-    "forms": [
-      {
-        "label": "명령·안내",
-        "pattern": "(Please) + 원형",
-        "note": "Please take a seat."
-      },
-      {
-        "label": "부정 명령",
-        "pattern": "Don’t + 원형",
-        "note": "Don’t forget your passport."
-      },
-      {
-        "label": "함께 제안",
-        "pattern": "Let’s (not) + 원형",
-        "note": "Let’s take a break."
-      },
-      {
-        "label": "의문형 제안",
-        "pattern": "Why don’t we + 원형? / How about + -ing?",
-        "note": "How about taking the bus?"
-      }
-    ],
-    "examples": [
-      {
-        "en": "Go straight and turn left at the corner.",
-        "ko": "직진한 뒤 모퉁이에서 왼쪽으로 도세요.",
-        "analysis": "길 안내 명령문입니다. go와 turn 모두 원형이며 you는 생략됐습니다."
-      },
-      {
-        "en": "Let’s not drive today. How about taking the subway?",
-        "ko": "오늘은 운전하지 말자. 지하철을 타는 건 어때?",
-        "analysis": "Let’s not 뒤 drive는 원형, 전치사 about 뒤 taking은 -ing입니다."
-      },
-      {
-        "en": "Why don’t we meet at the station?",
-        "ko": "역에서 만나는 게 어때요?",
-        "analysis": "why don’t we는 이 문맥에서 제안의 기능을 합니다."
-      }
-    ],
-    "mistakes": [
-      {
-        "wrong": "Let’s to go outside.",
-        "right": "Let’s go outside.",
-        "why": "Let’s 뒤에는 to 없이 원형입니다."
-      },
-      {
-        "wrong": "How about go hiking?",
-        "right": "How about going hiking?",
-        "why": "전치사 about 뒤에는 명사나 동명사 -ing가 옵니다."
-      }
-    ],
-    "exercises": [
-      {
-        "q": "“조심하세요”의 올바른 명령문은?",
-        "options": [
-          "Are careful.",
-          "Be careful.",
-          "Is careful."
-        ],
-        "answer": "Be careful.",
-        "explanation": "명령문은 주어 you를 보통 생략하고 동사원형으로 시작합니다. 따라서 are/is가 아닌 be를 쓰고, 뒤의 형용사 careful로 요청하는 상태를 나타냅니다."
-      },
-      {
-        "q": "“산책하는 건 어때요?”의 올바른 제안은?",
-        "options": [
-          "How about taking a walk?",
-          "How about to take a walk?",
-          "How about take a walk?"
-        ],
-        "answer": "How about taking a walk?",
-        "explanation": "How about 뒤에는 동명사 taking 또는 명사 표현이 옵니다."
-      }
-    ],
-    "spoken": {
-      "prompt": "친구에게 휴일 활동을 두 가지 제안하세요.",
-      "sample": "Let’s go for a walk first. After that, how about getting coffee at the café near the station?",
-      "note": "Let’s + 원형과 How about + -ing를 각각 말해 보세요."
-    }
-  },
-  {
     "id": "g32",
-    "cat": "문장 연결",
-    "title": "33 · 구동사와 동사·전치사 조합",
+    "cat": "말하기 보충",
+    "title": "47 · 구동사와 동사·전치사 조합",
     "lead": "동사 뒤의 짧은 단어 하나가 뜻과 어순을 바꿀 수 있습니다. 단어가 아니라 쓰임이 있는 덩어리로 익히세요.",
     "concepts": [
       {

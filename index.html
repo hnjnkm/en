@@ -9,21 +9,24 @@
 <meta property="og:description" content="기초 문법과 핵심 단어를 익히고, 내 이야기로 말해 보세요."><meta property="og:type" content="website">
 <link rel="icon" href="favicon.ico?v=1" sizes="any"><link rel="icon" type="image/svg+xml" href="favicon.svg?v=1">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
-<body><div class="page-layout"><aside id="grammar-rail" aria-label="문법 목차"><button id="rail-toggle" aria-expanded="true" aria-controls="grammar-index">문법 목차 <span>33개 강의</span></button><div id="grammar-index"></div></aside><main data-content-version="study-v5">
+<body><div class="page-layout">
+<aside id="grammar-rail" class="study-rail" aria-label="문법 목차"><button id="rail-toggle" class="rail-toggle" aria-expanded="true" aria-controls="grammar-index">문법 목차 <span>47개 강의</span></button><div id="grammar-index" class="rail-index"></div></aside>
+<aside id="word-rail" class="study-rail" aria-label="단어 목차" hidden><button id="word-rail-toggle" class="rail-toggle" aria-expanded="true" aria-controls="word-index">단어 목차 <span></span></button><div id="word-index" class="rail-index"></div></aside>
+<main data-content-version="study-v6">
 <header><a class="brand" href="./">oPIC</a><span>말하기의 기본</span></header>
 <nav aria-label="학습 메뉴"><button class="active" data-tab="grammar" aria-pressed="true">문법</button><button data-tab="vocabulary" aria-pressed="false">단어</button></nav>
-<section class="intro"><h1 id="heading">규칙을 이해하고, 문장을 만드는 문법.</h1><p id="description">문장 기초 → 명사와 수식 → 시제 → 동사 확장 → 문장 연결. 33개 강의에서 개념, 형태, 예문 분석과 연습 해설을 차례로 공부하세요.</p></section>
+<section class="intro"><h1 id="heading">규칙을 이해하고, 문장을 만드는 문법.</h1><p id="description">명사·대명사 → 동사 → 형용사·부사 → 전접부 → 준동사 → 분사·비교. 8개 Unit과 말하기 보충, 47개 강의에서 설명·예문·연습을 차례로 공부하세요.</p></section>
 <div class="toolbar"><label class="search"><span class="sr-only">학습 내용 검색</span><input id="search" type="search" placeholder="문법이나 예문 검색" autocomplete="off"></label><button id="quiz-open">퀴즈 풀기 ↗</button></div>
 <div id="word-tools" hidden>
 <div class="word-control-row"><label id="word-topic-label">주제 <select id="word-topic"><option value="전체">전체</option></select></label><label id="word-group-category-label" hidden>성격 <select id="word-group-category"><option value="전체">전체</option></select></label><label>상태 <select id="word-status"><option value="unknown">아직 모르는 단어</option><option value="all">전체 단어</option><option value="known">아는 단어</option></select></label></div>
 <div class="word-control-row"><div class="view-switch" aria-label="단어 학습 방식"><button data-word-view="groups" aria-pressed="true">묶음</button><button data-word-view="list" aria-pressed="false">목록</button><button data-word-view="cards" aria-pressed="false">카드</button></div><button id="word-shuffle">섞기 ↻</button></div>
 <div id="word-scope" class="word-scope" hidden><p></p><button id="word-scope-clear">묶음으로 돌아가기</button></div>
 <p class="study-guide">묶음은 성격과 결합을 함께 익히는 목록입니다. ‘이 묶음 카드·퀴즈’로 따로 복습할 수 있습니다. 처음 보는 항목도 모르는 항목에 포함되며, ‘알아요’를 표시하면 빠집니다. 카드는 남은 항목을 다시 섞어 반복합니다.</p><p id="storage-notice" class="storage-notice" role="status" hidden></p></div>
-<div id="filters" class="filters" aria-label="문법 학습 단계"></div><p id="study-guide" class="study-guide">처음이라면 01번부터 순서대로. 설명을 읽고 → 예문에서 구조를 찾고 → 문제를 푼 뒤 → 내 이야기로 말해 보세요. 퀴즈는 선택한 단계에서 최대 10문제를 출제합니다.</p>
-<p id="count" class="meta" aria-live="polite"></p><section id="list" aria-label="학습 내용"></section><section id="word-groups" aria-label="성격별 단어 묶음" hidden></section><section id="word-card" aria-label="단어 카드 학습" hidden></section><div id="word-pagination" class="pagination" hidden><button id="word-prev">이전</button><span id="word-page" aria-live="polite"></span><button id="word-next">다음</button></div>
+<div id="filters" class="filters" aria-label="문법 학습 단계"></div><p id="study-guide" class="study-guide">Unit 1부터 순서대로. 설명 → 예문 분석 → 연습 → 내 이야기로 말하기. 문장 기초는 ‘말하기 보충’에서 확인하세요. 퀴즈는 선택한 Unit에서 최대 10문제를 출제합니다. <a href="https://www.youtube.com/watch?v=3hm7qJDcHCM" target="_blank" rel="noopener noreferrer">목차 참고 강의 ↗</a></p>
+<p id="count" class="meta" aria-live="polite" tabindex="-1"></p><section id="list" aria-label="학습 내용"></section><section id="word-groups" aria-label="성격별 단어 묶음" hidden></section><section id="word-card" aria-label="단어 카드 학습" hidden></section><div id="word-pagination" class="pagination" hidden><button id="word-prev">이전</button><span id="word-page" aria-live="polite"></span><button id="word-next">다음</button></div>
 <footer><p>예문은 시작점입니다. 이유 → 구체적인 경험 → 느낌을 덧붙여 말해 보세요.</p><p>AL은 단어 암기만으로 결정되지 않습니다. 자연스러운 연결과 상황에 맞는 설명도 함께 연습하세요.</p></footer>
 </main></div>
 <dialog id="quiz" aria-labelledby="quiz-label"><div class="dialog-head"><span id="quiz-label">복습 퀴즈</span><button id="quiz-close" aria-label="퀴즈 닫기">닫기</button></div><div id="quiz-body"></div></dialog>
-<script src="content.js?v=5"></script><script src="word-groups.js?v=5"></script><script src="app.js?v=5"></script></body></html>
+<script src="content.js?v=6"></script><script src="word-groups.js?v=6"></script><script src="app.js?v=6"></script></body></html>

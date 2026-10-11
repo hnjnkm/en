@@ -55,6 +55,7 @@ function grammarLesson(item, learned) {
 }
 function render() {
   if (tab === 'vocabulary') { railObserver?.disconnect(); renderWords(); return; }
+  wordRailObserver?.disconnect();
   $('#list').hidden = false; $('#word-groups').hidden = true; $('#word-card').hidden = true; $('#word-pagination').hidden = true;
   const query = $('#search').value.trim().toLowerCase();
   const source = tab === 'grammar' ? grammar : vocabulary;
@@ -74,7 +75,8 @@ function renderFilters() {
 function switchTab(next) {
   tab = next; category = '전체'; $('#search').value = '';
   document.body.dataset.tab = tab;
-  $('#grammar-rail').hidden = tab !== 'grammar'; $('#word-tools').hidden = tab !== 'vocabulary';
+  $('#grammar-rail').hidden = tab !== 'grammar'; $('#word-rail').hidden = tab !== 'vocabulary'; $('#word-tools').hidden = tab !== 'vocabulary';
+  if (!railMedia.matches) { closeMobileRail('grammar-rail', 'rail-toggle'); closeMobileRail('word-rail', 'word-rail-toggle'); }
   $('#word-topic').value = '전체'; $('#word-group-category').value = '전체'; wordGroupCategory = '전체'; activeWordGroupId = null; wordPage = 1;
   if (tab === 'vocabulary') resetCards();
   document.querySelectorAll('nav button').forEach(button => {
@@ -82,7 +84,7 @@ function switchTab(next) {
     button.setAttribute('aria-pressed', button.dataset.tab === tab);
   });
   $('#heading').textContent = tab === 'grammar' ? '규칙을 이해하고, 문장을 만드는 문법.' : '자주 쓰는 말부터, 내 표현으로.';
-  $('#description').textContent = tab === 'grammar' ? `문장 기초 → 명사와 수식 → 시제 → 동사 확장 → 문장 연결. ${grammar.length}개 강의에서 개념, 형태, 예문 분석과 연습 해설을 차례로 공부하세요.` : `기본 단어·표현 ${vocabulary.length.toLocaleString()}개와 성격별 ${wordGroups.length}개 묶음. 함께 쓰는 말과 차이를 익히고, 모르는 항목만 섞어서 반복하세요.`;
+  $('#description').textContent = tab === 'grammar' ? `명사·대명사 → 동사 → 형용사·부사 → 전접부 → 준동사 → 분사·비교. 8개 Unit과 말하기 보충, ${grammar.length}개 강의에서 설명·예문·연습을 차례로 공부하세요.` : `기본 단어·표현 ${vocabulary.length.toLocaleString()}개와 성격별 ${wordGroups.length}개 묶음. 함께 쓰는 말과 차이를 익히고, 모르는 항목만 섞어서 반복하세요.`;
   $('#study-guide').hidden = tab !== 'grammar';
   $('#search').placeholder = tab === 'grammar' ? '개념, 문장, 예문까지 검색' : '단어, 뜻, 예문 검색';
   renderFilters(); render();
@@ -149,7 +151,9 @@ let wordView = 'groups', wordStatus = 'unknown', wordPage = 1, wordOrder = [...s
 let wordGroupCategory = '전체', activeWordGroupId = null, groupOrder = wordGroups.map(group => group.id);
 const groupItemOrder = new Map(wordGroups.map(group => [group.id, group.items.map(item => item.term)]));
 let cardDeck = [], cardIndex = 0, cardCycle = 1, cardRevealed = false;
-let activeLesson = 'g01', railObserver = null;
+let activeLesson = grammar[0].id, railObserver = null;
+let activeWordRailGroup = wordGroups[0].id, wordRailObserver = null;
+const wordTopics = [...new Set(vocabulary.map(word => word.cat))];
 const railMedia = matchMedia('(min-width: 1100px)');
 function readKnownWords() {
   try {
@@ -198,6 +202,7 @@ function renderWordCount(rows) {
 }
 function renderWords() {
   syncWordControls();
+  renderWordRail(); wordRailObserver?.disconnect();
   if (wordView === 'groups') { renderWordGroups(); return; }
   $('#word-groups').hidden = true;
   const rows = orderedWords(); renderWordCount(rows);
@@ -271,6 +276,7 @@ function renderWordGroups() {
   $('#quiz-open').disabled = entries === 0;
   $('#count').textContent = `${rows.length}개 묶음 · ${entries.toLocaleString()}개 항목 · 같은 표현이 다른 묶음에 다시 나올 수 있습니다.`;
   $('#word-groups').innerHTML = rows.map(({group, items}) => `<details class="lesson word-group" id="${group.id}" ${openGroups.has(group.id) ? 'open' : ''}><summary><span>${h(group.title)}<small>${h(group.cat)} · ${items.length}개</small></span></summary><div class="body group-body"><p class="group-lead">${h(group.lead)}</p><div class="group-actions"><button data-group-cards="${group.id}">이 묶음 카드</button><button data-group-quiz="${group.id}">이 묶음 퀴즈</button></div><table class="group-table"><thead><tr><th scope="col">단어·뜻</th><th scope="col">함께 쓰는 표현·차이</th></tr></thead><tbody>${items.map(item => `<tr data-group-term="${h(item.term)}"><th scope="row"><p lang="en">${h(item.term)}</p><p class="group-meaning">${h(item.meaning)}</p></th><td>${item.usages.map(usage => `<p lang="en">${h(usage)}</p>`).join('')}${item.note ? `<p class="word-note">${h(item.note)}</p>` : ''}${wordStateButtons(item)}</td></tr>`).join('')}</tbody></table></div></details>`).join('') || '<p class="empty">이 조건에 맞는 묶음 항목이 없습니다. 성격·상태·검색 조건을 바꿔 보세요.</p>';
+  observeWordGroups();
 }
 function studyGroup(id, view) {
   if (!groupMap.has(id)) return;
@@ -311,8 +317,69 @@ function goToLesson(id, updateHash = true) {
   lesson.querySelector('summary').focus({preventScroll:true}); lesson.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',block:'start'});
 }
 function syncRailSize() {
-  $('#rail-toggle').setAttribute('aria-expanded',railMedia.matches ? 'true':'false');
-  $('#grammar-rail').classList.toggle('rail-open',railMedia.matches);
+  for (const [railId, toggleId] of [['grammar-rail','rail-toggle'], ['word-rail','word-rail-toggle']]) {
+    document.getElementById(toggleId).setAttribute('aria-expanded',railMedia.matches ? 'true':'false');
+    document.getElementById(railId).classList.toggle('rail-open',railMedia.matches);
+  }
+}
+function closeMobileRail(railId, toggleId) {
+  if (railMedia.matches) return;
+  document.getElementById(railId).classList.remove('rail-open');
+  document.getElementById(toggleId).setAttribute('aria-expanded','false');
+}
+function activateWordRailGroup(id) {
+  activeWordRailGroup = id;
+  $('#word-index').querySelectorAll('[data-word-group-target]').forEach(link => {
+    if (link.dataset.wordGroupTarget === id) link.setAttribute('aria-current','location'); else link.removeAttribute('aria-current');
+  });
+}
+function renderWordRail() {
+  const groups = wordView === 'groups' || !!activeWordGroupId;
+  $('#word-rail-toggle > span').textContent = groups ? `${wordGroups.length}개 묶음` : `${wordTopics.length}개 주제`;
+  if (groups) {
+    $('#word-index').innerHTML = [...new Set(wordGroups.map(group => group.cat))].map(cat => `<section class="rail-group"><h2>${h(cat)}</h2>${wordGroups.filter(group => group.cat === cat).map(group => `<a href="#${group.id}" data-word-group-target="${group.id}"><span>${group.id.slice(2)}</span><span>${h(group.title)}</span></a>`).join('')}</section>`).join('');
+    activateWordRailGroup(activeWordGroupId || activeWordRailGroup);
+  } else {
+    $('#word-index').innerHTML = `<section class="rail-group"><h2>주제별 단어</h2>${['전체', ...wordTopics].map((topic, index) => `<a href="#wt${String(index).padStart(2,'0')}" data-word-topic-target="${index}" ${category === topic ? 'aria-current="location"' : ''}><span>${index ? String(index).padStart(2,'0') : '전체'}</span><span>${index ? h(topic) : `${vocabulary.length.toLocaleString()}개 단어·표현`}</span></a>`).join('')}</section>`;
+  }
+}
+function observeWordGroups() {
+  wordRailObserver?.disconnect();
+  const visible = new Set();
+  wordRailObserver = new IntersectionObserver(entries => {
+    if (tab !== 'vocabulary' || wordView !== 'groups') return;
+    for (const entry of entries) { if (entry.isIntersecting) visible.add(entry.target); else visible.delete(entry.target); }
+    const targets = [...visible].sort((a,b) => Math.abs(a.getBoundingClientRect().top - 100) - Math.abs(b.getBoundingClientRect().top - 100));
+    if (targets[0]) activateWordRailGroup(targets[0].id);
+  }, {rootMargin:'-10% 0px -65% 0px',threshold:0});
+  $('#word-groups').querySelectorAll('.word-group').forEach(group => wordRailObserver.observe(group));
+}
+function goToWordGroup(id, updateHash = true) {
+  const group = groupMap.get(id); if (!group) return;
+  if (tab !== 'vocabulary') switchTab('vocabulary');
+  wordView = 'groups'; activeWordGroupId = null; wordGroupCategory = '전체';
+  $('#word-group-category').value = '전체'; $('#search').value = '';
+  if (!visibleGroupItems(group).length) { wordStatus = 'all'; $('#word-status').value = 'all'; }
+  renderWords();
+  const target = document.getElementById(id); if (!target) return;
+  target.open = true; activateWordRailGroup(id); closeMobileRail('word-rail','word-rail-toggle');
+  if (updateHash) history.replaceState(null,'','#'+id);
+  target.querySelector('summary').focus({preventScroll:true});
+  target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto':'smooth',block:'start'});
+}
+function goToWordTopic(index, updateHash = true) {
+  const topic = ['전체', ...wordTopics][index]; if (!topic) return;
+  if (tab !== 'vocabulary') switchTab('vocabulary');
+  activeWordGroupId = null; category = topic; $('#word-topic').value = topic; $('#search').value = '';
+  if (wordView === 'groups') wordView = 'list';
+  refreshWordScope(); closeMobileRail('word-rail','word-rail-toggle');
+  if (updateHash) history.replaceState(null,'','#wt'+String(index).padStart(2,'0'));
+  $('#count').focus({preventScroll:true}); $('#count').scrollIntoView({block:'start'});
+}
+function openStudyHash() {
+  if (/^#g\d{2}$/.test(location.hash)) goToLesson(location.hash.slice(1), false);
+  else if (/^#wg\d{2,3}$/.test(location.hash)) goToWordGroup(location.hash.slice(1), false);
+  else if (/^#wt\d{2}$/.test(location.hash)) goToWordTopic(Number(location.hash.slice(3)), false);
 }
 function quizWordOptions(item) {
   const categories = ['사람·가족','음식·재료','집·공간','교통·이동'];
@@ -322,7 +389,7 @@ function quizWordOptions(item) {
   return shuffle([item.meaning,...distractors]);
 }
 
-$('nav').addEventListener('click', event => { const button = event.target.closest('[data-tab]'); if (button) switchTab(button.dataset.tab); });
+$('nav').addEventListener('click', event => { const button = event.target.closest('[data-tab]'); if (button) { switchTab(button.dataset.tab); history.replaceState(null,'',location.pathname+location.search); } });
 $('#search').addEventListener('input', () => { if (tab === 'vocabulary') refreshWordScope(); else render(); });
 $('#filters').addEventListener('click', event => { const button = event.target.closest('[data-category]'); if (button) { category = button.dataset.category; renderFilters(); render(); } });
 $('#list').addEventListener('click', event => {
@@ -422,7 +489,13 @@ $('#word-card').addEventListener('click', event => {
 $('#quiz').addEventListener('close', () => { if (tab === 'vocabulary') renderWords(); });
 $('#grammar-index').addEventListener('click', event => { const link = event.target.closest('[data-lesson-target]'); if (link) { event.preventDefault(); goToLesson(link.dataset.lessonTarget); } });
 $('#rail-toggle').addEventListener('click', () => { const open = $('#grammar-rail').classList.toggle('rail-open'); $('#rail-toggle').setAttribute('aria-expanded', open); });
+$('#word-index').addEventListener('click', event => {
+  const group = event.target.closest('[data-word-group-target]'), topic = event.target.closest('[data-word-topic-target]');
+  if (group) { event.preventDefault(); goToWordGroup(group.dataset.wordGroupTarget); }
+  else if (topic) { event.preventDefault(); goToWordTopic(Number(topic.dataset.wordTopicTarget)); }
+});
+$('#word-rail-toggle').addEventListener('click', () => { const open = $('#word-rail').classList.toggle('rail-open'); $('#word-rail-toggle').setAttribute('aria-expanded', open); });
 railMedia.addEventListener('change', syncRailSize);
 renderRail(); syncRailSize(); switchTab('grammar');
-if (/^#g\d{2}$/.test(location.hash)) goToLesson(location.hash.slice(1), false);
-window.addEventListener('hashchange', () => { if (/^#g\d{2}$/.test(location.hash)) goToLesson(location.hash.slice(1), false); });
+openStudyHash();
+window.addEventListener('hashchange', openStudyHash);

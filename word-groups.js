@@ -5887,5 +5887,3474 @@ const wordGroups = [
         "cat": "말하기 표현"
       }
     ]
+  },
+  {
+    "id": "wg65",
+    "cat": "어미와 품사",
+    "title": "-al로 끝나는 명사",
+    "lead": "형용사처럼 보여도 명사인 단어입니다. 제안서·도착 같은 뜻과 명사 자리의 표현을 함께 외우세요. 철자 끝은 단서일 뿐 모든 -al 단어의 품사를 결정하지 않습니다.",
+    "items": [
+      {
+        "term": "proposal",
+        "meaning": "제안·제안서",
+        "usages": [
+          "accept a proposal"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "arrival",
+        "meaning": "도착",
+        "usages": [
+          "on arrival / an early arrival"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "approval",
+        "meaning": "승인",
+        "usages": [
+          "get approval"
+        ],
+        "cat": "어미와 품사",
+        "note": "일반적인 승인은 불가산"
+      },
+      {
+        "term": "refusal",
+        "meaning": "거절",
+        "usages": [
+          "a refusal to cooperate"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "renewal",
+        "meaning": "갱신",
+        "usages": [
+          "membership renewal"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "removal",
+        "meaning": "제거",
+        "usages": [
+          "the removal of old furniture"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "survival",
+        "meaning": "생존",
+        "usages": [
+          "survival skills"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "withdrawal",
+        "meaning": "철회·인출",
+        "usages": [
+          "make a cash withdrawal"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "rehearsal",
+        "meaning": "리허설·예행연습",
+        "usages": [
+          "have a rehearsal"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "dismissal",
+        "meaning": "해고·기각",
+        "usages": [
+          "an unfair dismissal"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "betrayal",
+        "meaning": "배신",
+        "usages": [
+          "a feeling of betrayal"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "trial",
+        "meaning": "시험·재판",
+        "usages": [
+          "a free trial"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg66",
+    "cat": "어미와 품사",
+    "title": "-ive 명사와 명사·형용사 겸용 단어",
+    "lead": "명사인지 형용사인지는 문장 속 역할로 확인하세요. initiative는 주로 명사이고, alternative·objective·representative는 두 품사가 가능합니다.",
+    "items": [
+      {
+        "term": "initiative",
+        "meaning": "주도권·진취성·새로운 계획",
+        "usages": [
+          "take the initiative / a new initiative"
+        ],
+        "cat": "어미와 품사",
+        "note": "단순히 계획이라는 뜻만 외우지 않기"
+      },
+      {
+        "term": "alternative",
+        "meaning": "대안; 대체의·다른 선택이 되는",
+        "usages": [
+          "an alternative / an alternative plan"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "objective",
+        "meaning": "목표; 객관적인",
+        "usages": [
+          "a clear objective / an objective opinion"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "representative",
+        "meaning": "대표자; 대표하는",
+        "usages": [
+          "a sales representative / a representative sample"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "executive",
+        "meaning": "경영진·임원; 경영의",
+        "usages": [
+          "a company executive / an executive position"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "detective",
+        "meaning": "탐정·형사; 탐정의",
+        "usages": [
+          "a detective / a detective story"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "native",
+        "meaning": "원주민·현지인; 토착의·모국어의",
+        "usages": [
+          "a native of Seoul / a native speaker"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "relative",
+        "meaning": "친척; 상대적인",
+        "usages": [
+          "a close relative / relative importance"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "incentive",
+        "meaning": "장려책·동기",
+        "usages": [
+          "a financial incentive"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "preservative",
+        "meaning": "방부제; 보존하는",
+        "usages": [
+          "food preservatives / preservative treatment"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "narrative",
+        "meaning": "이야기·서술; 서술의",
+        "usages": [
+          "a personal narrative / a narrative style"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "collective",
+        "meaning": "공동체·단체; 공동의",
+        "usages": [
+          "an artists’ collective / a collective effort"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg67",
+    "cat": "어미와 품사",
+    "title": "-ing로 끝나는 명사",
+    "lead": "-ing가 항상 진행형 동사는 아닙니다. a meeting, the building처럼 명사 자리에도 옵니다. 활동과 개별 결과물은 가산성이 다를 수 있습니다.",
+    "items": [
+      {
+        "term": "meeting",
+        "meaning": "회의",
+        "usages": [
+          "attend a meeting"
+        ],
+        "cat": "어미와 품사",
+        "note": "개별 회의는 가산"
+      },
+      {
+        "term": "building",
+        "meaning": "건물·건축 활동",
+        "usages": [
+          "a tall building / building work"
+        ],
+        "cat": "어미와 품사",
+        "note": "건물은 가산, 건축 활동은 불가산"
+      },
+      {
+        "term": "training",
+        "meaning": "훈련",
+        "usages": [
+          "a training course"
+        ],
+        "cat": "어미와 품사",
+        "note": "일반적인 훈련은 불가산"
+      },
+      {
+        "term": "parking",
+        "meaning": "주차",
+        "usages": [
+          "free parking"
+        ],
+        "cat": "어미와 품사",
+        "note": "주차 공간 하나는 a parking space"
+      },
+      {
+        "term": "housing",
+        "meaning": "주택·주거 공급",
+        "usages": [
+          "affordable housing"
+        ],
+        "cat": "어미와 품사",
+        "note": "집 한 채는 a house"
+      },
+      {
+        "term": "shopping",
+        "meaning": "쇼핑",
+        "usages": [
+          "do some shopping"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "cooking",
+        "meaning": "요리 활동",
+        "usages": [
+          "enjoy cooking"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "painting",
+        "meaning": "회화·그림",
+        "usages": [
+          "painting as a hobby / a beautiful painting"
+        ],
+        "cat": "어미와 품사",
+        "note": "활동과 그림 한 점을 구분"
+      },
+      {
+        "term": "reading",
+        "meaning": "읽기·독서",
+        "usages": [
+          "reading practice / a poetry reading"
+        ],
+        "cat": "어미와 품사",
+        "note": "독서 활동과 낭독 행사 등은 가산성이 다름"
+      },
+      {
+        "term": "writing",
+        "meaning": "글쓰기·글",
+        "usages": [
+          "improve my writing"
+        ],
+        "cat": "어미와 품사",
+        "note": "개별 저작·글들을 말하면 writings도 가능"
+      },
+      {
+        "term": "advertising",
+        "meaning": "광고 활동",
+        "usages": [
+          "online advertising"
+        ],
+        "cat": "어미와 품사",
+        "note": "개별 광고는 an advertisement"
+      },
+      {
+        "term": "funding",
+        "meaning": "자금 지원",
+        "usages": [
+          "apply for funding"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg68",
+    "cat": "어미와 품사",
+    "title": "-ant·-ent로 끝나는 명사",
+    "lead": "사람 명사가 많지만 ingredient·incident처럼 사람이 아닌 명사도 있습니다. patient·resident는 형용사로도 쓰입니다.",
+    "items": [
+      {
+        "term": "applicant",
+        "meaning": "지원자",
+        "usages": [
+          "a job applicant"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "participant",
+        "meaning": "참가자",
+        "usages": [
+          "workshop participants"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "assistant",
+        "meaning": "조수; 보조의",
+        "usages": [
+          "an assistant / an assistant manager"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "accountant",
+        "meaning": "회계사",
+        "usages": [
+          "work as an accountant"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "consultant",
+        "meaning": "상담가·컨설턴트",
+        "usages": [
+          "a business consultant"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "attendant",
+        "meaning": "안내원·승무원",
+        "usages": [
+          "a flight attendant"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "resident",
+        "meaning": "거주자; 거주하는",
+        "usages": [
+          "local residents / resident doctors"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "student",
+        "meaning": "학생",
+        "usages": [
+          "a university student"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "patient",
+        "meaning": "환자; 참을성 있는",
+        "usages": [
+          "a patient / a patient teacher"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "client",
+        "meaning": "고객·의뢰인",
+        "usages": [
+          "meet a client"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "ingredient",
+        "meaning": "재료·성분",
+        "usages": [
+          "fresh ingredients"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "incident",
+        "meaning": "사건",
+        "usages": [
+          "a minor incident"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg69",
+    "cat": "어미와 품사",
+    "title": "-ee 사람 명사 · 받는 쪽",
+    "lead": "employee는 고용되는 사람, trainee는 훈련받는 사람입니다. referee처럼 단순한 받는 쪽으로 해석되지 않는 단어도 실제 뜻으로 익히세요.",
+    "items": [
+      {
+        "term": "employee",
+        "meaning": "직원·피고용인",
+        "usages": [
+          "a full-time employee"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "trainee",
+        "meaning": "훈련생",
+        "usages": [
+          "a new trainee"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "interviewee",
+        "meaning": "면접을 받는 사람",
+        "usages": [
+          "interview three interviewees"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "attendee",
+        "meaning": "참석자",
+        "usages": [
+          "conference attendees"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "nominee",
+        "meaning": "지명된 사람·후보",
+        "usages": [
+          "an award nominee"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "refugee",
+        "meaning": "난민",
+        "usages": [
+          "help refugees"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "examinee",
+        "meaning": "응시자",
+        "usages": [
+          "instructions for examinees"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "payee",
+        "meaning": "돈을 받는 사람·수취인",
+        "usages": [
+          "the payee’s name"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "licensee",
+        "meaning": "허가·면허를 받은 사람",
+        "usages": [
+          "a licensed business and its licensee"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "referee",
+        "meaning": "심판",
+        "usages": [
+          "a football referee"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg70",
+    "cat": "어미와 품사",
+    "title": "-er·-or·-ist 사람 명사",
+    "lead": "하는 사람·직업을 나타내는 단어를 실제 표현으로 외우세요. computer, elevator처럼 사물인 경우도 있으므로 끝만 보고 사람으로 단정하지 마세요.",
+    "items": [
+      {
+        "term": "teacher",
+        "meaning": "교사",
+        "usages": [
+          "an English teacher"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "driver",
+        "meaning": "운전자",
+        "usages": [
+          "a careful driver"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "manager",
+        "meaning": "관리자",
+        "usages": [
+          "a store manager"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "writer",
+        "meaning": "작가",
+        "usages": [
+          "a travel writer"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "actor",
+        "meaning": "배우",
+        "usages": [
+          "a famous actor"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "visitor",
+        "meaning": "방문객",
+        "usages": [
+          "welcome visitors"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "inventor",
+        "meaning": "발명가",
+        "usages": [
+          "a creative inventor"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "instructor",
+        "meaning": "강사",
+        "usages": [
+          "a fitness instructor"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "artist",
+        "meaning": "예술가",
+        "usages": [
+          "a local artist"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "dentist",
+        "meaning": "치과 의사",
+        "usages": [
+          "visit the dentist"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "tourist",
+        "meaning": "관광객",
+        "usages": [
+          "a group of tourists"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "journalist",
+        "meaning": "기자",
+        "usages": [
+          "a newspaper journalist"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg71",
+    "cat": "어미와 품사",
+    "title": "-ment로 끝나는 명사",
+    "lead": "행동의 결과·상태를 나타내는 명사가 많습니다. 가산성은 각 뜻에 따라 확인하세요: an appointment, some equipment.",
+    "items": [
+      {
+        "term": "agreement",
+        "meaning": "합의·동의",
+        "usages": [
+          "reach an agreement"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "appointment",
+        "meaning": "약속·예약",
+        "usages": [
+          "make an appointment"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "improvement",
+        "meaning": "개선",
+        "usages": [
+          "a major improvement"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "development",
+        "meaning": "발전·개발",
+        "usages": [
+          "personal development"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "equipment",
+        "meaning": "장비",
+        "usages": [
+          "some exercise equipment"
+        ],
+        "cat": "어미와 품사",
+        "note": "기본 의미에서 불가산"
+      },
+      {
+        "term": "entertainment",
+        "meaning": "오락",
+        "usages": [
+          "live entertainment"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "payment",
+        "meaning": "지불",
+        "usages": [
+          "make a payment"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "employment",
+        "meaning": "고용·취업",
+        "usages": [
+          "full-time employment"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "environment",
+        "meaning": "환경",
+        "usages": [
+          "a comfortable environment"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "government",
+        "meaning": "정부",
+        "usages": [
+          "the local government"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "management",
+        "meaning": "관리·경영",
+        "usages": [
+          "good time management"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "movement",
+        "meaning": "움직임·운동",
+        "usages": [
+          "a sudden movement"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg72",
+    "cat": "어미와 품사",
+    "title": "-tion·-sion으로 끝나는 명사",
+    "lead": "같은 명사 어미라도 information은 불가산, a reservation은 가산입니다. 어미와 가산성을 별개로 판단하세요.",
+    "items": [
+      {
+        "term": "information",
+        "meaning": "정보",
+        "usages": [
+          "useful information"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "reservation",
+        "meaning": "예약",
+        "usages": [
+          "make a reservation"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "application",
+        "meaning": "지원·신청(서)",
+        "usages": [
+          "fill out an application"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "education",
+        "meaning": "교육",
+        "usages": [
+          "access to education"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "communication",
+        "meaning": "소통",
+        "usages": [
+          "clear communication"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "transportation",
+        "meaning": "교통·운송",
+        "usages": [
+          "public transportation"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "invitation",
+        "meaning": "초대·초대장",
+        "usages": [
+          "accept an invitation"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "explanation",
+        "meaning": "설명",
+        "usages": [
+          "a clear explanation"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "discussion",
+        "meaning": "논의",
+        "usages": [
+          "have a discussion"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "decision",
+        "meaning": "결정",
+        "usages": [
+          "make a decision"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "permission",
+        "meaning": "허락",
+        "usages": [
+          "ask for permission"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "admission",
+        "meaning": "입장·입학 허가",
+        "usages": [
+          "free admission"
+        ],
+        "cat": "어미와 품사",
+        "note": "고백이라는 별도 의미에서는 an admission도 가능"
+      }
+    ]
+  },
+  {
+    "id": "wg73",
+    "cat": "어미와 품사",
+    "title": "-ance·-ence로 끝나는 명사",
+    "lead": "형용사와 연결되는 경우가 많습니다: important → importance, different → difference.",
+    "items": [
+      {
+        "term": "assistance",
+        "meaning": "도움·지원",
+        "usages": [
+          "ask for assistance"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "importance",
+        "meaning": "중요성",
+        "usages": [
+          "the importance of sleep"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "performance",
+        "meaning": "공연·수행 성과",
+        "usages": [
+          "a live performance"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "entrance",
+        "meaning": "입구·입장",
+        "usages": [
+          "the main entrance"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "appearance",
+        "meaning": "외모·등장",
+        "usages": [
+          "a sudden appearance"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "acceptance",
+        "meaning": "수락",
+        "usages": [
+          "acceptance of the offer"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "experience",
+        "meaning": "경험",
+        "usages": [
+          "work experience / a new experience"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "difference",
+        "meaning": "차이",
+        "usages": [
+          "a big difference"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "confidence",
+        "meaning": "자신감",
+        "usages": [
+          "build confidence"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "patience",
+        "meaning": "인내심",
+        "usages": [
+          "have patience"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "presence",
+        "meaning": "존재·참석",
+        "usages": [
+          "your presence at the event"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "absence",
+        "meaning": "부재·결석",
+        "usages": [
+          "in my absence"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg74",
+    "cat": "어미와 품사",
+    "title": "-ity·-ty로 끝나는 명사",
+    "lead": "성질·상태·가능성을 나타내는 명사를 묶습니다. opportunity처럼 개별 대상을 셀 수 있는 경우도 있습니다.",
+    "items": [
+      {
+        "term": "activity",
+        "meaning": "활동",
+        "usages": [
+          "an outdoor activity"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "ability",
+        "meaning": "능력",
+        "usages": [
+          "the ability to communicate"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "quality",
+        "meaning": "품질·특성",
+        "usages": [
+          "high quality / a good quality"
+        ],
+        "cat": "어미와 품사",
+        "note": "일반적 품질과 개별 특성을 구분"
+      },
+      {
+        "term": "safety",
+        "meaning": "안전",
+        "usages": [
+          "safety regulations"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "society",
+        "meaning": "사회",
+        "usages": [
+          "modern society"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "community",
+        "meaning": "공동체",
+        "usages": [
+          "a local community"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "responsibility",
+        "meaning": "책임",
+        "usages": [
+          "take responsibility / family responsibilities"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "possibility",
+        "meaning": "가능성",
+        "usages": [
+          "a possibility of rain"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "opportunity",
+        "meaning": "기회",
+        "usages": [
+          "a great opportunity"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "reality",
+        "meaning": "현실",
+        "usages": [
+          "face reality"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "variety",
+        "meaning": "다양성·종류",
+        "usages": [
+          "a variety of foods"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "priority",
+        "meaning": "우선 사항",
+        "usages": [
+          "a top priority"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg75",
+    "cat": "어미와 품사",
+    "title": "-ness·-ship·-hood로 끝나는 명사",
+    "lead": "상태·관계·시기를 나타내는 기본 명사입니다.",
+    "items": [
+      {
+        "term": "happiness",
+        "meaning": "행복",
+        "usages": [
+          "a sense of happiness"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "kindness",
+        "meaning": "친절",
+        "usages": [
+          "show kindness"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "darkness",
+        "meaning": "어둠",
+        "usages": [
+          "in the darkness"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "illness",
+        "meaning": "질병·아픔",
+        "usages": [
+          "a serious illness"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "fitness",
+        "meaning": "건강·체력",
+        "usages": [
+          "improve my fitness"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "awareness",
+        "meaning": "인식",
+        "usages": [
+          "raise awareness"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "friendship",
+        "meaning": "우정",
+        "usages": [
+          "a close friendship"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "membership",
+        "meaning": "회원 자격",
+        "usages": [
+          "a gym membership"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "relationship",
+        "meaning": "관계",
+        "usages": [
+          "a good relationship"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "leadership",
+        "meaning": "지도력",
+        "usages": [
+          "strong leadership"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "childhood",
+        "meaning": "어린 시절",
+        "usages": [
+          "during my childhood"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "neighborhood",
+        "meaning": "동네",
+        "usages": [
+          "a quiet neighborhood"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg76",
+    "cat": "어미와 품사",
+    "title": "-age·-ism으로 끝나는 명사",
+    "lead": "끝 철자가 비슷한 명사를 묶은 목록입니다. 모든 단어가 같은 방식으로 파생되거나 같은 가산성을 가진다는 뜻은 아닙니다.",
+    "items": [
+      {
+        "term": "language",
+        "meaning": "언어",
+        "usages": [
+          "learn a language"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "village",
+        "meaning": "마을",
+        "usages": [
+          "a small village"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "package",
+        "meaning": "소포·꾸러미",
+        "usages": [
+          "send a package"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "baggage",
+        "meaning": "수하물",
+        "usages": [
+          "check my baggage"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "postage",
+        "meaning": "우편 요금",
+        "usages": [
+          "pay postage"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "coverage",
+        "meaning": "보장 범위·보도",
+        "usages": [
+          "insurance coverage"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "garbage",
+        "meaning": "쓰레기",
+        "usages": [
+          "take out the garbage"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "advantage",
+        "meaning": "이점",
+        "usages": [
+          "a major advantage"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "tourism",
+        "meaning": "관광 산업·활동",
+        "usages": [
+          "local tourism"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "optimism",
+        "meaning": "낙관주의",
+        "usages": [
+          "a sense of optimism"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "pessimism",
+        "meaning": "비관주의",
+        "usages": [
+          "avoid excessive pessimism"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "realism",
+        "meaning": "현실주의·사실주의",
+        "usages": [
+          "a sense of realism"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg77",
+    "cat": "어미와 품사",
+    "title": "-ly인데 형용사로 쓰이는 단어",
+    "lead": "-ly는 부사에 많지만 friendly처럼 형용사에도 있습니다. daily·early 등은 부사로도 씁니다.",
+    "items": [
+      {
+        "term": "friendly",
+        "meaning": "친근한",
+        "usages": [
+          "friendly staff"
+        ],
+        "cat": "어미와 품사",
+        "note": "부사는 in a friendly way처럼 표현 가능"
+      },
+      {
+        "term": "lonely",
+        "meaning": "외로운",
+        "usages": [
+          "feel lonely"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "lovely",
+        "meaning": "사랑스러운·멋진",
+        "usages": [
+          "a lovely view"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "lively",
+        "meaning": "활기찬",
+        "usages": [
+          "a lively street"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "likely",
+        "meaning": "~할 가능성이 있는",
+        "usages": [
+          "be likely to rain"
+        ],
+        "cat": "어미와 품사",
+        "note": "부사 용법도 있지만 기본 표현은 be likely to"
+      },
+      {
+        "term": "unlikely",
+        "meaning": "~할 가능성이 낮은",
+        "usages": [
+          "be unlikely to happen"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "elderly",
+        "meaning": "나이가 많은",
+        "usages": [
+          "an elderly neighbor"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "daily",
+        "meaning": "매일의; 매일",
+        "usages": [
+          "a daily routine / exercise daily"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "weekly",
+        "meaning": "매주의; 매주",
+        "usages": [
+          "a weekly meeting / meet weekly"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "monthly",
+        "meaning": "매달의; 매달",
+        "usages": [
+          "a monthly payment / pay monthly"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "yearly",
+        "meaning": "매년의; 매년",
+        "usages": [
+          "a yearly event / visit yearly"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "early",
+        "meaning": "이른; 일찍",
+        "usages": [
+          "an early flight / arrive early"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg78",
+    "cat": "어미와 품사",
+    "title": "-ly를 붙이면 뜻이 달라지는 짝",
+    "lead": "hard → hardly처럼 단순히 형용사를 부사로 바꾸는 관계가 아닐 수 있습니다. 표현 속 의미를 비교하세요.",
+    "items": [
+      {
+        "term": "hard ↔ hardly",
+        "meaning": "열심히·세게 ↔ 거의 ~않다",
+        "usages": [
+          "work hard / hardly work"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "late ↔ lately",
+        "meaning": "늦게 ↔ 최근에",
+        "usages": [
+          "arrive late / haven’t seen him lately"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "near ↔ nearly",
+        "meaning": "가까이 ↔ 거의",
+        "usages": [
+          "come near / nearly finished"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "high ↔ highly",
+        "meaning": "높이 ↔ 매우·높이 평가하여",
+        "usages": [
+          "fly high / highly recommended"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "close ↔ closely",
+        "meaning": "가까이 ↔ 면밀히·긴밀히",
+        "usages": [
+          "stand close / watch closely"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "most ↔ mostly",
+        "meaning": "가장·최대 ↔ 대부분",
+        "usages": [
+          "like it most / mostly stay home"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "short ↔ shortly",
+        "meaning": "짧게·미처 못 미쳐 ↔ 곧",
+        "usages": [
+          "stop short / arrive shortly"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "free ↔ freely",
+        "meaning": "무료로 ↔ 자유롭게",
+        "usages": [
+          "travel free / speak freely"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "wide ↔ widely",
+        "meaning": "활짝 ↔ 널리",
+        "usages": [
+          "open wide / widely used"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "deep ↔ deeply",
+        "meaning": "깊은 곳까지 ↔ 깊이·몹시",
+        "usages": [
+          "dig deep / deeply moved"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg79",
+    "cat": "어미와 품사",
+    "title": "철자가 같은 명사·동사",
+    "lead": "명사 자리와 동사 자리를 문장으로 구분합니다. a/the/my 뒤의 명사와 주어 뒤의 동사를 비교하세요.",
+    "items": [
+      {
+        "term": "work",
+        "meaning": "일·업무; 일하다",
+        "usages": [
+          "a lot of work / I work here."
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "plan",
+        "meaning": "계획; 계획하다",
+        "usages": [
+          "a travel plan / plan a trip"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "call",
+        "meaning": "전화; 전화하다",
+        "usages": [
+          "a phone call / call a friend"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "walk",
+        "meaning": "산책; 걷다",
+        "usages": [
+          "a short walk / walk to work"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "drink",
+        "meaning": "음료; 마시다",
+        "usages": [
+          "a cold drink / drink water"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "look",
+        "meaning": "모습·시선; 보다",
+        "usages": [
+          "a new look / look at the sky"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "help",
+        "meaning": "도움; 돕다",
+        "usages": [
+          "need help / help my friend"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "change",
+        "meaning": "변화·잔돈; 바꾸다",
+        "usages": [
+          "a big change / change my schedule"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "answer",
+        "meaning": "답; 대답하다",
+        "usages": [
+          "the answer / answer a question"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "visit",
+        "meaning": "방문; 방문하다",
+        "usages": [
+          "a short visit / visit my parents"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg80",
+    "cat": "어미와 품사",
+    "title": "철자가 같은 명사·형용사",
+    "lead": "a local은 현지인, local food는 현지 음식입니다. 사람·사물과 성질을 나타내는 용법을 나누어 읽으세요.",
+    "items": [
+      {
+        "term": "local",
+        "meaning": "현지인; 현지의",
+        "usages": [
+          "ask a local / local food"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "native",
+        "meaning": "현지인·원주민; 모국어의·토착의",
+        "usages": [
+          "a native of Busan / a native language"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "adult",
+        "meaning": "성인; 성인의",
+        "usages": [
+          "an adult / adult education"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "average",
+        "meaning": "평균; 평균의",
+        "usages": [
+          "the average / an average score"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "present",
+        "meaning": "선물·현재; 참석한·현재의",
+        "usages": [
+          "a birthday present / everyone present"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "future",
+        "meaning": "미래; 미래의",
+        "usages": [
+          "in the future / future plans"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "original",
+        "meaning": "원본; 원래의·독창적인",
+        "usages": [
+          "the original / an original idea"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "final",
+        "meaning": "결승·기말시험; 마지막의",
+        "usages": [
+          "the final / a final decision"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "regular",
+        "meaning": "단골; 정기적인",
+        "usages": [
+          "a café regular / regular exercise"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "professional",
+        "meaning": "전문가; 전문적인",
+        "usages": [
+          "a professional / professional advice"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg81",
+    "cat": "어미와 품사",
+    "title": "형용사·부사의 형태가 같은 단어",
+    "lead": "부사라고 반드시 -ly를 붙이지 않습니다. 여기서 well은 건강하다는 형용사와 잘한다는 부사를 구분합니다.",
+    "items": [
+      {
+        "term": "fast",
+        "meaning": "빠른; 빠르게",
+        "usages": [
+          "a fast train / run fast"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "hard",
+        "meaning": "힘든·단단한; 열심히",
+        "usages": [
+          "a hard task / work hard"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "late",
+        "meaning": "늦은; 늦게",
+        "usages": [
+          "a late arrival / arrive late"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "early",
+        "meaning": "이른; 일찍",
+        "usages": [
+          "an early start / leave early"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "daily",
+        "meaning": "매일의; 매일",
+        "usages": [
+          "a daily habit / practice daily"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "straight",
+        "meaning": "곧은; 곧장",
+        "usages": [
+          "a straight road / go straight"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "right",
+        "meaning": "옳은; 정확히·바로",
+        "usages": [
+          "the right answer / right here"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "wrong",
+        "meaning": "잘못된; 잘못",
+        "usages": [
+          "a wrong answer / spell it wrong"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "enough",
+        "meaning": "충분한; 충분히",
+        "usages": [
+          "enough time / good enough"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 앞, 형용사 뒤 위치도 구분"
+      },
+      {
+        "term": "well",
+        "meaning": "건강한; 잘",
+        "usages": [
+          "I feel well. / I speak English well."
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg82",
+    "cat": "어미와 품사",
+    "title": "-ed 형용사와 동사 과거·분사",
+    "lead": "-ed가 보여도 곧바로 과거형으로 단정하지 마세요. 상태를 설명하는 형용사와 행동을 말하는 동사를 문맥에서 구분합니다.",
+    "items": [
+      {
+        "term": "interested",
+        "meaning": "관심 있는",
+        "usages": [
+          "I’m interested in art."
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "bored",
+        "meaning": "지루한 상태의",
+        "usages": [
+          "I felt bored."
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "excited",
+        "meaning": "신난",
+        "usages": [
+          "I was excited about the trip."
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "relaxed",
+        "meaning": "긴장이 풀린",
+        "usages": [
+          "I feel relaxed at home."
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "married",
+        "meaning": "결혼한",
+        "usages": [
+          "a married couple"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "crowded",
+        "meaning": "붐비는",
+        "usages": [
+          "a crowded bus"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "talented",
+        "meaning": "재능 있는",
+        "usages": [
+          "a talented musician"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "skilled",
+        "meaning": "숙련된",
+        "usages": [
+          "a skilled worker"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "experienced",
+        "meaning": "경험이 풍부한",
+        "usages": [
+          "an experienced teacher"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "tired",
+        "meaning": "피곤한",
+        "usages": [
+          "I felt tired after work."
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg83",
+    "cat": "어미와 품사",
+    "title": "-ate · 명사·형용사·동사를 구분",
+    "lead": "같은 끝 철자가 여러 품사에 나타납니다. 일부 단어는 품사에 따라 끝소리·강세도 달라집니다.",
+    "items": [
+      {
+        "term": "graduate",
+        "meaning": "졸업생; 졸업하다",
+        "usages": [
+          "a college graduate / graduate from college"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 끝소리는 /ət/, 동사는 /eɪt/"
+      },
+      {
+        "term": "estimate",
+        "meaning": "추정치; 추정하다",
+        "usages": [
+          "a cost estimate / estimate the cost"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "associate",
+        "meaning": "동료; 연관 짓다",
+        "usages": [
+          "a business associate / associate it with home"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "advocate",
+        "meaning": "옹호자; 지지하다",
+        "usages": [
+          "an advocate for change / advocate better safety"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "separate",
+        "meaning": "분리된; 분리하다",
+        "usages": [
+          "separate rooms / separate paper from plastic"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "duplicate",
+        "meaning": "복사본; 복제하다",
+        "usages": [
+          "a duplicate / duplicate the file"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "moderate",
+        "meaning": "적당한; 조절·사회하다",
+        "usages": [
+          "moderate exercise / moderate a discussion"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "deliberate",
+        "meaning": "의도적인; 숙고하다",
+        "usages": [
+          "a deliberate choice / deliberate on the issue"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "candidate",
+        "meaning": "후보자",
+        "usages": [
+          "a job candidate"
+        ],
+        "cat": "어미와 품사",
+        "note": "보통 명사, -ate라고 동사로 단정하지 않음"
+      },
+      {
+        "term": "accurate",
+        "meaning": "정확한",
+        "usages": [
+          "accurate information"
+        ],
+        "cat": "어미와 품사",
+        "note": "형용사"
+      }
+    ]
+  },
+  {
+    "id": "wg84",
+    "cat": "어미와 품사",
+    "title": "-en 형용사·분사와 동사",
+    "lead": "재료를 나타내는 wooden, 과거분사인 broken, 동사인 widen처럼 끝이 같아도 역할이 다릅니다.",
+    "items": [
+      {
+        "term": "wooden",
+        "meaning": "나무로 된",
+        "usages": [
+          "a wooden table"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "golden",
+        "meaning": "금빛의·아주 좋은",
+        "usages": [
+          "a golden opportunity"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "broken",
+        "meaning": "고장 난·깨진",
+        "usages": [
+          "a broken phone"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "chosen",
+        "meaning": "선택된",
+        "usages": [
+          "the chosen topic"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "frozen",
+        "meaning": "얼어붙은·냉동된",
+        "usages": [
+          "frozen food"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "hidden",
+        "meaning": "숨겨진",
+        "usages": [
+          "a hidden café"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "written",
+        "meaning": "쓰인·서면의",
+        "usages": [
+          "written instructions"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "stolen",
+        "meaning": "도난당한",
+        "usages": [
+          "a stolen bike"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "strengthen",
+        "meaning": "강화하다",
+        "usages": [
+          "strengthen my skills"
+        ],
+        "cat": "어미와 품사",
+        "note": "동사"
+      },
+      {
+        "term": "widen",
+        "meaning": "넓히다·넓어지다",
+        "usages": [
+          "widen the road"
+        ],
+        "cat": "어미와 품사",
+        "note": "동사"
+      }
+    ]
+  },
+  {
+    "id": "wg85",
+    "cat": "어미와 품사",
+    "title": "명사·동사에 따라 강세가 달라지는 단어",
+    "lead": "대문자는 대표적인 강세 위치를 표시합니다. 품사와 문맥을 함께 읽고, 세부 발음은 사전 음성으로 확인하세요.",
+    "items": [
+      {
+        "term": "record",
+        "meaning": "기록; 기록하다",
+        "usages": [
+          "a record / record a video"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 REcord, 동사 reCORD"
+      },
+      {
+        "term": "permit",
+        "meaning": "허가증; 허락하다",
+        "usages": [
+          "a parking permit / permit entry"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 PERmit, 동사 perMIT"
+      },
+      {
+        "term": "present",
+        "meaning": "선물; 제시하다",
+        "usages": [
+          "a present / present an idea"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 PREsent, 동사 preSENT"
+      },
+      {
+        "term": "conduct",
+        "meaning": "행동; 진행·수행하다",
+        "usages": [
+          "polite conduct / conduct an interview"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 CONduct, 동사 conDUCT"
+      },
+      {
+        "term": "object",
+        "meaning": "물체; 반대하다",
+        "usages": [
+          "a small object / object to the plan"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 OBject, 동사 obJECT"
+      },
+      {
+        "term": "produce",
+        "meaning": "농산물; 생산하다",
+        "usages": [
+          "fresh produce / produce electricity"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 PROduce, 동사 proDUCE"
+      },
+      {
+        "term": "contract",
+        "meaning": "계약; 수축·계약하다",
+        "usages": [
+          "a contract / contract with a supplier"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 CONtract, 동사 conTRACT"
+      },
+      {
+        "term": "import",
+        "meaning": "수입품·수입; 수입하다",
+        "usages": [
+          "food imports / import food"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 IMport, 동사 imPORT"
+      },
+      {
+        "term": "export",
+        "meaning": "수출품·수출; 수출하다",
+        "usages": [
+          "exports / export cars"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 EXport, 동사 exPORT"
+      },
+      {
+        "term": "increase",
+        "meaning": "증가; 증가하다",
+        "usages": [
+          "an increase / increase the price"
+        ],
+        "cat": "어미와 품사",
+        "note": "명사 INcrease, 동사 inCREASE"
+      }
+    ]
+  },
+  {
+    "id": "wg86",
+    "cat": "어미와 품사",
+    "title": "끝 철자가 낯선 명사의 복수",
+    "lead": "기본 회화에서도 analysis, crisis, series처럼 나올 수 있습니다. 단복수 동사까지 문장으로 구분하세요.",
+    "items": [
+      {
+        "term": "analysis → analyses",
+        "meaning": "분석 → 분석들",
+        "usages": [
+          "one analysis / two analyses"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "crisis → crises",
+        "meaning": "위기 → 위기들",
+        "usages": [
+          "one crisis / several crises"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "basis → bases",
+        "meaning": "근거·기반 → 근거·기반들",
+        "usages": [
+          "a legal basis / different bases"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "thesis → theses",
+        "meaning": "학위 논문 → 학위 논문들",
+        "usages": [
+          "a thesis / two theses"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "diagnosis → diagnoses",
+        "meaning": "진단 → 진단들",
+        "usages": [
+          "a diagnosis / different diagnoses"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "phenomenon → phenomena",
+        "meaning": "현상 → 현상들",
+        "usages": [
+          "a natural phenomenon / natural phenomena"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "criterion → criteria",
+        "meaning": "기준 → 기준들",
+        "usages": [
+          "one criterion / several criteria"
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "series → series",
+        "meaning": "시리즈 → 시리즈들",
+        "usages": [
+          "This series is good. / These series are good."
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "species → species",
+        "meaning": "종 → 종들",
+        "usages": [
+          "This species is rare. / These species are rare."
+        ],
+        "cat": "어미와 품사"
+      },
+      {
+        "term": "aircraft → aircraft",
+        "meaning": "항공기 → 항공기들",
+        "usages": [
+          "one aircraft / several aircraft"
+        ],
+        "cat": "어미와 품사"
+      }
+    ]
+  },
+  {
+    "id": "wg87",
+    "cat": "가산·불가산 비교",
+    "title": "허가·승인·문서 · 명사끼리 비교",
+    "lead": "아래 C는 가산, U는 불가산의 해당 뜻입니다. permit와 permission은 둘 다 명사이지만 a valid permit, permission이라고 다르게 씁니다.",
+    "items": [
+      {
+        "term": "permit [C] ↔ permission [U]",
+        "meaning": "허가증 ↔ 허락",
+        "usages": [
+          "a valid student permit / ask for permission"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "a/an 뒤에는 여기서 permit. permission 앞에 a를 직접 붙이지 않음"
+      },
+      {
+        "term": "license [C] ↔ permission [U]",
+        "meaning": "면허·허가증 ↔ 허락",
+        "usages": [
+          "a driver’s license / get permission"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "certificate [C] ↔ certification [U]",
+        "meaning": "증명서 ↔ 인증 절차·상태",
+        "usages": [
+          "a certificate / professional certification"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "certification이 개별 인증을 뜻하면 가산 용법도 가능"
+      },
+      {
+        "term": "document [C] ↔ documentation [U]",
+        "meaning": "문서 한 건 ↔ 관련 서류·문서화 전체",
+        "usages": [
+          "two documents / supporting documentation"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "record [C] ↔ evidence [U]",
+        "meaning": "개별 기록 ↔ 증거 전체",
+        "usages": [
+          "a medical record / some evidence"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "증거 하나는 a piece of evidence"
+      },
+      {
+        "term": "agreement [C] ↔ consent [U]",
+        "meaning": "개별 합의·계약 ↔ 동의",
+        "usages": [
+          "an agreement / give consent"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "agreement도 일반적 일치·동의 의미에서는 불가산 가능"
+      },
+      {
+        "term": "permit [C] ↔ approval [U]",
+        "meaning": "허가증 ↔ 승인",
+        "usages": [
+          "a building permit / get approval"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "일반적 승인 의미 기준"
+      },
+      {
+        "term": "ticket [C] ↔ admission [U]",
+        "meaning": "표 ↔ 입장·입장료",
+        "usages": [
+          "two tickets / free admission"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "qualification [C] ↔ eligibility [U]",
+        "meaning": "자격·요건 ↔ 자격을 갖춘 상태",
+        "usages": [
+          "professional qualifications / eligibility for the program"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "application [C] ↔ paperwork [U]",
+        "meaning": "신청서 ↔ 서류 작업",
+        "usages": [
+          "an application / complete the paperwork"
+        ],
+        "cat": "가산·불가산 비교"
+      }
+    ]
+  },
+  {
+    "id": "wg88",
+    "cat": "가산·불가산 비교",
+    "title": "사람·직업 ↔ 분야·활동",
+    "lead": "직업을 말하는 사람 명사는 보통 가산, 학문·활동 전체는 보통 불가산입니다. occupation도 “직업”이면 가산이므로 의미를 함께 확인하세요.",
+    "items": [
+      {
+        "term": "architect [C] ↔ architecture [U]",
+        "meaning": "건축가 ↔ 건축·건축학",
+        "usages": [
+          "an architect / modern architecture"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "employee [C] ↔ employment [U]",
+        "meaning": "직원 ↔ 고용·취업",
+        "usages": [
+          "three employees / full-time employment"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "assistant [C] ↔ assistance [U]",
+        "meaning": "조수 ↔ 지원·도움",
+        "usages": [
+          "an assistant / some assistance"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "participant [C] ↔ participation [U]",
+        "meaning": "참가자 ↔ 참여",
+        "usages": [
+          "ten participants / active participation"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "manager [C] ↔ management [U]",
+        "meaning": "관리자 ↔ 관리·경영",
+        "usages": [
+          "a manager / good management"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "scientist [C] ↔ science [U]",
+        "meaning": "과학자 ↔ 과학",
+        "usages": [
+          "a scientist / study science"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "musician [C] ↔ music [U]",
+        "meaning": "음악가 ↔ 음악",
+        "usages": [
+          "a musician / live music"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "photographer [C] ↔ photography [U]",
+        "meaning": "사진가 ↔ 사진 촬영·사진술",
+        "usages": [
+          "a photographer / learn photography"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "occupant [C] ↔ occupation [C: 직업]",
+        "meaning": "거주·점유자 ↔ 직업",
+        "usages": [
+          "a building occupant / her previous occupation"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "둘 다 가산. occupant는 점유자·거주자, occupation은 직업을 뜻하므로 의미로 구별"
+      },
+      {
+        "term": "student [C] ↔ education [U: 교육 활동]",
+        "meaning": "학생 ↔ 교육",
+        "usages": [
+          "a student / access to education"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "an education은 받은 교육의 종류·경험이라는 용법"
+      }
+    ]
+  },
+  {
+    "id": "wg89",
+    "cat": "가산·불가산 비교",
+    "title": "개별 물건 ↔ 물건 전체·설비",
+    "lead": "개수에는 C 명사, 전체나 양에는 U 명사를 쓰세요. 모든 짝이 완전한 동의어인 것은 아닙니다.",
+    "items": [
+      {
+        "term": "seat [C] ↔ seating [U]",
+        "meaning": "좌석 ↔ 좌석 설비·배치",
+        "usages": [
+          "a seat / comfortable seating"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "bag [C] ↔ baggage [U]",
+        "meaning": "가방 ↔ 수하물",
+        "usages": [
+          "two bags / heavy baggage"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "suitcase [C] ↔ luggage [U]",
+        "meaning": "여행 가방 ↔ 짐",
+        "usages": [
+          "three suitcases / much luggage"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "chair [C] ↔ furniture [U]",
+        "meaning": "의자 ↔ 가구 전체",
+        "usages": [
+          "four chairs / some furniture"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "machine [C] ↔ machinery [U]",
+        "meaning": "기계 한 대 ↔ 기계류",
+        "usages": [
+          "a machine / heavy machinery"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "tool [C] ↔ equipment [U]",
+        "meaning": "도구 ↔ 장비 전체",
+        "usages": [
+          "two tools / new equipment"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "garment [C] ↔ clothing [U]",
+        "meaning": "의복 한 점 ↔ 의류 전체",
+        "usages": [
+          "a garment / warm clothing"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "clothes는 별도의 복수 명사"
+      },
+      {
+        "term": "coin [C] ↔ money [U]",
+        "meaning": "동전 ↔ 돈",
+        "usages": [
+          "five coins / some money"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "vehicle [C] ↔ traffic [U]",
+        "meaning": "차량 ↔ 교통량",
+        "usages": [
+          "many vehicles / heavy traffic"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "advertisement [C] ↔ advertising [U]",
+        "meaning": "개별 광고 ↔ 광고 활동",
+        "usages": [
+          "an advertisement / online advertising"
+        ],
+        "cat": "가산·불가산 비교"
+      }
+    ]
+  },
+  {
+    "id": "wg90",
+    "cat": "가산·불가산 비교",
+    "title": "정보·말·생각 · 개별 내용과 전체",
+    "lead": "some advice와 a suggestion처럼 둘 다 명사여도 수량 표현이 달라집니다. 뜻이 완전히 같다는 의미는 아닙니다.",
+    "items": [
+      {
+        "term": "suggestion [C] ↔ advice [U]",
+        "meaning": "제안 한 가지 ↔ 조언",
+        "usages": [
+          "a suggestion / some advice"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "tip [C] ↔ advice [U]",
+        "meaning": "팁 한 가지 ↔ 조언",
+        "usages": [
+          "three useful tips / good advice"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "fact [C] ↔ information [U]",
+        "meaning": "개별 사실 ↔ 정보",
+        "usages": [
+          "an interesting fact / useful information"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "detail [C] ↔ information [U]",
+        "meaning": "세부 사항 ↔ 정보",
+        "usages": [
+          "several details / some information"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "rumor [C] ↔ gossip [U: 소문 이야기]",
+        "meaning": "개별 소문 ↔ 소문·험담",
+        "usages": [
+          "a rumor / office gossip"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "a gossip은 수다쟁이라는 다른 뜻"
+      },
+      {
+        "term": "story [C] ↔ news [U]",
+        "meaning": "이야기·보도 한 건 ↔ 소식",
+        "usages": [
+          "a news story / good news"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "clue [C] ↔ evidence [U]",
+        "meaning": "단서 ↔ 증거",
+        "usages": [
+          "a clue / strong evidence"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "word [C] ↔ vocabulary [U: 어휘 전체]",
+        "meaning": "단어 ↔ 어휘 전체",
+        "usages": [
+          "learn ten words / build vocabulary"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "특정 분야의 어휘 목록을 a vocabulary라고 하기도 함"
+      },
+      {
+        "term": "error [C] ↔ misinformation [U]",
+        "meaning": "오류 ↔ 잘못된 정보",
+        "usages": [
+          "an error / spread misinformation"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "idea [C] ↔ knowledge [U]",
+        "meaning": "생각 한 가지 ↔ 지식",
+        "usages": [
+          "a new idea / practical knowledge"
+        ],
+        "cat": "가산·불가산 비교"
+      }
+    ]
+  },
+  {
+    "id": "wg91",
+    "cat": "가산·불가산 비교",
+    "title": "일·서비스·시간·음식 · 수량을 바꿔 말하기",
+    "lead": "a/an, many와 함께 쓸지 some, much와 함께 쓸지 비교하세요.",
+    "items": [
+      {
+        "term": "job [C] ↔ work [U: 업무]",
+        "meaning": "일자리·개별 일 ↔ 일·업무의 양",
+        "usages": [
+          "a new job / a lot of work"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "task [C] ↔ work [U: 업무]",
+        "meaning": "과제 한 가지 ↔ 업무",
+        "usages": [
+          "three tasks / some work"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "assignment [C] ↔ homework [U]",
+        "meaning": "과제 한 개 ↔ 숙제",
+        "usages": [
+          "two assignments / a lot of homework"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "study [C] ↔ research [U]",
+        "meaning": "연구 한 건 ↔ 연구 활동",
+        "usages": [
+          "a research study / some research"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "lesson [C] ↔ training [U]",
+        "meaning": "수업 한 회 ↔ 훈련",
+        "usages": [
+          "a driving lesson / practical training"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "hour [C] ↔ time [U: 시간의 양]",
+        "meaning": "한 시간 ↔ 시간",
+        "usages": [
+          "two hours / much time"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "trip [C] ↔ travel [U: 여행 활동]",
+        "meaning": "여행 한 번 ↔ 여행 활동",
+        "usages": [
+          "a short trip / international travel"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "meal [C] ↔ food [U: 음식 전체]",
+        "meaning": "식사 한 번 ↔ 음식",
+        "usages": [
+          "three meals / delicious food"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "foods는 음식 종류들이라는 뜻에서 가능"
+      },
+      {
+        "term": "loaf [C] ↔ bread [U]",
+        "meaning": "빵 한 덩이 ↔ 빵",
+        "usages": [
+          "two loaves of bread / fresh bread"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "song [C] ↔ music [U]",
+        "meaning": "노래 한 곡 ↔ 음악",
+        "usages": [
+          "three songs / relaxing music"
+        ],
+        "cat": "가산·불가산 비교"
+      }
+    ]
+  },
+  {
+    "id": "wg92",
+    "cat": "가산·불가산 비교",
+    "title": "같은 명사 · 뜻이 바뀌면 C/U도 바뀜",
+    "lead": "불가산 기본 용법을 배운 뒤 아래 문맥 전환을 확인하세요. 모든 불가산명사에 같은 전환을 적용할 수 있다는 뜻은 아닙니다.",
+    "items": [
+      {
+        "term": "experience [U/C]",
+        "meaning": "쌓인 경험 / 개별 경험",
+        "usages": [
+          "some work experience / an unforgettable experience"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "business [U/C]",
+        "meaning": "사업 활동 / 개별 업체",
+        "usages": [
+          "do business / a family business"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "work [U/C]",
+        "meaning": "업무·일 / 작품",
+        "usages": [
+          "a lot of work / a work of art"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "noise [U/C]",
+        "meaning": "소음 전체 / 개별 소리",
+        "usages": [
+          "too much noise / a strange noise"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "pain [U/C]",
+        "meaning": "통증 전체 / 특정 통증",
+        "usages": [
+          "in pain / a sharp pain in my arm"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "space [U/C]",
+        "meaning": "공간의 양 / 개별 공간·칸",
+        "usages": [
+          "not much space / a parking space"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "fruit [U/C]",
+        "meaning": "과일 전체 / 과일 종류·개체",
+        "usages": [
+          "eat some fruit / different tropical fruits"
+        ],
+        "cat": "가산·불가산 비교",
+        "note": "일반적 개수는 pieces of fruit로 말하면 명확"
+      },
+      {
+        "term": "beer [U/C]",
+        "meaning": "음료 자체 / 주문한 한 잔·병",
+        "usages": [
+          "some beer / two beers"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "education [U/C]",
+        "meaning": "교육 활동 / 받은 교육의 종류·경험",
+        "usages": [
+          "access to education / a good education"
+        ],
+        "cat": "가산·불가산 비교"
+      },
+      {
+        "term": "light [U/C]",
+        "meaning": "빛 / 전등",
+        "usages": [
+          "natural light / a reading light"
+        ],
+        "cat": "가산·불가산 비교"
+      }
+    ]
+  },
+  {
+    "id": "wg93",
+    "cat": "복합명사",
+    "title": "명사 + 명사 · 구조와 품사 고르기",
+    "lead": "앞 명사는 종류·용도를 설명하고 뒤 명사가 핵심입니다. improved safety regulations는 improved(형용사) + safety(명사 수식어) + regulations(핵심 명사)입니다. 명사 앞 형용사도 가능하므로 위치만 보지 말고 뜻과 결합을 확인하세요.",
+    "items": [
+      {
+        "term": "safety regulations",
+        "meaning": "안전 규정",
+        "usages": [
+          "improved safety regulations"
+        ],
+        "cat": "복합명사",
+        "note": "안전 규정은 safety regulations. safe regulations는 규정 자체가 안전하다는 다른 설명"
+      },
+      {
+        "term": "quality control",
+        "meaning": "품질 관리",
+        "usages": [
+          "improve quality control"
+        ],
+        "cat": "복합명사",
+        "note": "quality가 관리의 대상을 설명"
+      },
+      {
+        "term": "customer service",
+        "meaning": "고객 서비스",
+        "usages": [
+          "contact customer service"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "health insurance",
+        "meaning": "건강 보험",
+        "usages": [
+          "have health insurance"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "security check",
+        "meaning": "보안 검사",
+        "usages": [
+          "go through a security check"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "data analysis",
+        "meaning": "데이터 분석",
+        "usages": [
+          "do some data analysis"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "business meeting",
+        "meaning": "업무 회의",
+        "usages": [
+          "attend a business meeting"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "job interview",
+        "meaning": "취업 면접",
+        "usages": [
+          "prepare for a job interview"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "emergency exit",
+        "meaning": "비상구",
+        "usages": [
+          "use the emergency exit"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "company policy",
+        "meaning": "회사 방침",
+        "usages": [
+          "follow company policy"
+        ],
+        "cat": "복합명사"
+      }
+    ]
+  },
+  {
+    "id": "wg94",
+    "cat": "복합명사",
+    "title": "일·회사 · 명사 결합",
+    "lead": "앞말이 뒤 명사의 종류를 좁힙니다. meeting이 핵심인 staff meeting은 회의이고, manager가 핵심인 project manager는 사람입니다.",
+    "items": [
+      {
+        "term": "sales report",
+        "meaning": "매출 보고서",
+        "usages": [
+          "write a sales report"
+        ],
+        "cat": "복합명사",
+        "note": "sales처럼 앞 명사가 -s로 끝나는 고정 결합도 있음"
+      },
+      {
+        "term": "marketing strategy",
+        "meaning": "마케팅 전략",
+        "usages": [
+          "develop a marketing strategy"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "production cost",
+        "meaning": "생산 비용",
+        "usages": [
+          "reduce production costs"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "training program",
+        "meaning": "교육·훈련 과정",
+        "usages": [
+          "join a training program"
+        ],
+        "cat": "복합명사",
+        "note": "-ing 형태도 명사를 수식할 수 있음"
+      },
+      {
+        "term": "staff meeting",
+        "meaning": "직원 회의",
+        "usages": [
+          "hold a staff meeting"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "project manager",
+        "meaning": "프로젝트 관리자",
+        "usages": [
+          "speak to the project manager"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "office worker",
+        "meaning": "사무직 직원",
+        "usages": [
+          "I’m an office worker."
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "application form",
+        "meaning": "신청서 양식",
+        "usages": [
+          "fill out an application form"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "interview question",
+        "meaning": "면접 질문",
+        "usages": [
+          "answer an interview question"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "performance review",
+        "meaning": "업무 성과 평가",
+        "usages": [
+          "have a performance review"
+        ],
+        "cat": "복합명사"
+      }
+    ]
+  },
+  {
+    "id": "wg95",
+    "cat": "복합명사",
+    "title": "여행·교통 · 자주 쓰는 결합",
+    "lead": "버스 정류장, 탑승권처럼 일상에서 하나의 대상으로 말하는 표현입니다.",
+    "items": [
+      {
+        "term": "bus stop",
+        "meaning": "버스 정류장",
+        "usages": [
+          "wait at the bus stop"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "train station",
+        "meaning": "기차역",
+        "usages": [
+          "meet at the train station"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "ticket office",
+        "meaning": "매표소",
+        "usages": [
+          "buy tickets at the ticket office"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "boarding pass",
+        "meaning": "탑승권",
+        "usages": [
+          "show my boarding pass"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "departure time",
+        "meaning": "출발 시각",
+        "usages": [
+          "check the departure time"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "arrival date",
+        "meaning": "도착 날짜",
+        "usages": [
+          "confirm the arrival date"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "passport control",
+        "meaning": "여권 심사",
+        "usages": [
+          "go through passport control"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "baggage claim",
+        "meaning": "수하물 찾는 곳",
+        "usages": [
+          "wait at baggage claim"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "travel insurance",
+        "meaning": "여행 보험",
+        "usages": [
+          "buy travel insurance"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "seat belt",
+        "meaning": "안전벨트",
+        "usages": [
+          "fasten your seat belt"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "flight attendant",
+        "meaning": "승무원",
+        "usages": [
+          "ask a flight attendant"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "traffic jam",
+        "meaning": "교통 정체",
+        "usages": [
+          "get stuck in a traffic jam"
+        ],
+        "cat": "복합명사"
+      }
+    ]
+  },
+  {
+    "id": "wg96",
+    "cat": "복합명사",
+    "title": "집·물건 · 붙여 쓰는 말과 띄어 쓰는 말",
+    "lead": "bedroom처럼 붙여 쓰거나 coffee table처럼 띄어 쓰기도 합니다. 철자는 사전 표기를 따르고 전체 뜻으로 외우세요.",
+    "items": [
+      {
+        "term": "living room",
+        "meaning": "거실",
+        "usages": [
+          "relax in the living room"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "bedroom",
+        "meaning": "침실",
+        "usages": [
+          "a small bedroom"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "bathroom",
+        "meaning": "욕실·화장실",
+        "usages": [
+          "clean the bathroom"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "dining table",
+        "meaning": "식탁",
+        "usages": [
+          "sit at the dining table"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "coffee table",
+        "meaning": "낮은 거실 탁자",
+        "usages": [
+          "put a book on the coffee table"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "kitchen sink",
+        "meaning": "주방 싱크대",
+        "usages": [
+          "wash dishes in the kitchen sink"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "doorbell",
+        "meaning": "초인종",
+        "usages": [
+          "ring the doorbell"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "bookshelf",
+        "meaning": "책장",
+        "usages": [
+          "a wooden bookshelf"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "washing machine",
+        "meaning": "세탁기",
+        "usages": [
+          "use the washing machine"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "vacuum cleaner",
+        "meaning": "진공청소기",
+        "usages": [
+          "buy a vacuum cleaner"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "alarm clock",
+        "meaning": "알람 시계",
+        "usages": [
+          "set an alarm clock"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "toothbrush",
+        "meaning": "칫솔",
+        "usages": [
+          "a new toothbrush"
+        ],
+        "cat": "복합명사"
+      }
+    ]
+  },
+  {
+    "id": "wg97",
+    "cat": "복합명사",
+    "title": "음식·쇼핑 · 장소·가격·주문",
+    "lead": "coffee shop은 커피와 관련된 가게, coffee cup은 커피를 담는 컵입니다. 뒤 명사를 먼저 이해하세요.",
+    "items": [
+      {
+        "term": "coffee shop",
+        "meaning": "커피숍",
+        "usages": [
+          "visit a coffee shop"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "shopping mall",
+        "meaning": "쇼핑몰",
+        "usages": [
+          "go to a shopping mall"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "grocery store",
+        "meaning": "식료품점",
+        "usages": [
+          "shop at a grocery store"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "ice cream",
+        "meaning": "아이스크림",
+        "usages": [
+          "eat some ice cream"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "fruit juice",
+        "meaning": "과일 주스",
+        "usages": [
+          "drink fruit juice"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "dinner party",
+        "meaning": "저녁 식사 모임",
+        "usages": [
+          "host a dinner party"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "breakfast menu",
+        "meaning": "아침 식사 메뉴",
+        "usages": [
+          "check the breakfast menu"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "credit card",
+        "meaning": "신용카드",
+        "usages": [
+          "pay by credit card"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "price tag",
+        "meaning": "가격표",
+        "usages": [
+          "look at the price tag"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "discount coupon",
+        "meaning": "할인 쿠폰",
+        "usages": [
+          "use a discount coupon"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "delivery fee",
+        "meaning": "배달료",
+        "usages": [
+          "pay a delivery fee"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "meal plan",
+        "meaning": "식사 계획",
+        "usages": [
+          "make a meal plan"
+        ],
+        "cat": "복합명사"
+      }
+    ]
+  },
+  {
+    "id": "wg98",
+    "cat": "복합명사",
+    "title": "건강·환경 · 분야와 대상",
+    "lead": "health, safety, energy처럼 추상 명사도 뒤 명사를 수식할 수 있습니다.",
+    "items": [
+      {
+        "term": "health care",
+        "meaning": "의료·건강 관리",
+        "usages": [
+          "access to health care"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "fitness center",
+        "meaning": "피트니스 센터",
+        "usages": [
+          "join a fitness center"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "exercise equipment",
+        "meaning": "운동 장비",
+        "usages": [
+          "use exercise equipment"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "sports center",
+        "meaning": "스포츠 센터",
+        "usages": [
+          "visit a sports center"
+        ],
+        "cat": "복합명사",
+        "note": "sports는 이 결합에서 -s를 유지"
+      },
+      {
+        "term": "air pollution",
+        "meaning": "대기 오염",
+        "usages": [
+          "reduce air pollution"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "water pollution",
+        "meaning": "수질 오염",
+        "usages": [
+          "prevent water pollution"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "climate change",
+        "meaning": "기후 변화",
+        "usages": [
+          "talk about climate change"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "energy consumption",
+        "meaning": "에너지 소비",
+        "usages": [
+          "reduce energy consumption"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "waste collection",
+        "meaning": "쓰레기 수거",
+        "usages": [
+          "the waste collection schedule"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "safety helmet",
+        "meaning": "안전모",
+        "usages": [
+          "wear a safety helmet"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "first aid",
+        "meaning": "응급처치",
+        "usages": [
+          "learn first aid"
+        ],
+        "cat": "복합명사",
+        "note": "모든 복합명사가 명사+명사인 것은 아님"
+      }
+    ]
+  },
+  {
+    "id": "wg99",
+    "cat": "복합명사",
+    "title": "기술·학습 · 기기·목표·콘텐츠",
+    "lead": "뒤의 screen, connection, plan, lesson이 무엇을 말하는지 먼저 확인하세요.",
+    "items": [
+      {
+        "term": "computer screen",
+        "meaning": "컴퓨터 화면",
+        "usages": [
+          "clean the computer screen"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "internet connection",
+        "meaning": "인터넷 연결",
+        "usages": [
+          "a stable internet connection"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "phone charger",
+        "meaning": "휴대전화 충전기",
+        "usages": [
+          "borrow a phone charger"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "memory card",
+        "meaning": "메모리 카드",
+        "usages": [
+          "insert a memory card"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "search engine",
+        "meaning": "검색 엔진",
+        "usages": [
+          "use a search engine"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "language learning",
+        "meaning": "언어 학습",
+        "usages": [
+          "enjoy language learning"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "study plan",
+        "meaning": "학습 계획",
+        "usages": [
+          "make a study plan"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "grammar lesson",
+        "meaning": "문법 강의",
+        "usages": [
+          "review a grammar lesson"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "vocabulary quiz",
+        "meaning": "단어 퀴즈",
+        "usages": [
+          "take a vocabulary quiz"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "classroom",
+        "meaning": "교실",
+        "usages": [
+          "enter the classroom"
+        ],
+        "cat": "복합명사"
+      }
+    ]
+  },
+  {
+    "id": "wg100",
+    "cat": "복합명사",
+    "title": "복합명사의 복수 · 핵심 명사를 바꾸기",
+    "lead": "보통 마지막 핵심 명사에 복수를 붙이고 앞 수식 명사는 그대로 둡니다. sisters-in-law, women doctors처럼 구조에 따른 예외도 있습니다.",
+    "items": [
+      {
+        "term": "bus stop → bus stops",
+        "meaning": "버스 정류장 → 정류장들",
+        "usages": [
+          "two bus stops"
+        ],
+        "cat": "복합명사",
+        "note": "보통 buses stops가 아님"
+      },
+      {
+        "term": "train station → train stations",
+        "meaning": "기차역 → 기차역들",
+        "usages": [
+          "three train stations"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "job interview → job interviews",
+        "meaning": "취업 면접 → 면접들",
+        "usages": [
+          "two job interviews"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "coffee cup → coffee cups",
+        "meaning": "커피 컵 → 컵들",
+        "usages": [
+          "four coffee cups"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "bedroom → bedrooms",
+        "meaning": "침실 → 침실들",
+        "usages": [
+          "two bedrooms"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "washing machine → washing machines",
+        "meaning": "세탁기 → 세탁기들",
+        "usages": [
+          "three washing machines"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "toothbrush → toothbrushes",
+        "meaning": "칫솔 → 칫솔들",
+        "usages": [
+          "two toothbrushes"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "swimming pool → swimming pools",
+        "meaning": "수영장 → 수영장들",
+        "usages": [
+          "two swimming pools"
+        ],
+        "cat": "복합명사"
+      },
+      {
+        "term": "sister-in-law → sisters-in-law",
+        "meaning": "시누이·올케·처제 등 → 그 여러 사람",
+        "usages": [
+          "two sisters-in-law"
+        ],
+        "cat": "복합명사",
+        "note": "핵심 명사 sister를 복수로"
+      },
+      {
+        "term": "woman doctor → women doctors",
+        "meaning": "여성 의사 → 여성 의사들",
+        "usages": [
+          "two women doctors"
+        ],
+        "cat": "복합명사",
+        "note": "성별 명사 man/woman은 함께 복수로 바뀌는 용법"
+      }
+    ]
   }
 ];
