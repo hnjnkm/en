@@ -76,7 +76,8 @@ function switchTab(next) {
   tab = next; category = '전체'; $('#search').value = '';
   document.body.dataset.tab = tab;
   $('#grammar-rail').hidden = tab !== 'grammar'; $('#word-rail').hidden = tab !== 'vocabulary'; $('#word-tools').hidden = tab !== 'vocabulary';
-  if (!railMedia.matches) { closeMobileRail('grammar-rail', 'rail-toggle'); closeMobileRail('word-rail', 'word-rail-toggle'); }
+  if (railMedia.matches) syncRailSize();
+  else { closeMobileRail('grammar-rail', 'rail-toggle'); closeMobileRail('word-rail', 'word-rail-toggle'); }
   $('#word-topic').value = '전체'; $('#word-group-category').value = '전체'; wordGroupCategory = '전체'; activeWordGroupId = null; wordPage = 1;
   if (tab === 'vocabulary') resetCards();
   document.querySelectorAll('nav button').forEach(button => {
@@ -100,7 +101,13 @@ function startQuiz(retry = false) {
   if (!pool.length) return;
   round = shuffle(pool).slice(0, 10); position = 0; score = 0; missed = [];
   showQuestion();
-  if (!$('#quiz').open) $('#quiz').showModal();
+  if (!$('#quiz').open) {
+    $('#quiz').show(); $('#quiz-overlay').hidden = false; $('.page-layout').inert = true;
+    $('.question').focus({preventScroll:true});
+  }
+}
+function closeQuiz() {
+  $('.page-layout').inert = false; $('#quiz-overlay').hidden = true; $('#quiz').close();
 }
 function showQuestion() {
   answered = false;
@@ -154,7 +161,7 @@ let cardDeck = [], cardIndex = 0, cardCycle = 1, cardRevealed = false;
 let activeLesson = grammar[0].id, railObserver = null;
 let activeWordRailGroup = wordGroups[0].id, wordRailObserver = null;
 const wordTopics = [...new Set(vocabulary.map(word => word.cat))];
-const railMedia = matchMedia('(min-width: 1100px)');
+const railMedia = matchMedia('(min-width: 768px)');
 function readKnownWords() {
   try {
     const existing = localStorage.getItem('opic-known-words');
@@ -319,6 +326,7 @@ function goToLesson(id, updateHash = true) {
 function syncRailSize() {
   for (const [railId, toggleId] of [['grammar-rail','rail-toggle'], ['word-rail','word-rail-toggle']]) {
     document.getElementById(toggleId).setAttribute('aria-expanded',railMedia.matches ? 'true':'false');
+    document.getElementById(toggleId).disabled = railMedia.matches;
     document.getElementById(railId).classList.toggle('rail-open',railMedia.matches);
   }
 }
@@ -389,7 +397,12 @@ function quizWordOptions(item) {
   return shuffle([item.meaning,...distractors]);
 }
 
-$('nav').addEventListener('click', event => { const button = event.target.closest('[data-tab]'); if (button) { switchTab(button.dataset.tab); history.replaceState(null,'',location.pathname+location.search); } });
+$('#top-nav').addEventListener('click', event => {
+  const button = event.target.closest('[data-tab]'); if (!button || button.dataset.tab === tab) return;
+  if ($('#quiz').open) closeQuiz();
+  switchTab(button.dataset.tab); history.replaceState(null,'',location.pathname+location.search);
+  window.scrollTo({top:0,behavior:'instant'});
+});
 $('#search').addEventListener('input', () => { if (tab === 'vocabulary') refreshWordScope(); else render(); });
 $('#filters').addEventListener('click', event => { const button = event.target.closest('[data-category]'); if (button) { category = button.dataset.category; renderFilters(); render(); } });
 $('#list').addEventListener('click', event => {
@@ -421,7 +434,11 @@ $('#list').addEventListener('click', event => {
   } catch { button.textContent = '저장할 수 없습니다'; }
 });
 $('#quiz-open').addEventListener('click', () => startQuiz());
-$('#quiz-close').addEventListener('click', () => $('#quiz').close());
+$('#quiz-close').addEventListener('click', () => { closeQuiz(); $('#quiz-open').focus({preventScroll:true}); });
+$('#quiz-overlay').addEventListener('click', () => { closeQuiz(); $('#quiz-open').focus({preventScroll:true}); });
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && $('#quiz').open) { event.preventDefault(); closeQuiz(); $('#quiz-open').focus({preventScroll:true}); }
+});
 $('#quiz-body').addEventListener('click', event => {
   const wordButton = event.target.closest('[data-word-state]');
   if (wordButton) { saveWordState(wordButton.dataset.term, wordButton.dataset.wordState === 'known'); wordButton.parentElement.querySelectorAll('[data-word-state]').forEach(b => b.setAttribute('aria-pressed', b.dataset.wordState === wordButton.dataset.wordState)); return; }
@@ -429,7 +446,7 @@ $('#quiz-body').addEventListener('click', event => {
   if (event.target.id === 'retry') { startQuiz(true); return; }
   const review = event.target.closest('[data-review-lesson]');
   if (review) {
-    $('#quiz').close(); switchTab('grammar');
+    closeQuiz(); switchTab('grammar');
     goToLesson(review.dataset.reviewLesson); return;
   }
   const button = event.target.closest('[data-answer]'); if (button) answerQuiz(button);
@@ -486,15 +503,18 @@ $('#word-card').addEventListener('click', event => {
   if (event.target.id === 'reveal-word') { cardRevealed = true; renderCard(); $('#word-card [data-word-state]')?.focus(); return; }
   const button = event.target.closest('[data-card-action]'); if (button) advanceCard(button.dataset.wordState === 'known');
 });
-$('#quiz').addEventListener('close', () => { if (tab === 'vocabulary') renderWords(); });
+$('#quiz').addEventListener('close', () => {
+  $('.page-layout').inert = false; $('#quiz-overlay').hidden = true;
+  if (tab === 'vocabulary') renderWords();
+});
 $('#grammar-index').addEventListener('click', event => { const link = event.target.closest('[data-lesson-target]'); if (link) { event.preventDefault(); goToLesson(link.dataset.lessonTarget); } });
-$('#rail-toggle').addEventListener('click', () => { const open = $('#grammar-rail').classList.toggle('rail-open'); $('#rail-toggle').setAttribute('aria-expanded', open); });
+$('#rail-toggle').addEventListener('click', () => { if (railMedia.matches) return; const open = $('#grammar-rail').classList.toggle('rail-open'); $('#rail-toggle').setAttribute('aria-expanded', open); });
 $('#word-index').addEventListener('click', event => {
   const group = event.target.closest('[data-word-group-target]'), topic = event.target.closest('[data-word-topic-target]');
   if (group) { event.preventDefault(); goToWordGroup(group.dataset.wordGroupTarget); }
   else if (topic) { event.preventDefault(); goToWordTopic(Number(topic.dataset.wordTopicTarget)); }
 });
-$('#word-rail-toggle').addEventListener('click', () => { const open = $('#word-rail').classList.toggle('rail-open'); $('#word-rail-toggle').setAttribute('aria-expanded', open); });
+$('#word-rail-toggle').addEventListener('click', () => { if (railMedia.matches) return; const open = $('#word-rail').classList.toggle('rail-open'); $('#word-rail-toggle').setAttribute('aria-expanded', open); });
 railMedia.addEventListener('change', syncRailSize);
 renderRail(); syncRailSize(); switchTab('grammar');
 openStudyHash();
