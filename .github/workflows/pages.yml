@@ -1,0 +1,58 @@
+name: Publish OPIc site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+concurrency:
+  group: opic-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Request and verify branch deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          site=$(gh api "repos/$GITHUB_REPOSITORY/pages")
+          echo "$site" | jq '{html_url, build_type, source}'
+          build_type=$(echo "$site" | jq -r '.build_type')
+          if [[ "$build_type" != "legacy" ]]; then
+            echo "Expected Pages publishing from a branch, got: $build_type"
+            exit 1
+          fi
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --jq '{status,url}'
+          for attempt in {1..30}; do
+            result=$(gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest")
+            status=$(echo "$result" | jq -r '.status')
+            echo "Build status: $status"
+            if [[ "$status" == "built" ]]; then
+              url=$(echo "$site" | jq -r '.html_url')
+              for probe in {1..12}; do
+                if curl --fail --silent --show-error "$url" -o /tmp/opic-published.html && grep -q 'OPIc · 문법과 단어' /tmp/opic-published.html; then
+                  echo "Verified OPIc site: $url"
+                  exit 0
+                fi
+                sleep 10
+              done
+              echo "Build completed, but the expected page was not served."
+              exit 1
+            fi
+            if [[ "$status" == "errored" ]]; then
+              echo "$result" | jq '{status,error,commit}'
+              exit 1
+            fi
+            sleep 10
+          done
+          echo "Timed out waiting for Pages deployment."
+          exit 1
