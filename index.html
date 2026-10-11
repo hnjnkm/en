@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OPIc · 문법과 단어</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><a class="brand" href="./">OPIc</a><span>말하기의 기본</span></header>
+<nav aria-label="학습 메뉴"><button class="active" data-tab="grammar" aria-selected="true">문법</button><button data-tab="vocabulary" aria-selected="false">단어</button></nav>
+<section class="intro"><h1 id="heading">짧게 이해하고, 직접 말하기.</h1><p id="description">문장의 뼈대부터 경험을 연결하는 법까지. 예문을 내 이야기로 바꿔 말해 보세요.</p></section>
+<div class="toolbar"><label class="search"><span class="sr-only">학습 내용 검색</span><input id="search" type="search" placeholder="문법이나 예문 검색" autocomplete="off"></label><button id="quiz-open">퀴즈 풀기 ↗</button></div>
+<div id="filters" class="filters" aria-label="단어 주제" hidden></div>
+<p id="count" class="meta" aria-live="polite"></p><section id="list" aria-label="학습 내용"></section>
+<footer><p>예문은 시작점입니다. 이유 → 구체적인 경험 → 느낌을 덧붙여 말해 보세요.</p><p>AL은 단어 암기만으로 결정되지 않습니다. 자연스러운 연결과 상황에 맞는 설명도 함께 연습하세요.</p></footer>
+</main>
+<dialog id="quiz"><div class="dialog-head"><span id="quiz-label">복습 퀴즈</span><button id="quiz-close" aria-label="퀴즈 닫기">닫기</button></div><div id="quiz-body"></div></dialog>
+<script src="content.js"></script><script src="app.js"></script></body></html>
