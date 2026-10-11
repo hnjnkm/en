@@ -1,4 +1,4 @@
-// 문법 32개 강의. 단어는 중복 표제어를 제외한 핵심 단어·표현.
+// 문법 33개 강의. 단어는 중복 표제어를 제외한 핵심 단어·표현.
 const grammar = [
   {
     "id": "g01",
@@ -210,9 +210,177 @@ const grammar = [
     }
   },
   {
+    "id": "g33",
+    "cat": "문장 기초",
+    "title": "03 · 자동사·타동사: 목적어가 필요한가?",
+    "lead": "자동사·타동사의 차이는 “스스로 하는 행동인가”가 아니라 “그 용법에서 동사가 직접 목적어를 취하는가”입니다. 영어의 동사 구조를 기준으로 판단하세요.",
+    "concepts": [
+      {
+        "title": "자동사와 타동사의 정확한 기준",
+        "text": "자동사는 동사의 직접 목적어 없이 쓰이는 동사입니다: The baby sleeps. 타동사는 동사의 직접 목적어를 취하는 동사입니다: I enjoy movies. movies는 즐기는 대상이라 enjoy의 목적어입니다. “자동사=혼자 하는 행동, 타동사=남에게 하는 행동”이라는 뜻은 아닙니다. I enjoy music처럼 혼자 하는 활동도 타동사 구조이고, We talked처럼 여러 사람이 함께 하는 활동도 자동사 구조일 수 있습니다."
+      },
+      {
+        "title": "목적어와 장소·시간 설명을 구별하기",
+        "text": "I arrived at the station에서 arrived 뒤의 at the station은 장소를 나타내는 전치사구입니다. station은 전치사 at의 목적어이지 arrive의 직접 목적어가 아닙니다. I slept for eight hours의 for eight hours도 기간을 더하는 표현입니다. I slept eight hours처럼 전치사 없이 명사구로 기간을 나타낼 수도 있으므로, 동사 뒤에 명사가 있다고 모두 직접 목적어인 것은 아닙니다. 그 말이 동작의 대상인지, 장소·시간을 덧붙이는지 확인하세요."
+      },
+      {
+        "title": "자동사라도 보어가 필요할 수 있습니다",
+        "text": "The baby sleeps는 주어+동사로 완성되는 1형식입니다. My sister became a teacher는 주어+동사+보어인 2형식입니다. become은 직접 목적어 대신 주어의 정체를 설명하는 보어가 필요합니다. a teacher는 my sister가 무엇이 됐는지 설명합니다. 따라서 “자동사는 뒤에 아무 말도 필요 없다”라고 외우면 안 됩니다. be, become, seem, look, feel 등의 연결동사는 뜻에 맞는 주격보어와 함께 자주 씁니다."
+      },
+      {
+        "title": "목적어와 보어는 명사 모양이어도 다릅니다",
+        "text": "My sister met a teacher에서 teacher는 만난 대상이므로 목적어입니다. My sister became a teacher에서는 sister 자신이 teacher가 됐으므로 보어입니다. 명사가 왔는지 형용사가 왔는지만 보지 말고 그 말의 역할을 보세요. The news made me happy에서는 me가 직접 목적어이고 happy는 me의 상태를 설명하는 목적격보어입니다. 타동사 구조에도 보어가 함께 올 수 있습니다."
+      },
+      {
+        "title": "전치사가 필요한 동사와 바로 연결하는 동사",
+        "text": "기본 표현은 listen to music, wait for a friend, arrive at the station, live in Seoul입니다. 반면 visit Seoul, reach the station, discuss the problem, enter the room은 목적어를 직접 붙입니다. 비슷한 한국어 번역이라도 영어의 구조는 다릅니다. “무엇을/누구를”로 번역되는지에만 의존하지 말고 동사와 뒤 표현을 함께 익히세요. go home의 home은 방향을 나타내는 부사라 to가 없는 것이며 go의 직접 목적어가 아닙니다."
+      },
+      {
+        "title": "같은 동사도 용법에 따라 둘 다 가능합니다",
+        "text": "The door opened는 문이 열린 자동사 용법, I opened the door는 문을 연 타동사 용법입니다. I eat at home은 먹는 장소를 말하는 자동사 용법, I eat breakfast at home은 breakfast라는 직접 목적어가 있는 타동사 용법입니다. 동사마다 항상 한 종류로 고정되는 것은 아닙니다. 문장에서 어떤 뜻·구조로 쓰이는지 보세요. 사전에서는 [I]/intransitive가 자동사, [T]/transitive가 타동사 용법을 표시합니다."
+      },
+      {
+        "title": "목적어가 꼭 물건 이름일 필요는 없습니다",
+        "text": "I enjoy cooking의 cooking은 동명사 목적어, I want to leave의 to leave는 부정사 목적어, I know that he is busy의 that he is busy는 내용 전체가 목적어 역할을 하는 명사절입니다. 목적어는 “사람·물건 명사 하나”로 제한되지 않습니다. 어떤 형태를 받을 수 있는지는 동사별로 다르므로 enjoy + -ing, want + to부정사처럼 함께 익히세요."
+      },
+      {
+        "title": "수동태와 연결해서 확인하기",
+        "text": "I opened the door에서 목적어 the door를 주어로 옮기면 The door was opened가 됩니다. 목적어 없는 The accident happened를 The accident was happened로 바꾸지는 않습니다. 기본 수동태는 목적어를 취하는 구조에서 출발합니다. 다만 목적어가 있다고 모든 수동 표현이 자연스러운 것은 아니며, 전치사 동사구가 수동으로 쓰이는 경우도 있어 수동 가능 여부만으로 모든 용법을 판정하지 마세요."
+      }
+    ],
+    "forms": [
+      {
+        "label": "자동사·1형식",
+        "pattern": "주어 + 동사 (+ 수식어)",
+        "note": "The baby sleeps. / The baby sleeps at night. at night는 시간 설명입니다."
+      },
+      {
+        "label": "자동사·2형식",
+        "pattern": "주어 + 연결동사 + 주격보어",
+        "note": "My sister became a teacher. teacher는 sister의 정체입니다."
+      },
+      {
+        "label": "타동사·3형식",
+        "pattern": "주어 + 동사 + 직접 목적어",
+        "note": "I visited a museum. museum은 방문한 대상입니다."
+      },
+      {
+        "label": "타동사·4형식",
+        "pattern": "주어 + 동사 + 간접 목적어 + 직접 목적어",
+        "note": "She gave me a ticket. me는 받는 사람, a ticket은 주는 대상입니다."
+      },
+      {
+        "label": "타동사·5형식",
+        "pattern": "주어 + 동사 + 목적어 + 목적격보어",
+        "note": "The movie made me happy. happy는 me의 상태를 설명합니다."
+      },
+      {
+        "label": "자동사+전치사",
+        "pattern": "동사 + 전치사 + 전치사의 목적어",
+        "note": "listen to music / wait for a friend. music과 friend는 전치사의 목적어입니다."
+      },
+      {
+        "label": "두 용법",
+        "pattern": "The door opened. / I opened the door.",
+        "note": "첫 문장은 직접 목적어가 없고, 두 번째 문장은 the door가 직접 목적어입니다."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I arrived at the station at eight.",
+        "ko": "8시에 역에 도착했어요.",
+        "analysis": "I가 주어, arrived가 자동사입니다. at the station은 장소, at eight는 시간입니다. station을 arrive에 바로 붙이지 않고 전치사 at으로 연결합니다."
+      },
+      {
+        "en": "I visited a museum with a friend.",
+        "ko": "친구와 박물관을 방문했어요.",
+        "analysis": "visited는 타동사이며 a museum이 직접 목적어입니다. with a friend는 함께한 사람을 더하는 수식어입니다. visit 뒤에 to를 넣지 않습니다."
+      },
+      {
+        "en": "The café became crowded after lunch.",
+        "ko": "점심 후에 카페가 붐비게 됐어요.",
+        "analysis": "became은 연결동사로 쓰이고 crowded는 café의 상태를 설명하는 주격보어입니다. 목적어가 없어도 보어가 필요한 2형식 문장입니다."
+      },
+      {
+        "en": "The door opened. I opened the window, too.",
+        "ko": "문이 열렸어요. 저는 창문도 열었어요.",
+        "analysis": "첫 opened는 자동사 용법, 두 번째 opened는 window를 직접 목적어로 취한 타동사 용법입니다. 같은 동사라도 구조가 달라집니다."
+      },
+      {
+        "en": "I listen to music when I work out.",
+        "ko": "운동할 때 음악을 들어요.",
+        "analysis": "listen은 이 구조에서 자동사이며 to music을 붙입니다. music은 전치사 to의 목적어입니다. 한국어로 “음악을 듣다”라고 해도 영어에서는 to를 유지합니다."
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I arrived the airport.",
+        "right": "I arrived at the airport.",
+        "why": "arrive는 이 의미에서 직접 목적어를 취하지 않아 장소를 at으로 연결합니다. 비슷한 뜻의 reach를 쓰면 I reached the airport처럼 바로 목적어를 붙입니다."
+      },
+      {
+        "wrong": "We discussed about the problem.",
+        "right": "We discussed the problem.",
+        "why": "discuss는 논의하는 대상을 직접 목적어로 취합니다. 같은 뜻을 talk로 말하면 We talked about the problem처럼 about이 필요합니다."
+      },
+      {
+        "wrong": "I listened music.",
+        "right": "I listened to music.",
+        "why": "listen은 듣는 대상을 전치사 to와 연결하는 것이 기본입니다. heard music은 hear가 직접 목적어를 취하는 다른 구조이며, 듣다라는 번역만으로 어순을 정하면 안 됩니다."
+      }
+    ],
+    "exercises": [
+      {
+        "q": "“공항에 도착했어요”의 올바른 구조는?",
+        "options": [
+          "I arrived the airport.",
+          "I arrived at the airport.",
+          "I arrived to the airport."
+        ],
+        "answer": "I arrived at the airport.",
+        "explanation": "arrive는 이 의미에서 자동사입니다. 공항이라는 지점은 at the airport라는 전치사구로 연결합니다. to가 아닌 at을 쓰며, 도시·나라에는 보통 arrive in을 씁니다."
+      },
+      {
+        "q": "My sister became a teacher에서 a teacher의 역할은?",
+        "options": [
+          "became의 직접 목적어",
+          "sister의 정체를 설명하는 주격보어",
+          "시간을 설명하는 수식어"
+        ],
+        "answer": "sister의 정체를 설명하는 주격보어",
+        "explanation": "sister 자신이 teacher가 된 것이므로 a teacher는 주격보어입니다. become은 이 구조에서 직접 목적어를 취하지 않는 연결동사입니다. “동사 뒤 명사=항상 목적어”는 아닙니다."
+      },
+      {
+        "q": "“그 문제를 논의했어요”의 올바른 문장은?",
+        "options": [
+          "We discussed about the problem.",
+          "We discussed the problem.",
+          "We discussed to the problem."
+        ],
+        "answer": "We discussed the problem.",
+        "explanation": "discuss는 타동사로 the problem을 직접 목적어로 받습니다. about을 쓰고 싶으면 We talked about the problem처럼 동사도 talk로 바꿔야 합니다."
+      },
+      {
+        "q": "The door opened. / I opened the door.에서 open의 용법은?",
+        "options": [
+          "두 문장 모두 직접 목적어가 있다",
+          "첫 문장은 자동사, 두 번째는 타동사 용법",
+          "첫 문장은 타동사, 두 번째는 자동사 용법"
+        ],
+        "answer": "첫 문장은 자동사, 두 번째는 타동사 용법",
+        "explanation": "첫 문장은 door가 주어이며 직접 목적어가 없습니다. 두 번째는 I가 주어이고 the door가 직접 목적어입니다. 같은 동사가 두 용법으로 쓰일 수 있습니다."
+      }
+    ],
+    "spoken": {
+      "prompt": "집을 나서서 목적지에 도착한 일과, 그곳에서 방문하거나 한 일을 말하세요. 동사 뒤가 직접 목적어인지 전치사구인지 찾아보세요.",
+      "sample": "I left home at nine and arrived at the station at nine thirty. Later, I visited a museum. While I was waiting for my friend, I listened to music.",
+      "note": "arrived at the station, waiting for my friend, listened to music은 전치사를 유지합니다. visited a museum은 타동사 뒤에 직접 목적어를 붙인 구조입니다. left home의 leave도 문맥에 따라 여러 용법이 있습니다."
+    }
+  },
+  {
     "id": "g03",
     "cat": "문장 기초",
-    "title": "03 · 일반동사와 주어·동사의 수 일치",
+    "title": "04 · 일반동사와 주어·동사의 수 일치",
     "lead": "일반동사는 like, live, work, go처럼 행동·습관·상태를 나타내며, 현재형에서는 주어에 따라 모양이 달라집니다.",
     "concepts": [
       {
@@ -314,7 +482,7 @@ const grammar = [
   {
     "id": "g04",
     "cat": "문장 기초",
-    "title": "04 · 부정문과 do·does·did의 역할",
+    "title": "05 · 부정문과 do·does·did의 역할",
     "lead": "일반동사 문장을 부정하거나 질문할 때 do는 문장의 모양을 바꾸는 보조 역할을 합니다.",
     "concepts": [
       {
@@ -416,7 +584,7 @@ const grammar = [
   {
     "id": "g05",
     "cat": "문장 기초",
-    "title": "05 · 의문문: yes/no 질문과 의문사 질문",
+    "title": "06 · 의문문: yes/no 질문과 의문사 질문",
     "lead": "질문은 무조건 문장 앞에 do를 붙이는 것이 아닙니다. be·조동사·일반동사에 따라 첫 단어가 달라집니다.",
     "concepts": [
       {
@@ -519,7 +687,7 @@ const grammar = [
   {
     "id": "g06",
     "cat": "문장 기초",
-    "title": "06 · 대명사: I·me·my·mine과 재귀대명사",
+    "title": "07 · 대명사: I·me·my·mine과 재귀대명사",
     "lead": "같은 “나”라도 문장에서 맡는 역할에 따라 I, me, my, mine으로 달라집니다.",
     "concepts": [
       {
@@ -617,7 +785,7 @@ const grammar = [
   {
     "id": "g07",
     "cat": "명사와 수식",
-    "title": "07 · 셀 수 있는 명사와 셀 수 없는 명사",
+    "title": "08 · 셀 수 있는 명사와 셀 수 없는 명사",
     "lead": "명사의 종류에 따라 복수형, 관사, 수량 표현, 동사 형태가 달라집니다.",
     "concepts": [
       {
@@ -719,7 +887,7 @@ const grammar = [
   {
     "id": "g08",
     "cat": "명사와 수식",
-    "title": "08 · a·an·the와 관사 없이 쓰는 경우",
+    "title": "09 · a·an·the와 관사 없이 쓰는 경우",
     "lead": "관사는 단순히 “하나”를 붙이는 장식이 아니라, 듣는 사람이 그 대상을 특정할 수 있는지 알려줍니다.",
     "concepts": [
       {
@@ -821,7 +989,7 @@ const grammar = [
   {
     "id": "g09",
     "cat": "명사와 수식",
-    "title": "09 · some·any·many·much와 수량 표현",
+    "title": "10 · some·any·many·much와 수량 표현",
     "lead": "수량 표현은 명사가 셀 수 있는지, 양이 충분한지에 따라 선택합니다.",
     "concepts": [
       {
@@ -923,7 +1091,7 @@ const grammar = [
   {
     "id": "g10",
     "cat": "명사와 수식",
-    "title": "10 · 형용사·부사와 감정 표현",
+    "title": "11 · 형용사·부사와 감정 표현",
     "lead": "형용사는 “어떤 사람·사물인가”, 부사는 “어떻게·얼마나·얼마나 자주인가”를 설명합니다.",
     "concepts": [
       {
@@ -1025,7 +1193,7 @@ const grammar = [
   {
     "id": "g11",
     "cat": "명사와 수식",
-    "title": "11 · 비교급·최상급과 as … as",
+    "title": "12 · 비교급·최상급과 as … as",
     "lead": "두 대상을 비교하면 비교급, 같은 범위에서 가장 두드러지면 최상급을 씁니다.",
     "concepts": [
       {
@@ -1127,7 +1295,7 @@ const grammar = [
   {
     "id": "g12",
     "cat": "명사와 수식",
-    "title": "12 · 전치사: 시간·위치·이동",
+    "title": "13 · 전치사: 시간·위치·이동",
     "lead": "전치사는 뒤의 명사·대명사와 한 덩어리가 되어 시간, 장소, 방향 등의 관계를 나타냅니다.",
     "concepts": [
       {
@@ -1229,7 +1397,7 @@ const grammar = [
   {
     "id": "g13",
     "cat": "시제",
-    "title": "13 · 현재형: 습관·사실·상태",
+    "title": "14 · 현재형: 습관·사실·상태",
     "lead": "현재형은 “지금 눈앞에서 하는 행동”만을 뜻하지 않습니다. 반복하는 일, 일반적 사실, 현재 유지되는 상태가 중심입니다.",
     "concepts": [
       {
@@ -1327,7 +1495,7 @@ const grammar = [
   {
     "id": "g14",
     "cat": "시제",
-    "title": "14 · 과거형: 끝난 사건과 경험의 순서",
+    "title": "15 · 과거형: 끝난 사건과 경험의 순서",
     "lead": "과거형은 현재 이전의 특정 시간에 끝난 행동이나 상태를 이야기합니다.",
     "concepts": [
       {
@@ -1429,7 +1597,7 @@ const grammar = [
   {
     "id": "g15",
     "cat": "시제",
-    "title": "15 · 현재진행·과거진행: 그 순간 하고 있던 일",
+    "title": "16 · 현재진행·과거진행: 그 순간 하고 있던 일",
     "lead": "진행형은 특정 시점을 기준으로 진행 중인 동작이나 일시적인 상황을 보여줍니다.",
     "concepts": [
       {
@@ -1531,7 +1699,7 @@ const grammar = [
   {
     "id": "g16",
     "cat": "시제",
-    "title": "16 · 미래: will·be going to·현재진행",
+    "title": "17 · 미래: will·be going to·현재진행",
     "lead": "미래를 말하는 표현들은 서로 겹치지만, 결정 시점·근거·약속 여부에 따라 초점이 달라집니다.",
     "concepts": [
       {
@@ -1633,7 +1801,7 @@ const grammar = [
   {
     "id": "g17",
     "cat": "시제",
-    "title": "17 · 현재완료: 과거를 현재와 연결하기",
+    "title": "18 · 현재완료: 과거를 현재와 연결하기",
     "lead": "현재완료는 have/has + 과거분사입니다. 과거에 시작되거나 일어난 일을 현재의 경험·결과·기간과 연결합니다.",
     "concepts": [
       {
@@ -1735,7 +1903,7 @@ const grammar = [
   {
     "id": "g18",
     "cat": "시제",
-    "title": "18 · for·since와 현재완료진행",
+    "title": "19 · for·since와 현재완료진행",
     "lead": "과거부터 지금까지 계속되는 상태·활동을 말할 때, 기간의 길이와 시작점을 구분해야 합니다.",
     "concepts": [
       {
@@ -1837,7 +2005,7 @@ const grammar = [
   {
     "id": "g19",
     "cat": "시제",
-    "title": "19 · 과거완료: 과거 사건보다 더 이전의 일",
+    "title": "20 · 과거완료: 과거 사건보다 더 이전의 일",
     "lead": "과거완료는 “그 과거 시점에 이미”라는 관계를 나타냅니다. 오래된 일이기 때문에 쓰는 시제는 아닙니다.",
     "concepts": [
       {
@@ -1935,7 +2103,7 @@ const grammar = [
   {
     "id": "g20",
     "cat": "동사 확장",
-    "title": "20 · 조동사: 가능·허락·의무·조언·추측",
+    "title": "21 · 조동사: 가능·허락·의무·조언·추측",
     "lead": "조동사는 행동 자체보다 “할 수 있는가, 해야 하는가, 그럴 가능성이 있는가”를 덧붙입니다.",
     "concepts": [
       {
@@ -2037,7 +2205,7 @@ const grammar = [
   {
     "id": "g21",
     "cat": "동사 확장",
-    "title": "21 · would·could와 정중한 요청",
+    "title": "22 · would·could와 정중한 요청",
     "lead": "would와 could는 과거만 나타내지 않습니다. 부탁·선호·가정에서도 자주 사용합니다.",
     "concepts": [
       {
@@ -2139,7 +2307,7 @@ const grammar = [
   {
     "id": "g22",
     "cat": "동사 확장",
-    "title": "22 · to부정사·동명사와 동사 연결",
+    "title": "23 · to부정사·동명사와 동사 연결",
     "lead": "동작 두 개를 연결할 때 두 번째 동사를 무조건 원형으로 놓을 수는 없습니다. 앞의 동사와 역할에 맞는 형태가 필요합니다.",
     "concepts": [
       {
@@ -2241,7 +2409,7 @@ const grammar = [
   {
     "id": "g23",
     "cat": "동사 확장",
-    "title": "23 · used to·be used to·get used to",
+    "title": "24 · used to·be used to·get used to",
     "lead": "철자가 비슷하지만 “예전 습관”, “익숙한 상태”, “익숙해지는 과정”은 서로 다른 구조입니다.",
     "concepts": [
       {
@@ -2343,7 +2511,7 @@ const grammar = [
   {
     "id": "g24",
     "cat": "동사 확장",
-    "title": "24 · 수동태: 행동을 받은 대상이 주어일 때",
+    "title": "25 · 수동태: 행동을 받은 대상이 주어일 때",
     "lead": "누가 했는지보다 “무엇이 어떻게 되었는지”가 중요한 상황에서는 수동태가 유용합니다.",
     "concepts": [
       {
@@ -2445,7 +2613,7 @@ const grammar = [
   {
     "id": "g25",
     "cat": "동사 확장",
-    "title": "25 · there is·가주어 it와 존재·상황 설명",
+    "title": "26 · there is·가주어 it와 존재·상황 설명",
     "lead": "“무엇이 있다”와 “그것이 어디 있다”는 영어에서 서로 다른 문장으로 자주 말합니다.",
     "concepts": [
       {
@@ -2547,7 +2715,7 @@ const grammar = [
   {
     "id": "g26",
     "cat": "문장 연결",
-    "title": "26 · and·but·because·so·although",
+    "title": "27 · and·but·because·so·although",
     "lead": "짧은 문장을 길게 만들려면 두 내용의 관계를 먼저 정하세요: 추가, 대조, 이유, 결과 중 무엇인가요?",
     "concepts": [
       {
@@ -2649,7 +2817,7 @@ const grammar = [
   {
     "id": "g27",
     "cat": "문장 연결",
-    "title": "27 · when·while·before·after·until",
+    "title": "28 · when·while·before·after·until",
     "lead": "시간을 나타내는 절은 “언제, 동안, 이전, 이후, 언제까지” 사건이 이어지는지 설명합니다.",
     "concepts": [
       {
@@ -2751,7 +2919,7 @@ const grammar = [
   {
     "id": "g28",
     "cat": "문장 연결",
-    "title": "28 · 명사절·간접질문: 문장 속에 문장 넣기",
+    "title": "29 · 명사절·간접질문: 문장 속에 문장 넣기",
     "lead": "생각·정보·질문 내용을 한 문장의 목적어로 넣을 수 있습니다. 안쪽 문장은 평서문 순서가 기본입니다.",
     "concepts": [
       {
@@ -2853,7 +3021,7 @@ const grammar = [
   {
     "id": "g29",
     "cat": "문장 연결",
-    "title": "29 · 관계절: 사람·장소·물건을 더 설명하기",
+    "title": "30 · 관계절: 사람·장소·물건을 더 설명하기",
     "lead": "관계절은 앞의 명사를 설명하는 작은 문장입니다. “어떤 사람·장소·물건인지”를 더 구체적으로 말합니다.",
     "concepts": [
       {
@@ -2955,7 +3123,7 @@ const grammar = [
   {
     "id": "g30",
     "cat": "문장 연결",
-    "title": "30 · 조건문: 실제 가능성과 가정",
+    "title": "31 · 조건문: 실제 가능성과 가정",
     "lead": "if절은 조건, 주절은 그 조건의 결과를 말합니다. 현재 가능한 조건인지 사실과 다른 상상인지 구분하세요.",
     "concepts": [
       {
@@ -3057,7 +3225,7 @@ const grammar = [
   {
     "id": "g31",
     "cat": "문장 연결",
-    "title": "31 · 명령·제안: 원형·let’s·why don’t we",
+    "title": "32 · 명령·제안: 원형·let’s·why don’t we",
     "lead": "상대에게 행동을 요청하거나 함께할 일을 제안할 때는 평서문과 다른 시작 형태를 씁니다.",
     "concepts": [
       {
@@ -3155,7 +3323,7 @@ const grammar = [
   {
     "id": "g32",
     "cat": "문장 연결",
-    "title": "32 · 구동사와 동사·전치사 조합",
+    "title": "33 · 구동사와 동사·전치사 조합",
     "lead": "동사 뒤의 짧은 단어 하나가 뜻과 어순을 바꿀 수 있습니다. 단어가 아니라 쓰임이 있는 덩어리로 익히세요.",
     "concepts": [
       {

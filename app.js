@@ -79,7 +79,7 @@ function switchTab(next) {
     button.setAttribute('aria-pressed', button.dataset.tab === tab);
   });
   $('#heading').textContent = tab === 'grammar' ? '규칙을 이해하고, 문장을 만드는 문법.' : '자주 쓰는 말부터, 내 표현으로.';
-  $('#description').textContent = tab === 'grammar' ? '문장 기초 → 명사와 수식 → 시제 → 동사 확장 → 문장 연결. 32개 강의에서 개념, 형태, 예문 분석과 연습 해설을 차례로 공부하세요.' : `말하기에 쓰는 핵심 단어·표현 ${vocabulary.length.toLocaleString()}개. 뜻과 사용 표현을 익히고, 모르는 단어만 섞어서 반복하세요.`;
+  $('#description').textContent = tab === 'grammar' ? `문장 기초 → 명사와 수식 → 시제 → 동사 확장 → 문장 연결. ${grammar.length}개 강의에서 개념, 형태, 예문 분석과 연습 해설을 차례로 공부하세요.` : `말하기에 쓰는 핵심 단어·표현 ${vocabulary.length.toLocaleString()}개. 뜻과 사용 표현을 익히고, 모르는 단어만 섞어서 반복하세요.`;
   $('#study-guide').hidden = tab !== 'grammar';
   $('#search').placeholder = tab === 'grammar' ? '개념, 문장, 예문까지 검색' : '단어, 뜻, 예문 검색';
   renderFilters(); render();
@@ -237,6 +237,7 @@ function activateRail(id) {
   });
 }
 function renderRail() {
+  $('#rail-toggle > span').textContent = `${grammar.length}개 강의`;
   $('#grammar-index').innerHTML = [...new Set(grammar.map(lesson => lesson.cat))].map(cat => `<section class="rail-group"><h2>${h(cat)}</h2>${grammar.filter(lesson => lesson.cat === cat).map(lesson => `<a href="#${lesson.id}" data-lesson-target="${lesson.id}"><span>${lesson.title.slice(0,2)}</span><span>${h(lesson.title.slice(5))}</span></a>`).join('')}</section>`).join('');
   activateRail(activeLesson);
 }
