@@ -34,6 +34,9 @@ function grammarLesson(item, learned) {
           ${item.forms.map(f => `<tr><th scope="row">${h(f.label)}</th><td><p>${h(f.pattern)}</p><p class="form-note">${h(f.note)}</p></td></tr>`).join('')}
         </tbody></table>
       </section>
+      ${item.referenceTables?.length ? `<section class="lesson-section"><h2>비교표와 핵심 표현</h2>
+        ${item.referenceTables.map(table => `<div class="reference-block"><h3>${h(table.title)}</h3><table class="reference-table"><thead><tr>${table.headers.map(header => `<th scope="col">${h(header)}</th>`).join('')}</tr></thead><tbody>${table.rows.map(row => `<tr>${row.map((cell, index) => index === 0 ? `<th scope="row">${h(cell)}</th>` : `<td>${h(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table>${table.note ? `<p class="reference-note">${h(table.note)}</p>` : ''}</div>`).join('')}
+      </section>` : ''}
       <section class="lesson-section"><h2>예문을 한 부분씩 보기</h2>
         ${item.examples.map(e => `<div class="analyzed-example"><p class="english" lang="en">${h(e.en)}</p><p class="translation">${h(e.ko)}</p><p class="analysis">${h(e.analysis)}</p></div>`).join('')}
       </section>
@@ -52,7 +55,7 @@ function grammarLesson(item, learned) {
 }
 function render() {
   if (tab === 'vocabulary') { railObserver?.disconnect(); renderWords(); return; }
-  $('#list').hidden = false; $('#word-card').hidden = true; $('#word-pagination').hidden = true;
+  $('#list').hidden = false; $('#word-groups').hidden = true; $('#word-card').hidden = true; $('#word-pagination').hidden = true;
   const query = $('#search').value.trim().toLowerCase();
   const source = tab === 'grammar' ? grammar : vocabulary;
   const rows = source.filter(item => (category === '전체' || item.cat === category) && JSON.stringify(item).toLowerCase().includes(query));
@@ -72,14 +75,14 @@ function switchTab(next) {
   tab = next; category = '전체'; $('#search').value = '';
   document.body.dataset.tab = tab;
   $('#grammar-rail').hidden = tab !== 'grammar'; $('#word-tools').hidden = tab !== 'vocabulary';
-  $('#word-topic').value = '전체'; wordPage = 1;
+  $('#word-topic').value = '전체'; $('#word-group-category').value = '전체'; wordGroupCategory = '전체'; activeWordGroupId = null; wordPage = 1;
   if (tab === 'vocabulary') resetCards();
   document.querySelectorAll('nav button').forEach(button => {
     button.classList.toggle('active', button.dataset.tab === tab);
     button.setAttribute('aria-pressed', button.dataset.tab === tab);
   });
   $('#heading').textContent = tab === 'grammar' ? '규칙을 이해하고, 문장을 만드는 문법.' : '자주 쓰는 말부터, 내 표현으로.';
-  $('#description').textContent = tab === 'grammar' ? `문장 기초 → 명사와 수식 → 시제 → 동사 확장 → 문장 연결. ${grammar.length}개 강의에서 개념, 형태, 예문 분석과 연습 해설을 차례로 공부하세요.` : `말하기에 쓰는 핵심 단어·표현 ${vocabulary.length.toLocaleString()}개. 뜻과 사용 표현을 익히고, 모르는 단어만 섞어서 반복하세요.`;
+  $('#description').textContent = tab === 'grammar' ? `문장 기초 → 명사와 수식 → 시제 → 동사 확장 → 문장 연결. ${grammar.length}개 강의에서 개념, 형태, 예문 분석과 연습 해설을 차례로 공부하세요.` : `기본 단어·표현 ${vocabulary.length.toLocaleString()}개와 성격별 ${wordGroups.length}개 묶음. 함께 쓰는 말과 차이를 익히고, 모르는 항목만 섞어서 반복하세요.`;
   $('#study-guide').hidden = tab !== 'grammar';
   $('#search').placeholder = tab === 'grammar' ? '개념, 문장, 예문까지 검색' : '단어, 뜻, 예문 검색';
   renderFilters(); render();
@@ -88,9 +91,9 @@ function grammarQuestions(source) {
   return source.flatMap(lesson => lesson.exercises.map(exercise => ({ ...exercise, lessonId: lesson.id, lessonTitle: lesson.title })));
 }
 function startQuiz(retry = false) {
-  if (!retry) quizScope = { tab, category, status: wordStatus, query: $('#search').value };
+  if (!retry) quizScope = { tab, category, status: wordStatus, query: $('#search').value, groupId: activeWordGroupId, groupCategory: wordGroupCategory, wordView };
   const source = quizScope.tab === 'grammar' ? grammar : vocabulary;
-  const scoped = quizScope.tab === 'grammar' ? source.filter(item => quizScope.category === '전체' || item.cat === quizScope.category) : wordPool(quizScope);
+  const scoped = quizScope.tab === 'grammar' ? source.filter(item => quizScope.category === '전체' || item.cat === quizScope.category) : quizScope.wordView === 'groups' && !quizScope.groupId ? groupQuizPool(quizScope) : wordPool(quizScope);
   const pool = quizScope.tab === 'grammar' ? grammarQuestions(scoped) : scoped;
   if (!pool.length) return;
   round = shuffle(pool).slice(0, 10); position = 0; score = 0; missed = [];
@@ -140,7 +143,11 @@ function answerInline(button) {
   const retry = field.querySelector('.inline-retry'); retry.hidden = false; retry.focus();
 }
 const WORD_PAGE_SIZE = 30;
-let wordView = 'list', wordStatus = 'unknown', wordPage = 1, wordOrder = vocabulary.map(item => item.term);
+const groupMap = new Map(wordGroups.map(group => [group.id, group]));
+const studyTerms = [...new Set([...vocabulary, ...wordGroups.flatMap(group => group.items)].map(item => item.term))];
+let wordView = 'groups', wordStatus = 'unknown', wordPage = 1, wordOrder = [...studyTerms];
+let wordGroupCategory = '전체', activeWordGroupId = null, groupOrder = wordGroups.map(group => group.id);
+const groupItemOrder = new Map(wordGroups.map(group => [group.id, group.items.map(item => item.term)]));
 let cardDeck = [], cardIndex = 0, cardCycle = 1, cardRevealed = false;
 let activeLesson = 'g01', railObserver = null;
 const railMedia = matchMedia('(min-width: 1100px)');
@@ -162,9 +169,10 @@ function saveWordState(term, known) {
     $('#storage-notice').hidden = false;
   }
 }
-function wordPool(scope = {category, status: wordStatus, query: $('#search').value}) {
+function wordPool(scope = {category, status: wordStatus, query: $('#search').value, groupId: activeWordGroupId}) {
   const query = scope.query.trim().toLowerCase();
-  return vocabulary.filter(word => (scope.category === '전체' || word.cat === scope.category)
+  const source = scope.groupId ? groupMap.get(scope.groupId)?.items || [] : vocabulary;
+  return source.filter(word => (scope.groupId || scope.category === '전체' || word.cat === scope.category)
     && (scope.status === 'all' || (scope.status === 'known' ? knownWords.has(word.term) : !knownWords.has(word.term)))
     && JSON.stringify(word).toLowerCase().includes(query));
 }
@@ -173,7 +181,7 @@ function orderedWords() {
   return wordOrder.filter(term => pool.has(term)).map(term => pool.get(term));
 }
 function usageHTML(word) {
-  return `${word.example ? `<div class="example"><p lang="en">${h(word.example)}</p><p class="translation">${h(word.ko)}</p></div>` : ''}${word.usages?.length ? `<p class="pattern usage-label">함께 쓰는 표현</p>${word.usages.map(usage => `<p class="word-usage" lang="en">${h(usage)}</p>`).join('')}` : ''}`;
+  return `${word.example ? `<div class="example"><p lang="en">${h(word.example)}</p><p class="translation">${h(word.ko)}</p></div>` : ''}${word.usages?.length ? `<p class="pattern usage-label">함께 쓰는 표현</p>${word.usages.map(usage => `<p class="word-usage" lang="en">${h(usage)}</p>`).join('')}` : ''}${word.note ? `<p class="word-note">${h(word.note)}</p>` : ''}`;
 }
 function wordStateButtons(word, card = false) {
   const known = knownWords.has(word.term);
@@ -183,11 +191,15 @@ function vocabularyLesson(word) {
   return `<details class="lesson word-row" data-word="${h(word.term)}"><summary><span>${h(word.term)}<small>${h(word.meaning)}</small></span><span class="word-status-mark">${knownWords.has(word.term) ? '알아요' : ''}</span></summary><div class="body"><p class="pattern">${h(word.cat)}</p>${usageHTML(word)}<div class="practice"><span>뜻을 가리고 떠올린 뒤 표시하세요.</span>${wordStateButtons(word)}</div></div></details>`;
 }
 function renderWordCount(rows) {
-  const knownCount = vocabulary.filter(word => knownWords.has(word.term)).length;
-  $('#count').textContent = `${rows.length.toLocaleString()}개 ${wordStatus === 'unknown' ? '모르는 단어' : wordStatus === 'known' ? '아는 단어' : '단어'} · 전체 ${vocabulary.length.toLocaleString()}개 중 ${knownCount.toLocaleString()}개 알아요`;
+  const source = activeWordGroupId ? groupMap.get(activeWordGroupId).items : vocabulary;
+  const knownCount = source.filter(word => knownWords.has(word.term)).length, noun = activeWordGroupId ? '항목' : '단어';
+  $('#count').textContent = `${rows.length.toLocaleString()}개 ${wordStatus === 'unknown' ? '모르는 ' : wordStatus === 'known' ? '아는 ' : ''}${noun} · ${activeWordGroupId ? '이 묶음' : '전체'} ${source.length.toLocaleString()}개 중 ${knownCount.toLocaleString()}개 알아요`;
   $('#quiz-open').disabled = rows.length === 0;
 }
 function renderWords() {
+  syncWordControls();
+  if (wordView === 'groups') { renderWordGroups(); return; }
+  $('#word-groups').hidden = true;
   const rows = orderedWords(); renderWordCount(rows);
   $('#list').hidden = wordView === 'cards'; $('#word-card').hidden = wordView !== 'cards';
   $('#word-pagination').hidden = wordView === 'cards' || rows.length <= WORD_PAGE_SIZE;
@@ -225,11 +237,48 @@ function advanceCard(known) {
 }
 function setWordView(view) {
   wordView = view;
-  document.querySelectorAll('[data-word-view]').forEach(button => button.setAttribute('aria-pressed', button.dataset.wordView === view));
+  if (view === 'groups') activeWordGroupId = null;
+  wordPage = 1;
   if (view === 'cards') resetCards();
   renderWords();
 }
 function refreshWordScope() { wordPage = 1; resetCards(); renderWords(); }
+function syncWordControls() {
+  document.querySelectorAll('[data-word-view]').forEach(button => button.setAttribute('aria-pressed', button.dataset.wordView === wordView));
+  $('#word-topic-label').hidden = wordView === 'groups' || !!activeWordGroupId;
+  $('#word-group-category-label').hidden = wordView !== 'groups';
+  $('#word-scope').hidden = !activeWordGroupId;
+  if (activeWordGroupId) $('#word-scope > p').textContent = `복습 범위: ${groupMap.get(activeWordGroupId).title}`;
+}
+function visibleGroupItems(group, scope = {status: wordStatus, query: $('#search').value}) {
+  const query = scope.query.trim().toLowerCase();
+  const matchesGroup = query && `${group.title} ${group.lead} ${group.cat}`.toLowerCase().includes(query);
+  const items = new Map(group.items.filter(item => (scope.status === 'all' || (scope.status === 'known' ? knownWords.has(item.term) : !knownWords.has(item.term)))
+    && (!query || matchesGroup || JSON.stringify(item).toLowerCase().includes(query))).map(item => [item.term, item]));
+  return groupItemOrder.get(group.id).filter(term => items.has(term)).map(term => items.get(term));
+}
+function visibleGroups(scope = {status: wordStatus, query: $('#search').value, groupCategory: wordGroupCategory}) {
+  return groupOrder.map(id => groupMap.get(id)).filter(group => scope.groupCategory === '전체' || group.cat === scope.groupCategory)
+    .map(group => ({group, items: visibleGroupItems(group, scope)})).filter(row => row.items.length);
+}
+function groupQuizPool(scope) {
+  return [...new Map(visibleGroups(scope).flatMap(row => row.items).map(item => [item.term, item])).values()];
+}
+function renderWordGroups() {
+  const openGroups = new Set([...$('#word-groups').querySelectorAll('details[open]')].map(group => group.id));
+  const rows = visibleGroups(), entries = rows.reduce((sum, row) => sum + row.items.length, 0);
+  $('#list').hidden = true; $('#word-card').hidden = true; $('#word-pagination').hidden = true; $('#word-groups').hidden = false;
+  $('#quiz-open').disabled = entries === 0;
+  $('#count').textContent = `${rows.length}개 묶음 · ${entries.toLocaleString()}개 항목 · 같은 표현이 다른 묶음에 다시 나올 수 있습니다.`;
+  $('#word-groups').innerHTML = rows.map(({group, items}) => `<details class="lesson word-group" id="${group.id}" ${openGroups.has(group.id) ? 'open' : ''}><summary><span>${h(group.title)}<small>${h(group.cat)} · ${items.length}개</small></span></summary><div class="body group-body"><p class="group-lead">${h(group.lead)}</p><div class="group-actions"><button data-group-cards="${group.id}">이 묶음 카드</button><button data-group-quiz="${group.id}">이 묶음 퀴즈</button></div><table class="group-table"><thead><tr><th scope="col">단어·뜻</th><th scope="col">함께 쓰는 표현·차이</th></tr></thead><tbody>${items.map(item => `<tr data-group-term="${h(item.term)}"><th scope="row"><p lang="en">${h(item.term)}</p><p class="group-meaning">${h(item.meaning)}</p></th><td>${item.usages.map(usage => `<p lang="en">${h(usage)}</p>`).join('')}${item.note ? `<p class="word-note">${h(item.note)}</p>` : ''}${wordStateButtons(item)}</td></tr>`).join('')}</tbody></table></div></details>`).join('') || '<p class="empty">이 조건에 맞는 묶음 항목이 없습니다. 성격·상태·검색 조건을 바꿔 보세요.</p>';
+}
+function studyGroup(id, view) {
+  if (!groupMap.has(id)) return;
+  activeWordGroupId = id; category = '전체'; $('#word-topic').value = '전체'; $('#search').value = '';
+  wordPage = 1; wordView = view === 'quiz' ? 'groups' : 'cards'; resetCards();
+  if (view === 'quiz') { startQuiz(); activeWordGroupId = null; }
+  else { renderWords(); $('#count').scrollIntoView({block:'start'}); }
+}
 function activateRail(id) {
   activeLesson = id;
   $('#grammar-index').querySelectorAll('[data-lesson-target]').forEach(link => {
@@ -320,11 +369,40 @@ $('#quiz-body').addEventListener('click', event => {
 });
 $('#word-topic').innerHTML = ['전체', ...new Set(vocabulary.map(word => word.cat))].map(cat => `<option value="${h(cat)}">${h(cat)}</option>`).join('');
 $('#word-topic').addEventListener('change', event => { category = event.target.value; refreshWordScope(); });
+$('#word-group-category').innerHTML = ['전체', ...new Set(wordGroups.map(group => group.cat))].map(cat => `<option value="${h(cat)}">${h(cat)}</option>`).join('');
+$('#word-group-category').addEventListener('change', event => { wordGroupCategory = event.target.value; renderWords(); });
 $('#word-status').addEventListener('change', event => { wordStatus = event.target.value; refreshWordScope(); });
 $('#word-tools').addEventListener('click', event => { const view = event.target.closest('[data-word-view]'); if (view) setWordView(view.dataset.wordView); });
+$('#word-scope-clear').addEventListener('click', () => setWordView('groups'));
+$('#word-groups').addEventListener('click', event => {
+  const cards = event.target.closest('[data-group-cards]');
+  if (cards) { studyGroup(cards.dataset.groupCards, 'cards'); return; }
+  const quiz = event.target.closest('[data-group-quiz]');
+  if (quiz) { studyGroup(quiz.dataset.groupQuiz, 'quiz'); return; }
+  const button = event.target.closest('[data-word-state]');
+  if (!button) return;
+  const groupId = button.closest('.word-group').id, term = button.dataset.term, state = button.dataset.wordState;
+  const previousRows = [...button.closest('tbody').querySelectorAll('tr')], index = previousRows.indexOf(button.closest('tr'));
+  saveWordState(term, state === 'known'); renderWords();
+  const group = document.getElementById(groupId), rows = [...(group?.querySelectorAll('tbody tr') || [])];
+  const same = rows.find(row => row.dataset.groupTerm === term);
+  if (same) same.querySelector(`[data-word-state="${state}"]`).focus({preventScroll:true});
+  else if (rows.length) rows[Math.min(index, rows.length - 1)].querySelector('[data-word-state]').focus({preventScroll:true});
+  else $('#word-groups summary')?.focus({preventScroll:true});
+});
 $('#word-shuffle').addEventListener('click', () => {
+  if (wordView === 'groups') {
+    const first = groupOrder[0]; groupOrder = shuffle(groupOrder);
+    if (groupOrder.length > 1 && groupOrder[0] === first) [groupOrder[0], groupOrder[1]] = [groupOrder[1], groupOrder[0]];
+    for (const group of wordGroups) {
+      const previous = groupItemOrder.get(group.id), next = shuffle(previous);
+      if (next.length > 1 && next[0] === previous[0]) [next[0], next[1]] = [next[1], next[0]];
+      groupItemOrder.set(group.id, next);
+    }
+    renderWords(); return;
+  }
   const previous = orderedWords()[0]?.term, previousCard = currentCard()?.term;
-  wordOrder = shuffle(vocabulary.map(word => word.term));
+  wordOrder = shuffle(studyTerms);
   const pool = new Set(wordPool().map(word => word.term));
   const selected = wordOrder.filter(term => pool.has(term));
   if (selected.length > 1 && selected[0] === previous) {

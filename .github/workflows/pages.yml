@@ -1,4 +1,4 @@
-name: Publish OPIc site
+name: Publish oPIC site
 
 on:
   push:
@@ -40,8 +40,20 @@ jobs:
             if [[ "$status" == "built" && "$commit" == "$GITHUB_SHA" ]]; then
               url=$(echo "$site" | jq -r '.html_url')
               for probe in {1..12}; do
-                if curl --fail --silent --show-error "$url?build=$GITHUB_SHA" -o /tmp/opic-published.html && grep -q 'data-content-version="study-v4"' /tmp/opic-published.html && curl --fail --silent --show-error "${url}content.js?build=$GITHUB_SHA" -o /tmp/opic-content.js && grep -q '"id": "g33"' /tmp/opic-content.js && grep -q '"term": "end up"' /tmp/opic-content.js; then
-                  echo "Verified OPIc site: $url"
+                if curl --fail --silent --show-error "$url?build=$GITHUB_SHA" -o /tmp/opic-published.html &&
+                   grep -q 'data-content-version="study-v5"' /tmp/opic-published.html &&
+                   grep -q '<title>oPIC</title>' /tmp/opic-published.html &&
+                   curl --fail --silent --show-error "${url}content.js?build=$GITHUB_SHA" -o /tmp/opic-content.js &&
+                   grep -q '가산명사·불가산명사: 관사·복수·수량' /tmp/opic-content.js &&
+                   grep -q '"id": "g33"' /tmp/opic-content.js &&
+                   grep -q '"term": "end up"' /tmp/opic-content.js &&
+                   curl --fail --silent --show-error "${url}word-groups.js?build=$GITHUB_SHA" -o /tmp/opic-groups.js &&
+                   grep -q '"id": "wg64"' /tmp/opic-groups.js &&
+                   curl --fail --silent --show-error "${url}favicon.svg?build=$GITHUB_SHA" -o /tmp/opic-icon.svg &&
+                   grep -q '<circle' /tmp/opic-icon.svg &&
+                   curl --fail --silent --show-error "${url}favicon.ico?build=$GITHUB_SHA" -o /tmp/opic-icon.ico &&
+                   curl --fail --silent --show-error "${url}apple-touch-icon.png?build=$GITHUB_SHA" -o /tmp/opic-touch.png; then
+                  echo "Verified oPIC site, study content, grouped vocabulary and icons: $url"
                   exit 0
                 fi
                 sleep 10

@@ -785,75 +785,365 @@ const grammar = [
   {
     "id": "g07",
     "cat": "명사와 수식",
-    "title": "08 · 셀 수 있는 명사와 셀 수 없는 명사",
-    "lead": "명사의 종류에 따라 복수형, 관사, 수량 표현, 동사 형태가 달라집니다.",
+    "title": "08 · 가산명사·불가산명사: 관사·복수·수량",
+    "lead": "가산명사는 하나씩 세는 대상, 불가산명사는 양이나 묶음으로 보는 대상입니다. 이 구분이 a/an, 복수형, 수량 표현, 동사의 단수·복수를 결정합니다. 한국어로 셀 수 있다는 느낌보다 영어에서 그 뜻을 어떻게 쓰는지 확인하세요.",
     "concepts": [
       {
-        "title": "셀 수 있는 명사",
-        "text": "book, chair, idea처럼 개체를 하나씩 구분할 수 있는 명사입니다. 단수는 a book / my book / the book처럼 보통 한정사가 필요하고, 복수는 books처럼 -s 등을 붙입니다. 일반적인 대상을 말할 때 I like books처럼 복수형을 쓸 수 있습니다."
+        "title": "1. 가산명사: 한 개와 여러 개를 구분합니다",
+        "text": "book, chair, idea, trip, job은 각각 하나를 구분할 수 있습니다. 한 개는 a book, 여러 개는 two books입니다. 보통의 문장에서 단수 가산명사를 혼자 쓰지 않고 a/an, the, my, this 같은 한정사를 붙입니다: I bought a chair. / My chair is comfortable. 일반적인 종류를 말할 때는 복수형을 써서 I like books.라고 할 수 있습니다."
       },
       {
-        "title": "셀 수 없는 명사",
-        "text": "water, information, advice, furniture, luggage는 일반적인 의미에서 하나·둘로 직접 세지 않습니다. a/an이나 복수 -s를 보통 쓰지 않고 단수 동사와 연결합니다. 수량을 세려면 a glass of water, two pieces of advice, three pieces of furniture처럼 단위를 붙입니다."
+        "title": "2. 불가산명사: 영어에서 개수보다 양·전체로 다룹니다",
+        "text": "water, information, advice, furniture, luggage는 기본 의미에서 불가산명사입니다. 물을 밀리리터로 재거나 가구를 실제로 셀 수 있어도, 영어의 water와 furniture 자체에 숫자를 바로 붙이는 것은 다른 문제입니다. 기본적으로 a/an이나 복수 -s를 붙이지 않고 단수 동사와 씁니다: The furniture is old. 가구 한 점은 a piece of furniture, 의자 한 개는 a chair라고 합니다."
       },
       {
-        "title": "뜻에 따라 셀 수 있기도 합니다",
-        "text": "chicken은 음식일 때 셀 수 없는 명사, 살아 있는 닭 한 마리는 a chicken입니다. coffee는 음료 자체를 말하면 불가산이지만 주문 상황의 two coffees는 두 잔이라는 뜻으로 자연스럽습니다. “a water는 언제나 틀리다”처럼 문맥 없이 단정하지 말고, 기본 용법과 주문·종류 용법을 구분하세요."
+        "title": "3. a/an과 the는 역할이 다릅니다",
+        "text": "a/an은 불특정한 단수 가산명사에 씁니다. a chair는 가능하지만 a chairs, an information은 기본 용법에서 틀립니다. the는 서로 어떤 대상인지 알 수 있을 때 쓰므로 단수·복수·불가산 모두 가능합니다: the chair / the chairs / the water in this bottle. 불가산명사 앞에 the를 붙인다고 가산명사로 바뀌지는 않습니다. 일반적인 물을 말하면 Water is important., 이 병의 물을 말하면 The water in this bottle is cold.입니다."
       },
       {
-        "title": "복수형의 기본 규칙",
-        "text": "보통 -s, bus → buses, city → cities, child → children, person → people, foot → feet처럼 불규칙도 있습니다. sheep는 단복수 형태가 같습니다. people은 “사람들”이라는 뜻일 때 복수 동사를 씁니다."
+        "title": "4. 수량 표현도 명사 종류에 맞춥니다",
+        "text": "복수 가산명사에는 many, a few, few: many chairs / a few ideas. 불가산명사에는 much, a little, little: much luggage / a little time. some, any, a lot of는 복수 가산명사와 불가산명사 모두에 쓸 수 있습니다: some books / some water. 긍정문에서 “물이 많다”는 There is a lot of water.가 회화에서 자연스럽습니다. 질문은 How many bags? / How much luggage?처럼 나눕니다. 자세한 뉘앙스는 10번 수량 표현 강의에서 이어집니다."
+      },
+      {
+        "title": "5. 불가산명사는 단위나 가산명사로 세세요",
+        "text": "a piece of advice, two pieces of furniture, three bottles of water처럼 단위를 붙이면 그 단위가 단수·복수를 결정합니다. A piece of advice is helpful. / Two pieces of advice are helpful.에서 advice는 그대로이고 piece만 바뀝니다. 모든 불가산명사에 piece를 붙이는 것은 아닙니다. water는 a glass/bottle of water, bread는 a slice/loaf of bread가 자연스럽습니다. 돈은 ten dollars, 일은 two jobs/tasks, 숙제는 two assignments처럼 구체적인 가산명사로 바꿀 수도 있습니다."
+      },
+      {
+        "title": "6. 한 명사가 뜻에 따라 가산·불가산이 됩니다",
+        "text": "명사 전체에 영원히 한 가지 분류가 붙는다고 외우지 마세요. coffee는 음료 자체이면 불가산이지만 주문의 two coffees는 두 잔입니다. paper는 재료인 종이이면 불가산, 논문 한 편이면 a paper입니다. experience는 쌓인 경험이면 불가산, 구체적인 경험 한 번이면 an experience입니다. 아래 비교표에서 두 용법을 함께 확인하세요. 다만 이런 전환을 information이나 advice에 임의로 적용해 informations, advices라고 하지는 않습니다."
+      },
+      {
+        "title": "7. -s가 있다고 모두 복수인 것은 아닙니다",
+        "text": "news는 -s로 끝나도 “소식”을 뜻하는 불가산명사이며 The news is good.라고 합니다. 반대로 people은 “사람들”이라는 뜻에서 복수 가산명사라 Three people are waiting.입니다. clothes는 불가산명사가 아니라 복수로 쓰는 명사입니다: My clothes are wet. scissors도 보통 복수로 쓰며 한 자루는 a pair of scissors라고 합니다. Sheep처럼 단수·복수가 같은 명사도 있으므로 철자만으로 판단하지 마세요."
+      },
+      {
+        "title": "8. 가산명사의 복수형 만드는 법",
+        "text": "보통 -s를 붙입니다: book → books. -s, -sh, -ch, -x 등으로 끝나면 보통 -es: bus → buses, watch → watches, box → boxes. 자음+y는 y를 i로 바꾸고 -es: city → cities. 모음+y는 그대로 -s: boy → boys. 일부 -f/-fe는 -ves: leaf → leaves, knife → knives. roof → roofs 같은 예외도 있습니다. child → children, person → people, man → men, woman → women, foot → feet, tooth → teeth는 따로 익히세요."
+      },
+      {
+        "title": "9. 문장을 만들 때 확인하는 순서",
+        "text": "① 지금 쓰는 뜻이 가산인지 불가산인지 확인합니다. ② 가산이면 한 개인지 여러 개인지 정합니다. ③ 서로 특정할 수 있는 대상이면 the, 불특정한 하나이면 a/an, 일반적인 복수·불가산이면 보통 무관사를 씁니다. ④ 수량 표현과 동사를 맞춥니다. 사전의 [C]는 countable, [U]는 uncountable입니다. [C, U]라면 내가 쓰려는 뜻의 예문을 확인하세요. 직업·장소의 관용 표현 같은 별도 규칙은 다음 관사 강의에서 다룹니다."
       }
     ],
     "forms": [
       {
-        "label": "셀 수 있는 단수",
-        "pattern": "a/an/the/my … + 단수 명사",
-        "note": "I bought a chair. The chair is comfortable."
+        "label": "가산 단수",
+        "pattern": "a/an/the/my/this … + 단수 명사 + 단수 동사",
+        "note": "A chair is next to my desk. / My room has a window."
       },
       {
-        "label": "셀 수 있는 복수",
-        "pattern": "숫자 / many / some + 복수 명사",
-        "note": "I bought two chairs. The chairs are comfortable."
+        "label": "가산 복수",
+        "pattern": "숫자 / many / a few + 복수 명사 + 복수 동사",
+        "note": "Two chairs are next to my desk. / There are a few cafés nearby."
       },
       {
-        "label": "셀 수 없는 명사",
-        "pattern": "some / much / a little + 명사",
-        "note": "The information is useful."
+        "label": "불가산",
+        "pattern": "some / much / a little + 불가산명사 + 단수 동사",
+        "note": "There is some water. / I don’t have much luggage."
       },
       {
-        "label": "단위로 세기",
-        "pattern": "a piece/glass/bottle of + 명사",
-        "note": "I need two bottles of water."
+        "label": "일반적인 대상",
+        "pattern": "무관사 복수 가산명사 / 무관사 불가산명사",
+        "note": "Books are useful. / Information is useful."
+      },
+      {
+        "label": "특정한 대상",
+        "pattern": "the + 단수 / 복수 / 불가산명사",
+        "note": "The chair is old. / The chairs are old. / The furniture is old."
+      },
+      {
+        "label": "하나의 단위",
+        "pattern": "a/an + 단위 명사 + of + 불가산명사",
+        "note": "A bottle of water is on the table."
+      },
+      {
+        "label": "여러 단위",
+        "pattern": "숫자 + 복수 단위 명사 + of + 불가산명사",
+        "note": "Two bottles of water are on the table. water에 -s를 붙이지 않습니다."
+      },
+      {
+        "label": "개수 / 양 질문",
+        "pattern": "How many + 복수 가산명사? / How much + 불가산명사?",
+        "note": "How many bags do you have? / How much luggage do you have?"
+      }
+    ],
+    "referenceTables": [
+      {
+        "title": "관사와 명사 비교",
+        "headers": [
+          "관사",
+          "가산 단수",
+          "가산 복수",
+          "불가산"
+        ],
+        "rows": [
+          [
+            "a/an",
+            "○ a chair",
+            "× a chairs",
+            "× a water\n(물 자체)"
+          ],
+          [
+            "the",
+            "○ the chair",
+            "○ the chairs",
+            "○ the water"
+          ],
+          [
+            "관사 없음",
+            "보통 × chair\n(단독 사용)",
+            "○ chairs\n(일반적인 의자)",
+            "○ water\n(일반적인 물)"
+          ]
+        ],
+        "note": "○는 붙일 수 있다는 뜻입니다. the가 항상 필요하다는 뜻은 아닙니다. 듣는 사람이 대상을 특정할 수 있어야 the를 씁니다. 주문 상황의 a water는 “물 한 잔/한 병”이라는 가산 용법으로 쓰이기도 합니다."
+      },
+      {
+        "title": "주요 불가산명사 · 정보와 도움",
+        "headers": [
+          "명사 · 뜻",
+          "수량 표현과 바로 말할 문장"
+        ],
+        "rows": [
+          [
+            "information · 정보",
+            "some information / a piece of information\nI found some useful information online.\n온라인에서 유용한 정보를 찾았어요."
+          ],
+          [
+            "advice · 조언",
+            "some advice / two pieces of advice\nMy friend gave me some good advice.\n친구가 좋은 조언을 해줬어요."
+          ],
+          [
+            "assistance · 도움·지원",
+            "some assistance / a lot of assistance\nI needed some assistance with my luggage.\n짐을 옮기는 데 도움이 좀 필요했어요."
+          ],
+          [
+            "access · 접근·이용 권한",
+            "access to + 장소·정보\nGuests have access to the gym.\n투숙객은 헬스장을 이용할 수 있어요."
+          ],
+          [
+            "funding · 자금 지원",
+            "some funding / an amount of funding\nThe project needs more funding.\n그 프로젝트에는 자금 지원이 더 필요해요."
+          ],
+          [
+            "research · 연구",
+            "some research / a research study\nI did some research before my trip.\n여행 전에 조사를 좀 했어요."
+          ],
+          [
+            "news · 소식",
+            "some news / a piece of news\nThe news is encouraging.\n그 소식은 희망적이에요."
+          ]
+        ],
+        "note": "information → facts/details, advice → suggestions/tips처럼 비슷한 뜻의 가산명사로 바꿔 개수를 말할 수도 있습니다. research 자체는 기본적으로 불가산이지만 study는 가산입니다."
+      },
+      {
+        "title": "주요 불가산명사 · 집·여행·물건",
+        "headers": [
+          "명사 · 뜻",
+          "수량 표현과 바로 말할 문장"
+        ],
+        "rows": [
+          [
+            "furniture · 가구",
+            "some furniture / three pieces of furniture\nThere isn’t much furniture in my room.\n제 방에는 가구가 많지 않아요."
+          ],
+          [
+            "equipment · 장비",
+            "some equipment / a piece of equipment\nThe gym has a lot of exercise equipment.\n그 헬스장에는 운동 장비가 많아요."
+          ],
+          [
+            "luggage / baggage · 짐·수하물",
+            "some luggage / two pieces of luggage\nMy luggage is quite heavy.\n제 짐은 꽤 무거워요."
+          ],
+          [
+            "stationery · 문구류",
+            "some stationery / stationery items\nI bought some stationery for school.\n학교에서 쓸 문구류를 좀 샀어요."
+          ],
+          [
+            "merchandise · 판매 상품",
+            "some merchandise / merchandise items\nThe store sells sports merchandise.\n그 가게는 스포츠 상품을 팔아요."
+          ],
+          [
+            "produce · 농산물",
+            "fresh produce / some produce\nI buy fresh produce at the market.\n저는 시장에서 신선한 농산물을 사요."
+          ],
+          [
+            "homework · 숙제",
+            "some homework / two assignments\nI have a lot of homework tonight.\n오늘 밤에 해야 할 숙제가 많아요."
+          ],
+          [
+            "traffic · 교통량",
+            "heavy traffic / a lot of traffic\nThere was heavy traffic on the way home.\n집에 오는 길에 차가 많이 막혔어요."
+          ]
+        ],
+        "note": "가구는 chairs/tables, 장비는 machines/tools, 짐은 bags/suitcases로 구체화하면 셀 수 있습니다. produce는 여기서 명사 “농산물”이며 동사 “생산하다”와 구분합니다. stationery(문구류)와 stationary(움직이지 않는)는 철자와 뜻이 다릅니다."
+      },
+      {
+        "title": "주요 불가산명사 · 일상과 음식",
+        "headers": [
+          "명사 · 뜻",
+          "수량 표현과 바로 말할 문장"
+        ],
+        "rows": [
+          [
+            "water · 물",
+            "a glass of water / two bottles of water\nCould I have a glass of water?\n물 한 잔 주실 수 있을까요?"
+          ],
+          [
+            "coffee · 커피",
+            "some coffee / a cup of coffee\nI drink a cup of coffee every morning.\n매일 아침 커피 한 잔을 마셔요."
+          ],
+          [
+            "money · 돈",
+            "some money / ten dollars\nI’m saving some money for a trip.\n여행을 위해 돈을 좀 모으고 있어요."
+          ],
+          [
+            "time · 시간",
+            "some time / two hours\nI don’t have much free time these days.\n요즘은 여유 시간이 많지 않아요."
+          ],
+          [
+            "work · 일·업무",
+            "some work / two tasks / a job\nI have a lot of work to do today.\n오늘 해야 할 일이 많아요."
+          ],
+          [
+            "experience · 쌓인 경험",
+            "some experience / years of experience\nI have some experience working with customers.\n고객을 응대한 경험이 좀 있어요."
+          ],
+          [
+            "music · 음악",
+            "some music / two songs\nI listen to music on my way to work.\n출근길에 음악을 들어요."
+          ],
+          [
+            "weather · 날씨",
+            "good weather / nice weather\nThe weather was perfect for a picnic.\n소풍 가기에 딱 좋은 날씨였어요."
+          ],
+          [
+            "bread / rice · 빵·쌀·밥",
+            "a slice of bread / a bowl of rice\nI had two slices of bread for breakfast.\n아침으로 빵 두 조각을 먹었어요."
+          ]
+        ],
+        "note": "이 표는 기본 의미 기준입니다. 음식의 종류·주문 단위 등에서는 일부 명사가 가산 용법으로 바뀔 수 있습니다. 기본 회화에서는 위 단위 표현을 쓰면 뜻을 분명하게 전달할 수 있습니다."
+      },
+      {
+        "title": "뜻이 달라지면 가산성도 달라집니다",
+        "headers": [
+          "명사",
+          "불가산 의미 ↔ 가산 의미"
+        ],
+        "rows": [
+          [
+            "coffee",
+            "음료 자체: I like coffee.\n주문한 잔: We ordered two coffees."
+          ],
+          [
+            "chicken",
+            "닭고기: I had chicken for dinner.\n닭 한 마리: They keep three chickens."
+          ],
+          [
+            "paper",
+            "재료인 종이: I need some paper.\n논문 한 편: I read a paper about sleep."
+          ],
+          [
+            "glass",
+            "재료인 유리: This table is made of glass.\n유리잔: I bought two glasses."
+          ],
+          [
+            "room",
+            "여유 공간: There isn’t much room in my bag.\n방: My apartment has two rooms."
+          ],
+          [
+            "time",
+            "시간의 양: I need more time.\n횟수: I’ve been there three times."
+          ],
+          [
+            "experience",
+            "쌓인 경험: I have some teaching experience.\n구체적인 경험: That trip was an amazing experience."
+          ],
+          [
+            "hair",
+            "머리카락 전체: Her hair is long.\n한 올: I found a hair in my soup."
+          ]
+        ],
+        "note": "a good experience는 “하나의 좋은 경험”이고 good experience는 “쌓인 좋은 경험”입니다. 복수 experiences는 서로 구분되는 경험들을 뜻합니다. 뜻이 달라지므로 관사만 기계적으로 붙이지 마세요."
       }
     ],
     "examples": [
       {
         "en": "There are three chairs, but there isn’t much space.",
         "ko": "의자는 세 개 있지만 공간은 많지 않아요.",
-        "analysis": "chairs는 복수 가산명사라 are, space는 이 의미에서 불가산명사라 isn’t와 much를 씁니다."
+        "analysis": "three가 개수를 세므로 chair → chairs, 동사는 are입니다. space는 여기서 공간의 양을 뜻하는 불가산명사여서 much와 단수 isn’t를 씁니다."
       },
       {
-        "en": "She gave me some useful advice.",
-        "ko": "그녀가 유용한 조언을 해줬어요.",
-        "analysis": "advice는 불가산명사입니다. some advice라고 하고 an advice나 advices는 기본 용법에서 쓰지 않습니다."
+        "en": "My luggage is heavy, but my two bags are easy to carry.",
+        "ko": "제 짐은 무겁지만 두 가방은 들기 편해요.",
+        "analysis": "luggage는 짐 전체를 말하므로 is, two bags는 두 개의 가방을 세므로 are입니다. 한국어로 모두 “짐”이라고 생각해도 영어의 명사 종류는 다릅니다."
       },
       {
-        "en": "We ordered two coffees.",
-        "ko": "커피 두 잔을 주문했어요.",
-        "analysis": "주문 문맥에서는 coffees가 커피 두 잔을 뜻합니다. 음료 자체의 일반적 선호는 I like coffee라고 말합니다."
+        "en": "She gave me two pieces of useful advice.",
+        "ko": "그녀가 유용한 조언 두 가지를 해줬어요.",
+        "analysis": "two가 세는 것은 advice가 아니라 pieces입니다. 복수형은 pieces에만 붙입니다. useful이 있어도 advice의 가산성이 바뀌지 않습니다."
+      },
+      {
+        "en": "The information you sent me is really helpful.",
+        "ko": "보내주신 정보가 정말 도움이 돼요.",
+        "analysis": "you sent me가 “보내준 그 정보”를 특정하므로 the가 가능합니다. the를 썼어도 information은 불가산이어서 is를 씁니다."
+      },
+      {
+        "en": "I bought two pieces of furniture. They are both secondhand.",
+        "ko": "가구 두 점을 샀어요. 둘 다 중고예요.",
+        "analysis": "두 개의 pieces를 가리키므로 다음 문장에서 They are라고 합니다. furniture 자체를 주어로 말하면 The furniture is secondhand.입니다."
+      },
+      {
+        "en": "We ordered two coffees because we didn’t have much time.",
+        "ko": "시간이 별로 없어서 커피 두 잔을 주문했어요.",
+        "analysis": "주문한 두 잔을 세는 coffees는 가산 용법입니다. time은 시간의 양이므로 불가산입니다. 세 번을 뜻할 때는 three times처럼 가산 용법을 씁니다."
+      },
+      {
+        "en": "I have some travel experience, but that was a completely new experience for me.",
+        "ko": "여행 경험이 좀 있지만 그건 제게 완전히 새로운 경험이었어요.",
+        "analysis": "첫 experience는 쌓인 경험의 양이어서 some을 씁니다. 두 번째는 구체적인 하나의 경험이므로 a new experience입니다. a/an은 바로 다음 소리를 따라 선택하므로 a completely new experience가 됩니다."
+      },
+      {
+        "en": "The news is good: there won’t be much traffic tomorrow.",
+        "ko": "좋은 소식이에요. 내일은 차가 많이 막히지 않을 거래요.",
+        "analysis": "news는 -s로 끝나도 단수 동사 is를 씁니다. traffic은 차의 개수가 아니라 교통량이므로 much traffic입니다."
       }
     ],
     "mistakes": [
       {
-        "wrong": "The informations are helpful.",
-        "right": "The information is helpful.",
-        "why": "information은 기본적으로 불가산명사이며 단수 동사 is와 연결합니다."
-      },
-      {
         "wrong": "I bought chair.",
         "right": "I bought a chair.",
-        "why": "단수 가산명사 chair에는 문맥에 맞는 a/the/my 등의 한정사가 필요합니다."
+        "why": "보통의 단수 가산명사에는 한정사가 필요합니다. 특정 의자면 the chair, 내 의자면 my chair처럼 문맥에 맞게 선택하세요."
+      },
+      {
+        "wrong": "The informations are helpful.",
+        "right": "The information is helpful.",
+        "why": "정보를 뜻하는 information은 불가산명사입니다. -s를 붙이지 않고 단수 동사 is를 씁니다. 개수를 세고 싶으면 two pieces of information 또는 two useful facts라고 합니다."
+      },
+      {
+        "wrong": "She gave me an advice.",
+        "right": "She gave me some advice. / She gave me a piece of advice.",
+        "why": "조언을 뜻하는 advice에 a/an을 직접 붙이지 않습니다. “하나”를 강조하려면 piece라는 가산 단위를 붙이세요."
+      },
+      {
+        "wrong": "I don’t have many luggage.",
+        "right": "I don’t have much luggage. / I don’t have many bags.",
+        "why": "luggage는 양을 말하므로 much, bags는 복수 개수를 말하므로 many입니다."
+      },
+      {
+        "wrong": "Two pieces of furniture is enough.",
+        "right": "Two pieces of furniture are enough.",
+        "why": "주어의 핵심은 복수인 pieces입니다. of 뒤의 furniture만 보고 is를 고르면 안 됩니다."
+      },
+      {
+        "wrong": "The news are good.",
+        "right": "The news is good.",
+        "why": "news의 끝 -s는 일반적인 복수형 표시가 아닙니다. 소식을 뜻하는 불가산명사로 단수 동사와 연결합니다."
+      },
+      {
+        "wrong": "I have two homeworks and three works to finish. (숙제 두 개와 업무 세 가지)",
+        "right": "I have two assignments and three tasks to finish.",
+        "why": "숙제 homework와 업무 work는 이 뜻에서 불가산명사입니다. 각각 assignment와 task로 구체화하면 개수를 셀 수 있습니다. works가 미술·문학 “작품들”이라는 뜻으로 쓰이는 경우와 구분하세요."
       }
     ],
     "exercises": [
@@ -865,7 +1155,7 @@ const grammar = [
           "I got useful advices."
         ],
         "answer": "I got some useful advice.",
-        "explanation": "advice는 불가산명사입니다. 조언 하나를 세려면 a piece of advice라고 말합니다."
+        "explanation": "advice는 기본 의미에서 불가산명사입니다. some advice라고 하고, 조언 하나를 세려면 a piece of advice라고 말합니다. 또한 useful은 /j/ 소리로 시작해 단수 가산명사 앞이라도 an useful이 되지 않습니다."
       },
       {
         "q": "“사람들이 친절해요”의 올바른 문장은?",
@@ -875,13 +1165,113 @@ const grammar = [
           "The people am friendly."
         ],
         "answer": "The people are friendly.",
-        "explanation": "사람들을 뜻하는 people은 복수이므로 are를 씁니다."
+        "explanation": "사람들을 뜻하는 people은 복수 가산명사이므로 are를 씁니다. -s가 없다는 이유로 단수라고 판단하지 마세요."
+      },
+      {
+        "q": "이 병에 든 특정한 물을 가리킬 때 올바른 문장은?",
+        "options": [
+          "The water in this bottle is cold.",
+          "A water in this bottle are cold.",
+          "The waters in this bottle are cold."
+        ],
+        "answer": "The water in this bottle is cold.",
+        "explanation": "불가산명사도 특정할 수 있으면 the를 씁니다. 이 문장은 물 자체를 말하므로 water에 -s를 붙이지 않고 단수 동사 is를 씁니다."
+      },
+      {
+        "q": "“가구 두 점이면 충분해요”의 올바른 문장은?",
+        "options": [
+          "Two pieces of furniture are enough.",
+          "Two furnitures are enough.",
+          "Two pieces of furniture is enough."
+        ],
+        "answer": "Two pieces of furniture are enough.",
+        "explanation": "furniture는 불가산명사라 pieces로 셉니다. 주어의 핵심은 복수 pieces이므로 동사는 are입니다."
+      },
+      {
+        "q": "“그 소식은 좋네요”의 올바른 문장은?",
+        "options": [
+          "The news are good.",
+          "The news is good.",
+          "The new is good."
+        ],
+        "answer": "The news is good.",
+        "explanation": "news는 -s로 끝나는 불가산명사입니다. news 형태를 유지하고 단수 동사 is와 연결합니다."
+      },
+      {
+        "q": "“마쳐야 할 업무가 많아요”의 자연스러운 표현은?",
+        "options": [
+          "I have many work to finish.",
+          "I have a lot of work to finish.",
+          "I have a work to finish."
+        ],
+        "answer": "I have a lot of work to finish.",
+        "explanation": "업무의 양을 뜻하는 work는 불가산명사여서 many나 a를 직접 붙이지 않습니다. 개수를 세려면 many tasks 또는 several jobs처럼 구체화하세요."
+      },
+      {
+        "q": "카페 주문에서 We ordered two coffees.는 어떤 뜻인가요?",
+        "options": [
+          "커피 두 잔을 주문했다.",
+          "불가산명사라 어떤 상황에서도 틀린 문장이다.",
+          "커피 원두 두 알을 주문했다."
+        ],
+        "answer": "커피 두 잔을 주문했다.",
+        "explanation": "주문 상황에서는 coffee가 한 잔을 뜻하는 가산 용법으로 쓰입니다. 음료 자체에 대한 선호는 I like coffee.처럼 불가산 용법입니다."
+      },
+      {
+        "q": "“그 여행은 놀라운 경험이었어요”의 올바른 문장은?",
+        "options": [
+          "That trip was an amazing experience.",
+          "That trip was many amazing experience.",
+          "That trip were an amazing experience."
+        ],
+        "answer": "That trip was an amazing experience.",
+        "explanation": "구체적인 하나의 경험은 가산명사 an experience입니다. 형용사 amazing의 첫소리가 모음이므로 an을 씁니다. 쌓인 경험은 some experience처럼 불가산으로 씁니다."
+      },
+      {
+        "q": "“장비가 비싸요”의 기본 표현은?",
+        "options": [
+          "The equipments are expensive.",
+          "The equipment is expensive.",
+          "An equipment are expensive."
+        ],
+        "answer": "The equipment is expensive.",
+        "explanation": "equipment는 장비를 뜻하는 불가산명사입니다. 복수 -s와 a/an을 직접 붙이지 않고 단수 동사 is와 씁니다."
+      },
+      {
+        "q": "“차가 많이 막히지는 않았어요”의 올바른 문장은?",
+        "options": [
+          "There wasn’t much traffic.",
+          "There weren’t many traffic.",
+          "There wasn’t a few traffic."
+        ],
+        "answer": "There wasn’t much traffic.",
+        "explanation": "traffic은 교통량이라는 불가산명사이므로 much와 단수 wasn’t를 씁니다. 차의 개수를 말하면 many cars처럼 가산명사를 쓰세요."
+      },
+      {
+        "q": "“도시 세 곳을 방문했어요”의 올바른 문장은?",
+        "options": [
+          "I visited three city.",
+          "I visited three citys.",
+          "I visited three cities."
+        ],
+        "answer": "I visited three cities.",
+        "explanation": "city는 가산명사라 three 뒤에서 복수형입니다. 자음+y로 끝나므로 y를 i로 바꾸고 -es를 붙여 cities가 됩니다."
+      },
+      {
+        "q": "“종이가 좀 필요해요”에서 재료인 종이를 뜻하는 문장은?",
+        "options": [
+          "I need some paper.",
+          "I need a paper. (종이라는 재료 자체)",
+          "I need many paper."
+        ],
+        "answer": "I need some paper.",
+        "explanation": "재료인 종이를 뜻하면 paper는 불가산명사입니다. 한 장은 a sheet of paper라고 합니다. a paper는 문맥에 따라 논문 한 편이나 신문 한 부 등을 뜻할 수 있습니다."
       }
     ],
     "spoken": {
-      "prompt": "방에 있는 물건 개수와 공간·가구를 설명하세요.",
-      "sample": "There are two chairs in my room. I don’t have much furniture, so there’s plenty of space.",
-      "note": "chairs는 세고, furniture와 space는 기본 용법에서 직접 세지 않습니다."
+      "prompt": "내 방이나 여행 준비를 설명하세요. ① 개수를 셀 수 있는 물건 두 가지 ② 가구·짐·공간의 양 ③ 누군가에게 받은 조언을 넣어 4~5문장으로 말해 보세요.",
+      "sample": "There are two chairs and a small desk in my room. I don’t have much furniture, so there’s plenty of space. Before my last trip, I packed two bags, but my luggage was too heavy. My friend gave me a useful piece of advice: pack only what you really need. That made the trip much easier.",
+      "note": "two chairs와 two bags는 복수 가산명사, a desk는 단수 가산명사입니다. furniture, space, luggage는 불가산명사입니다. advice 하나를 말하려고 piece를 붙였습니다. 물건 설명에서 구체적인 경험과 결과로 이어가면 발화를 늘릴 수 있습니다."
     }
   },
   {
