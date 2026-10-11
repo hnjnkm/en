@@ -1,4 +1,4 @@
-// 문법: 학습 순서에 따른 32개 강의. 단어: 주제별 핵심 64개.
+// 문법 32개 강의. 단어는 중복 표제어를 제외한 핵심 단어·표현.
 const grammar = [
   {
     "id": "g01",
@@ -3164,7 +3164,7 @@ const grammar = [
       },
       {
         "title": "분리 가능한 구동사",
-        "text": "turn on the light 또는 turn the light on처럼 명사 목적어 위치를 바꿀 수 있습니다. 목적어가 it/them 같은 대명사이면 turn it on처럼 가운데에 놓습니다. turn on it을 불을 켠다는 의미로 쓰지 않습니다. put it off, pick them up도 같은 기본 패턴입니다."
+        "text": "turn on the light 또는 turn the light on처럼 명사 목적어 위치를 바꿀 수 있습니다. the light는 명사 light를 중심으로 한 명사구입니다. 반면 it(그것), them(그것들)은 이미 말한 명사를 대신하는 대명사이며, 여기서는 목적격입니다. 분리 가능한 구동사의 목적어가 me/you/him/her/it/us/them이면 반드시 동사와 소사 사이에 둡니다: turn it on, put it off, pick them up. 불을 켠다는 뜻으로 turn on it을 쓰지 않습니다. 이 규칙을 분리 불가능한 look after her에 적용하지는 않습니다."
       },
       {
         "title": "분리하지 않는 동사·전치사 조합",
@@ -3257,451 +3257,9798 @@ const grammar = [
 ];
 const vocabulary = [
   {
-    "cat": "일상·습관",
+    "cat": "시간·빈도",
     "term": "usually",
     "meaning": "보통",
     "example": "I usually get up at seven.",
-    "ko": "보통 7시에 일어나요."
+    "ko": "보통 7시에 일어나요.",
+    "usages": [
+      "usually walk to work"
+    ]
   },
   {
-    "cat": "일상·습관",
+    "cat": "시간·빈도",
     "term": "rarely",
     "meaning": "거의 ~하지 않는",
     "example": "I rarely eat out on weekdays.",
-    "ko": "평일에는 외식을 거의 안 해요."
+    "ko": "평일에는 외식을 거의 안 해요.",
+    "usages": [
+      "rarely drive"
+    ]
   },
   {
-    "cat": "일상·습관",
+    "cat": "일상·집안일",
     "term": "spend time",
     "meaning": "시간을 보내다",
     "example": "I spend time with my family.",
     "ko": "가족과 시간을 보내요."
   },
   {
-    "cat": "일상·습관",
+    "cat": "일상·집안일",
     "term": "relax",
     "meaning": "쉬다, 긴장을 풀다",
     "example": "I listen to music to relax.",
     "ko": "쉬려고 음악을 들어요."
   },
   {
-    "cat": "일상·습관",
+    "cat": "일상·집안일",
     "term": "routine",
-    "meaning": "일상, 반복하는 습관",
+    "meaning": "일상, 반복하는 습관; 일과, 반복 습관",
     "example": "My morning routine is simple.",
-    "ko": "아침 일과는 단순해요."
+    "ko": "아침 일과는 단순해요.",
+    "usages": [
+      "a daily routine"
+    ]
   },
   {
-    "cat": "일상·습관",
+    "cat": "일상·집안일",
     "term": "get ready",
     "meaning": "준비하다",
     "example": "I get ready for work at eight.",
     "ko": "8시에 출근 준비를 해요."
   },
   {
-    "cat": "일상·습관",
+    "cat": "교통·이동",
     "term": "commute",
     "meaning": "통근하다",
     "example": "I commute by subway.",
-    "ko": "지하철로 통근해요."
+    "ko": "지하철로 통근해요.",
+    "usages": [
+      "commute to work"
+    ]
   },
   {
-    "cat": "일상·습관",
+    "cat": "일상·집안일",
     "term": "take a break",
     "meaning": "잠깐 쉬다",
     "example": "I take a break after lunch.",
     "ko": "점심 후에 잠깐 쉬어요."
   },
   {
-    "cat": "집·동네",
+    "cat": "동네·도시",
     "term": "neighborhood",
     "meaning": "동네",
     "example": "My neighborhood is quiet.",
-    "ko": "우리 동네는 조용해요."
+    "ko": "우리 동네는 조용해요.",
+    "usages": [
+      "a quiet neighborhood"
+    ]
   },
   {
-    "cat": "집·동네",
+    "cat": "위치·방향·수량",
     "term": "nearby",
     "meaning": "근처에, 근처의",
     "example": "There’s a park nearby.",
-    "ko": "근처에 공원이 있어요."
+    "ko": "근처에 공원이 있어요.",
+    "usages": [
+      "a nearby café"
+    ]
   },
   {
-    "cat": "집·동네",
+    "cat": "묘사·평가",
     "term": "convenient",
     "meaning": "편리한",
     "example": "The location is convenient.",
-    "ko": "위치가 편리해요."
+    "ko": "위치가 편리해요.",
+    "usages": [
+      "a convenient location"
+    ]
   },
   {
-    "cat": "집·동네",
+    "cat": "집·공간",
     "term": "cozy",
     "meaning": "아늑한",
     "example": "My room is small but cozy.",
     "ko": "방은 작지만 아늑해요."
   },
   {
-    "cat": "집·동네",
+    "cat": "집·공간",
     "term": "spacious",
     "meaning": "넓은",
     "example": "The living room is spacious.",
     "ko": "거실은 넓어요."
   },
   {
-    "cat": "집·동네",
+    "cat": "상태·크기·비교",
     "term": "crowded",
     "meaning": "붐비는",
     "example": "The street gets crowded at night.",
-    "ko": "밤에는 거리가 붐벼요."
+    "ko": "밤에는 거리가 붐벼요.",
+    "usages": [
+      "a crowded train"
+    ]
   },
   {
-    "cat": "집·동네",
+    "cat": "집·공간",
     "term": "within walking distance",
     "meaning": "걸어서 갈 수 있는 거리의",
     "example": "The café is within walking distance.",
     "ko": "카페는 걸어서 갈 수 있어요."
   },
   {
-    "cat": "집·동네",
+    "cat": "기본 동사·행동",
     "term": "move",
-    "meaning": "이사하다",
+    "meaning": "이동하다, 이사하다",
     "example": "I moved here last year.",
-    "ko": "작년에 여기로 이사했어요."
+    "ko": "작년에 여기로 이사했어요.",
+    "usages": [
+      "move to a new apartment"
+    ]
   },
   {
-    "cat": "취미·여가",
+    "cat": "취미·운동",
     "term": "go for a walk",
     "meaning": "산책하러 가다",
     "example": "I go for a walk after dinner.",
     "ko": "저녁 후에 산책하러 가요."
   },
   {
-    "cat": "취미·여가",
+    "cat": "자주 쓰는 구동사·표현",
     "term": "work out",
-    "meaning": "운동하다",
+    "meaning": "운동하다; 해결되다",
     "example": "I work out twice a week.",
-    "ko": "일주일에 두 번 운동해요."
+    "ko": "일주일에 두 번 운동해요.",
+    "usages": [
+      "work out at the gym"
+    ]
   },
   {
-    "cat": "취미·여가",
+    "cat": "취미·운동",
     "term": "be into",
     "meaning": "~에 관심이 많다",
     "example": "I’m into movies these days.",
     "ko": "요즘 영화에 관심이 많아요."
   },
   {
-    "cat": "취미·여가",
+    "cat": "생각·선택",
     "term": "prefer",
     "meaning": "더 좋아하다",
     "example": "I prefer comedies to action movies.",
-    "ko": "액션보다 코미디 영화를 좋아해요."
+    "ko": "액션보다 코미디 영화를 좋아해요.",
+    "usages": [
+      "prefer tea to coffee"
+    ]
   },
   {
-    "cat": "취미·여가",
+    "cat": "취미·운동",
     "term": "recommend",
     "meaning": "추천하다",
     "example": "I’d recommend this movie.",
     "ko": "이 영화를 추천하고 싶어요."
   },
   {
-    "cat": "취미·여가",
+    "cat": "자주 쓰는 구동사·표현",
     "term": "catch up with",
     "meaning": "밀린 근황을 나누다",
     "example": "I caught up with a friend over coffee.",
-    "ko": "친구와 커피를 마시며 근황을 나눴어요."
+    "ko": "친구와 커피를 마시며 근황을 나눴어요.",
+    "usages": [
+      "catch up with an old friend"
+    ]
   },
   {
-    "cat": "취미·여가",
+    "cat": "자주 쓰는 구동사·표현",
     "term": "try out",
     "meaning": "시험 삼아 해보다",
     "example": "I want to try out a new hobby.",
-    "ko": "새 취미를 해보고 싶어요."
+    "ko": "새 취미를 해보고 싶어요.",
+    "usages": [
+      "try out a new hobby"
+    ]
   },
   {
-    "cat": "취미·여가",
+    "cat": "취미·운동",
     "term": "be worth it",
     "meaning": "그만한 가치가 있다",
     "example": "The ticket was expensive, but it was worth it.",
     "ko": "표는 비쌌지만 그만한 가치가 있었어요."
   },
   {
-    "cat": "여행·예약",
+    "cat": "여행·숙박",
     "term": "reservation",
     "meaning": "예약",
     "example": "I’d like to make a reservation.",
-    "ko": "예약하고 싶어요."
+    "ko": "예약하고 싶어요.",
+    "usages": [
+      "confirm a reservation"
+    ]
   },
   {
-    "cat": "여행·예약",
+    "cat": "여행·숙박",
     "term": "book",
-    "meaning": "예약하다",
+    "meaning": "예약하다; 책",
     "example": "I booked a room online.",
-    "ko": "온라인으로 방을 예약했어요."
+    "ko": "온라인으로 방을 예약했어요.",
+    "usages": [
+      "book a hotel"
+    ]
   },
   {
-    "cat": "여행·예약",
+    "cat": "문제·변화",
     "term": "cancel",
     "meaning": "취소하다",
     "example": "I need to cancel my reservation.",
-    "ko": "예약을 취소해야 해요."
+    "ko": "예약을 취소해야 해요.",
+    "usages": [
+      "cancel a reservation"
+    ]
   },
   {
-    "cat": "여행·예약",
+    "cat": "문제·변화",
     "term": "reschedule",
     "meaning": "일정을 변경하다",
     "example": "Could we reschedule the tour?",
-    "ko": "투어 일정을 바꿀 수 있을까요?"
+    "ko": "투어 일정을 바꿀 수 있을까요?",
+    "usages": [
+      "reschedule a meeting"
+    ]
   },
   {
-    "cat": "여행·예약",
+    "cat": "상태·크기·비교",
     "term": "available",
     "meaning": "이용 가능한",
     "example": "Is a room available for tonight?",
-    "ko": "오늘 밤 이용 가능한 방이 있나요?"
+    "ko": "오늘 밤 이용 가능한 방이 있나요?",
+    "usages": [
+      "an available room"
+    ]
   },
   {
-    "cat": "여행·예약",
+    "cat": "문제·변화",
     "term": "delay",
     "meaning": "지연시키다; 지연",
     "example": "My flight was delayed.",
-    "ko": "항공편이 지연됐어요."
+    "ko": "항공편이 지연됐어요.",
+    "usages": [
+      "a two-hour delay"
+    ]
   },
   {
-    "cat": "여행·예약",
+    "cat": "여행·숙박",
     "term": "get lost",
     "meaning": "길을 잃다",
     "example": "I got lost on my way to the hotel.",
     "ko": "호텔에 가다가 길을 잃었어요."
   },
   {
-    "cat": "여행·예약",
+    "cat": "여행·숙박",
     "term": "get around",
     "meaning": "돌아다니다, 이동하다",
     "example": "It’s easy to get around by bus.",
     "ko": "버스로 이동하기 쉬워요."
   },
   {
-    "cat": "음식·쇼핑",
+    "cat": "외식·카페",
     "term": "order",
     "meaning": "주문하다",
     "example": "I ordered a sandwich.",
-    "ko": "샌드위치를 주문했어요."
+    "ko": "샌드위치를 주문했어요.",
+    "usages": [
+      "place an order"
+    ]
   },
   {
-    "cat": "음식·쇼핑",
+    "cat": "외식·카페",
     "term": "takeout",
     "meaning": "포장 음식",
     "example": "I picked up some takeout.",
-    "ko": "포장 음식을 사 왔어요."
+    "ko": "포장 음식을 사 왔어요.",
+    "usages": [
+      "order takeout"
+    ]
   },
   {
-    "cat": "음식·쇼핑",
+    "cat": "외식·카페",
     "term": "portion",
     "meaning": "음식의 1인분, 양",
     "example": "The portions are generous.",
-    "ko": "음식 양이 푸짐해요."
+    "ko": "음식 양이 푸짐해요.",
+    "usages": [
+      "a large portion"
+    ]
   },
   {
-    "cat": "음식·쇼핑",
+    "cat": "쇼핑·돈",
     "term": "affordable",
     "meaning": "가격이 부담스럽지 않은",
     "example": "The food is affordable.",
-    "ko": "음식 가격이 부담스럽지 않아요."
+    "ko": "음식 가격이 부담스럽지 않아요.",
+    "usages": [
+      "affordable housing"
+    ]
   },
   {
-    "cat": "음식·쇼핑",
+    "cat": "쇼핑·돈",
     "term": "refund",
     "meaning": "환불",
     "example": "Could I get a refund?",
-    "ko": "환불받을 수 있을까요?"
+    "ko": "환불받을 수 있을까요?",
+    "usages": [
+      "request a refund"
+    ]
   },
   {
-    "cat": "음식·쇼핑",
+    "cat": "쇼핑·돈",
     "term": "exchange",
     "meaning": "교환하다",
     "example": "I’d like to exchange this shirt.",
-    "ko": "이 셔츠를 교환하고 싶어요."
+    "ko": "이 셔츠를 교환하고 싶어요.",
+    "usages": [
+      "exchange a shirt"
+    ]
   },
   {
-    "cat": "음식·쇼핑",
+    "cat": "쇼핑·돈",
     "term": "fit",
     "meaning": "크기가 맞다",
     "example": "These shoes don’t fit me.",
     "ko": "이 신발은 크기가 안 맞아요."
   },
   {
-    "cat": "음식·쇼핑",
+    "cat": "자주 쓰는 구동사·표현",
     "term": "run out of",
     "meaning": "~이 다 떨어지다",
     "example": "We ran out of milk.",
-    "ko": "우유가 다 떨어졌어요."
+    "ko": "우유가 다 떨어졌어요.",
+    "usages": [
+      "run out of milk"
+    ]
   },
   {
-    "cat": "감정·경험",
+    "cat": "묘사·평가",
     "term": "memorable",
     "meaning": "기억에 남는",
     "example": "It was a memorable trip.",
-    "ko": "기억에 남는 여행이었어요."
+    "ko": "기억에 남는 여행이었어요.",
+    "usages": [
+      "a memorable experience"
+    ]
   },
   {
-    "cat": "감정·경험",
+    "cat": "감정·성격",
     "term": "excited",
     "meaning": "신이 난",
     "example": "I was excited about the trip.",
-    "ko": "여행이 기대돼서 신이 났어요."
+    "ko": "여행이 기대돼서 신이 났어요.",
+    "usages": [
+      "excited about a trip"
+    ]
   },
   {
-    "cat": "감정·경험",
+    "cat": "감정·성격",
     "term": "frustrated",
     "meaning": "답답한, 좌절한",
     "example": "I felt frustrated by the delay.",
-    "ko": "지연 때문에 답답했어요."
+    "ko": "지연 때문에 답답했어요.",
+    "usages": [
+      "frustrated with the delay"
+    ]
   },
   {
-    "cat": "감정·경험",
+    "cat": "감정·성격",
     "term": "relieved",
     "meaning": "안도한",
     "example": "I was relieved when I found my bag.",
-    "ko": "가방을 찾았을 때 안도했어요."
+    "ko": "가방을 찾았을 때 안도했어요.",
+    "usages": [
+      "feel relieved"
+    ]
   },
   {
-    "cat": "감정·경험",
+    "cat": "감정·성격",
     "term": "disappointed",
     "meaning": "실망한",
     "example": "I was disappointed with the service.",
-    "ko": "서비스에 실망했어요."
+    "ko": "서비스에 실망했어요.",
+    "usages": [
+      "disappointed with the service"
+    ]
   },
   {
-    "cat": "감정·경험",
+    "cat": "감정·성격",
     "term": "embarrassed",
-    "meaning": "당황한, 창피한",
+    "meaning": "당황한, 창피한; 창피한, 당황한",
     "example": "I was embarrassed when I forgot his name.",
-    "ko": "이름을 잊어서 당황했어요."
+    "ko": "이름을 잊어서 당황했어요.",
+    "usages": [
+      "feel embarrassed"
+    ]
   },
   {
-    "cat": "감정·경험",
+    "cat": "문제·변화",
     "term": "unexpected",
     "meaning": "예상치 못한",
     "example": "An unexpected problem came up.",
-    "ko": "예상치 못한 문제가 생겼어요."
+    "ko": "예상치 못한 문제가 생겼어요.",
+    "usages": [
+      "an unexpected delay"
+    ]
   },
   {
-    "cat": "감정·경험",
+    "cat": "감정·성격",
     "term": "turn out",
     "meaning": "결과적으로 ~이 되다",
     "example": "The trip turned out to be great.",
     "ko": "여행은 결과적으로 정말 좋았어요."
   },
   {
-    "cat": "문제 해결·롤플레이",
+    "cat": "문제·변화",
     "term": "issue",
-    "meaning": "문제",
+    "meaning": "문제, 쟁점",
     "example": "There’s an issue with my room.",
-    "ko": "방에 문제가 있어요."
+    "ko": "방에 문제가 있어요.",
+    "usages": [
+      "an issue with the booking"
+    ]
   },
   {
-    "cat": "문제 해결·롤플레이",
+    "cat": "문제·변화",
     "term": "broken",
-    "meaning": "고장 난",
+    "meaning": "고장 난, 부서진",
     "example": "The air conditioner is broken.",
-    "ko": "에어컨이 고장 났어요."
+    "ko": "에어컨이 고장 났어요.",
+    "usages": [
+      "a broken screen"
+    ]
   },
   {
-    "cat": "문제 해결·롤플레이",
+    "cat": "문제·변화",
     "term": "fix",
     "meaning": "고치다",
     "example": "Could someone fix it?",
-    "ko": "누가 고쳐주실 수 있나요?"
+    "ko": "누가 고쳐주실 수 있나요?",
+    "usages": [
+      "fix a problem"
+    ]
   },
   {
-    "cat": "문제 해결·롤플레이",
+    "cat": "문제·변화",
     "term": "replace",
     "meaning": "교체하다",
     "example": "Could you replace the towels?",
-    "ko": "수건을 교체해 주실 수 있나요?"
+    "ko": "수건을 교체해 주실 수 있나요?",
+    "usages": [
+      "replace the battery"
+    ]
   },
   {
-    "cat": "문제 해결·롤플레이",
+    "cat": "문제·변화",
     "term": "by mistake",
     "meaning": "실수로",
     "example": "I booked the wrong date by mistake.",
     "ko": "실수로 날짜를 잘못 예약했어요."
   },
   {
-    "cat": "문제 해결·롤플레이",
+    "cat": "이유·의견·연결",
     "term": "instead",
     "meaning": "대신",
     "example": "Could I get another room instead?",
-    "ko": "대신 다른 방을 받을 수 있나요?"
+    "ko": "대신 다른 방을 받을 수 있나요?",
+    "usages": [
+      "take the bus instead"
+    ]
   },
   {
-    "cat": "문제 해결·롤플레이",
+    "cat": "자주 쓰는 구동사·표현",
     "term": "figure out",
     "meaning": "알아내다, 해결 방법을 찾다",
     "example": "We figured out what went wrong.",
-    "ko": "무엇이 잘못됐는지 알아냈어요."
+    "ko": "무엇이 잘못됐는지 알아냈어요.",
+    "usages": [
+      "figure out a problem"
+    ]
   },
   {
-    "cat": "문제 해결·롤플레이",
+    "cat": "문제·변화",
     "term": "make sure",
     "meaning": "확인하다, 확실히 하다",
     "example": "I’ll make sure I have the right address.",
     "ko": "주소가 맞는지 확인할게요."
   },
   {
-    "cat": "답변 연결",
+    "cat": "이유·의견·연결",
     "term": "actually",
     "meaning": "사실은",
     "example": "Actually, I prefer staying home.",
-    "ko": "사실 집에 있는 걸 더 좋아해요."
+    "ko": "사실 집에 있는 걸 더 좋아해요.",
+    "usages": [
+      "actually, I prefer tea"
+    ]
   },
   {
-    "cat": "답변 연결",
+    "cat": "이유·의견·연결",
     "term": "for example",
     "meaning": "예를 들어",
     "example": "For example, I often go hiking.",
     "ko": "예를 들어 등산을 자주 해요."
   },
   {
-    "cat": "답변 연결",
+    "cat": "이유·의견·연결",
     "term": "especially",
     "meaning": "특히",
     "example": "I love music, especially jazz.",
-    "ko": "음악, 특히 재즈를 좋아해요."
+    "ko": "음악, 특히 재즈를 좋아해요.",
+    "usages": [
+      "especially in winter"
+    ]
   },
   {
-    "cat": "답변 연결",
+    "cat": "이유·의견·연결",
     "term": "compared to",
     "meaning": "~와 비교하면",
     "example": "Compared to my old place, it’s quieter.",
     "ko": "예전 집에 비해 더 조용해요."
   },
   {
-    "cat": "답변 연결",
+    "cat": "이유·의견·연결",
     "term": "at first",
     "meaning": "처음에는",
     "example": "At first, I was nervous.",
     "ko": "처음에는 긴장했어요."
   },
   {
-    "cat": "답변 연결",
+    "cat": "이유·의견·연결",
     "term": "eventually",
     "meaning": "결국, 마침내",
     "example": "Eventually, we found the hotel.",
     "ko": "마침내 호텔을 찾았어요."
   },
   {
-    "cat": "답변 연결",
+    "cat": "이유·의견·연결",
     "term": "on top of that",
     "meaning": "게다가",
     "example": "On top of that, it started raining.",
     "ko": "게다가 비가 오기 시작했어요."
   },
   {
-    "cat": "답변 연결",
+    "cat": "이유·의견·연결",
     "term": "that’s why",
     "meaning": "그래서 ~하다",
     "example": "That’s why I go there often.",
     "ko": "그래서 그곳에 자주 가요."
+  },
+  {
+    "cat": "사람·가족",
+    "term": "person",
+    "meaning": "사람",
+    "usages": [
+      "a kind person"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "people",
+    "meaning": "사람들",
+    "usages": [
+      "meet new people"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "man",
+    "meaning": "남자",
+    "usages": [
+      "a young man"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "woman",
+    "meaning": "여자",
+    "usages": [
+      "a young woman"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "child",
+    "meaning": "아이",
+    "usages": [
+      "an only child"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "adult",
+    "meaning": "성인",
+    "usages": [
+      "an adult ticket"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "baby",
+    "meaning": "아기",
+    "usages": [
+      "a newborn baby"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "teenager",
+    "meaning": "십 대 청소년",
+    "usages": [
+      "as a teenager"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "parent",
+    "meaning": "부모",
+    "usages": [
+      "a single parent"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "mother",
+    "meaning": "어머니",
+    "usages": [
+      "my mother’s birthday"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "father",
+    "meaning": "아버지",
+    "usages": [
+      "my father’s advice"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "son",
+    "meaning": "아들",
+    "usages": [
+      "their eldest son"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "daughter",
+    "meaning": "딸",
+    "usages": [
+      "their youngest daughter"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "brother",
+    "meaning": "형제",
+    "usages": [
+      "my older brother"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "sister",
+    "meaning": "자매",
+    "usages": [
+      "my younger sister"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "husband",
+    "meaning": "남편",
+    "usages": [
+      "her husband’s job"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "wife",
+    "meaning": "아내",
+    "usages": [
+      "his wife’s hobby"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "couple",
+    "meaning": "커플, 부부",
+    "usages": [
+      "a married couple"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "family",
+    "meaning": "가족",
+    "usages": [
+      "spend time with family"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "relative",
+    "meaning": "친척",
+    "usages": [
+      "visit relatives"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "cousin",
+    "meaning": "사촌",
+    "usages": [
+      "my favorite cousin"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "aunt",
+    "meaning": "이모·고모·숙모 등",
+    "usages": [
+      "visit my aunt"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "uncle",
+    "meaning": "삼촌·외삼촌·고모부 등",
+    "usages": [
+      "stay with my uncle"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "grandmother",
+    "meaning": "할머니",
+    "usages": [
+      "my grandmother’s house"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "grandfather",
+    "meaning": "할아버지",
+    "usages": [
+      "call my grandfather"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "grandparent",
+    "meaning": "조부모",
+    "usages": [
+      "visit my grandparents"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "grandchild",
+    "meaning": "손주",
+    "usages": [
+      "play with a grandchild"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "friend",
+    "meaning": "친구",
+    "usages": [
+      "a close friend"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "neighbor",
+    "meaning": "이웃",
+    "usages": [
+      "talk to a neighbor"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "roommate",
+    "meaning": "룸메이트",
+    "usages": [
+      "share a room with a roommate"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "classmate",
+    "meaning": "급우",
+    "usages": [
+      "an old classmate"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "colleague",
+    "meaning": "동료",
+    "usages": [
+      "have lunch with colleagues",
+      "work with a colleague"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "coworker",
+    "meaning": "직장 동료",
+    "usages": [
+      "help a coworker"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "partner",
+    "meaning": "동반자, 파트너",
+    "usages": [
+      "a business partner"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "guest",
+    "meaning": "손님",
+    "usages": [
+      "welcome a guest"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "host",
+    "meaning": "주최자, 진행자",
+    "usages": [
+      "thank the host"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "visitor",
+    "meaning": "방문객",
+    "usages": [
+      "a first-time visitor"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "stranger",
+    "meaning": "모르는 사람",
+    "usages": [
+      "ask a stranger for directions"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "resident",
+    "meaning": "거주자",
+    "usages": [
+      "local residents"
+    ]
+  },
+  {
+    "cat": "사람·가족",
+    "term": "member",
+    "meaning": "구성원, 회원",
+    "usages": [
+      "a family member"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "relationship",
+    "meaning": "관계",
+    "usages": [
+      "build a relationship"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "friendship",
+    "meaning": "우정",
+    "usages": [
+      "a lasting friendship"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "conversation",
+    "meaning": "대화",
+    "usages": [
+      "start a conversation"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "chat",
+    "meaning": "가볍게 이야기하다",
+    "usages": [
+      "chat with a friend"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "discussion",
+    "meaning": "논의",
+    "usages": [
+      "have a discussion"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "argument",
+    "meaning": "논쟁, 말다툼",
+    "usages": [
+      "have an argument"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "contact",
+    "meaning": "연락하다; 연락",
+    "usages": [
+      "keep in contact"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "introduce",
+    "meaning": "소개하다",
+    "usages": [
+      "introduce myself"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "invite",
+    "meaning": "초대하다",
+    "usages": [
+      "invite friends over"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "invitation",
+    "meaning": "초대",
+    "usages": [
+      "accept an invitation"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "visit",
+    "meaning": "방문하다",
+    "usages": [
+      "visit my parents"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "welcome",
+    "meaning": "환영하다",
+    "usages": [
+      "welcome visitors"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "greet",
+    "meaning": "인사하다",
+    "usages": [
+      "greet a customer"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "meet",
+    "meaning": "만나다",
+    "usages": [
+      "meet a friend"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "join",
+    "meaning": "참여하다",
+    "usages": [
+      "join a club"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "share",
+    "meaning": "공유하다",
+    "usages": [
+      "share an experience"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "support",
+    "meaning": "지지하다, 돕다",
+    "usages": [
+      "support each other"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "trust",
+    "meaning": "믿다",
+    "usages": [
+      "trust my friend"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "respect",
+    "meaning": "존중하다",
+    "usages": [
+      "respect other opinions"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "promise",
+    "meaning": "약속하다",
+    "usages": [
+      "promise to call"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "apologize",
+    "meaning": "사과하다",
+    "usages": [
+      "apologize for being late"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "thank",
+    "meaning": "감사하다",
+    "usages": [
+      "thank someone for their help"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "forgive",
+    "meaning": "용서하다",
+    "usages": [
+      "forgive a mistake"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "agree",
+    "meaning": "동의하다",
+    "usages": [
+      "agree with an opinion"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "disagree",
+    "meaning": "동의하지 않다",
+    "usages": [
+      "disagree politely"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "interrupt",
+    "meaning": "말을 끊다",
+    "usages": [
+      "interrupt a conversation"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "communicate",
+    "meaning": "소통하다",
+    "usages": [
+      "communicate clearly"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "listen",
+    "meaning": "듣다",
+    "usages": [
+      "listen to a friend"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "speak",
+    "meaning": "말하다",
+    "usages": [
+      "speak in public"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "talk",
+    "meaning": "이야기하다",
+    "usages": [
+      "talk about a trip"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "say",
+    "meaning": "말하다",
+    "usages": [
+      "say hello"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "tell",
+    "meaning": "말해주다",
+    "usages": [
+      "tell a story"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "ask",
+    "meaning": "묻다, 요청하다",
+    "usages": [
+      "ask a question"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "answer",
+    "meaning": "대답하다",
+    "usages": [
+      "answer the phone"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "reply",
+    "meaning": "답하다",
+    "usages": [
+      "reply to a message"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "explain",
+    "meaning": "설명하다",
+    "usages": [
+      "explain the situation"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "suggest",
+    "meaning": "제안하다",
+    "usages": [
+      "suggest a restaurant"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "advice",
+    "meaning": "조언",
+    "usages": [
+      "ask for advice"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "compliment",
+    "meaning": "칭찬",
+    "usages": [
+      "give someone a compliment"
+    ]
+  },
+  {
+    "cat": "관계·대화",
+    "term": "favor",
+    "meaning": "부탁, 호의",
+    "usages": [
+      "ask a favor"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "home",
+    "meaning": "집, 가정",
+    "usages": [
+      "stay at home"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "house",
+    "meaning": "주택, 집",
+    "usages": [
+      "a two-story house"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "apartment",
+    "meaning": "아파트",
+    "usages": [
+      "rent an apartment"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "building",
+    "meaning": "건물",
+    "usages": [
+      "an old building"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "room",
+    "meaning": "방",
+    "usages": [
+      "a spare room"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "bedroom",
+    "meaning": "침실",
+    "usages": [
+      "a spacious bedroom"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "bathroom",
+    "meaning": "욕실",
+    "usages": [
+      "a private bathroom"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "kitchen",
+    "meaning": "부엌",
+    "usages": [
+      "a modern kitchen"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "living room",
+    "meaning": "거실",
+    "usages": [
+      "sit in the living room"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "dining room",
+    "meaning": "식당, 식사 공간",
+    "usages": [
+      "a separate dining room"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "balcony",
+    "meaning": "발코니",
+    "usages": [
+      "a small balcony"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "hallway",
+    "meaning": "복도",
+    "usages": [
+      "a long hallway"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "entrance",
+    "meaning": "입구",
+    "usages": [
+      "the main entrance"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "exit",
+    "meaning": "출구",
+    "usages": [
+      "an emergency exit"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "door",
+    "meaning": "문",
+    "usages": [
+      "close the door"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "window",
+    "meaning": "창문",
+    "usages": [
+      "open the window"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "wall",
+    "meaning": "벽",
+    "usages": [
+      "hang a picture on the wall"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "floor",
+    "meaning": "바닥; 층",
+    "usages": [
+      "a wooden floor"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "ceiling",
+    "meaning": "천장",
+    "usages": [
+      "a high ceiling"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "roof",
+    "meaning": "지붕",
+    "usages": [
+      "repair the roof"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "stairs",
+    "meaning": "계단",
+    "usages": [
+      "take the stairs"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "elevator",
+    "meaning": "엘리베이터",
+    "usages": [
+      "use the elevator"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "furniture",
+    "meaning": "가구",
+    "usages": [
+      "buy new furniture"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "sofa",
+    "meaning": "소파",
+    "usages": [
+      "sit on the sofa"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "chair",
+    "meaning": "의자",
+    "usages": [
+      "a comfortable chair"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "table",
+    "meaning": "테이블",
+    "usages": [
+      "set the table"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "desk",
+    "meaning": "책상",
+    "usages": [
+      "work at my desk"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "bed",
+    "meaning": "침대",
+    "usages": [
+      "make the bed"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "mattress",
+    "meaning": "매트리스",
+    "usages": [
+      "a soft mattress"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "pillow",
+    "meaning": "베개",
+    "usages": [
+      "a firm pillow"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "blanket",
+    "meaning": "담요",
+    "usages": [
+      "a warm blanket"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "closet",
+    "meaning": "옷장",
+    "usages": [
+      "a walk-in closet"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "shelf",
+    "meaning": "선반",
+    "usages": [
+      "put books on a shelf"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "drawer",
+    "meaning": "서랍",
+    "usages": [
+      "a desk drawer"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "lamp",
+    "meaning": "램프",
+    "usages": [
+      "a reading lamp"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "light",
+    "meaning": "불, 조명; 가벼운",
+    "usages": [
+      "turn on the light",
+      "a light bag"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "curtain",
+    "meaning": "커튼",
+    "usages": [
+      "draw the curtains"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "carpet",
+    "meaning": "카펫",
+    "usages": [
+      "a thick carpet"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "mirror",
+    "meaning": "거울",
+    "usages": [
+      "look in the mirror"
+    ]
+  },
+  {
+    "cat": "집·공간",
+    "term": "key",
+    "meaning": "열쇠",
+    "usages": [
+      "lose my keys"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "wake",
+    "meaning": "깨다, 깨우다",
+    "usages": [
+      "wake up early"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "sleep",
+    "meaning": "자다",
+    "usages": [
+      "sleep well"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "rest",
+    "meaning": "쉬다",
+    "usages": [
+      "get some rest"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "wash",
+    "meaning": "씻다",
+    "usages": [
+      "wash my hands"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "brush",
+    "meaning": "솔질하다",
+    "usages": [
+      "brush my teeth"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "shower",
+    "meaning": "샤워하다; 샤워",
+    "usages": [
+      "take a shower"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "bath",
+    "meaning": "목욕",
+    "usages": [
+      "take a bath"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "clean",
+    "meaning": "청소하다; 깨끗한",
+    "usages": [
+      "clean the kitchen",
+      "a clean bathroom"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "tidy",
+    "meaning": "정리하다; 깔끔한",
+    "usages": [
+      "tidy my room"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "sweep",
+    "meaning": "쓸다",
+    "usages": [
+      "sweep the floor"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "mop",
+    "meaning": "대걸레질하다",
+    "usages": [
+      "mop the floor"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "vacuum",
+    "meaning": "진공청소기로 청소하다",
+    "usages": [
+      "vacuum the carpet"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "laundry",
+    "meaning": "세탁물, 빨래",
+    "usages": [
+      "do the laundry"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "chore",
+    "meaning": "집안일",
+    "usages": [
+      "do household chores"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "iron",
+    "meaning": "다림질하다",
+    "usages": [
+      "iron a shirt"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "fold",
+    "meaning": "접다",
+    "usages": [
+      "fold the clothes"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "hang",
+    "meaning": "걸다",
+    "usages": [
+      "hang up a coat"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "dry",
+    "meaning": "말리다; 마른",
+    "usages": [
+      "dry the dishes",
+      "dry weather"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "wipe",
+    "meaning": "닦다",
+    "usages": [
+      "wipe the table"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "scrub",
+    "meaning": "문질러 닦다",
+    "usages": [
+      "scrub the sink"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "trash",
+    "meaning": "쓰레기",
+    "usages": [
+      "take out the trash"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "garbage",
+    "meaning": "쓰레기",
+    "usages": [
+      "throw away garbage"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "recycle",
+    "meaning": "재활용하다",
+    "usages": [
+      "recycle plastic bottles"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "recycling",
+    "meaning": "재활용",
+    "usages": [
+      "sort the recycling"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "sort",
+    "meaning": "분류하다",
+    "usages": [
+      "sort the laundry"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "organize",
+    "meaning": "정돈하다, 조직하다",
+    "usages": [
+      "organize my closet"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "arrange",
+    "meaning": "배치하다, 마련하다",
+    "usages": [
+      "arrange the furniture"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "water",
+    "meaning": "물; 물을 주다",
+    "usages": [
+      "water the plants"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "plant",
+    "meaning": "식물",
+    "usages": [
+      "a houseplant"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "pet",
+    "meaning": "반려동물",
+    "usages": [
+      "feed a pet"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "feed",
+    "meaning": "먹이를 주다",
+    "usages": [
+      "feed the dog"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "walk",
+    "meaning": "걷다; 산책시키다",
+    "usages": [
+      "walk the dog"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "habit",
+    "meaning": "습관",
+    "usages": [
+      "develop a good habit"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "schedule",
+    "meaning": "일정",
+    "usages": [
+      "a busy schedule"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "alarm",
+    "meaning": "알람, 경보",
+    "usages": [
+      "set an alarm"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "prepare",
+    "meaning": "준비하다",
+    "usages": [
+      "prepare for work"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "pack",
+    "meaning": "짐을 싸다",
+    "usages": [
+      "pack a bag"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "unpack",
+    "meaning": "짐을 풀다",
+    "usages": [
+      "unpack a suitcase"
+    ]
+  },
+  {
+    "cat": "일상·집안일",
+    "term": "errand",
+    "meaning": "심부름, 볼일",
+    "usages": [
+      "run errands"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "city",
+    "meaning": "도시",
+    "usages": [
+      "a large city"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "town",
+    "meaning": "소도시",
+    "usages": [
+      "a small town"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "village",
+    "meaning": "마을",
+    "usages": [
+      "a fishing village"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "countryside",
+    "meaning": "시골",
+    "usages": [
+      "live in the countryside"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "suburb",
+    "meaning": "교외",
+    "usages": [
+      "move to the suburbs"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "downtown",
+    "meaning": "도심",
+    "usages": [
+      "go downtown"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "street",
+    "meaning": "거리",
+    "usages": [
+      "a busy street"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "road",
+    "meaning": "도로",
+    "usages": [
+      "a main road"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "avenue",
+    "meaning": "큰 거리, 대로",
+    "usages": [
+      "a tree-lined avenue"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "corner",
+    "meaning": "모퉁이",
+    "usages": [
+      "turn at the corner"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "block",
+    "meaning": "도시의 한 구획",
+    "usages": [
+      "two blocks away"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "sidewalk",
+    "meaning": "인도",
+    "usages": [
+      "walk on the sidewalk"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "crosswalk",
+    "meaning": "횡단보도",
+    "usages": [
+      "use the crosswalk"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "intersection",
+    "meaning": "교차로",
+    "usages": [
+      "a busy intersection"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "park",
+    "meaning": "주차하다; 공원",
+    "usages": [
+      "a neighborhood park",
+      "park the car"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "playground",
+    "meaning": "놀이터",
+    "usages": [
+      "take children to the playground"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "square",
+    "meaning": "광장",
+    "usages": [
+      "the town square"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "library",
+    "meaning": "도서관",
+    "usages": [
+      "borrow books from the library"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "museum",
+    "meaning": "박물관",
+    "usages": [
+      "visit a history museum"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "gallery",
+    "meaning": "미술관, 전시장",
+    "usages": [
+      "an art gallery"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "theater",
+    "meaning": "극장",
+    "usages": [
+      "a local theater"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "stadium",
+    "meaning": "경기장",
+    "usages": [
+      "a soccer stadium"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "market",
+    "meaning": "시장",
+    "usages": [
+      "a traditional market"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "supermarket",
+    "meaning": "슈퍼마켓",
+    "usages": [
+      "shop at a supermarket"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "mall",
+    "meaning": "쇼핑몰",
+    "usages": [
+      "a shopping mall"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "bank",
+    "meaning": "은행",
+    "usages": [
+      "go to the bank"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "post office",
+    "meaning": "우체국",
+    "usages": [
+      "send a parcel at the post office"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "police station",
+    "meaning": "경찰서",
+    "usages": [
+      "report it at the police station"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "hospital",
+    "meaning": "병원",
+    "usages": [
+      "a nearby hospital"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "clinic",
+    "meaning": "의원, 클리닉",
+    "usages": [
+      "a dental clinic"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "pharmacy",
+    "meaning": "약국",
+    "usages": [
+      "find a pharmacy"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "school",
+    "meaning": "학교",
+    "usages": [
+      "a local school"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "community",
+    "meaning": "지역사회, 공동체",
+    "usages": [
+      "a friendly community"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "facility",
+    "meaning": "시설",
+    "usages": [
+      "sports facilities"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "location",
+    "meaning": "위치",
+    "usages": [
+      "a central location"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "area",
+    "meaning": "지역, 구역",
+    "usages": [
+      "a residential area"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "district",
+    "meaning": "구역, 지역",
+    "usages": [
+      "a shopping district"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "landmark",
+    "meaning": "대표적 명소",
+    "usages": [
+      "a famous landmark"
+    ]
+  },
+  {
+    "cat": "동네·도시",
+    "term": "surroundings",
+    "meaning": "주변 환경",
+    "usages": [
+      "peaceful surroundings"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "food",
+    "meaning": "음식",
+    "usages": [
+      "try local food"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "meal",
+    "meaning": "식사",
+    "usages": [
+      "a homemade meal"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "breakfast",
+    "meaning": "아침 식사",
+    "usages": [
+      "have breakfast"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "lunch",
+    "meaning": "점심 식사",
+    "usages": [
+      "eat lunch"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "dinner",
+    "meaning": "저녁 식사",
+    "usages": [
+      "cook dinner"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "snack",
+    "meaning": "간식",
+    "usages": [
+      "a light snack"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "rice",
+    "meaning": "쌀, 밥",
+    "usages": [
+      "a bowl of rice"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "bread",
+    "meaning": "빵",
+    "usages": [
+      "fresh bread"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "noodle",
+    "meaning": "면",
+    "usages": [
+      "a noodle dish"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "pasta",
+    "meaning": "파스타",
+    "usages": [
+      "a plate of pasta"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "cereal",
+    "meaning": "시리얼",
+    "usages": [
+      "a bowl of cereal"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "flour",
+    "meaning": "밀가루",
+    "usages": [
+      "a bag of flour"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "meat",
+    "meaning": "고기",
+    "usages": [
+      "grilled meat"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "beef",
+    "meaning": "소고기",
+    "usages": [
+      "roast beef"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "pork",
+    "meaning": "돼지고기",
+    "usages": [
+      "cooked pork"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "chicken",
+    "meaning": "닭; 닭고기",
+    "usages": [
+      "fried chicken"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "fish",
+    "meaning": "물고기; 생선",
+    "usages": [
+      "fresh fish"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "seafood",
+    "meaning": "해산물",
+    "usages": [
+      "a seafood restaurant"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "egg",
+    "meaning": "달걀",
+    "usages": [
+      "a boiled egg"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "milk",
+    "meaning": "우유",
+    "usages": [
+      "a glass of milk"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "cheese",
+    "meaning": "치즈",
+    "usages": [
+      "a slice of cheese"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "butter",
+    "meaning": "버터",
+    "usages": [
+      "spread butter on bread"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "yogurt",
+    "meaning": "요거트",
+    "usages": [
+      "plain yogurt"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "fruit",
+    "meaning": "과일",
+    "usages": [
+      "fresh fruit"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "vegetable",
+    "meaning": "채소",
+    "usages": [
+      "green vegetables"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "apple",
+    "meaning": "사과",
+    "usages": [
+      "an apple a day"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "banana",
+    "meaning": "바나나",
+    "usages": [
+      "a ripe banana"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "orange",
+    "meaning": "오렌지",
+    "usages": [
+      "orange juice"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "lemon",
+    "meaning": "레몬",
+    "usages": [
+      "a slice of lemon"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "berry",
+    "meaning": "베리류 열매",
+    "usages": [
+      "fresh berries"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "grape",
+    "meaning": "포도",
+    "usages": [
+      "a bunch of grapes"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "peach",
+    "meaning": "복숭아",
+    "usages": [
+      "a juicy peach"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "potato",
+    "meaning": "감자",
+    "usages": [
+      "baked potatoes"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "tomato",
+    "meaning": "토마토",
+    "usages": [
+      "a tomato salad"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "onion",
+    "meaning": "양파",
+    "usages": [
+      "chop an onion"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "carrot",
+    "meaning": "당근",
+    "usages": [
+      "raw carrots"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "cucumber",
+    "meaning": "오이",
+    "usages": [
+      "sliced cucumber"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "lettuce",
+    "meaning": "상추·양상추",
+    "usages": [
+      "fresh lettuce"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "garlic",
+    "meaning": "마늘",
+    "usages": [
+      "a clove of garlic"
+    ]
+  },
+  {
+    "cat": "음식·재료",
+    "term": "mushroom",
+    "meaning": "버섯",
+    "usages": [
+      "mushroom soup"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "cook",
+    "meaning": "요리하다",
+    "usages": [
+      "cook a meal"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "bake",
+    "meaning": "오븐에 굽다",
+    "usages": [
+      "bake a cake"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "boil",
+    "meaning": "끓이다",
+    "usages": [
+      "boil water"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "fry",
+    "meaning": "기름에 튀기거나 부치다",
+    "usages": [
+      "fry an egg"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "grill",
+    "meaning": "석쇠에 굽다",
+    "usages": [
+      "grill vegetables"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "roast",
+    "meaning": "오븐 등에 구워 익히다",
+    "usages": [
+      "roast chicken"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "steam",
+    "meaning": "찌다",
+    "usages": [
+      "steam vegetables"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "heat",
+    "meaning": "데우다; 열",
+    "usages": [
+      "heat up food"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "mix",
+    "meaning": "섞다",
+    "usages": [
+      "mix the ingredients"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "stir",
+    "meaning": "젓다",
+    "usages": [
+      "stir the soup"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "chop",
+    "meaning": "잘게 썰다",
+    "usages": [
+      "chop vegetables"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "slice",
+    "meaning": "얇게 썰다; 조각",
+    "usages": [
+      "slice bread"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "peel",
+    "meaning": "껍질을 벗기다",
+    "usages": [
+      "peel a potato"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "pour",
+    "meaning": "붓다",
+    "usages": [
+      "pour a drink"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "add",
+    "meaning": "더하다",
+    "usages": [
+      "add some salt"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "serve",
+    "meaning": "음식을 내다, 제공하다",
+    "usages": [
+      "serve dinner"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "recipe",
+    "meaning": "조리법",
+    "usages": [
+      "follow a recipe"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "ingredient",
+    "meaning": "재료",
+    "usages": [
+      "fresh ingredients"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "flavor",
+    "meaning": "맛, 풍미",
+    "usages": [
+      "a rich flavor"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "taste",
+    "meaning": "맛; 맛보다",
+    "usages": [
+      "taste the sauce"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "delicious",
+    "meaning": "맛있는",
+    "usages": [
+      "a delicious meal"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "tasty",
+    "meaning": "맛좋은",
+    "usages": [
+      "a tasty snack"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "sweet",
+    "meaning": "단",
+    "usages": [
+      "a sweet dessert"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "salty",
+    "meaning": "짠",
+    "usages": [
+      "salty food"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "sour",
+    "meaning": "신",
+    "usages": [
+      "a sour taste"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "bitter",
+    "meaning": "쓴",
+    "usages": [
+      "bitter coffee"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "spicy",
+    "meaning": "매운",
+    "usages": [
+      "spicy noodles"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "mild",
+    "meaning": "순한, 자극적이지 않은",
+    "usages": [
+      "a mild sauce"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "fresh",
+    "meaning": "신선한",
+    "usages": [
+      "fresh ingredients"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "raw",
+    "meaning": "날것의",
+    "usages": [
+      "raw fish"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "cooked",
+    "meaning": "익힌",
+    "usages": [
+      "cooked vegetables"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "crispy",
+    "meaning": "바삭한",
+    "usages": [
+      "crispy chicken"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "crunchy",
+    "meaning": "아삭한, 오독오독한",
+    "usages": [
+      "crunchy carrots"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "soft",
+    "meaning": "부드러운",
+    "usages": [
+      "soft bread"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "tender",
+    "meaning": "연한, 부드러운",
+    "usages": [
+      "tender meat"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "juicy",
+    "meaning": "즙이 많은",
+    "usages": [
+      "a juicy steak"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "greasy",
+    "meaning": "기름진",
+    "usages": [
+      "greasy food"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "bland",
+    "meaning": "싱거운, 맛이 밋밋한",
+    "usages": [
+      "bland soup"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "season",
+    "meaning": "계절; 양념하다",
+    "usages": [
+      "season with salt",
+      "the rainy season"
+    ]
+  },
+  {
+    "cat": "요리·맛",
+    "term": "sauce",
+    "meaning": "소스",
+    "usages": [
+      "a tomato sauce"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "restaurant",
+    "meaning": "식당",
+    "usages": [
+      "a popular restaurant"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "café",
+    "meaning": "카페",
+    "usages": [
+      "a cozy café"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "coffee",
+    "meaning": "커피",
+    "usages": [
+      "a cup of coffee"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "tea",
+    "meaning": "차",
+    "usages": [
+      "a pot of tea"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "juice",
+    "meaning": "주스",
+    "usages": [
+      "fresh orange juice"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "soda",
+    "meaning": "탄산음료",
+    "usages": [
+      "a can of soda"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "drink",
+    "meaning": "음료; 마시다",
+    "usages": [
+      "order a drink"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "beverage",
+    "meaning": "음료",
+    "usages": [
+      "hot beverages"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "menu",
+    "meaning": "메뉴",
+    "usages": [
+      "look at the menu"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "waiter",
+    "meaning": "남성 종업원",
+    "usages": [
+      "ask the waiter"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "waitress",
+    "meaning": "여성 종업원",
+    "usages": [
+      "ask the waitress"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "server",
+    "meaning": "음식점 종업원",
+    "usages": [
+      "thank the server"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "customer",
+    "meaning": "고객",
+    "usages": [
+      "a regular customer"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "bill",
+    "meaning": "계산서",
+    "usages": [
+      "ask for the bill"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "check",
+    "meaning": "확인하다; 계산서",
+    "usages": [
+      "pay the check"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "tip",
+    "meaning": "팁, 조언",
+    "usages": [
+      "leave a tip"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "appetizer",
+    "meaning": "전채 요리",
+    "usages": [
+      "order an appetizer"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "main course",
+    "meaning": "주요리",
+    "usages": [
+      "choose a main course"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "dessert",
+    "meaning": "디저트",
+    "usages": [
+      "have dessert"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "salad",
+    "meaning": "샐러드",
+    "usages": [
+      "a fresh salad"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "soup",
+    "meaning": "수프",
+    "usages": [
+      "a bowl of soup"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "sandwich",
+    "meaning": "샌드위치",
+    "usages": [
+      "a cheese sandwich"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "burger",
+    "meaning": "버거",
+    "usages": [
+      "a veggie burger"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "pizza",
+    "meaning": "피자",
+    "usages": [
+      "a slice of pizza"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "steak",
+    "meaning": "스테이크",
+    "usages": [
+      "a grilled steak"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "cake",
+    "meaning": "케이크",
+    "usages": [
+      "a birthday cake"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "cookie",
+    "meaning": "쿠키",
+    "usages": [
+      "a chocolate cookie"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "pastry",
+    "meaning": "페이스트리",
+    "usages": [
+      "fresh pastries"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "buffet",
+    "meaning": "뷔페",
+    "usages": [
+      "a breakfast buffet"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "dine",
+    "meaning": "식사하다",
+    "usages": [
+      "dine with friends"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "delivery",
+    "meaning": "배달",
+    "usages": [
+      "free delivery"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "refill",
+    "meaning": "리필",
+    "usages": [
+      "a free refill"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "special",
+    "meaning": "특별한; 특별 메뉴",
+    "usages": [
+      "today’s special"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "vegan",
+    "meaning": "비건의, 비건",
+    "usages": [
+      "a vegan option"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "vegetarian",
+    "meaning": "채식의, 채식주의자",
+    "usages": [
+      "a vegetarian meal"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "allergy",
+    "meaning": "알레르기",
+    "usages": [
+      "a food allergy"
+    ]
+  },
+  {
+    "cat": "외식·카페",
+    "term": "appetite",
+    "meaning": "식욕",
+    "usages": [
+      "have a good appetite"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "shop",
+    "meaning": "가게; 쇼핑하다",
+    "usages": [
+      "shop for clothes"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "store",
+    "meaning": "상점",
+    "usages": [
+      "a department store"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "purchase",
+    "meaning": "구매하다; 구매",
+    "usages": [
+      "make a purchase"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "buy",
+    "meaning": "사다",
+    "usages": [
+      "buy groceries"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "sell",
+    "meaning": "팔다",
+    "usages": [
+      "sell used books"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "pay",
+    "meaning": "지불하다",
+    "usages": [
+      "pay by card"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "spend",
+    "meaning": "쓰다, 소비하다",
+    "usages": [
+      "spend money wisely"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "cost",
+    "meaning": "비용이 들다; 비용",
+    "usages": [
+      "the total cost"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "price",
+    "meaning": "가격",
+    "usages": [
+      "compare prices"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "budget",
+    "meaning": "예산",
+    "usages": [
+      "stick to a budget"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "money",
+    "meaning": "돈",
+    "usages": [
+      "save money"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "cash",
+    "meaning": "현금",
+    "usages": [
+      "pay in cash"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "coin",
+    "meaning": "동전",
+    "usages": [
+      "a small coin"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "change",
+    "meaning": "잔돈; 변화",
+    "usages": [
+      "keep the change"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "wallet",
+    "meaning": "지갑",
+    "usages": [
+      "carry a wallet"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "card",
+    "meaning": "카드",
+    "usages": [
+      "use a credit card"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "receipt",
+    "meaning": "영수증",
+    "usages": [
+      "keep the receipt"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "discount",
+    "meaning": "할인",
+    "usages": [
+      "get a discount"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "sale",
+    "meaning": "할인 판매; 판매",
+    "usages": [
+      "on sale"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "bargain",
+    "meaning": "저렴하게 산 물건",
+    "usages": [
+      "find a bargain"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "deal",
+    "meaning": "거래; 좋은 조건",
+    "usages": [
+      "a good deal"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "cheap",
+    "meaning": "싼",
+    "usages": [
+      "a cheap ticket"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "expensive",
+    "meaning": "비싼",
+    "usages": [
+      "an expensive coat"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "valuable",
+    "meaning": "가치 있는",
+    "usages": [
+      "a valuable item"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "worth",
+    "meaning": "~의 가치가 있는",
+    "usages": [
+      "worth the price"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "return",
+    "meaning": "반품하다; 돌아오다",
+    "usages": [
+      "return a damaged item"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "size",
+    "meaning": "크기, 치수",
+    "usages": [
+      "the right size"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "brand",
+    "meaning": "브랜드",
+    "usages": [
+      "a local brand"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "quality",
+    "meaning": "품질",
+    "usages": [
+      "good quality"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "product",
+    "meaning": "제품",
+    "usages": [
+      "a new product"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "item",
+    "meaning": "물건, 품목",
+    "usages": [
+      "a useful item"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "stock",
+    "meaning": "재고",
+    "usages": [
+      "in stock"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "payment",
+    "meaning": "결제, 지불",
+    "usages": [
+      "make a payment"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "fee",
+    "meaning": "수수료, 요금",
+    "usages": [
+      "an entrance fee"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "charge",
+    "meaning": "청구하다; 요금",
+    "usages": [
+      "an extra charge"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "account",
+    "meaning": "계좌, 계정",
+    "usages": [
+      "a bank account"
+    ]
+  },
+  {
+    "cat": "쇼핑·돈",
+    "term": "coupon",
+    "meaning": "쿠폰",
+    "usages": [
+      "use a coupon"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "clothes",
+    "meaning": "옷",
+    "usages": [
+      "casual clothes"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "clothing",
+    "meaning": "의류",
+    "usages": [
+      "winter clothing"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "shirt",
+    "meaning": "셔츠",
+    "usages": [
+      "a cotton shirt"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "T-shirt",
+    "meaning": "티셔츠",
+    "usages": [
+      "a plain T-shirt"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "blouse",
+    "meaning": "블라우스",
+    "usages": [
+      "a silk blouse"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "sweater",
+    "meaning": "스웨터",
+    "usages": [
+      "a warm sweater"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "hoodie",
+    "meaning": "후드티",
+    "usages": [
+      "wear a hoodie"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "jacket",
+    "meaning": "재킷",
+    "usages": [
+      "a light jacket"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "coat",
+    "meaning": "코트",
+    "usages": [
+      "a winter coat"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "pants",
+    "meaning": "바지",
+    "usages": [
+      "a pair of pants"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "jeans",
+    "meaning": "청바지",
+    "usages": [
+      "blue jeans"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "shorts",
+    "meaning": "반바지",
+    "usages": [
+      "wear shorts"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "skirt",
+    "meaning": "치마",
+    "usages": [
+      "a long skirt"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "dress",
+    "meaning": "원피스; 옷을 입다",
+    "usages": [
+      "a summer dress"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "suit",
+    "meaning": "정장",
+    "usages": [
+      "a business suit"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "uniform",
+    "meaning": "제복, 유니폼",
+    "usages": [
+      "a school uniform"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "sock",
+    "meaning": "양말",
+    "usages": [
+      "a pair of socks"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "shoe",
+    "meaning": "신발",
+    "usages": [
+      "comfortable shoes"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "sneaker",
+    "meaning": "운동화",
+    "usages": [
+      "running sneakers"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "boot",
+    "meaning": "부츠",
+    "usages": [
+      "winter boots"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "sandal",
+    "meaning": "샌들",
+    "usages": [
+      "a pair of sandals"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "slipper",
+    "meaning": "실내화, 슬리퍼",
+    "usages": [
+      "wear slippers"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "hat",
+    "meaning": "모자",
+    "usages": [
+      "a sun hat"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "cap",
+    "meaning": "챙이 있는 모자",
+    "usages": [
+      "a baseball cap"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "scarf",
+    "meaning": "목도리",
+    "usages": [
+      "a wool scarf"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "glove",
+    "meaning": "장갑",
+    "usages": [
+      "warm gloves"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "belt",
+    "meaning": "벨트",
+    "usages": [
+      "a leather belt"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "tie",
+    "meaning": "넥타이; 묶다",
+    "usages": [
+      "wear a tie"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "bag",
+    "meaning": "가방",
+    "usages": [
+      "a shoulder bag"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "backpack",
+    "meaning": "배낭",
+    "usages": [
+      "pack a backpack"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "purse",
+    "meaning": "핸드백, 작은 돈지갑",
+    "usages": [
+      "a small purse"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "umbrella",
+    "meaning": "우산",
+    "usages": [
+      "bring an umbrella"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "glasses",
+    "meaning": "안경",
+    "usages": [
+      "wear glasses"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "sunglasses",
+    "meaning": "선글라스",
+    "usages": [
+      "put on sunglasses"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "watch",
+    "meaning": "손목시계; 보다",
+    "usages": [
+      "wear a watch"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "ring",
+    "meaning": "반지",
+    "usages": [
+      "a wedding ring"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "necklace",
+    "meaning": "목걸이",
+    "usages": [
+      "a silver necklace"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "earring",
+    "meaning": "귀걸이",
+    "usages": [
+      "a pair of earrings"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "outfit",
+    "meaning": "한 벌의 옷차림",
+    "usages": [
+      "a casual outfit"
+    ]
+  },
+  {
+    "cat": "옷·소지품",
+    "term": "fabric",
+    "meaning": "옷감, 천",
+    "usages": [
+      "a soft fabric"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "transportation",
+    "meaning": "교통, 이동 수단",
+    "usages": [
+      "public transportation"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "traffic",
+    "meaning": "교통량, 차량 흐름",
+    "usages": [
+      "heavy traffic"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "vehicle",
+    "meaning": "차량",
+    "usages": [
+      "an electric vehicle"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "car",
+    "meaning": "자동차",
+    "usages": [
+      "rent a car"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "bus",
+    "meaning": "버스",
+    "usages": [
+      "catch a bus"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "train",
+    "meaning": "기차",
+    "usages": [
+      "take a train"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "subway",
+    "meaning": "지하철",
+    "usages": [
+      "a subway station"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "taxi",
+    "meaning": "택시",
+    "usages": [
+      "take a taxi"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "bicycle",
+    "meaning": "자전거",
+    "usages": [
+      "ride a bicycle"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "motorcycle",
+    "meaning": "오토바이",
+    "usages": [
+      "ride a motorcycle"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "truck",
+    "meaning": "트럭",
+    "usages": [
+      "a delivery truck"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "plane",
+    "meaning": "비행기",
+    "usages": [
+      "board a plane"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "boat",
+    "meaning": "보트, 배",
+    "usages": [
+      "a fishing boat"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "ship",
+    "meaning": "큰 배",
+    "usages": [
+      "a cruise ship"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "ferry",
+    "meaning": "연락선, 페리",
+    "usages": [
+      "take a ferry"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "station",
+    "meaning": "역",
+    "usages": [
+      "the nearest station"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "stop",
+    "meaning": "정류장; 멈추다",
+    "usages": [
+      "a bus stop"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "platform",
+    "meaning": "승강장",
+    "usages": [
+      "wait on the platform"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "ticket",
+    "meaning": "표",
+    "usages": [
+      "a round-trip ticket"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "fare",
+    "meaning": "교통 요금",
+    "usages": [
+      "the bus fare"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "route",
+    "meaning": "경로",
+    "usages": [
+      "the fastest route"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "transfer",
+    "meaning": "환승하다",
+    "usages": [
+      "transfer to another line"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "passenger",
+    "meaning": "승객",
+    "usages": [
+      "a train passenger"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "driver",
+    "meaning": "운전자",
+    "usages": [
+      "a careful driver"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "pedestrian",
+    "meaning": "보행자",
+    "usages": [
+      "a pedestrian crossing"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "ride",
+    "meaning": "타다; 타기",
+    "usages": [
+      "ride a bike"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "drive",
+    "meaning": "운전하다",
+    "usages": [
+      "drive to work"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "parking",
+    "meaning": "주차",
+    "usages": [
+      "a parking space"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "license",
+    "meaning": "면허, 허가증",
+    "usages": [
+      "a driver’s license"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "seat",
+    "meaning": "좌석",
+    "usages": [
+      "a window seat"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "seat belt",
+    "meaning": "안전벨트",
+    "usages": [
+      "wear a seat belt"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "fuel",
+    "meaning": "연료",
+    "usages": [
+      "save fuel"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "gas",
+    "meaning": "휘발유, 가스",
+    "usages": [
+      "a gas station"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "highway",
+    "meaning": "고속도로",
+    "usages": [
+      "drive on the highway"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "bridge",
+    "meaning": "다리",
+    "usages": [
+      "cross a bridge"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "tunnel",
+    "meaning": "터널",
+    "usages": [
+      "go through a tunnel"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "speed",
+    "meaning": "속도",
+    "usages": [
+      "reduce speed"
+    ]
+  },
+  {
+    "cat": "교통·이동",
+    "term": "distance",
+    "meaning": "거리",
+    "usages": [
+      "a short distance"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "travel",
+    "meaning": "여행하다",
+    "usages": [
+      "travel abroad"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "trip",
+    "meaning": "여행",
+    "usages": [
+      "a weekend trip"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "journey",
+    "meaning": "여정",
+    "usages": [
+      "a long journey"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "vacation",
+    "meaning": "휴가",
+    "usages": [
+      "take a vacation"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "holiday",
+    "meaning": "휴일, 휴가",
+    "usages": [
+      "a national holiday"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "tour",
+    "meaning": "투어",
+    "usages": [
+      "a guided tour"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "tourist",
+    "meaning": "관광객",
+    "usages": [
+      "a popular tourist spot"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "destination",
+    "meaning": "목적지",
+    "usages": [
+      "a holiday destination"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "itinerary",
+    "meaning": "여행 일정",
+    "usages": [
+      "plan an itinerary"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "passport",
+    "meaning": "여권",
+    "usages": [
+      "renew a passport"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "visa",
+    "meaning": "비자",
+    "usages": [
+      "apply for a visa"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "airport",
+    "meaning": "공항",
+    "usages": [
+      "arrive at the airport"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "flight",
+    "meaning": "항공편",
+    "usages": [
+      "a direct flight"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "airline",
+    "meaning": "항공사",
+    "usages": [
+      "a budget airline"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "boarding pass",
+    "meaning": "탑승권",
+    "usages": [
+      "show a boarding pass"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "gate",
+    "meaning": "탑승구, 출입구",
+    "usages": [
+      "the departure gate"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "departure",
+    "meaning": "출발",
+    "usages": [
+      "the departure time"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "arrival",
+    "meaning": "도착",
+    "usages": [
+      "the arrival time"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "luggage",
+    "meaning": "여행 짐",
+    "usages": [
+      "carry heavy luggage"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "suitcase",
+    "meaning": "여행 가방",
+    "usages": [
+      "pack a suitcase"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "baggage",
+    "meaning": "수하물",
+    "usages": [
+      "checked baggage"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "accommodation",
+    "meaning": "숙박 시설",
+    "usages": [
+      "book accommodation"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "hotel",
+    "meaning": "호텔",
+    "usages": [
+      "a beachfront hotel"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "hostel",
+    "meaning": "호스텔",
+    "usages": [
+      "stay at a hostel"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "resort",
+    "meaning": "리조트",
+    "usages": [
+      "a ski resort"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "check-in",
+    "meaning": "체크인",
+    "usages": [
+      "early check-in"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "check-out",
+    "meaning": "체크아웃",
+    "usages": [
+      "late check-out"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "reception",
+    "meaning": "접수처, 프런트",
+    "usages": [
+      "ask at reception"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "receptionist",
+    "meaning": "접수 직원",
+    "usages": [
+      "speak to the receptionist"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "amenity",
+    "meaning": "편의 시설",
+    "usages": [
+      "hotel amenities"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "souvenir",
+    "meaning": "기념품",
+    "usages": [
+      "buy a souvenir"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "guide",
+    "meaning": "안내자; 안내하다",
+    "usages": [
+      "a tour guide"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "map",
+    "meaning": "지도",
+    "usages": [
+      "read a map"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "sightseeing",
+    "meaning": "관광",
+    "usages": [
+      "go sightseeing"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "abroad",
+    "meaning": "해외에, 해외로",
+    "usages": [
+      "study abroad"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "local",
+    "meaning": "현지의, 지역의",
+    "usages": [
+      "local culture"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "foreign",
+    "meaning": "외국의",
+    "usages": [
+      "a foreign country"
+    ]
+  },
+  {
+    "cat": "여행·숙박",
+    "term": "international",
+    "meaning": "국제적인",
+    "usages": [
+      "an international flight"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "nature",
+    "meaning": "자연",
+    "usages": [
+      "enjoy nature"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "weather",
+    "meaning": "날씨",
+    "usages": [
+      "check the weather"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "climate",
+    "meaning": "기후",
+    "usages": [
+      "a warm climate"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "spring",
+    "meaning": "봄",
+    "usages": [
+      "in spring"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "summer",
+    "meaning": "여름",
+    "usages": [
+      "a hot summer"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "autumn",
+    "meaning": "가을",
+    "usages": [
+      "autumn leaves"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "winter",
+    "meaning": "겨울",
+    "usages": [
+      "a cold winter"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "sun",
+    "meaning": "태양",
+    "usages": [
+      "watch the sun rise"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "sunshine",
+    "meaning": "햇빛",
+    "usages": [
+      "enjoy the sunshine"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "rain",
+    "meaning": "비; 비가 오다",
+    "usages": [
+      "heavy rain"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "snow",
+    "meaning": "눈; 눈이 오다",
+    "usages": [
+      "fresh snow"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "wind",
+    "meaning": "바람",
+    "usages": [
+      "a strong wind"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "cloud",
+    "meaning": "구름",
+    "usages": [
+      "dark clouds"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "storm",
+    "meaning": "폭풍",
+    "usages": [
+      "a sudden storm"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "thunder",
+    "meaning": "천둥",
+    "usages": [
+      "hear thunder"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "lightning",
+    "meaning": "번개",
+    "usages": [
+      "a flash of lightning"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "fog",
+    "meaning": "안개",
+    "usages": [
+      "thick fog"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "temperature",
+    "meaning": "온도",
+    "usages": [
+      "a high temperature"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "forecast",
+    "meaning": "예보",
+    "usages": [
+      "the weather forecast"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "sunny",
+    "meaning": "화창한",
+    "usages": [
+      "a sunny day"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "rainy",
+    "meaning": "비 오는",
+    "usages": [
+      "a rainy afternoon"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "snowy",
+    "meaning": "눈 오는",
+    "usages": [
+      "a snowy winter"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "windy",
+    "meaning": "바람이 부는",
+    "usages": [
+      "a windy day"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "cloudy",
+    "meaning": "흐린",
+    "usages": [
+      "a cloudy sky"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "humid",
+    "meaning": "습한",
+    "usages": [
+      "hot and humid weather"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "freezing",
+    "meaning": "몹시 추운",
+    "usages": [
+      "freezing temperatures"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "mountain",
+    "meaning": "산",
+    "usages": [
+      "climb a mountain"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "hill",
+    "meaning": "언덕",
+    "usages": [
+      "a gentle hill"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "forest",
+    "meaning": "숲",
+    "usages": [
+      "a dense forest"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "river",
+    "meaning": "강",
+    "usages": [
+      "walk along the river"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "lake",
+    "meaning": "호수",
+    "usages": [
+      "a peaceful lake"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "sea",
+    "meaning": "바다",
+    "usages": [
+      "swim in the sea"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "ocean",
+    "meaning": "대양, 바다",
+    "usages": [
+      "the Pacific Ocean"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "beach",
+    "meaning": "해변",
+    "usages": [
+      "a sandy beach"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "island",
+    "meaning": "섬",
+    "usages": [
+      "a small island"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "valley",
+    "meaning": "계곡",
+    "usages": [
+      "a beautiful valley"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "waterfall",
+    "meaning": "폭포",
+    "usages": [
+      "a famous waterfall"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "view",
+    "meaning": "경치; 견해",
+    "usages": [
+      "a beautiful view"
+    ]
+  },
+  {
+    "cat": "자연·날씨",
+    "term": "scenery",
+    "meaning": "풍경",
+    "usages": [
+      "enjoy the scenery"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "hobby",
+    "meaning": "취미",
+    "usages": [
+      "take up a hobby"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "interest",
+    "meaning": "관심, 흥미",
+    "usages": [
+      "a personal interest"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "activity",
+    "meaning": "활동",
+    "usages": [
+      "an outdoor activity"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "exercise",
+    "meaning": "운동; 운동하다",
+    "usages": [
+      "get regular exercise"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "workout",
+    "meaning": "운동 시간, 운동",
+    "usages": [
+      "a morning workout"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "sport",
+    "meaning": "스포츠",
+    "usages": [
+      "play a sport"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "game",
+    "meaning": "게임, 경기",
+    "usages": [
+      "watch a game"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "team",
+    "meaning": "팀",
+    "usages": [
+      "join a team"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "player",
+    "meaning": "선수, 참가자",
+    "usages": [
+      "a team player"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "coach",
+    "meaning": "코치",
+    "usages": [
+      "a fitness coach"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "practice",
+    "meaning": "연습하다; 연습",
+    "usages": [
+      "practice every day"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "training",
+    "meaning": "훈련",
+    "usages": [
+      "strength training"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "fitness",
+    "meaning": "체력, 건강",
+    "usages": [
+      "improve my fitness"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "gym",
+    "meaning": "헬스장, 체육관",
+    "usages": [
+      "go to the gym"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "pool",
+    "meaning": "수영장",
+    "usages": [
+      "an indoor pool"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "swim",
+    "meaning": "수영하다",
+    "usages": [
+      "swim in the pool"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "run",
+    "meaning": "달리다",
+    "usages": [
+      "run every morning"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "jog",
+    "meaning": "조깅하다",
+    "usages": [
+      "jog in the park"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "hike",
+    "meaning": "하이킹하다",
+    "usages": [
+      "hike in the mountains"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "climb",
+    "meaning": "오르다",
+    "usages": [
+      "climb a hill"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "cycle",
+    "meaning": "자전거를 타다",
+    "usages": [
+      "cycle to work"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "stretch",
+    "meaning": "스트레칭하다",
+    "usages": [
+      "stretch after exercising"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "lift",
+    "meaning": "들어 올리다",
+    "usages": [
+      "lift weights"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "weight",
+    "meaning": "무게, 체중",
+    "usages": [
+      "lift a heavy weight"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "balance",
+    "meaning": "균형",
+    "usages": [
+      "keep my balance"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "strength",
+    "meaning": "힘, 강점",
+    "usages": [
+      "build strength"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "energy",
+    "meaning": "에너지, 기력",
+    "usages": [
+      "have more energy"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "stamina",
+    "meaning": "지구력",
+    "usages": [
+      "improve my stamina"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "soccer",
+    "meaning": "축구",
+    "usages": [
+      "play soccer"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "basketball",
+    "meaning": "농구",
+    "usages": [
+      "a basketball game"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "baseball",
+    "meaning": "야구",
+    "usages": [
+      "watch baseball"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "tennis",
+    "meaning": "테니스",
+    "usages": [
+      "play tennis"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "badminton",
+    "meaning": "배드민턴",
+    "usages": [
+      "play badminton"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "golf",
+    "meaning": "골프",
+    "usages": [
+      "a golf course"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "yoga",
+    "meaning": "요가",
+    "usages": [
+      "do yoga"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "dance",
+    "meaning": "춤추다; 춤",
+    "usages": [
+      "take a dance class"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "camping",
+    "meaning": "캠핑",
+    "usages": [
+      "go camping"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "fishing",
+    "meaning": "낚시",
+    "usages": [
+      "go fishing"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "gardening",
+    "meaning": "정원 가꾸기",
+    "usages": [
+      "enjoy gardening"
+    ]
+  },
+  {
+    "cat": "취미·운동",
+    "term": "photography",
+    "meaning": "사진 촬영",
+    "usages": [
+      "learn photography"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "music",
+    "meaning": "음악",
+    "usages": [
+      "listen to music"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "song",
+    "meaning": "노래",
+    "usages": [
+      "a favorite song"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "singer",
+    "meaning": "가수",
+    "usages": [
+      "a popular singer"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "band",
+    "meaning": "밴드",
+    "usages": [
+      "a live band"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "concert",
+    "meaning": "콘서트",
+    "usages": [
+      "attend a concert"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "festival",
+    "meaning": "축제",
+    "usages": [
+      "a music festival"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "performance",
+    "meaning": "공연, 수행",
+    "usages": [
+      "a live performance"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "stage",
+    "meaning": "무대; 단계",
+    "usages": [
+      "perform on stage"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "audience",
+    "meaning": "관객",
+    "usages": [
+      "a large audience"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "instrument",
+    "meaning": "악기, 도구",
+    "usages": [
+      "play an instrument"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "piano",
+    "meaning": "피아노",
+    "usages": [
+      "play the piano"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "guitar",
+    "meaning": "기타",
+    "usages": [
+      "an acoustic guitar"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "drum",
+    "meaning": "드럼, 북",
+    "usages": [
+      "play the drums"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "melody",
+    "meaning": "멜로디",
+    "usages": [
+      "a catchy melody"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "rhythm",
+    "meaning": "리듬",
+    "usages": [
+      "a steady rhythm"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "lyrics",
+    "meaning": "노래 가사",
+    "usages": [
+      "remember the lyrics"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "album",
+    "meaning": "앨범",
+    "usages": [
+      "a new album"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "playlist",
+    "meaning": "재생 목록",
+    "usages": [
+      "make a playlist"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "movie",
+    "meaning": "영화",
+    "usages": [
+      "watch a movie"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "film",
+    "meaning": "영화",
+    "usages": [
+      "a short film"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "actor",
+    "meaning": "배우",
+    "usages": [
+      "a leading actor"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "actress",
+    "meaning": "여성 배우",
+    "usages": [
+      "a famous actress"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "director",
+    "meaning": "감독",
+    "usages": [
+      "a film director"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "character",
+    "meaning": "등장인물; 성격",
+    "usages": [
+      "the main character"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "scene",
+    "meaning": "장면",
+    "usages": [
+      "a memorable scene"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "plot",
+    "meaning": "줄거리",
+    "usages": [
+      "an interesting plot"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "story",
+    "meaning": "이야기",
+    "usages": [
+      "tell a story"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "ending",
+    "meaning": "결말",
+    "usages": [
+      "a surprising ending"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "comedy",
+    "meaning": "코미디",
+    "usages": [
+      "a romantic comedy"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "drama",
+    "meaning": "드라마",
+    "usages": [
+      "a family drama"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "thriller",
+    "meaning": "스릴러",
+    "usages": [
+      "an exciting thriller"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "documentary",
+    "meaning": "다큐멘터리",
+    "usages": [
+      "a nature documentary"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "animation",
+    "meaning": "애니메이션",
+    "usages": [
+      "computer animation"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "art",
+    "meaning": "예술",
+    "usages": [
+      "modern art"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "artist",
+    "meaning": "예술가",
+    "usages": [
+      "a local artist"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "painting",
+    "meaning": "그림, 회화",
+    "usages": [
+      "a beautiful painting"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "exhibition",
+    "meaning": "전시회",
+    "usages": [
+      "visit an exhibition"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "culture",
+    "meaning": "문화",
+    "usages": [
+      "experience a new culture"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "tradition",
+    "meaning": "전통",
+    "usages": [
+      "a family tradition"
+    ]
+  },
+  {
+    "cat": "음악·영화·문화",
+    "term": "custom",
+    "meaning": "관습",
+    "usages": [
+      "a local custom"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "body",
+    "meaning": "몸",
+    "usages": [
+      "take care of my body"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "head",
+    "meaning": "머리",
+    "usages": [
+      "shake my head"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "face",
+    "meaning": "얼굴",
+    "usages": [
+      "wash my face"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "eye",
+    "meaning": "눈",
+    "usages": [
+      "close my eyes"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "ear",
+    "meaning": "귀",
+    "usages": [
+      "cover my ears"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "nose",
+    "meaning": "코",
+    "usages": [
+      "a runny nose"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "mouth",
+    "meaning": "입",
+    "usages": [
+      "open my mouth"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "tooth",
+    "meaning": "이",
+    "usages": [
+      "brush my teeth"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "neck",
+    "meaning": "목",
+    "usages": [
+      "a stiff neck"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "shoulder",
+    "meaning": "어깨",
+    "usages": [
+      "shoulder pain"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "arm",
+    "meaning": "팔",
+    "usages": [
+      "stretch my arms"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "hand",
+    "meaning": "손",
+    "usages": [
+      "wash my hands"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "finger",
+    "meaning": "손가락",
+    "usages": [
+      "hurt a finger"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "back",
+    "meaning": "등; 뒤",
+    "usages": [
+      "back pain"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "leg",
+    "meaning": "다리",
+    "usages": [
+      "stretch my legs"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "knee",
+    "meaning": "무릎",
+    "usages": [
+      "bend my knees"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "foot",
+    "meaning": "발",
+    "usages": [
+      "rest my feet"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "stomach",
+    "meaning": "위, 배",
+    "usages": [
+      "a stomach ache"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "heart",
+    "meaning": "심장; 마음",
+    "usages": [
+      "a healthy heart"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "skin",
+    "meaning": "피부",
+    "usages": [
+      "dry skin"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "health",
+    "meaning": "건강",
+    "usages": [
+      "good health"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "healthy",
+    "meaning": "건강한",
+    "usages": [
+      "a healthy lifestyle"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "illness",
+    "meaning": "질병",
+    "usages": [
+      "recover from an illness"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "sick",
+    "meaning": "아픈",
+    "usages": [
+      "feel sick"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "pain",
+    "meaning": "통증",
+    "usages": [
+      "feel pain"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "ache",
+    "meaning": "지속적인 아픔",
+    "usages": [
+      "a dull ache"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "fever",
+    "meaning": "열",
+    "usages": [
+      "have a fever"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "cough",
+    "meaning": "기침; 기침하다",
+    "usages": [
+      "a bad cough"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "cold",
+    "meaning": "감기; 추운",
+    "usages": [
+      "catch a cold",
+      "cold air"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "headache",
+    "meaning": "두통",
+    "usages": [
+      "have a headache"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "symptom",
+    "meaning": "증상",
+    "usages": [
+      "describe the symptoms"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "medicine",
+    "meaning": "약",
+    "usages": [
+      "take medicine"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "pill",
+    "meaning": "알약",
+    "usages": [
+      "take a pill"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "treatment",
+    "meaning": "치료",
+    "usages": [
+      "medical treatment"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "doctor",
+    "meaning": "의사",
+    "usages": [
+      "see a doctor"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "nurse",
+    "meaning": "간호사",
+    "usages": [
+      "talk to a nurse"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "dentist",
+    "meaning": "치과 의사",
+    "usages": [
+      "visit the dentist"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "appointment",
+    "meaning": "예약, 약속",
+    "usages": [
+      "make an appointment"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "recover",
+    "meaning": "회복하다",
+    "usages": [
+      "recover from a cold"
+    ]
+  },
+  {
+    "cat": "몸·건강",
+    "term": "diet",
+    "meaning": "식습관, 식단",
+    "usages": [
+      "a balanced diet"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "study",
+    "meaning": "공부하다",
+    "usages": [
+      "study English"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "learn",
+    "meaning": "배우다",
+    "usages": [
+      "learn a new skill"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "teach",
+    "meaning": "가르치다",
+    "usages": [
+      "teach children"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "student",
+    "meaning": "학생",
+    "usages": [
+      "a university student"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "teacher",
+    "meaning": "선생님",
+    "usages": [
+      "an English teacher"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "class",
+    "meaning": "수업",
+    "usages": [
+      "take a class"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "lesson",
+    "meaning": "수업, 강의",
+    "usages": [
+      "a grammar lesson"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "course",
+    "meaning": "강좌, 과정",
+    "usages": [
+      "an online course"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "lecture",
+    "meaning": "강의",
+    "usages": [
+      "attend a lecture"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "subject",
+    "meaning": "과목, 주제",
+    "usages": [
+      "a favorite subject"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "homework",
+    "meaning": "숙제",
+    "usages": [
+      "do homework"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "assignment",
+    "meaning": "과제",
+    "usages": [
+      "finish an assignment"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "exam",
+    "meaning": "시험",
+    "usages": [
+      "take an exam"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "test",
+    "meaning": "시험; 시험하다",
+    "usages": [
+      "a speaking test"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "quiz",
+    "meaning": "퀴즈",
+    "usages": [
+      "take a quiz"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "score",
+    "meaning": "점수",
+    "usages": [
+      "a high score"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "grade",
+    "meaning": "성적; 학년",
+    "usages": [
+      "get a good grade"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "pass",
+    "meaning": "통과하다",
+    "usages": [
+      "pass an exam"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "fail",
+    "meaning": "실패하다, 불합격하다",
+    "usages": [
+      "fail a test"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "review",
+    "meaning": "복습하다; 후기",
+    "usages": [
+      "review vocabulary"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "revise",
+    "meaning": "수정하다, 복습하다",
+    "usages": [
+      "revise an essay"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "memorize",
+    "meaning": "암기하다",
+    "usages": [
+      "memorize useful phrases"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "understand",
+    "meaning": "이해하다",
+    "usages": [
+      "understand the rule"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "knowledge",
+    "meaning": "지식",
+    "usages": [
+      "gain knowledge"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "skill",
+    "meaning": "기술, 능력",
+    "usages": [
+      "develop a skill"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "ability",
+    "meaning": "능력",
+    "usages": [
+      "speaking ability"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "language",
+    "meaning": "언어",
+    "usages": [
+      "learn a language"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "word",
+    "meaning": "단어",
+    "usages": [
+      "a useful word"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "vocabulary",
+    "meaning": "어휘",
+    "usages": [
+      "expand my vocabulary"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "grammar",
+    "meaning": "문법",
+    "usages": [
+      "study basic grammar"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "sentence",
+    "meaning": "문장",
+    "usages": [
+      "make a sentence"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "phrase",
+    "meaning": "구, 표현",
+    "usages": [
+      "a common phrase"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "pronunciation",
+    "meaning": "발음",
+    "usages": [
+      "practice pronunciation"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "accent",
+    "meaning": "억양, 발음상의 특징",
+    "usages": [
+      "a regional accent"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "meaning",
+    "meaning": "뜻",
+    "usages": [
+      "check the meaning"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "example",
+    "meaning": "예시",
+    "usages": [
+      "give an example"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "question",
+    "meaning": "질문",
+    "usages": [
+      "ask a question"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "notebook",
+    "meaning": "공책",
+    "usages": [
+      "write in a notebook"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "dictionary",
+    "meaning": "사전",
+    "usages": [
+      "look up a word in a dictionary"
+    ]
+  },
+  {
+    "cat": "공부·언어",
+    "term": "education",
+    "meaning": "교육",
+    "usages": [
+      "higher education"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "work",
+    "meaning": "일; 일하다",
+    "usages": [
+      "work from home"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "job",
+    "meaning": "직업, 일자리",
+    "usages": [
+      "find a job"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "career",
+    "meaning": "경력, 직업 생활",
+    "usages": [
+      "start a career"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "office",
+    "meaning": "사무실",
+    "usages": [
+      "work at an office"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "company",
+    "meaning": "회사",
+    "usages": [
+      "a small company"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "business",
+    "meaning": "사업",
+    "usages": [
+      "run a business"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "employee",
+    "meaning": "직원",
+    "usages": [
+      "a full-time employee"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "employer",
+    "meaning": "고용주",
+    "usages": [
+      "a previous employer"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "manager",
+    "meaning": "관리자",
+    "usages": [
+      "a project manager"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "boss",
+    "meaning": "상사",
+    "usages": [
+      "talk to my boss"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "staff",
+    "meaning": "직원들",
+    "usages": [
+      "friendly staff"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "meeting",
+    "meaning": "회의, 만남",
+    "usages": [
+      "attend a meeting"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "project",
+    "meaning": "프로젝트",
+    "usages": [
+      "work on a project"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "task",
+    "meaning": "작업, 과업",
+    "usages": [
+      "complete a task"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "deadline",
+    "meaning": "마감",
+    "usages": [
+      "meet a deadline"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "report",
+    "meaning": "보고서; 보고하다",
+    "usages": [
+      "write a report"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "presentation",
+    "meaning": "발표",
+    "usages": [
+      "give a presentation"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "email",
+    "meaning": "이메일",
+    "usages": [
+      "send an email"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "message",
+    "meaning": "메시지",
+    "usages": [
+      "leave a message"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "call",
+    "meaning": "전화; 전화하다",
+    "usages": [
+      "make a call"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "interview",
+    "meaning": "면접",
+    "usages": [
+      "prepare for an interview"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "application",
+    "meaning": "지원, 신청",
+    "usages": [
+      "submit an application"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "resume",
+    "meaning": "이력서",
+    "usages": [
+      "update my resume"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "salary",
+    "meaning": "급여",
+    "usages": [
+      "a monthly salary"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "wage",
+    "meaning": "임금",
+    "usages": [
+      "an hourly wage"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "income",
+    "meaning": "소득",
+    "usages": [
+      "a steady income"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "promotion",
+    "meaning": "승진, 판촉",
+    "usages": [
+      "get a promotion"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "position",
+    "meaning": "직위, 위치",
+    "usages": [
+      "apply for a position"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "experience",
+    "meaning": "경험",
+    "usages": [
+      "work experience"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "responsibility",
+    "meaning": "책임",
+    "usages": [
+      "take responsibility"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "professional",
+    "meaning": "전문적인; 전문가",
+    "usages": [
+      "professional advice"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "part-time",
+    "meaning": "시간제의",
+    "usages": [
+      "a part-time job"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "full-time",
+    "meaning": "상근의, 전일제의",
+    "usages": [
+      "a full-time job"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "remote",
+    "meaning": "원격의, 외딴",
+    "usages": [
+      "remote work"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "shift",
+    "meaning": "교대 근무; 변화",
+    "usages": [
+      "a night shift"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "teamwork",
+    "meaning": "팀워크",
+    "usages": [
+      "good teamwork"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "feedback",
+    "meaning": "의견, 피드백",
+    "usages": [
+      "receive feedback"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "progress",
+    "meaning": "진전",
+    "usages": [
+      "make progress"
+    ]
+  },
+  {
+    "cat": "일·업무",
+    "term": "achievement",
+    "meaning": "성취",
+    "usages": [
+      "a personal achievement"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "technology",
+    "meaning": "기술",
+    "usages": [
+      "modern technology"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "computer",
+    "meaning": "컴퓨터",
+    "usages": [
+      "use a computer"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "laptop",
+    "meaning": "노트북",
+    "usages": [
+      "a lightweight laptop"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "tablet",
+    "meaning": "태블릿",
+    "usages": [
+      "a tablet computer"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "phone",
+    "meaning": "전화기",
+    "usages": [
+      "charge my phone"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "smartphone",
+    "meaning": "스마트폰",
+    "usages": [
+      "a new smartphone"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "screen",
+    "meaning": "화면",
+    "usages": [
+      "a large screen"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "keyboard",
+    "meaning": "키보드",
+    "usages": [
+      "a wireless keyboard"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "mouse",
+    "meaning": "컴퓨터 마우스; 쥐",
+    "usages": [
+      "a computer mouse"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "printer",
+    "meaning": "프린터",
+    "usages": [
+      "use a printer"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "camera",
+    "meaning": "카메라",
+    "usages": [
+      "a digital camera"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "speaker",
+    "meaning": "스피커; 발언자",
+    "usages": [
+      "a portable speaker"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "headphone",
+    "meaning": "헤드폰",
+    "usages": [
+      "a pair of headphones"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "charger",
+    "meaning": "충전기",
+    "usages": [
+      "a phone charger"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "battery",
+    "meaning": "배터리",
+    "usages": [
+      "a low battery"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "cable",
+    "meaning": "케이블",
+    "usages": [
+      "a charging cable"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "internet",
+    "meaning": "인터넷",
+    "usages": [
+      "access the internet"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "website",
+    "meaning": "웹사이트",
+    "usages": [
+      "visit a website"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "browser",
+    "meaning": "브라우저",
+    "usages": [
+      "open a browser"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "app",
+    "meaning": "앱",
+    "usages": [
+      "download an app"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "software",
+    "meaning": "소프트웨어",
+    "usages": [
+      "install software"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "hardware",
+    "meaning": "하드웨어",
+    "usages": [
+      "computer hardware"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "file",
+    "meaning": "파일",
+    "usages": [
+      "save a file"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "folder",
+    "meaning": "폴더",
+    "usages": [
+      "create a folder"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "password",
+    "meaning": "비밀번호",
+    "usages": [
+      "reset a password"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "username",
+    "meaning": "사용자 이름",
+    "usages": [
+      "choose a username"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "network",
+    "meaning": "네트워크",
+    "usages": [
+      "a wireless network"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "connection",
+    "meaning": "연결",
+    "usages": [
+      "a stable connection"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "signal",
+    "meaning": "신호",
+    "usages": [
+      "a weak signal"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "online",
+    "meaning": "온라인의, 온라인으로",
+    "usages": [
+      "shop online"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "offline",
+    "meaning": "오프라인의, 접속하지 않은",
+    "usages": [
+      "use it offline"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "download",
+    "meaning": "다운로드하다",
+    "usages": [
+      "download a file"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "upload",
+    "meaning": "업로드하다",
+    "usages": [
+      "upload a photo"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "install",
+    "meaning": "설치하다",
+    "usages": [
+      "install an app"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "update",
+    "meaning": "업데이트하다; 최신 정보",
+    "usages": [
+      "update software"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "search",
+    "meaning": "검색하다",
+    "usages": [
+      "search for information"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "click",
+    "meaning": "클릭하다",
+    "usages": [
+      "click a link"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "link",
+    "meaning": "링크, 연결",
+    "usages": [
+      "share a link"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "post",
+    "meaning": "게시하다; 게시물",
+    "usages": [
+      "post a photo"
+    ]
+  },
+  {
+    "cat": "기술·미디어",
+    "term": "notification",
+    "meaning": "알림",
+    "usages": [
+      "turn off notifications"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "happy",
+    "meaning": "행복한",
+    "usages": [
+      "feel happy"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "sad",
+    "meaning": "슬픈",
+    "usages": [
+      "a sad story"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "angry",
+    "meaning": "화난",
+    "usages": [
+      "get angry"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "upset",
+    "meaning": "속상한, 화가 난",
+    "usages": [
+      "feel upset"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "worried",
+    "meaning": "걱정하는",
+    "usages": [
+      "worried about an exam"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "anxious",
+    "meaning": "불안한",
+    "usages": [
+      "feel anxious"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "nervous",
+    "meaning": "긴장한",
+    "usages": [
+      "nervous before a test"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "bored",
+    "meaning": "지루함을 느끼는",
+    "usages": [
+      "feel bored"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "interested",
+    "meaning": "관심이 있는",
+    "usages": [
+      "interested in art"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "surprised",
+    "meaning": "놀란",
+    "usages": [
+      "surprised by the news"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "shocked",
+    "meaning": "충격을 받은",
+    "usages": [
+      "feel shocked"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "proud",
+    "meaning": "자랑스러운",
+    "usages": [
+      "proud of my progress"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "lonely",
+    "meaning": "외로운",
+    "usages": [
+      "feel lonely"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "homesick",
+    "meaning": "향수병이 있는",
+    "usages": [
+      "feel homesick"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "hopeful",
+    "meaning": "희망을 품은",
+    "usages": [
+      "hopeful about the future"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "confident",
+    "meaning": "자신감 있는",
+    "usages": [
+      "a confident speaker"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "shy",
+    "meaning": "수줍은",
+    "usages": [
+      "a shy child"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "friendly",
+    "meaning": "친근한, 친절한",
+    "usages": [
+      "a friendly neighbor"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "kind",
+    "meaning": "친절한",
+    "usages": [
+      "a kind person"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "patient",
+    "meaning": "참을성 있는",
+    "usages": [
+      "a patient teacher"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "honest",
+    "meaning": "정직한",
+    "usages": [
+      "an honest answer"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "polite",
+    "meaning": "예의 바른",
+    "usages": [
+      "a polite request"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "rude",
+    "meaning": "무례한",
+    "usages": [
+      "a rude comment"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "generous",
+    "meaning": "너그러운",
+    "usages": [
+      "a generous friend"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "selfish",
+    "meaning": "이기적인",
+    "usages": [
+      "selfish behavior"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "reliable",
+    "meaning": "믿을 수 있는",
+    "usages": [
+      "a reliable friend"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "creative",
+    "meaning": "창의적인",
+    "usages": [
+      "a creative idea"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "curious",
+    "meaning": "호기심 많은",
+    "usages": [
+      "curious about other cultures"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "calm",
+    "meaning": "차분한",
+    "usages": [
+      "stay calm"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "cheerful",
+    "meaning": "쾌활한",
+    "usages": [
+      "a cheerful person"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "serious",
+    "meaning": "진지한, 심각한",
+    "usages": [
+      "a serious discussion"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "sensitive",
+    "meaning": "민감한",
+    "usages": [
+      "sensitive to noise"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "stubborn",
+    "meaning": "고집 센",
+    "usages": [
+      "a stubborn person"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "outgoing",
+    "meaning": "사교적인",
+    "usages": [
+      "an outgoing personality"
+    ]
+  },
+  {
+    "cat": "감정·성격",
+    "term": "thoughtful",
+    "meaning": "사려 깊은",
+    "usages": [
+      "a thoughtful gift"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "good",
+    "meaning": "좋은",
+    "usages": [
+      "a good idea"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "bad",
+    "meaning": "나쁜",
+    "usages": [
+      "a bad experience"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "great",
+    "meaning": "훌륭한",
+    "usages": [
+      "a great time"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "excellent",
+    "meaning": "매우 뛰어난",
+    "usages": [
+      "excellent service"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "wonderful",
+    "meaning": "정말 좋은",
+    "usages": [
+      "a wonderful trip"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "amazing",
+    "meaning": "놀라운, 아주 멋진",
+    "usages": [
+      "an amazing view"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "awful",
+    "meaning": "끔찍한",
+    "usages": [
+      "an awful experience"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "terrible",
+    "meaning": "몹시 나쁜",
+    "usages": [
+      "terrible weather"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "nice",
+    "meaning": "좋은, 멋진",
+    "usages": [
+      "a nice place"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "pleasant",
+    "meaning": "기분 좋은",
+    "usages": [
+      "a pleasant afternoon"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "comfortable",
+    "meaning": "편안한",
+    "usages": [
+      "a comfortable seat"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "uncomfortable",
+    "meaning": "불편한",
+    "usages": [
+      "an uncomfortable chair"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "inconvenient",
+    "meaning": "불편한, 번거로운",
+    "usages": [
+      "an inconvenient time"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "useful",
+    "meaning": "유용한",
+    "usages": [
+      "a useful tip"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "useless",
+    "meaning": "쓸모없는",
+    "usages": [
+      "useless information"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "important",
+    "meaning": "중요한",
+    "usages": [
+      "an important decision"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "necessary",
+    "meaning": "필요한",
+    "usages": [
+      "necessary equipment"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "essential",
+    "meaning": "필수적인",
+    "usages": [
+      "an essential skill"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "optional",
+    "meaning": "선택적인",
+    "usages": [
+      "an optional activity"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "popular",
+    "meaning": "인기 있는",
+    "usages": [
+      "a popular café"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "famous",
+    "meaning": "유명한",
+    "usages": [
+      "a famous singer"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "ordinary",
+    "meaning": "평범한",
+    "usages": [
+      "an ordinary day"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "unusual",
+    "meaning": "특이한",
+    "usages": [
+      "an unusual experience"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "unique",
+    "meaning": "독특한",
+    "usages": [
+      "a unique design"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "common",
+    "meaning": "흔한",
+    "usages": [
+      "a common problem"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "rare",
+    "meaning": "드문",
+    "usages": [
+      "a rare opportunity"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "interesting",
+    "meaning": "흥미로운",
+    "usages": [
+      "an interesting story"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "boring",
+    "meaning": "지루하게 하는",
+    "usages": [
+      "a boring movie"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "exciting",
+    "meaning": "신나게 하는",
+    "usages": [
+      "an exciting game"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "relaxing",
+    "meaning": "편안하게 해주는",
+    "usages": [
+      "a relaxing holiday"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "stressful",
+    "meaning": "스트레스를 주는",
+    "usages": [
+      "a stressful job"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "impressive",
+    "meaning": "인상적인",
+    "usages": [
+      "an impressive performance"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "beautiful",
+    "meaning": "아름다운",
+    "usages": [
+      "a beautiful garden"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "ugly",
+    "meaning": "못생긴, 보기 싫은",
+    "usages": [
+      "an ugly building"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "attractive",
+    "meaning": "매력적인",
+    "usages": [
+      "an attractive design"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "perfect",
+    "meaning": "완벽한",
+    "usages": [
+      "a perfect day"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "ideal",
+    "meaning": "이상적인",
+    "usages": [
+      "an ideal location"
+    ]
+  },
+  {
+    "cat": "묘사·평가",
+    "term": "practical",
+    "meaning": "실용적인",
+    "usages": [
+      "practical advice"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "time",
+    "meaning": "시간",
+    "usages": [
+      "save time"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "day",
+    "meaning": "날, 하루",
+    "usages": [
+      "a busy day"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "week",
+    "meaning": "주",
+    "usages": [
+      "next week"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "month",
+    "meaning": "달, 월",
+    "usages": [
+      "once a month"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "year",
+    "meaning": "해, 년",
+    "usages": [
+      "last year"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "hour",
+    "meaning": "시간 단위",
+    "usages": [
+      "for an hour"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "minute",
+    "meaning": "분",
+    "usages": [
+      "a few minutes"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "second",
+    "meaning": "초; 두 번째의",
+    "usages": [
+      "wait a second"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "morning",
+    "meaning": "아침",
+    "usages": [
+      "in the morning"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "afternoon",
+    "meaning": "오후",
+    "usages": [
+      "in the afternoon"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "evening",
+    "meaning": "저녁",
+    "usages": [
+      "in the evening"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "night",
+    "meaning": "밤",
+    "usages": [
+      "at night"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "noon",
+    "meaning": "정오",
+    "usages": [
+      "at noon"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "midnight",
+    "meaning": "자정",
+    "usages": [
+      "after midnight"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "today",
+    "meaning": "오늘",
+    "usages": [
+      "later today"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "yesterday",
+    "meaning": "어제",
+    "usages": [
+      "yesterday morning"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "tomorrow",
+    "meaning": "내일",
+    "usages": [
+      "tomorrow evening"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "weekend",
+    "meaning": "주말",
+    "usages": [
+      "on weekends"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "weekday",
+    "meaning": "평일",
+    "usages": [
+      "on weekdays"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "early",
+    "meaning": "일찍; 이른",
+    "usages": [
+      "arrive early"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "late",
+    "meaning": "늦게; 늦은",
+    "usages": [
+      "run late"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "soon",
+    "meaning": "곧",
+    "usages": [
+      "see you soon"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "now",
+    "meaning": "지금",
+    "usages": [
+      "right now"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "then",
+    "meaning": "그때; 그러고 나서",
+    "usages": [
+      "back then"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "later",
+    "meaning": "나중에",
+    "usages": [
+      "talk later"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "recently",
+    "meaning": "최근에",
+    "usages": [
+      "move recently"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "lately",
+    "meaning": "최근 들어",
+    "usages": [
+      "feel busy lately"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "currently",
+    "meaning": "현재",
+    "usages": [
+      "currently available"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "already",
+    "meaning": "이미",
+    "usages": [
+      "already finished"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "yet",
+    "meaning": "아직; 벌써",
+    "usages": [
+      "not yet"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "still",
+    "meaning": "여전히",
+    "usages": [
+      "still waiting"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "always",
+    "meaning": "항상",
+    "usages": [
+      "always on time"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "often",
+    "meaning": "자주",
+    "usages": [
+      "visit often"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "sometimes",
+    "meaning": "때때로",
+    "usages": [
+      "sometimes eat out"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "occasionally",
+    "meaning": "가끔",
+    "usages": [
+      "occasionally travel"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "seldom",
+    "meaning": "좀처럼 ~하지 않는",
+    "usages": [
+      "seldom complain"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "never",
+    "meaning": "전혀 ~하지 않는",
+    "usages": [
+      "never give up"
+    ]
+  },
+  {
+    "cat": "시간·빈도",
+    "term": "frequently",
+    "meaning": "빈번하게",
+    "usages": [
+      "frequently asked questions"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "place",
+    "meaning": "장소",
+    "usages": [
+      "a quiet place"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "space",
+    "meaning": "공간",
+    "usages": [
+      "enough space"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "side",
+    "meaning": "옆, 측면",
+    "usages": [
+      "on the left side"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "center",
+    "meaning": "중심",
+    "usages": [
+      "the city center"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "front",
+    "meaning": "앞",
+    "usages": [
+      "in front of the building"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "middle",
+    "meaning": "가운데",
+    "usages": [
+      "in the middle"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "end",
+    "meaning": "끝",
+    "usages": [
+      "at the end"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "left",
+    "meaning": "왼쪽",
+    "usages": [
+      "turn left"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "right",
+    "meaning": "오른쪽; 맞는",
+    "usages": [
+      "turn right"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "north",
+    "meaning": "북쪽",
+    "usages": [
+      "head north"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "south",
+    "meaning": "남쪽",
+    "usages": [
+      "in the south"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "east",
+    "meaning": "동쪽",
+    "usages": [
+      "the east coast"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "west",
+    "meaning": "서쪽",
+    "usages": [
+      "the west side"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "inside",
+    "meaning": "안에, 내부",
+    "usages": [
+      "stay inside"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "outside",
+    "meaning": "밖에, 외부",
+    "usages": [
+      "go outside"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "upstairs",
+    "meaning": "위층에",
+    "usages": [
+      "go upstairs"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "downstairs",
+    "meaning": "아래층에",
+    "usages": [
+      "wait downstairs"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "near",
+    "meaning": "가까이",
+    "usages": [
+      "near the station"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "far",
+    "meaning": "멀리",
+    "usages": [
+      "far from home"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "opposite",
+    "meaning": "맞은편의; 반대의",
+    "usages": [
+      "opposite the bank"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "between",
+    "meaning": "사이에",
+    "usages": [
+      "between two buildings"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "among",
+    "meaning": "여럿 사이에",
+    "usages": [
+      "among friends"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "behind",
+    "meaning": "뒤에",
+    "usages": [
+      "behind the hotel"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "beside",
+    "meaning": "옆에",
+    "usages": [
+      "beside the river"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "above",
+    "meaning": "위에",
+    "usages": [
+      "above the clouds"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "below",
+    "meaning": "아래에",
+    "usages": [
+      "below zero"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "around",
+    "meaning": "주변에",
+    "usages": [
+      "around the corner"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "through",
+    "meaning": "통과하여",
+    "usages": [
+      "through the tunnel"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "across",
+    "meaning": "건너서",
+    "usages": [
+      "across the street"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "along",
+    "meaning": "~을 따라서",
+    "usages": [
+      "along the beach"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "toward",
+    "meaning": "~쪽으로",
+    "usages": [
+      "toward the entrance"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "amount",
+    "meaning": "양",
+    "usages": [
+      "a small amount"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "number",
+    "meaning": "수, 번호",
+    "usages": [
+      "a large number of people"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "quantity",
+    "meaning": "수량",
+    "usages": [
+      "a limited quantity"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "plenty",
+    "meaning": "충분한 양",
+    "usages": [
+      "plenty of time"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "enough",
+    "meaning": "충분한",
+    "usages": [
+      "enough money"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "several",
+    "meaning": "몇몇의",
+    "usages": [
+      "several people"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "extra",
+    "meaning": "추가의",
+    "usages": [
+      "an extra towel"
+    ]
+  },
+  {
+    "cat": "위치·방향·수량",
+    "term": "whole",
+    "meaning": "전체의",
+    "usages": [
+      "the whole day"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "be",
+    "meaning": "~이다, 있다",
+    "usages": [
+      "be at home"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "have",
+    "meaning": "가지다",
+    "usages": [
+      "have a question"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "do",
+    "meaning": "하다",
+    "usages": [
+      "do my homework"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "make",
+    "meaning": "만들다",
+    "usages": [
+      "make dinner"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "get",
+    "meaning": "얻다, 받다",
+    "usages": [
+      "get a message"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "give",
+    "meaning": "주다",
+    "usages": [
+      "give advice"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "take",
+    "meaning": "가져가다, 취하다",
+    "usages": [
+      "take a break"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "bring",
+    "meaning": "가져오다",
+    "usages": [
+      "bring a jacket"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "come",
+    "meaning": "오다",
+    "usages": [
+      "come home"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "go",
+    "meaning": "가다",
+    "usages": [
+      "go to work"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "leave",
+    "meaning": "떠나다, 남기다",
+    "usages": [
+      "leave early"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "arrive",
+    "meaning": "도착하다",
+    "usages": [
+      "arrive on time"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "stay",
+    "meaning": "머무르다",
+    "usages": [
+      "stay for a week"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "sit",
+    "meaning": "앉다",
+    "usages": [
+      "sit down"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "stand",
+    "meaning": "서다",
+    "usages": [
+      "stand in line"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "lie",
+    "meaning": "눕다; 거짓말하다",
+    "usages": [
+      "lie on the sofa"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "open",
+    "meaning": "열다",
+    "usages": [
+      "open the door"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "close",
+    "meaning": "닫다",
+    "usages": [
+      "close a window"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "start",
+    "meaning": "시작하다",
+    "usages": [
+      "start a conversation"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "begin",
+    "meaning": "시작하다",
+    "usages": [
+      "begin a lesson"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "finish",
+    "meaning": "끝내다",
+    "usages": [
+      "finish work"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "continue",
+    "meaning": "계속하다",
+    "usages": [
+      "continue studying"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "keep",
+    "meaning": "유지하다, 보관하다",
+    "usages": [
+      "keep a promise"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "hold",
+    "meaning": "잡다, 들다",
+    "usages": [
+      "hold a bag"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "put",
+    "meaning": "놓다",
+    "usages": [
+      "put it on the table"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "pick",
+    "meaning": "고르다, 집다",
+    "usages": [
+      "pick a color"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "drop",
+    "meaning": "떨어뜨리다",
+    "usages": [
+      "drop my phone"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "carry",
+    "meaning": "나르다, 휴대하다",
+    "usages": [
+      "carry a backpack"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "pull",
+    "meaning": "당기다",
+    "usages": [
+      "pull the door"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "push",
+    "meaning": "밀다",
+    "usages": [
+      "push a button"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "throw",
+    "meaning": "던지다",
+    "usages": [
+      "throw a ball"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "catch",
+    "meaning": "잡다",
+    "usages": [
+      "catch the bus"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "hit",
+    "meaning": "치다",
+    "usages": [
+      "hit a ball"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "kick",
+    "meaning": "발로 차다",
+    "usages": [
+      "kick a ball"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "cut",
+    "meaning": "자르다",
+    "usages": [
+      "cut the paper"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "break",
+    "meaning": "부수다, 고장내다",
+    "usages": [
+      "break a glass"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "build",
+    "meaning": "짓다",
+    "usages": [
+      "build a house"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "create",
+    "meaning": "창조하다, 만들다",
+    "usages": [
+      "create a playlist"
+    ]
+  },
+  {
+    "cat": "기본 동사·행동",
+    "term": "use",
+    "meaning": "사용하다",
+    "usages": [
+      "use a computer"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "think",
+    "meaning": "생각하다",
+    "usages": [
+      "think about the problem"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "know",
+    "meaning": "알다",
+    "usages": [
+      "know the answer"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "remember",
+    "meaning": "기억하다",
+    "usages": [
+      "remember a name"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "forget",
+    "meaning": "잊다",
+    "usages": [
+      "forget an appointment"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "notice",
+    "meaning": "공지; 알아차리다",
+    "usages": [
+      "notice a change",
+      "a written notice"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "realize",
+    "meaning": "깨닫다",
+    "usages": [
+      "realize my mistake"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "recognize",
+    "meaning": "알아보다",
+    "usages": [
+      "recognize a friend"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "believe",
+    "meaning": "믿다",
+    "usages": [
+      "believe in myself"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "feel",
+    "meaning": "느끼다",
+    "usages": [
+      "feel comfortable"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "hope",
+    "meaning": "바라다",
+    "usages": [
+      "hope to visit"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "wish",
+    "meaning": "바라다",
+    "usages": [
+      "wish for good weather"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "want",
+    "meaning": "원하다",
+    "usages": [
+      "want to learn"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "need",
+    "meaning": "필요하다",
+    "usages": [
+      "need more time"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "like",
+    "meaning": "좋아하다",
+    "usages": [
+      "like cooking"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "love",
+    "meaning": "사랑하다, 매우 좋아하다",
+    "usages": [
+      "love music"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "hate",
+    "meaning": "몹시 싫어하다",
+    "usages": [
+      "hate waiting"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "choose",
+    "meaning": "고르다",
+    "usages": [
+      "choose a destination"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "decide",
+    "meaning": "결정하다",
+    "usages": [
+      "decide to go"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "consider",
+    "meaning": "고려하다",
+    "usages": [
+      "consider other options"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "expect",
+    "meaning": "기대하다, 예상하다",
+    "usages": [
+      "expect a delay"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "imagine",
+    "meaning": "상상하다",
+    "usages": [
+      "imagine living abroad"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "wonder",
+    "meaning": "궁금해하다",
+    "usages": [
+      "wonder why"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "suppose",
+    "meaning": "추정하다",
+    "usages": [
+      "suppose it’s true"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "mean",
+    "meaning": "의미하다",
+    "usages": [
+      "mean a lot to me"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "seem",
+    "meaning": "~처럼 보이다",
+    "usages": [
+      "seem friendly"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "appear",
+    "meaning": "나타나다, ~처럼 보이다",
+    "usages": [
+      "appear tired"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "look",
+    "meaning": "보다, ~처럼 보이다",
+    "usages": [
+      "look happy"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "sound",
+    "meaning": "들리다, ~하게 느껴지다",
+    "usages": [
+      "sound interesting"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "smell",
+    "meaning": "냄새가 나다, 맡다",
+    "usages": [
+      "smell fresh"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "hear",
+    "meaning": "들리다, 듣다",
+    "usages": [
+      "hear a noise"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "see",
+    "meaning": "보다",
+    "usages": [
+      "see a movie"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "find",
+    "meaning": "찾다, 발견하다",
+    "usages": [
+      "find my keys"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "discover",
+    "meaning": "발견하다",
+    "usages": [
+      "discover a new café"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "compare",
+    "meaning": "비교하다",
+    "usages": [
+      "compare prices"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "judge",
+    "meaning": "판단하다",
+    "usages": [
+      "judge the quality"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "accept",
+    "meaning": "받아들이다",
+    "usages": [
+      "accept an invitation"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "refuse",
+    "meaning": "거절하다",
+    "usages": [
+      "refuse an offer"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "avoid",
+    "meaning": "피하다",
+    "usages": [
+      "avoid crowds"
+    ]
+  },
+  {
+    "cat": "생각·선택",
+    "term": "allow",
+    "meaning": "허락하다",
+    "usages": [
+      "allow pets"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "problem",
+    "meaning": "문제",
+    "usages": [
+      "solve a problem"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "trouble",
+    "meaning": "곤란, 문제",
+    "usages": [
+      "have trouble sleeping"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "mistake",
+    "meaning": "실수",
+    "usages": [
+      "make a mistake"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "error",
+    "meaning": "오류",
+    "usages": [
+      "an error message"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "accident",
+    "meaning": "사고",
+    "usages": [
+      "a traffic accident"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "emergency",
+    "meaning": "비상사태",
+    "usages": [
+      "in an emergency"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "damage",
+    "meaning": "손상; 손상시키다",
+    "usages": [
+      "water damage"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "lost",
+    "meaning": "잃어버린, 길을 잃은",
+    "usages": [
+      "a lost bag"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "missing",
+    "meaning": "없어진, 빠진",
+    "usages": [
+      "a missing item"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "wrong",
+    "meaning": "잘못된",
+    "usages": [
+      "the wrong address"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "repair",
+    "meaning": "수리하다",
+    "usages": [
+      "repair a bike"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "solve",
+    "meaning": "해결하다",
+    "usages": [
+      "solve an issue"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "solution",
+    "meaning": "해결책",
+    "usages": [
+      "find a solution"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "alternative",
+    "meaning": "대안",
+    "usages": [
+      "suggest an alternative"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "option",
+    "meaning": "선택지",
+    "usages": [
+      "consider an option"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "improve",
+    "meaning": "개선하다",
+    "usages": [
+      "improve my English"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "increase",
+    "meaning": "증가하다, 늘리다",
+    "usages": [
+      "increase the price"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "decrease",
+    "meaning": "감소하다, 줄이다",
+    "usages": [
+      "decrease the cost"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "reduce",
+    "meaning": "줄이다",
+    "usages": [
+      "reduce stress"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "save",
+    "meaning": "아끼다, 구하다",
+    "usages": [
+      "save money"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "waste",
+    "meaning": "낭비하다",
+    "usages": [
+      "waste time"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "lose",
+    "meaning": "잃다",
+    "usages": [
+      "lose my wallet"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "miss",
+    "meaning": "놓치다, 그리워하다",
+    "usages": [
+      "miss the train"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "happen",
+    "meaning": "일어나다",
+    "usages": [
+      "happen unexpectedly"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "occur",
+    "meaning": "발생하다",
+    "usages": [
+      "an error can occur"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "cause",
+    "meaning": "원인; 야기하다",
+    "usages": [
+      "cause a delay"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "result",
+    "meaning": "결과",
+    "usages": [
+      "a good result"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "effect",
+    "meaning": "영향, 효과",
+    "usages": [
+      "a positive effect"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "risk",
+    "meaning": "위험",
+    "usages": [
+      "take a risk"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "safe",
+    "meaning": "안전한",
+    "usages": [
+      "a safe area"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "dangerous",
+    "meaning": "위험한",
+    "usages": [
+      "a dangerous road"
+    ]
+  },
+  {
+    "cat": "문제·변화",
+    "term": "prevent",
+    "meaning": "예방하다",
+    "usages": [
+      "prevent accidents"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "big",
+    "meaning": "큰",
+    "usages": [
+      "a big room"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "small",
+    "meaning": "작은",
+    "usages": [
+      "a small bag"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "large",
+    "meaning": "큰, 넓은",
+    "usages": [
+      "a large park"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "tiny",
+    "meaning": "아주 작은",
+    "usages": [
+      "a tiny apartment"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "huge",
+    "meaning": "거대한",
+    "usages": [
+      "a huge building"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "tall",
+    "meaning": "키가 큰, 높은",
+    "usages": [
+      "a tall building"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "short",
+    "meaning": "짧은, 키가 작은",
+    "usages": [
+      "a short walk"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "long",
+    "meaning": "긴",
+    "usages": [
+      "a long trip"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "wide",
+    "meaning": "넓은",
+    "usages": [
+      "a wide road"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "narrow",
+    "meaning": "좁은",
+    "usages": [
+      "a narrow street"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "thick",
+    "meaning": "두꺼운",
+    "usages": [
+      "a thick blanket"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "thin",
+    "meaning": "얇은",
+    "usages": [
+      "a thin jacket"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "heavy",
+    "meaning": "무거운",
+    "usages": [
+      "a heavy suitcase"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "lightweight",
+    "meaning": "가벼운",
+    "usages": [
+      "a lightweight laptop"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "full",
+    "meaning": "가득 찬",
+    "usages": [
+      "a full bus"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "empty",
+    "meaning": "빈",
+    "usages": [
+      "an empty room"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "dirty",
+    "meaning": "더러운",
+    "usages": [
+      "dirty dishes"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "wet",
+    "meaning": "젖은",
+    "usages": [
+      "wet clothes"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "hot",
+    "meaning": "뜨거운, 더운",
+    "usages": [
+      "hot soup"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "warm",
+    "meaning": "따뜻한",
+    "usages": [
+      "warm weather"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "cool",
+    "meaning": "시원한",
+    "usages": [
+      "a cool evening"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "bright",
+    "meaning": "밝은",
+    "usages": [
+      "a bright room"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "dark",
+    "meaning": "어두운",
+    "usages": [
+      "a dark hallway"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "quiet",
+    "meaning": "조용한",
+    "usages": [
+      "a quiet neighborhood"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "noisy",
+    "meaning": "시끄러운",
+    "usages": [
+      "a noisy street"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "loud",
+    "meaning": "소리가 큰",
+    "usages": [
+      "loud music"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "busy",
+    "meaning": "바쁜",
+    "usages": [
+      "a busy day"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "free",
+    "meaning": "무료의; 자유로운",
+    "usages": [
+      "free admission"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "new",
+    "meaning": "새로운",
+    "usages": [
+      "a new phone"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "old",
+    "meaning": "오래된, 나이 든",
+    "usages": [
+      "an old house"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "modern",
+    "meaning": "현대적인",
+    "usages": [
+      "a modern building"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "traditional",
+    "meaning": "전통적인",
+    "usages": [
+      "a traditional market"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "similar",
+    "meaning": "비슷한",
+    "usages": [
+      "similar interests"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "different",
+    "meaning": "다른",
+    "usages": [
+      "a different experience"
+    ]
+  },
+  {
+    "cat": "상태·크기·비교",
+    "term": "same",
+    "meaning": "같은",
+    "usages": [
+      "the same address"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "reason",
+    "meaning": "이유",
+    "usages": [
+      "the main reason"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "opinion",
+    "meaning": "의견",
+    "usages": [
+      "in my opinion"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "idea",
+    "meaning": "생각, 아이디어",
+    "usages": [
+      "a good idea"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "point",
+    "meaning": "요점",
+    "usages": [
+      "the main point"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "fact",
+    "meaning": "사실",
+    "usages": [
+      "an interesting fact"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "truth",
+    "meaning": "진실",
+    "usages": [
+      "tell the truth"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "purpose",
+    "meaning": "목적",
+    "usages": [
+      "the purpose of the trip"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "goal",
+    "meaning": "목표",
+    "usages": [
+      "reach a goal"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "benefit",
+    "meaning": "이점",
+    "usages": [
+      "a health benefit"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "advantage",
+    "meaning": "장점",
+    "usages": [
+      "a major advantage"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "disadvantage",
+    "meaning": "단점",
+    "usages": [
+      "a possible disadvantage"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "choice",
+    "meaning": "선택",
+    "usages": [
+      "make a choice"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "difference",
+    "meaning": "차이",
+    "usages": [
+      "a big difference"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "similarity",
+    "meaning": "유사점",
+    "usages": [
+      "notice a similarity"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "comparison",
+    "meaning": "비교",
+    "usages": [
+      "make a comparison"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "because",
+    "meaning": "~이기 때문에",
+    "usages": [
+      "because it’s convenient"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "although",
+    "meaning": "비록 ~이지만",
+    "usages": [
+      "although it was expensive"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "though",
+    "meaning": "~이지만",
+    "usages": [
+      "though I was tired"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "however",
+    "meaning": "그러나",
+    "usages": [
+      "however, the room was small"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "therefore",
+    "meaning": "그러므로",
+    "usages": [
+      "therefore, we stayed home"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "otherwise",
+    "meaning": "그렇지 않으면",
+    "usages": [
+      "otherwise, we’ll be late"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "besides",
+    "meaning": "게다가",
+    "usages": [
+      "besides, it’s cheaper"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "also",
+    "meaning": "또한",
+    "usages": [
+      "also enjoy hiking"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "either",
+    "meaning": "둘 중 하나; 부정문의 ~도",
+    "usages": [
+      "I don’t drive either"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "neither",
+    "meaning": "둘 다 아닌",
+    "usages": [
+      "neither option"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "both",
+    "meaning": "둘 다",
+    "usages": [
+      "both restaurants"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "whether",
+    "meaning": "~인지",
+    "usages": [
+      "whether it’s available"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "unless",
+    "meaning": "~하지 않는 한",
+    "usages": [
+      "unless it rains"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "while",
+    "meaning": "~하는 동안",
+    "usages": [
+      "while I was waiting"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "since",
+    "meaning": "~부터; ~이므로",
+    "usages": [
+      "since last year"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "until",
+    "meaning": "~까지 계속",
+    "usages": [
+      "until midnight"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "before",
+    "meaning": "~전에",
+    "usages": [
+      "before dinner"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "after",
+    "meaning": "~후에",
+    "usages": [
+      "after work"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "despite",
+    "meaning": "~에도 불구하고",
+    "usages": [
+      "despite the rain"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "basically",
+    "meaning": "기본적으로",
+    "usages": [
+      "basically the same"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "perhaps",
+    "meaning": "아마",
+    "usages": [
+      "perhaps next time"
+    ]
+  },
+  {
+    "cat": "이유·의견·연결",
+    "term": "probably",
+    "meaning": "아마도",
+    "usages": [
+      "probably tomorrow"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "plan",
+    "meaning": "계획; 계획하다",
+    "usages": [
+      "make a plan"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "planning",
+    "meaning": "계획 수립",
+    "usages": [
+      "careful planning"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "arrangement",
+    "meaning": "준비, 합의",
+    "usages": [
+      "travel arrangements"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "organizer",
+    "meaning": "주최자",
+    "usages": [
+      "the event organizer"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "event",
+    "meaning": "행사, 사건",
+    "usages": [
+      "a local event"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "occasion",
+    "meaning": "때, 특별한 행사",
+    "usages": [
+      "a special occasion"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "opportunity",
+    "meaning": "기회",
+    "usages": [
+      "a great opportunity"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "possibility",
+    "meaning": "가능성",
+    "usages": [
+      "a real possibility"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "request",
+    "meaning": "요청",
+    "usages": [
+      "make a request"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "requirement",
+    "meaning": "요구 사항",
+    "usages": [
+      "meet a requirement"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "service",
+    "meaning": "서비스",
+    "usages": [
+      "good customer service"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "assistance",
+    "meaning": "도움",
+    "usages": [
+      "ask for assistance"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "help",
+    "meaning": "돕다; 도움",
+    "usages": [
+      "ask for help"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "information",
+    "meaning": "정보",
+    "usages": [
+      "useful information"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "detail",
+    "meaning": "세부 사항",
+    "usages": [
+      "check the details"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "instruction",
+    "meaning": "지시, 사용법",
+    "usages": [
+      "follow the instructions"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "direction",
+    "meaning": "방향; 길 안내",
+    "usages": [
+      "ask for directions"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "confirmation",
+    "meaning": "확인, 확정",
+    "usages": [
+      "a booking confirmation"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "permission",
+    "meaning": "허락",
+    "usages": [
+      "ask for permission"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "access",
+    "meaning": "접근, 이용",
+    "usages": [
+      "internet access"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "availability",
+    "meaning": "이용 가능 여부",
+    "usages": [
+      "check availability"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "policy",
+    "meaning": "규정, 정책",
+    "usages": [
+      "a refund policy"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "rule",
+    "meaning": "규칙",
+    "usages": [
+      "follow the rules"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "condition",
+    "meaning": "조건; 상태",
+    "usages": [
+      "in good condition"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "limit",
+    "meaning": "한도, 제한",
+    "usages": [
+      "a time limit"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "restriction",
+    "meaning": "제한",
+    "usages": [
+      "travel restrictions"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "warning",
+    "meaning": "경고",
+    "usages": [
+      "a weather warning"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "complaint",
+    "meaning": "불만, 항의",
+    "usages": [
+      "make a complaint"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "inquiry",
+    "meaning": "문의",
+    "usages": [
+      "a booking inquiry"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "equipment",
+    "meaning": "장비",
+    "usages": [
+      "sports equipment"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "tool",
+    "meaning": "도구",
+    "usages": [
+      "a useful tool"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "supply",
+    "meaning": "공급; 용품",
+    "usages": [
+      "office supplies"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "material",
+    "meaning": "재료",
+    "usages": [
+      "building materials"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "resource",
+    "meaning": "자원",
+    "usages": [
+      "learning resources"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "provide",
+    "meaning": "제공하다",
+    "usages": [
+      "provide information"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "offer",
+    "meaning": "제안하다, 제공하다",
+    "usages": [
+      "offer help"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "require",
+    "meaning": "요구하다",
+    "usages": [
+      "require a reservation"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "include",
+    "meaning": "포함하다",
+    "usages": [
+      "include breakfast"
+    ]
+  },
+  {
+    "cat": "계획·서비스",
+    "term": "exclude",
+    "meaning": "제외하다",
+    "usages": [
+      "exclude delivery costs"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "turn on",
+    "meaning": "켜다",
+    "usages": [
+      "turn on the light"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "turn off",
+    "meaning": "끄다",
+    "usages": [
+      "turn off the TV"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "turn down",
+    "meaning": "소리를 줄이다; 거절하다",
+    "usages": [
+      "turn down the volume"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "turn up",
+    "meaning": "소리를 높이다; 나타나다",
+    "usages": [
+      "turn up the volume"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "put on",
+    "meaning": "입다, 착용하다",
+    "usages": [
+      "put on a jacket"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "take off",
+    "meaning": "벗다; 이륙하다",
+    "usages": [
+      "take off my shoes"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "pick up",
+    "meaning": "데리러 가다; 집어 들다",
+    "usages": [
+      "pick up a friend"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "drop off",
+    "meaning": "내려주다, 맡기다",
+    "usages": [
+      "drop off a package"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "put off",
+    "meaning": "미루다",
+    "usages": [
+      "put off a meeting"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "set up",
+    "meaning": "설치하다, 준비하다",
+    "usages": [
+      "set up a computer"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "look for",
+    "meaning": "찾다",
+    "usages": [
+      "look for my keys"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "look after",
+    "meaning": "돌보다",
+    "usages": [
+      "look after a pet"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "look up",
+    "meaning": "찾아보다",
+    "usages": [
+      "look up a word"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "look forward to",
+    "meaning": "기대하다",
+    "usages": [
+      "look forward to the trip"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "find out",
+    "meaning": "알아내다",
+    "usages": [
+      "find out the price"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "hang out",
+    "meaning": "함께 시간을 보내다",
+    "usages": [
+      "hang out with friends"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "get along with",
+    "meaning": "~와 잘 지내다",
+    "usages": [
+      "get along with coworkers"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "give up",
+    "meaning": "포기하다",
+    "usages": [
+      "give up smoking"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "calm down",
+    "meaning": "진정하다",
+    "usages": [
+      "calm down after an argument"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "show up",
+    "meaning": "나타나다",
+    "usages": [
+      "show up on time"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "grow up",
+    "meaning": "자라다",
+    "usages": [
+      "grow up in a small town"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "wake up",
+    "meaning": "잠에서 깨다",
+    "usages": [
+      "wake up early"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "get up",
+    "meaning": "일어나다",
+    "usages": [
+      "get up at seven"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "come back",
+    "meaning": "돌아오다",
+    "usages": [
+      "come back home"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "go back",
+    "meaning": "다시 돌아가다",
+    "usages": [
+      "go back to work"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "try on",
+    "meaning": "입어보다",
+    "usages": [
+      "try on a coat"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "fill out",
+    "meaning": "작성하다",
+    "usages": [
+      "fill out a form"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "check in",
+    "meaning": "체크인하다",
+    "usages": [
+      "check in at the hotel"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "check out",
+    "meaning": "체크아웃하다; 살펴보다",
+    "usages": [
+      "check out of the hotel"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "get over",
+    "meaning": "회복하다, 극복하다",
+    "usages": [
+      "get over a cold"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "break down",
+    "meaning": "고장 나다",
+    "usages": [
+      "the car might break down"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "go off",
+    "meaning": "알람이 울리다",
+    "usages": [
+      "the alarm didn’t go off"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "carry on",
+    "meaning": "계속하다",
+    "usages": [
+      "carry on with my work"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "bring up",
+    "meaning": "화제를 꺼내다",
+    "usages": [
+      "bring up a topic"
+    ]
+  },
+  {
+    "cat": "자주 쓰는 구동사·표현",
+    "term": "end up",
+    "meaning": "결국 ~하게 되다",
+    "usages": [
+      "end up taking a taxi"
+    ]
   }
 ];

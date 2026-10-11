@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="ko">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OPIc · 문법과 단어</title><link rel="stylesheet" href="style.css?v=2"></head>
-<body><main data-content-version="grammar-v2">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OPIc · 문법과 단어</title><link rel="stylesheet" href="style.css?v=3"></head>
+<body><div class="page-layout"><aside id="grammar-rail" aria-label="문법 목차"><button id="rail-toggle" aria-expanded="true" aria-controls="grammar-index">문법 목차 <span>32개 강의</span></button><div id="grammar-index"></div></aside><main data-content-version="study-v3">
 <header><a class="brand" href="./">OPIc</a><span>말하기의 기본</span></header>
 <nav aria-label="학습 메뉴"><button class="active" data-tab="grammar" aria-pressed="true">문법</button><button data-tab="vocabulary" aria-pressed="false">단어</button></nav>
 <section class="intro"><h1 id="heading">규칙을 이해하고, 문장을 만드는 문법.</h1><p id="description">문장 기초 → 명사와 수식 → 시제 → 동사 확장 → 문장 연결. 32개 강의에서 개념, 형태, 예문 분석과 연습 해설을 차례로 공부하세요.</p></section>
 <div class="toolbar"><label class="search"><span class="sr-only">학습 내용 검색</span><input id="search" type="search" placeholder="문법이나 예문 검색" autocomplete="off"></label><button id="quiz-open">퀴즈 풀기 ↗</button></div>
+<div id="word-tools" hidden>
+<div class="word-control-row"><label>주제 <select id="word-topic"><option value="전체">전체</option></select></label><label>상태 <select id="word-status"><option value="unknown">아직 모르는 단어</option><option value="all">전체 단어</option><option value="known">아는 단어</option></select></label></div>
+<div class="word-control-row"><div class="view-switch" aria-label="단어 학습 방식"><button data-word-view="list" aria-pressed="true">목록</button><button data-word-view="cards" aria-pressed="false">카드</button></div><button id="word-shuffle">섞기 ↻</button></div>
+<p class="study-guide">처음 보는 단어도 모르는 단어에 포함됩니다. ‘알아요’를 표시하면 모르는 단어에서 빠집니다. 카드는 남은 단어를 다시 섞어 반복합니다.</p><p id="storage-notice" class="storage-notice" role="status" hidden></p></div>
 <div id="filters" class="filters" aria-label="문법 학습 단계"></div><p id="study-guide" class="study-guide">처음이라면 01번부터 순서대로. 설명을 읽고 → 예문에서 구조를 찾고 → 문제를 푼 뒤 → 내 이야기로 말해 보세요. 퀴즈는 선택한 단계에서 최대 10문제를 출제합니다.</p>
-<p id="count" class="meta" aria-live="polite"></p><section id="list" aria-label="학습 내용"></section>
+<p id="count" class="meta" aria-live="polite"></p><section id="list" aria-label="학습 내용"></section><section id="word-card" aria-label="단어 카드 학습" hidden></section><div id="word-pagination" class="pagination" hidden><button id="word-prev">이전</button><span id="word-page" aria-live="polite"></span><button id="word-next">다음</button></div>
 <footer><p>예문은 시작점입니다. 이유 → 구체적인 경험 → 느낌을 덧붙여 말해 보세요.</p><p>AL은 단어 암기만으로 결정되지 않습니다. 자연스러운 연결과 상황에 맞는 설명도 함께 연습하세요.</p></footer>
-</main>
+</main></div>
 <dialog id="quiz" aria-labelledby="quiz-label"><div class="dialog-head"><span id="quiz-label">복습 퀴즈</span><button id="quiz-close" aria-label="퀴즈 닫기">닫기</button></div><div id="quiz-body"></div></dialog>
-<script src="content.js?v=2"></script><script src="app.js?v=2"></script></body></html>
+<script src="content.js?v=3"></script><script src="app.js?v=3"></script></body></html>

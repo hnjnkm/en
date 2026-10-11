@@ -40,7 +40,7 @@ jobs:
             if [[ "$status" == "built" && "$commit" == "$GITHUB_SHA" ]]; then
               url=$(echo "$site" | jq -r '.html_url')
               for probe in {1..12}; do
-                if curl --fail --silent --show-error "$url?build=$GITHUB_SHA" -o /tmp/opic-published.html && grep -q 'data-content-version="grammar-v2"' /tmp/opic-published.html && curl --fail --silent --show-error "${url}content.js?build=$GITHUB_SHA" -o /tmp/opic-content.js && grep -q '"id": "g32"' /tmp/opic-content.js; then
+                if curl --fail --silent --show-error "$url?build=$GITHUB_SHA" -o /tmp/opic-published.html && grep -q 'data-content-version="study-v3"' /tmp/opic-published.html && curl --fail --silent --show-error "${url}content.js?build=$GITHUB_SHA" -o /tmp/opic-content.js && grep -q '"id": "g32"' /tmp/opic-content.js && grep -q '"term": "end up"' /tmp/opic-content.js; then
                   echo "Verified OPIc site: $url"
                   exit 0
                 fi
