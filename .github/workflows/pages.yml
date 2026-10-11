@@ -35,11 +35,12 @@ jobs:
           for attempt in {1..30}; do
             result=$(gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest")
             status=$(echo "$result" | jq -r '.status')
-            echo "Build status: $status"
-            if [[ "$status" == "built" ]]; then
+            commit=$(echo "$result" | jq -r '.commit')
+            echo "Build status: $status; commit: $commit"
+            if [[ "$status" == "built" && "$commit" == "$GITHUB_SHA" ]]; then
               url=$(echo "$site" | jq -r '.html_url')
               for probe in {1..12}; do
-                if curl --fail --silent --show-error "$url" -o /tmp/opic-published.html && grep -q 'OPIc · 문법과 단어' /tmp/opic-published.html; then
+                if curl --fail --silent --show-error "$url?build=$GITHUB_SHA" -o /tmp/opic-published.html && grep -q 'data-content-version="grammar-v2"' /tmp/opic-published.html && curl --fail --silent --show-error "${url}content.js?build=$GITHUB_SHA" -o /tmp/opic-content.js && grep -q '"id": "g32"' /tmp/opic-content.js; then
                   echo "Verified OPIc site: $url"
                   exit 0
                 fi

@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="ko">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OPIc · 문법과 단어</title><link rel="stylesheet" href="style.css"></head>
-<body><main>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OPIc · 문법과 단어</title><link rel="stylesheet" href="style.css?v=2"></head>
+<body><main data-content-version="grammar-v2">
 <header><a class="brand" href="./">OPIc</a><span>말하기의 기본</span></header>
-<nav aria-label="학습 메뉴"><button class="active" data-tab="grammar" aria-selected="true">문법</button><button data-tab="vocabulary" aria-selected="false">단어</button></nav>
-<section class="intro"><h1 id="heading">짧게 이해하고, 직접 말하기.</h1><p id="description">문장의 뼈대부터 경험을 연결하는 법까지. 예문을 내 이야기로 바꿔 말해 보세요.</p></section>
+<nav aria-label="학습 메뉴"><button class="active" data-tab="grammar" aria-pressed="true">문법</button><button data-tab="vocabulary" aria-pressed="false">단어</button></nav>
+<section class="intro"><h1 id="heading">규칙을 이해하고, 문장을 만드는 문법.</h1><p id="description">문장 기초 → 명사와 수식 → 시제 → 동사 확장 → 문장 연결. 32개 강의에서 개념, 형태, 예문 분석과 연습 해설을 차례로 공부하세요.</p></section>
 <div class="toolbar"><label class="search"><span class="sr-only">학습 내용 검색</span><input id="search" type="search" placeholder="문법이나 예문 검색" autocomplete="off"></label><button id="quiz-open">퀴즈 풀기 ↗</button></div>
-<div id="filters" class="filters" aria-label="단어 주제" hidden></div>
+<div id="filters" class="filters" aria-label="문법 학습 단계"></div><p id="study-guide" class="study-guide">처음이라면 01번부터 순서대로. 설명을 읽고 → 예문에서 구조를 찾고 → 문제를 푼 뒤 → 내 이야기로 말해 보세요. 퀴즈는 선택한 단계에서 최대 10문제를 출제합니다.</p>
 <p id="count" class="meta" aria-live="polite"></p><section id="list" aria-label="학습 내용"></section>
 <footer><p>예문은 시작점입니다. 이유 → 구체적인 경험 → 느낌을 덧붙여 말해 보세요.</p><p>AL은 단어 암기만으로 결정되지 않습니다. 자연스러운 연결과 상황에 맞는 설명도 함께 연습하세요.</p></footer>
 </main>
-<dialog id="quiz"><div class="dialog-head"><span id="quiz-label">복습 퀴즈</span><button id="quiz-close" aria-label="퀴즈 닫기">닫기</button></div><div id="quiz-body"></div></dialog>
-<script src="content.js"></script><script src="app.js"></script></body></html>
+<dialog id="quiz" aria-labelledby="quiz-label"><div class="dialog-head"><span id="quiz-label">복습 퀴즈</span><button id="quiz-close" aria-label="퀴즈 닫기">닫기</button></div><div id="quiz-body"></div></dialog>
+<script src="content.js?v=2"></script><script src="app.js?v=2"></script></body></html>
